@@ -6,6 +6,7 @@ export default defineConfig({
       input: {
         index: "index.html", // 기본 index.html
         ldgnb: "src/components/ldgnb.html",
+        mgnb: "src/components/mgnb.html",
       },
     },
   },

@@ -1,0 +1,10 @@
+body {
+  font-family: "Pretendard Variable", sans-serif;
+  background: var(--brand--dark-bg-1);
+}
+
+.mgnb {
+  --gnb-height: 2.375rem;
+  --gnb-inline-p: 1rem;
+  --gnb-logo-w: 46px;
+}
