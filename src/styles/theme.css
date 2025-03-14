@@ -1,4 +1,12 @@
 :root {
+  /* Spacing styles */
+  --space-2: 8px;
+  --space-2-rem: 0.5rem;
+  --base: 4px;
+  --base-rem: 0.25rem;
+  --space-1: -32px;
+  --space-1-rem: -2rem;
+
   /* Color styles */
   --black: #000000;
   --white: #ffffff;
