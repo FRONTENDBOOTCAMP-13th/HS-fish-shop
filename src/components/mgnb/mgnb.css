@@ -110,11 +110,24 @@ li {
       display: block;
     }
   }
+  .mgnb-sch-icon {
+    position: relative;
+    width: var(--icon-w);
+    aspect-ratio: 1/1;
+  }
   .mgnb-sch-input {
     appearance: none;
     width: var(--icon-w);
     aspect-ratio: 1/1;
     display: block;
+  }
+  .mgnb-sch-label {
+    width: var(--icon-w);
+    aspect-ratio: 1/1;
+    display: block;
+    position: absolute;
+    top: 0;
+    pointer-events: none;
 
     &::after {
       content: "";
@@ -146,7 +159,7 @@ li {
       }
     }
   }
-  .mgnb-sch-input:checked {
+  .mgnb-sch-input:checked + .mgnb-sch-label {
     &::after {
       background: url(../../assets/mgnb/gnbx-sm-default.svg) no-repeat center;
       @media screen and (min-width: 764px) {

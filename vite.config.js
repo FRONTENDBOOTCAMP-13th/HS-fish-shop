@@ -5,8 +5,9 @@ export default defineConfig({
     rollupOptions: {
       input: {
         index: "index.html", // 기본 index.html
-        ldgnb: "src/components/ldgnb.html",
-        mgnb: "src/components/mgnb.html",
+        ldgnb: "src/components/ldgnb/ldgnb.html",
+        mgnb: "src/components/mgnb/mgnb.html",
+        gnbsch: "src/components/gnb-sch/gnb-sch.html",
       },
     },
   },

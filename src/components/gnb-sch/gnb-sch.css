@@ -1,0 +1,35 @@
+.gnb-sch-bar {
+  --block-sch-p: 0.5rem;
+  --sch-in-text: 1rem;
+
+  display: flex;
+  width: 100%;
+  padding-block: var(--block-sch-p);
+  border-bottom: 2px solid white;
+  font-size: var(--sch-in-text);
+  font-weight: 600;
+
+  input {
+    flex-grow: 1;
+    appearance: none;
+    background: none;
+    border: none;
+    color: white;
+
+    &::placeholder {
+      color: var(--gray--700);
+    }
+  }
+  .gnb-sch-input {
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+  }
+
+  .gnb-sch-input-lg {
+    display: none;
+    @media screen and (min-width: 768px) {
+      display: block;
+    }
+  }
+}
