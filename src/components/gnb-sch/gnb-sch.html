@@ -8,14 +8,78 @@
   <link rel="stylesheet" as="style" href="/font/pretendardvariable.css" />
   <script type="module" src="./../../main.js"/></script>
   <title>GNB-검색창 만들기</title>
+ 
 </head>
 <body>
   <!-- 서치바 -->
-    <form class="gnb-sch-bar">
-      <input type="text" class="gnb-sch-input" name="gnb-sch" id="gnb-sch" placeholder="검색"/>
-      <input type="text" class="gnb-sch-input-lg" name="gnb-sch" id="gnb-sch" placeholder="검색"/>
-      <label for="gnb-sch" class="sr-only">TV프로그램, 영화 제목 및 출연진으로 검색해 보세요.</label>
-      <button class="gnb-sch-btn"><span class="sr-only">검색하기</span></button>
-    </form>
+  <form class="gnb-sch-bar">
+    <input type="search" required class="gnb-sch-input" name="gnb-sch-input" id="gnb-sch-input" placeholder="검색"/>
+    <label for="gnb-sch-input" required class="sr-only">TV프로그램, 영화 제목 및 출연진으로 검색해 보세요.</label>
+
+    <input type="search" required class="gnb-sch-input-lg" name="gnb-sch-input-lg" id="gnb-sch-input-lg" placeholder="TV프로그램, 영화 제목 및 출연진으로 검색해 보세요."/>
+    <label for="gnb-sch-input-lg" required class="sr-only">TV프로그램, 영화 제목 및 출연진으로 검색해 보세요.</label>
+    <button class="gnb-sch-btn" type="submit"><span class="sr-only">검색하기</span></button>
+    <div id="result"></div>
+  </form> 
+<!-- 최근검색어 -->
+  <div class="gnb-sch-result">
+    <header role="heading" class="gnb-sch-result-title">최근 검색어</header>
+    <p class="gnb-sch-result-text">검색 내역이 없습니다.</p>
+  </div>
+<!-- 실시간 인기검색어 -->
+  <div class="gnb-sch-pop">
+    <header class="gnb-sch-pop-title">실시간 인기 검색어</header>
+    <ol>
+      <li><a href="#" target="_blank" rel="noopener noreferrer"><span class="gnb-sch-num">1</span>재벌집 막내아들</a></li>
+      <li><a href="#" target="_blank" rel="noopener noreferrer"><span class="gnb-sch-num">2</span>미스터트롯2:새로운 전설의 시작</a></li>
+      <li><a href="#" target="_blank" rel="noopener noreferrer"><span class="gnb-sch-num">3</span>유 퀴즈 온 더 블럭</a></li>
+      <li><a href="#" target="_blank" rel="noopener noreferrer"><span class="gnb-sch-num">4</span>대행사</a></li>
+      <li><a href="#" target="_blank" rel="noopener noreferrer"><span class="gnb-sch-num">5</span>SHOW ME THE MONEY</a></li>
+      <li><a href="#" target="_blank" rel="noopener noreferrer"><span class="gnb-sch-num">6</span>미씽:그들이 있었다2</a></li>
+      <li><a href="#" target="_blank" rel="noopener noreferrer"><span class="gnb-sch-num">7</span>술꾼도시여자들2</a></li>
+      <li><a href="#" target="_blank" rel="noopener noreferrer"><span class="gnb-sch-num">8</span>캐나다 체크인</a></li>
+      <li><a href="#" target="_blank" rel="noopener noreferrer"><span class="gnb-sch-num">9</span>미씽:그들이 있었다-그들을 다만나다</a></li>
+      <li><a href="#" target="_blank" rel="noopener noreferrer"><span class="gnb-sch-num">10</span>술꾼도시여자들</a></li>
+    </ol>
+    <time datetime="2022-12-24T03:04:00">2022.12.24 오전 03.04 기준</time>
+  </div>
+  <!-- 검색전체 -->
+  <div class="gnb-sch-wrapper">
+      <!-- 서치바 -->
+      <form class="gnb-sch-bar">
+        <input type="search" required class="gnb-sch-input" name="gnb-sch-input" id="gnb-sch-input" placeholder="검색"/>
+        <label for="gnb-sch-input" required class="sr-only">TV프로그램, 영화 제목 및 출연진으로 검색해 보세요.</label>
+    
+        <input type="search" required class="gnb-sch-input-lg" name="gnb-sch-input-lg" id="gnb-sch-input-lg" placeholder="TV프로그램, 영화 제목 및 출연진으로 검색해 보세요."/>
+        <label for="gnb-sch-input-lg" required class="sr-only">TV프로그램, 영화 제목 및 출연진으로 검색해 보세요.</label>
+        <button class="gnb-sch-btn" type="submit"><span class="sr-only">검색하기</span></button>
+        <div id="result"></div>
+      </form> 
+    <!-- 최근검색어 -->
+      <div class="gnb-sch-result">
+        <header role="heading" class="gnb-sch-result-title">최근 검색어</header>
+        <p class="gnb-sch-result-text">검색 내역이 없습니다.</p>
+      </div>
+      <div role="none" class="gnb-center-line"></div>
+    <!-- 실시간 인기검색어 -->
+      <div class="gnb-sch-pop">
+        <header class="gnb-sch-pop-title">실시간 인기 검색어</header>
+        <ol>
+          <li><a href="#" target="_blank" rel="noopener noreferrer"><span class="gnb-sch-num">1</span>재벌집 막내아들</a></li>
+          <li><a href="#" target="_blank" rel="noopener noreferrer"><span class="gnb-sch-num">2</span>미스터트롯2:새로운 전설의 시작</a></li>
+          <li><a href="#" target="_blank" rel="noopener noreferrer"><span class="gnb-sch-num">3</span>유 퀴즈 온 더 블럭</a></li>
+          <li><a href="#" target="_blank" rel="noopener noreferrer"><span class="gnb-sch-num">4</span>대행사</a></li>
+          <li><a href="#" target="_blank" rel="noopener noreferrer"><span class="gnb-sch-num">5</span>SHOW ME THE MONEY</a></li>
+          <li><a href="#" target="_blank" rel="noopener noreferrer"><span class="gnb-sch-num">6</span>미씽:그들이 있었다2</a></li>
+          <li><a href="#" target="_blank" rel="noopener noreferrer"><span class="gnb-sch-num">7</span>술꾼도시여자들2</a></li>
+          <li><a href="#" target="_blank" rel="noopener noreferrer"><span class="gnb-sch-num">8</span>캐나다 체크인</a></li>
+          <li><a href="#" target="_blank" rel="noopener noreferrer"><span class="gnb-sch-num">9</span>미씽:그들이 있었다-그들을 다만나다</a></li>
+          <li><a href="#" target="_blank" rel="noopener noreferrer"><span class="gnb-sch-num">10</span>술꾼도시여자들</a></li>
+        </ol>
+        <time datetime="2022-12-24T03:04:00">2022.12.24 오전 03.04 기준</time>
+      </div>
+  </div>
+
+
 </body>
 </html>
