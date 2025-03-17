@@ -5,7 +5,12 @@ export default defineConfig({
     rollupOptions: {
       input: {
         index: "index.html", // 기본 index.html
-        ldgnb: "src/components/ldgnb/ldgnb.html",
+        gnbland: "src/components/gnb-land/gnb-land.html",
+        gnblogin: "src/components/gnb-login/gnb-login.html",
+        gnbmain: "src/components/gnb-main/gnb-main.html",
+        gnbschm: "src/components/gnb-sch-m/gnb-sch-m.html",
+        gnbschpc: "src/components/gnb-sch-pc/gnb-sch-pc.html",
+        historypage: "src/components/history-page/history-page.html",
 
       },
     },
