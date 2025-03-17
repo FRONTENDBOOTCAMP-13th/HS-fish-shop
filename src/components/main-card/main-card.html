@@ -17,7 +17,7 @@
   <body>
     <h1>main-card-component</h1>
 
-    <section class="tving-content">
+    <section class="card-wrapper tving-content">
       <h2>tving-content</h2>
       <ul class="card main-card">
         <li>
@@ -26,12 +26,12 @@
               <picture>
                 <source
                   srcset="./../../assets/card-images/treasure-hunt-desktop.webp"
-                  media="(min-width: 1920px)"
+                  media="(min-width: 1024px)"
                 />
 
                 <source
                   srcset="./../../assets/card-images/treasure-hunt-tablet.webp"
-                  media="(min-width: 768px) and (max-width: 1920px)"
+                  media="(min-width: 768px) and (max-width: 1023px)"
                 />
 
                 <source
@@ -53,7 +53,7 @@
 
     <hr />
 
-    <section class="quick-VOD">
+    <section class="card-wrapper quick-VOD">
       <h2>Quick VOD</h2>
       <ul class="card quick-VOD-card">
         <li>
@@ -64,12 +64,12 @@
                   srcset="
                     ./../../assets/card-images/jtbc-news-room-desktop.webp
                   "
-                  media="(min-width: 1920px)"
+                  media="(min-width: 1024px)"
                 />
 
                 <source
                   srcset="./../../assets/card-images/jtbc-news-room-tablet.webp"
-                  media="(min-width: 768px) and (max-width: 1920px)"
+                  media="(min-width: 768px) and (max-width: 1023px)"
                 />
 
                 <source
@@ -92,7 +92,77 @@
 
     <hr />
 
-    <section class="live-ranking">
+    <section class="card-wrapper user-watching-content">
+      <h2>프로필님이 시청중인 콘텐츠</h2>
+      <ul class="card user-watching-content-card">
+        <li>
+          <a href="/">
+            <figure>
+              <picture>
+                <source
+                  srcset="./../../assets/card-images/rich-last-son-desktop.webp"
+                  media="(min-width: 1024px)"
+                />
+
+                <source
+                  srcset="./../../assets/card-images/rich-last-son-tablet.webp"
+                  media="(min-width: 768px) and (max-width: 1023px)"
+                />
+
+                <source
+                  srcset="./../../assets/card-images/rich-last-son.webp"
+                  media="(max-width: 767px)"
+                />
+
+                <img
+                  src="./../../assets/card-images/rich-last-son.webp"
+                  alt="시청중인 재벌집 막내아들 포스터"
+                />
+              </picture>
+              <div class="watching-card-bottom">
+                <figcaption>1화</figcaption>
+                <div class="watching-content-card-info">
+                  <svg
+                    viewBox="0 0 37 36"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle cx="18.28" cy="10" r="2" fill="#B3B3B3"></circle>
+                    <circle cx="18.28" cy="18" r="2" fill="#B3B3B3"></circle>
+                    <circle cx="18.28" cy="26" r="2" fill="#B3B3B3"></circle>
+                  </svg>
+                </div>
+              </div>
+              <div class="play-svg-img">
+                <svg
+                  viewBox="0 0 84 83"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g opacity="0.996">
+                    <circle
+                      cx="41.78"
+                      cy="41.5"
+                      r="34.083"
+                      fill="#000"
+                      fill-opacity="0.7"
+                      stroke="#fff"
+                    ></circle>
+                    <path
+                      d="M34.863 55.333V27.667L57.343 41.5l-22.48 13.832z"
+                      fill="#fff"
+                    ></path>
+                  </g>
+                </svg>
+              </div>
+            </figure>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <hr />
+    <section class="card-wrapper live-ranking">
       <h2>실시간 인기 프로그램</h2>
       <ul class="card live-ranking-card">
         <li>
@@ -101,12 +171,12 @@
               <picture>
                 <source
                   srcset="./../../assets/card-images/rich-last-son-desktop.webp"
-                  media="(min-width: 1920px)"
+                  media="(min-width: 1024px)"
                 />
 
                 <source
                   srcset="./../../assets/card-images/rich-last-son-tablet.webp"
-                  media="(min-width: 768px) and (max-width: 1920px)"
+                  media="(min-width: 768px) and (max-width: 1023px)"
                 />
 
                 <source
@@ -119,19 +189,78 @@
                   alt="랭킹 리스트 중 재벌집 막내아들 이미지 "
                 />
               </picture>
-              <div class="rank-list-text">
-                <figcaption>title</figcaption>
-                <p class="ranking">1</p>
-              </div>
+              <figcaption>1</figcaption>
             </figure>
           </a>
         </li>
       </ul>
+      <div class="card-move-buttons">
+        <button type="button" class="left">
+          <svg
+            width="70"
+            height="70"
+            viewBox="0 0 70 70"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0_158_6408)">
+              <g opacity="0.7">
+                <path
+                  d="M44.13 16.7393L25.8691 35.0001"
+                  stroke="#ffffff"
+                  stroke-width="4"
+                  stroke-linecap="square"
+                />
+                <path
+                  d="M25.8691 35L44.13 53.2609"
+                  stroke="#ffffff"
+                  stroke-width="4"
+                  stroke-linecap="square"
+                />
+              </g>
+            </g>
+            <defs>
+              <clipPath id="clip0_158_6408">
+                <rect width="70" height="70" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+        </button>
+        <button type="button" class="right">
+          <svg
+            width="70"
+            height="70"
+            viewBox="0 0 70 70"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0_158_6402)">
+              <path
+                d="M25.8691 16.7373L44.13 34.9982"
+                stroke="#ffffff"
+                stroke-width="4"
+                stroke-linecap="square"
+              />
+              <path
+                d="M44.13 34.998L25.8691 53.2589"
+                stroke="#ffffff"
+                stroke-width="4"
+                stroke-linecap="square"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_158_6402">
+                <rect width="70" height="70" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+        </button>
+      </div>
     </section>
 
     <hr />
 
-    <section class="live-channel">
+    <section class="card-wrapper live-channel">
       <h2>인기 채널</h2>
       <ul class="card live-channel-card">
         <li>
@@ -142,14 +271,14 @@
                   srcset="
                     ./../../assets/card-images/ranking-list-jtbc-desktop.webp
                   "
-                  media="(min-width: 1920px)"
+                  media="(min-width: 1024px)"
                 />
 
                 <source
                   srcset="
                     ./../../assets/card-images/ranking-list-jtbc-tablet.webp
                   "
-                  media="(min-width: 768px) and (max-width: 1920px)"
+                  media="(min-width: 768px) and (max-width: 1023px)"
                 />
 
                 <source
@@ -176,7 +305,7 @@
 
     <hr />
 
-    <section class="only-tving">
+    <section class="card-wrapper only-tving">
       <h2>오로지 티빙에서만</h2>
       <ul class="card only-tving-card">
         <li>
@@ -184,12 +313,12 @@
             <picture>
               <source
                 srcset="./../../assets/card-images/can-all-see-desktop.webp"
-                media="(min-width: 1920px)"
+                media="(min-width: 1024px)"
               />
 
               <source
                 srcset="./../../assets/card-images/can-all-see-tablet.webp"
-                media="(min-width: 768px) and (max-width: 1920px)"
+                media="(min-width: 768px) and (max-width: 1023px)"
               />
 
               <source
@@ -210,33 +339,31 @@
     <hr />
 
     <section class="banner-area">
-      <ul class="card banner-card">
-        <li>
-          <a href="/">
-            <picture>
-              <source
-                srcset="./../../assets/card-images/sports-live-desktop.webp"
-                media="(min-width: 1920px)"
-              />
+      <div class="card banner-card">
+        <a href="/">
+          <picture>
+            <source
+              srcset="./../../assets/card-images/sports-live-desktop.webp"
+              media="(min-width: 1024px)"
+            />
 
-              <source
-                srcset="./../../assets/card-images/sports-live-tablet.webp"
-                media="(min-width: 768px) and (max-width: 1920px)"
-              />
+            <source
+              srcset="./../../assets/card-images/sports-live-tablet.webp"
+              media="(min-width: 768px) and (max-width: 1023px)"
+            />
 
-              <source
-                srcset="./../../assets/card-images/sports-live.webp"
-                media="(max-width: 767px)"
-              />
+            <source
+              srcset="./../../assets/card-images/sports-live.webp"
+              media="(max-width: 767px)"
+            />
 
-              <img
-                src="./../../assets/card-images/sports-live.webp"
-                alt="티빙 스포츠 경기 생중게 배너 "
-              />
-            </picture>
-          </a>
-        </li>
-      </ul>
+            <img
+              src="./../../assets/card-images/sports-live.webp"
+              alt="티빙 스포츠 경기 생중게 배너 "
+            />
+          </picture>
+        </a>
+      </div>
     </section>
 
     <hr />
@@ -248,12 +375,12 @@
             <picture>
               <source
                 srcset="./../../assets/card-images/sinbi-apart-desktop.webp"
-                media="(min-width: 1920px)"
+                media="(min-width: 1024px)"
               />
 
               <source
                 srcset="./../../assets/card-images/sinbi-apart-tablet.webp"
-                media="(min-width: 768px) and (max-width: 1920px)"
+                media="(min-width: 768px) and (max-width: 1023px)"
               />
 
               <source
@@ -269,6 +396,73 @@
           </a>
         </li>
       </ul>
+    </section>
+
+    <hr />
+
+    <section style="background-color: #000">
+      <div class="card-move-buttons">
+        <button type="button" class="left">
+          <svg
+            width="70"
+            height="70"
+            viewBox="0 0 70 70"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0_158_6408)">
+              <g opacity="0.7">
+                <path
+                  d="M44.13 16.7393L25.8691 35.0001"
+                  stroke="#ffffff"
+                  stroke-width="2"
+                  stroke-linecap="square"
+                />
+                <path
+                  d="M25.8691 35L44.13 53.2609"
+                  stroke="#ffffff"
+                  stroke-width="2"
+                  stroke-linecap="square"
+                />
+              </g>
+            </g>
+            <defs>
+              <clipPath id="clip0_158_6408">
+                <rect width="70" height="70" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+        </button>
+        <button type="button" class="right">
+          <svg
+            width="70"
+            height="70"
+            viewBox="0 0 70 70"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0_158_6402)">
+              <path
+                d="M25.8691 16.7373L44.13 34.9982"
+                stroke="#ffffff"
+                stroke-width="2"
+                stroke-linecap="square"
+              />
+              <path
+                d="M44.13 34.998L25.8691 53.2589"
+                stroke="#ffffff"
+                stroke-width="2"
+                stroke-linecap="square"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_158_6402">
+                <rect width="70" height="70" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+        </button>
+      </div>
     </section>
   </body>
 </html>
