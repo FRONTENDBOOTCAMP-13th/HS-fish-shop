@@ -1,0 +1,77 @@
+
+
+/* 각 페이지 상단 메뉴 높이 / 정렬*/
+.gnb-land{
+  --gnb-login-h:3.125rem;
+  height: var(--gnb-login-h);
+
+  @media screen and (min-width:768px){
+    --gnb-login-h:3.5rem;
+  }
+  @media screen and (min-width:1024px){
+    --gnb-login-h:6.25rem;
+  }
+
+  .gnb-flex-row{
+    justify-content: space-between;
+  }
+}
+
+/* 지금가입, 로그인, 이벤트 정렬 레이아웃 */
+.gnb-land-nav{
+  --gnb-land-nav-gap:.75rem;
+  --gnb-land-btn-text-size:.75rem;
+
+  /* 반응형사이즈 */
+  @media screen and (min-width:768px){
+    --gnb-land-nav-gap:1rem;
+    --gnb-land-btn-text-size:1rem;
+  }
+  @media screen and (min-width:1024px){
+    --gnb-land-nav-gap:1.375rem;
+    --gnb-land-btn-text-size:1.25rem;  
+  }
+
+  /* 레이아웃 */
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  gap: var(--gnb-land-nav-gap);
+
+  /* 폰트 */
+  font-size: var(--gnb-land-btn-text-size);
+  color: var(--white);
+
+  li, a{
+    display: inline-block;
+  }
+
+  .gnb-land-btn{
+    padding: 2px;
+  }
+  /* 포인트 버튼 디자인 */
+  .gnb-red-btn{
+    --gnb-land-btn-px:.5rem;
+    --gnb-land-btn-py:.25rem;
+    --gnb-land-btn-round:.125rem;
+  
+      /* 반응형사이즈 */
+      @media screen and (min-width:768px){
+        --gnb-land-btn-px:.75rem;
+        --gnb-land-btn-py:.375rem;
+        --gnb-land-btn-round:.25rem;
+      }
+      @media screen and (min-width:1024px){
+        --gnb-land-btn-px:1rem;
+        --gnb-land-btn-py:.5rem;
+        --gnb-land-btn-round:.25rem;
+      }
+    
+    background-color: var(--brand--red-1);
+    padding-inline: var(--gnb-land-btn-px);
+    padding-block: var(--gnb-land-btn-py);
+    border-radius: var(--gnb-land-btn-round);
+  }
+}
+
+

@@ -1,9 +1,9 @@
 /* CSS 스타일을 작성해 주세요. */
 @import "./styles/reset.css";
 @import "./styles/theme.css";
-@import "./components/gnb-land/gnb-land.css"
-@import "./components/gnb-login/gnb-login.css"
-@import "./components/gnb-main/gnb-main.css"
-@import "./components/gnb-sch-m/gnb-sch-m.css"
-@import "./components/gnb-sch-pc/gnb-sch-pc.css"
-@import "./components/history-page/history-page.css"
+@import "./components/gnb-land/gnb-land.css";
+@import "./components/gnb-login/gnb-login.css";
+@import "./components/gnb-main/gnb-main.css";
+@import "./components/gnb-sch-m/gnb-sch-m.css";
+@import "./components/gnb-sch-pc/gnb-sch-pc.css";
+@import "./components/history-page/history-page.css";
