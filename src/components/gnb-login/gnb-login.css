@@ -7,6 +7,7 @@
     --gnb-logo-w: 6.5rem;
     --gnb-login-px: 2.25rem;
   }
+
   @media screen and (min-width: 1024px) {
     --gnb-logo-w: 8.75rem;
     --gnb-login-px: 3.75rem;
