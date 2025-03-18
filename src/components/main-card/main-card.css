@@ -2,13 +2,25 @@
   background-color: #000;
   color: #fff;
 } */
+
 /* card desgin */
 .card {
-  font-family: Pretendard;
-  font-size: 21.328px;
-  font-weight: 600;
+  --card-font-desektop: 1.333rem;
+  --card-font-tablet: 0.75rem;
+  --card-font-mobile: 0.5rem;
+  --card-font-xl: 2.125rem;
+  --card-font-2xl: 2.875rem;
+  --card-font-3xl: 4.375rem;
+
+  --card-font-bold-600: 600;
+  --card-font-bold-400: 400;
+  --card-font-bold-700: 700;
+
+  font-family: "Pretendard";
+  font-weight: var(--card-font-bold-600);
   width: fit-content;
-  a {
+
+  .card-link {
     color: var(--gray-200, #c4c4c4);
     text-decoration: none;
     img {
@@ -19,32 +31,49 @@
   /* card title */
   figcaption {
     text-transform: uppercase;
-    margin-top: 8px;
+    margin-top: var(--card-font-mobile);
     font-size: 0;
 
     @media (min-width: 768px) {
-      font-weight: 400;
-      font-size: 0.75rem;
+      font-weight: var(--card-font-bold-400);
+      font-size: var(--card-font-tablet);
     }
     @media (min-width: 1024px) {
-      font-size: 1.333rem;
+      font-size: var(--card-font-desektop);
     }
   }
 }
 
+/* card-wrapper */
 .card-wrapper {
+  --button-w-desktop: 4.375rem;
+  --button-w-tablet: 2.5rem;
+  --button-w-mobile: 0.9375rem;
+  --button-h-desktop: 4.375rem;
+  --button-h-tablet: 2.5rem;
+  --button-h-mobile: 0.9375rem;
+  --bg-arrow-button: radial-gradient(
+    106.25% 50% at 106.25% 50%,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(0, 0, 0, 0.4) 62.6%,
+    rgba(0, 0, 0, 0) 100%
+  );
+
   position: relative;
+
   /* card-move-buttons */
   .card-move-buttons {
     position: absolute;
     width: 100%;
-    height: 200px;
+    height: 100%;
     display: flex;
     justify-content: space-between;
     top: 50%;
     left: 0;
     transform: translateY(-50%);
-    button {
+
+    .left,
+    .right {
       display: none;
       width: 42px;
       background: none;
@@ -53,99 +82,86 @@
   }
 
   &:hover {
-    button {
+    .left,
+    .right {
       display: inline-block;
       border: none;
+
       svg {
-        width: 15px;
-        height: 15px;
+        width: var(--button-w-mobile);
+        height: var(--button-h-mobile);
 
         @media (min-width: 768px) {
-          width: 40px;
-          height: 40px;
+          width: var(--button-w-tablet);
+          height: var(--button-h-tablet);
         }
         @media (min-width: 1024px) {
-          width: 70px;
-          height: 70px;
+          width: var(--button-w-desktop);
+          height: var(--button-h-desktop);
         }
       }
     }
 
     .left {
-      background-image: radial-gradient(
-        106.88% 50.3% at -6.88% 50%,
-        rgba(0, 0, 0, 0.8) 0%,
-        rgba(0, 0, 0, 0.5) 62.6%,
-        rgba(0, 0, 0, 0) 100%
-      );
+      background-image: var(--bg-arrow-button);
     }
 
     .right {
-      background-image: radial-gradient(
-        106.25% 50% at 106.25% 50%,
-        rgba(0, 0, 0, 0.8) 0%,
-        rgba(0, 0, 0, 0.4) 62.6%,
-        rgba(0, 0, 0, 0) 100%
-      );
+      background-image: var(--bg-arrow-button);
     }
   }
 }
-/* quick-VOD-card  */
-.quick-VOD-card {
-  figcaption {
-    font-family: Pretendard;
-    font-size: 0;
-    font-weight: 600;
 
-    @media (min-width: 768px) {
-      font-size: 0.75rem;
-    }
-    @media (min-width: 1024px) {
-      font-size: 1.333rem;
-    }
+/* quick-VOD-card  */
+.quick-VOD-card-list {
+  font-size: 0;
+  font-weight: var(--card-font-bold-600);
+
+  @media (min-width: 768px) {
+    font-size: var(--card-font-tablet);
+  }
+  @media (min-width: 1024px) {
+    font-size: var(--card-font-desektop);
   }
   p {
-    font-family: Pretendard;
-    font-size: 0;
-    font-weight: 400;
-
-    @media (min-width: 768px) {
-      font-size: 0.75rem;
-    }
-    @media (min-width: 1024px) {
-      font-size: 1rem;
-    }
+    font-weight: var(--card-font-bold-400);
   }
 }
 
-.user-watching-content-card {
-  li figure {
+.user-watching-card-list {
+  .card-link > figure {
     position: relative;
   }
   figcaption {
-    font-size: 8px;
+    font-size: var(--card-font-mobile);
     padding: 10px 0 10px 10px;
 
     @media (min-width: 768px) {
-      font-size: 12px;
+      font-weight: var(--card-font-bold-600);
+      font-size: var(--card-font-tablet);
     }
-
   }
   .play-svg-img {
+    --play-img-w-mobile: 3.125rem;
+    --play-img-w-tablet: 4.375rem;
+    --play-img-w-desktop: 6.25rem;
+
     position: absolute;
+    width: var(--play-img-w-mobile);
     top: 30%;
     left: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-30%);
     transform: translateX(-50%);
     z-index: 2;
-    width: 50px;
+
     @media (min-width: 768px) {
-      width: 70px;
+      width: var(--play-img-w-tablet);
     }
     @media (min-width: 1024px) {
-      width: 100px;
+      width: var(--play-img-w-desktop);
     }
   }
+
   .watching-card-bottom {
     display: flex;
     justify-content: space-between;
@@ -153,17 +169,18 @@
     align-items: center;
   }
   .watching-content-card-info {
-    width: 18px;
+    font-weight: var(--card-font-bold-600);
+    width: var(--card-font-tablet);
+
     @media (min-width: 768px) {
-      width: 19px;
-    }
-    @media (min-width: 1024px) {
-      width: 21px;
+      font-weight: var(--card-font-bold-600);
+      width: var(--card-font-desektop);
     }
   }
 }
+
 /* live-ranking */
-.live-ranking-card {
+.live-ranking-card-list {
   display: flex;
   gap: 8px;
   overflow-x: scroll;
@@ -179,17 +196,20 @@
       display: block;
       width: 100%;
     }
+
     figure {
       width: 100%;
       display: grid;
       grid-template-rows: repeat(3, 1fr);
       grid-template-columns: auto 1fr;
     }
+
     figure:hover {
       transform: translateY(-10px);
       transition: all 0.3s ease-in-out;
     }
   }
+
   picture {
     grid-row: 3 span;
     grid-column: 1 span;
@@ -204,42 +224,43 @@
     color: #fff;
     grid-row: 3/4;
     grid-column: span 1;
-    font-family: "Noto Sans KR";
-    font-size: 34px;
-    font-weight: 700;
+    font-size: var(--card-font-xl);
+    font-weight: var(--card-font-bold-700);
     place-self: end;
 
     @media (min-width: 768px) {
-      font-size: 46px;
+      font-size: var(--card-font-2xl);
     }
 
     @media (min-width: 1024px) {
-      font-size: 70px;
+      font-size: var(--card-font-3xl);
     }
   }
 }
 
 /* live-channel-card */
-.live-channel-card {
+.live-channel-card-list {
+  background-color: #000;
   .rank-channel-text {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: auto 1fr 1fr;
+    grid-template-rows: repeat(3, auto);
+    column-gap: 0.625rem;
+    align-items: center;
   }
+
   .ranking {
-    font-family: "Noto Sans KR";
-    font-size: 34px;
-    font-weight: 700;
-    place-self: start;
+    color: var(--white);
+    font-size: var(--card-font-xl);
+    font-weight: var(--card-font-bold-700);
     grid-column: 1/2;
     grid-row: 1/-1;
-    transform: rotate(9.344deg);
 
     @media (min-width: 768px) {
-      font-size: 46px;
+      font-size: var(--card-font-2xl);
     }
     @media (min-width: 1024px) {
-      font-size: 70px;
+      font-size: var(--card-font-3xl);
     }
   }
 
@@ -249,18 +270,19 @@
   }
   .subtitle {
     grid-column: 2/4;
-    font-size: 0.75rem;
-    font-weight: 400;
+    font-size: var(--card-font-tablet);
+    font-weight: var(--card-font-bold-400);
+    color: var(--gray--300);
+
     @media (min-width: 1024px) {
       font-size: 1rem;
     }
   }
   .viewer {
-    font-family: Pretendard;
-    font-size: 12.003px;
-    font-style: normal;
-    font-weight: 400;
     grid-column: 2/4;
+    font-size: var(--card-font-tablet);
+    font-weight: var(--card-font-bold-400);
+    color: var(--gray-500, #6b6b6b);
 
     @media (min-width: 1024px) {
       font-size: 1rem;
@@ -272,7 +294,8 @@
 .banner-card {
   width: 100%;
   margin-right: 8px;
-  padding: 36px 70px;
+  padding: 0 4.375rem;
+
   a {
     display: block;
     margin: 0 auto;
@@ -282,5 +305,15 @@
     object-fit: cover;
     width: 100%;
     height: 100%;
+  }
+}
+
+.event-card-list {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+
+  li {
+    flex-shrink: 0;
   }
 }

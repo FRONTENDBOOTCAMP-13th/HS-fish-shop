@@ -1,5 +1,9 @@
 footer {
-  padding: 140px 40px;
+  --font-size-desktop: 0.875rem;
+  --font-size-tablet: 0.75rem;
+  --font-size-mobile: 0.625rem;
+
+  padding: 8.75rem 2.5rem;
   /* border: 1px solid #000;
   background-color: black; */
 
@@ -56,11 +60,11 @@ footer {
       a {
         text-decoration: none;
         color: var(--gray-200, #c4c4c4);
-        font-size: 10px;
+        font-size: var(--font-size-mobile);
         font-weight: 400;
 
         @media (min-width: 1024px) {
-          font-size: 14px;
+          font-size: var(--font-size-desktop);
         }
       }
       a:hover {
@@ -73,6 +77,8 @@ footer {
     .footer-header-link {
       display: none;
       white-space: nowrap;
+      flex-shrink: 0;
+      
       @media (min-width: 768px) {
         display: block;
         align-self: flex-start;
@@ -81,14 +87,14 @@ footer {
       a {
         color: var(--gray--100);
         text-decoration: none;
-        font-size: 10px;
+        font-size: var(--font-size-mobile);
         font-weight: 400;
 
         span {
-          margin-left: 16px;
+          margin-left: 1rem;
         }
         @media (min-width: 1024px) {
-          font-size: 14px;
+          font-size: var(--font-size-desktop);
         }
       }
 
@@ -102,7 +108,7 @@ footer {
         fill: var(--gray-500, #6b6b6b);
         stroke-width: 1px;
         stroke: var(--gray-500, #6b6b6b);
-        padding: 0 13px;
+        padding: 0 0.8125rem;
       }
     }
   }
@@ -117,7 +123,7 @@ footer {
     margin-top: 1.5rem;
     address {
       color: var(--gray-500, #6b6b6b);
-      font-size: 12px;
+      font-size: var(--font-size-tablet);
       font-weight: 400;
       p {
         margin-bottom: 6px;
@@ -180,7 +186,7 @@ footer {
   .footer-copyright {
     .copyright {
       margin-top: 16px;
-      font-size: 12px;
+      font-size: var(--font-size-tablet);
       color: var(--gray-500, #6b6b6b);
       font-weight: 400;
     }

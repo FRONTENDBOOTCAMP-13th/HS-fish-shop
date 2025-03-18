@@ -1,34 +1,31 @@
-main {
+/* main-visual-area */
+.main-visual-area {
   --mobile-min-w: 20rem;
   --tablet-min-w: 48rem;
   --desktop-min-w: 120rem;
 
-  max-width: var(--mobile-min-w);
-
-  @media (min-width: 768px) {
-    max-width: var(--tablet-min-w);
-  }
-
   @media (min-width: 1024px) {
     max-width: var(--desktop-min-w);
   }
-}
-/* main-visual-area */
-.main-visual-area {
   /* padding: 4rem; */
   /* background: #000; */
+  width: 100%;
   position: relative;
 
   /* main-visual */
   .main-visual {
-    width: 100%;
     text-align: center;
     img {
       width: 100%;
+      object-fit: cover;
     }
   }
   /* main-visual-button-wrap  */
   .main-visual-button-wrap {
+    --button-w-desktop: 4.375rem;
+    --button-w-tablet: 2.5rem;
+    --button-w-mobile: 0.9375rem;
+
     width: 100%;
     position: absolute;
     top: 50%;
@@ -37,21 +34,19 @@ main {
     display: flex;
     justify-content: space-between;
 
-    button {
+    .main-visual-button-left,
+    .main-visual-button-right {
       background: none;
       border: none;
 
       svg {
-        width: 15px;
-        height: 15px;
+        width: var(--button-w-mobile);
 
         @media (min-width: 768px) {
-          width: 40px;
-          height: 40px;
+          width: var(--button-w-tablet);
         }
         @media (min-width: 1024px) {
-          width: 70px;
-          height: 70px;
+          width: var(--button-w-desktop);
         }
       }
     }
@@ -59,21 +54,19 @@ main {
   /* main-visual-text */
   .main-visual-text {
     color: #fff;
-    font-family: Pretendard;
-    font-size: 12.003px;
-    font-style: normal;
+    font-size: 0.75rem;
     font-weight: 600;
     top: 70%;
     left: 3%;
     position: absolute;
 
     @media (min-width: 768px) {
-      font-size: 16px;
+      font-size: 0.875rem;
       font-weight: 600;
     }
     @media (min-width: 1024px) {
-      font-size: 28px;
-      font-weight: 400;
+      font-size: 1.3125rem;
+      font-weight: 600;
     }
   }
 }
