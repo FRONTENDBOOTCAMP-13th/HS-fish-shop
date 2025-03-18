@@ -1,0 +1,108 @@
+.categort-visual-area {
+  --mobile-min-w: 20rem;
+  --tablet-min-w: 48rem;
+  --desktop-min-w: 120rem;
+  padding: 0 50px;
+  @media (min-width: 1024px) {
+    max-width: var(--desktop-min-w);
+  }
+}
+/* category-visual */
+.category-visual {
+  width: 100%;
+  margin: 0 auto;
+
+  .visual-img-list {
+    li {
+      list-style: none;
+    }
+
+    a {
+      display: block;
+      position: relative;
+      width: 100%;
+      max-height: 470px;
+      overflow: hidden;
+      border-radius: 8px;
+      background: linear-gradient(to bottom, #121212 0%, #121212 60%);
+      background: linear-gradient(
+        0deg,
+        rgba(38, 38, 38, 1) 0%,
+        rgba(38, 38, 38, 1) 60%
+      );
+      position: relative;
+      z-index: 1;
+    }
+
+    a::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0) 57.4%,
+        rgba(0, 0, 0, 0.5) 100%
+      );
+    }
+
+    .category-visual-img {
+      object-fit: contain;
+      border-radius: 8px;
+    }
+    .category-visual-img-text {
+      position: absolute;
+      width: 8rem;
+      bottom: 10%;
+      left: 2%;
+
+      @media (min-width: 768px) {
+        width: 18rem;
+      }
+
+      @media (min-width: 1024px) {
+        width: 24rem;
+      }
+    }
+  }
+}
+
+/* sub-category-list */
+.sub-category-list {
+  display: flex;
+  overflow-x: scroll;
+  white-space: nowrap;
+  background-color: #121212;
+
+  .sub-category-button {
+    display: block;
+    border-radius: 30px;
+    padding: 9px 24px;
+    color: var(--white);
+    background-color: var(--gray--700);
+    border: 1px solid var(--gray--500);
+  }
+
+  .sub-category-button:hover,
+  .sub-category-button:active {
+    transform: translateY(-10px);
+    transition: all 0.4s ease-in-out;
+  }
+}
+
+/* drama-card-list */
+.drama-card-list {
+  display: flex;
+  gap: 13px;
+  overflow-x: scroll;
+  white-space: nowrap;
+
+  .drama-card {
+    flex-shrink: 0;
+    max-width: 11rem;
+
+    img {
+      border-radius: 6px;
+    }
+  }
+}
