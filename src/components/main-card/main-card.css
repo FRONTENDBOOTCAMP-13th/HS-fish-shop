@@ -19,6 +19,7 @@
   font-family: "Pretendard";
   font-weight: var(--card-font-bold-600);
   width: fit-content;
+  list-style: none;
 
   .card-link {
     color: var(--gray-200, #c4c4c4);
