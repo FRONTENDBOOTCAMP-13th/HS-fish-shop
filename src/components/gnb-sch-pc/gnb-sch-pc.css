@@ -145,17 +145,17 @@ body {
     li:last-child {
       margin-bottom: var(--gnb-list-lastli-mb);
     }
-    .serch-list-num {
-      color: var(--brand--red-1);
-      font-weight: bold;
-      display: inline-block;
-      width: 1.25em;
-    }
     time {
       color: var(--gray--500);
       font-size: var(--gnb-time-size);
     }
   }
+}
+.serch-list-num {
+  color: var(--brand--red-1);
+  font-weight: bold;
+  display: inline-block;
+  width: 1.25em;
 }
 
 .gnb-sch-pc-back {
