@@ -84,7 +84,11 @@
     background-color: var(--gray--700);
     border: 1px solid var(--gray--500);
 
-    font-size: 14px;
+    font-size: 8px;
+
+    @media (min-width: 768px) {
+      font-size: 14px;
+    }
   }
 
   .sub-category-button:hover,
@@ -95,19 +99,59 @@
 }
 
 /* drama-card-list */
-.drama-card-list {
+.category-card-list {
   display: flex;
-  gap: 13px;
+  gap: 8px;
   overflow-x: scroll;
   white-space: nowrap;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #000;
+}
 
-  .drama-card {
-    overflow: hidden;
-    width: calc(100vw / 6);
-    min-width: 140px;
-    img {
-      object-fit: cover;
-      border-radius: 6px;
+.category-ranking-list {
+  li {
+    background-color: #000;
+
+    figure {
+      width: 100%;
+      display: grid;
+      grid-template-columns: auto 1fr;
+      overflow: hidden;
+
+      .ranking-content-img {
+        border-radius: 6px;
+        grid-row: 1/-1;
+        grid-column: 2/3;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+
+    figcaption {
+      color: #fff;
+      grid-column: 1/2;
+      place-self: end;
+      width: fit-content;
+
+      img {
+        height: 100%;
+        min-width: 20px;
+        width: 4vw;
+        object-fit: cover;
+      }
+
+      @media (min-width: 768px) {
+        img {
+          width: 4vw;
+        }
+      }
+
+      @media (min-width: 1024px) {
+        img {
+          width: 4vw;
+        }
+      }
     }
   }
 }
