@@ -34,11 +34,17 @@
   justify-content: space-between;
   padding: 0.5rem 1rem;
 
+  li:last-child {
+    display: none;
+  }
+
   /* 반응형 */
   @media screen and (min-width: 768px) {
     --main-nav-gap: 1.75rem;
-
     justify-content: start;
+    li:last-child {
+      display: block;
+    }
   }
   @media screen and (min-width: 1024px) {
     --main-nav-gap: 2.5rem;

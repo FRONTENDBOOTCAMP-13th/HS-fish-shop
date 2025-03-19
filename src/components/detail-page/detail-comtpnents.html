@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="/favicon.jpg" />
+  <link rel="preload" as="font" href="/font/woff2/PretendardVariable.woff2" crossorigin="anonymous" /> 
+  <link rel="stylesheet" as="style" href="/font/pretendardvariable.css" />
+  <script type="module" src="./../../main.js"/></script>
+  <title>detail-compunents</title>
+</head>
+<body style="background-color: black;">
+<div class="dt-program-wrapper">
+  <!-- 비쥬얼 이미지 컴포넌트-->
+  <picture class="dt-visual-img">
+    <source srcset="../../assets/detail-page/1-visual-pc-1.webp" media="(min-width:1024px)"/>
+    <img src="../../assets/detail-page/1-visual-m-1.webp" alt="그놈은 흑염룡" />
+  </picture>
+  <!-- 드라마 제목 컴포넌트 -->
+  <figure role="heading" class="dt-program-title">
+    <img class="dt-tving-only" src="../../assets/detail-page/icons/tving-only.svg" alt="티빙 단독 공개" />
+    <img class="dt-title-img" src="../../assets/detail-page/1-vixual-pc-title.webp" alt="그놈은 흑염룡" />
+  <h2>그놈은 흑염룡</h2>
+  </figure>
+  <!-- 정보 텍스트 컴포넌트 -->
+  <ul class="dt-program-info gnb-flex-row" role="contentinfo">
+    <li><img src="../../assets/detail-page/icons/icon-fifteen.svg" alt="15세 이상 관람가" /></li>
+    <li>월화 오후8:50</li>
+    <li>드라마</li>
+    <li>tvN</li>
+    <li>시즌 1개</li>
+    <li>해설 자막</li>
+  </ul>
+  <!-- 제작자 및 출연진 -->
+  <dl class="dt-cast-list" role="contentinfo">
+    <dt id="creator">크리에이터</dt>
+    <dd aria-labelledby="creator">이수현, 김수연</dd>
+    <dt id="cast">출연</dt>
+    <dd aria-labelledby="cast">문가영, 최현욱, 임세미, 곽시양</dd>
+  </dl>
+  <!-- 스토리 요약 -->
+  <div class="dt-program-story" role="contentinfo"><p>
+    새로 온 본부장에게서 최악의 첫사랑, '흑염룡'의 기운이 느껴진다? 흑역사에 고통받는 '본부장 킬러' 팀장 백수정과 가슴에 흑염룡을 품은 '재벌 3세'본부장 반주연의 봉인해제 로맨스
+  </p></div>
+  <!-- 링크 컴포넌트 -->
+  <a href="#" target="_self" role="link" class="dt-sub-btn">이용권 구독하기</a>
+  <a href="#" target="_self" role="link" class="dt-more-btn">더 많은 회차가 보고싶다면, 지금 구독하기</a>
+  <!-- 아이콘 버튼 컴포넌트 -->
+  <button class="dt-icon-btn" aria-label="찜"><img src="../../assets/detail-page/icons/icon-plus.svg" alt="찜" />찜</button>
+  <button class="dt-icon-btn" aria-label="찜"><img src="../../assets/detail-page/icons/icon-share.svg" alt="공유" />공유</button>
+  <!-- 섹션 제목 컴포넌트 -->
+   <h3 class="dt-section-header">관련영상</h3>
+  <!-- 관련 영상 컴포넌트 -->
+  <a href="#" target="_self" class="dt-youtube-item dt-item-transition" aria-label="관련영상 보기">
+    <figure>
+      <img src="../../assets/detail-page/3-youtube-1.webp" alt="은밀한 사생활 눈감아 줄게요, 그놈은 흑염룡 티저영상" />
+      <figcaption>
+        <p role="heading"><strong>[봉인해제 티저]</strong>그놈은 흑염룡</p>
+      </figcaption>
+    </figure>
+  </a>
+  
+  <!-- 프로그램 회차 컴포넌트 -->
+  <a href="#" target="_self" class="dt-program-item dt-item-transition" aria-label="그놈은 흑염룡 1화 보기">
+    <figure class="dt-program-item-fig">
+      <img src="../../assets/detail-page/2-thummail-1.webp" alt="그놈은 흑염룡 1화 썸네일" />
+      <figcaption class="dt-program-item-cap">
+        <p class="dt-program-item-h" role="heading">1. 그놈은 흑염룡 1화</p>
+        <p class="dt-program-item-text">돌아가신 엄마의 몫까지 대신하며 정신없이 살아온 열아홉 수정. 우연히 시작한 게임에서 첫 사랑, '흑염룡'을 만난다. 그러나 설렘 가득했...</p>
+        <time datetime="2025-02-17T00:00:00">2025.02.17 월&#183;61분</time>
+      </figcaption>
+    </figure>
+  </a>
+  <!-- 비슷한 콘텐츠 컴포넌트 -->
+  <a href="#" target="_self" class="dt-contents-item dt-item-transition" aria-label="삼생 초월 로맨스 우룡">
+    <figure>
+      <img src="../../assets/detail-page/4-contents-1.webp" alt="삼생 초월 로맨스 우룡" />
+      <figcaption><p>삼생 초월 로맨스 우룡</p></figcaption>
+    </figure>
+  </a>
+</div>
+</body>
+</html>
