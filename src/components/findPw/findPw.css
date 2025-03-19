@@ -1,7 +1,7 @@
 body {
   background-color: black;
 }
-.findId-main {
+.findPw-main {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -14,7 +14,7 @@ body {
   font-size: 12px;
 }
 
-.find-header {
+.findPw-header {
   color: var(--white, #fff);
   /* Heading/Medium */
   font-family: Pretendard;
@@ -28,13 +28,13 @@ body {
   margin: 0px;
 }
 
-.findId-form {
+.findPw-form {
   display: flex;
   flex-direction: column;
 }
 
-.find-email-title {
-  color: var(--white, #fff);
+.find-pw-title {
+  color: #898989;
 
   /* Label/Small */
   font-family: Pretendard;
@@ -42,16 +42,12 @@ body {
   font-style: normal;
   font-weight: 600;
   line-height: 150%; /* 18.005px */
-  margin-bottom: 4px;
-}
-
-.find-email-title2 {
-  width: 288px;
   margin-bottom: 16px;
+  width: 288px;
 }
 
 /* input */
-.input_email {
+.input_id {
   display: flex;
   width: 252px;
   height: 46px;
@@ -62,18 +58,19 @@ body {
   border-radius: 4px;
   background: var(--brand-dark-bg-2, #212121);
   color: white;
+  font-size: 12px;
 }
 
-#emailInput:focus {
+#findPw_Input:focus {
   border-color: #e1e1e1;
   outline: none;
 }
 
-.email-container {
+.findPw-container {
   position: relative;
   display: inline-block;
 
-  #deletEmail {
+  #delet_findPw {
     appearance: none; /* 기본 스타일 제거 */
     display: flex;
     justify-content: flex-end;
@@ -91,7 +88,7 @@ body {
   }
 }
 
-.email_button {
+.id_button {
   width: 100%;
   max-width: 732 px;
   height: 42px;
@@ -102,69 +99,18 @@ body {
   margin-top: 20px;
   cursor: pointer;
   align-self: center;
+  font-size: 12px;
 }
 
-.email_button:hover {
+.id_button:hover {
   background-color: white;
 }
-.email_button:active {
-  background-color: #e1e1e1;
-}
-
-.divider {
-  display: flex;
-  align-items: center;
-  text-align: center;
-  width: 100%;
-  height: 80px;
-}
-
-.divider hr {
-  flex-grow: 1;
-  border: none;
-  border-top: 1px solid #404040; /* 선 색상 */
-  margin: 0 4px; /* 양쪽 간격 */
-}
-
-.divider span {
-  color: #404040;
-}
-
-.auth-form {
-  display: flex;
-  flex-direction: column;
-  gap: 4;
-  margin: 0;
-
-  h2 {
-    margin: 0 0 4px;
-  }
-  p {
-    width: 288px;
-    margin: 0 0 16px;
-  }
-}
-
-.auth_button {
-  width: 100%;
-  max-width: 732 px;
-  height: 42px;
-  color: black;
-  background-color: #898989;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  align-self: center;
-}
-.auth_button:hover {
-  background-color: white;
-}
-.auth_button:active {
+.id_button:active {
   background-color: #e1e1e1;
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-  .findId-main {
+  .findPw-main {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -172,32 +118,30 @@ body {
     align-self: stretch;
     width: 100%;
     max-width: 1023px;
-    padding-top: 55px;
+    padding-top: 44px;
     color: #6b6b6b;
-    font-size: 16px;
   }
 
-  .find-header {
+  .findPw-header {
     color: var(--white, #fff);
-    /* Heading/Medium */
+
+    /* Heading/XL */
     font-family: Pretendard;
     font-size: 28.43px;
     font-style: normal;
     font-weight: 700;
-    line-height: 140%; /* 22.4px */
-    display: flex;
-    justify-content: center;
-    padding: 0 0 24px;
+    line-height: 140%; /* 39.802px */
+    padding: 0 0 28px;
     margin: 0px;
   }
 
-  .findId-form {
+  .findPw-form {
     display: flex;
     flex-direction: column;
   }
 
-  .find-email-title {
-    color: var(--white, #fff);
+  .find-pw-title {
+    color: #898989;
 
     /* Label/Small */
     font-family: Pretendard;
@@ -208,12 +152,13 @@ body {
     margin-bottom: 4px;
   }
 
-  .find-email-title2 {
+  .find-pw-title {
+    width: 416px;
     margin-bottom: 16px;
   }
 
   /* input */
-  .input_email {
+  .input_id {
     display: flex;
     width: 380px;
     height: 54px;
@@ -227,16 +172,16 @@ body {
     font-size: 16px;
   }
 
-  #emailInput:focus {
+  #findPw_Input:focus {
     border-color: #e1e1e1;
     outline: none;
   }
 
-  .email-container {
+  .findPw-container {
     position: relative;
     display: inline-block;
 
-    #deletEmail {
+    #delet_findPw {
       appearance: none; /* 기본 스타일 제거 */
       display: flex;
       justify-content: flex-end;
@@ -254,7 +199,7 @@ body {
     }
   }
 
-  .email_button {
+  .id_button {
     width: 100%;
     max-width: 732 px;
     height: 50px;
@@ -268,72 +213,15 @@ body {
     font-size: 16px;
   }
 
-  .email_button:hover {
+  .id_button:hover {
     background-color: white;
   }
-  .email_button:active {
-    background-color: #e1e1e1;
-  }
-
-  .divider {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    width: 100%;
-    height: 80px;
-    font-size: 12px;
-  }
-
-  .divider hr {
-    flex-grow: 1;
-    border: none;
-    border-top: 1px solid #404040; /* 선 색상 */
-    margin: 0 4px; /* 양쪽 간격 */
-  }
-
-  .divider span {
-    color: #404040;
-  }
-
-  .auth-form {
-    display: flex;
-    flex-direction: column;
-    gap: 4;
-    margin: 0;
-
-    h2 {
-      margin: 0 0 4px;
-    }
-    p {
-      width: 416px;
-      margin: 0 0 16px;
-    }
-  }
-
-  .auth_button {
-    width: 100%;
-    max-width: 732 px;
-    height: 50px;
-    color: black;
-    background-color: #898989;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    align-self: center;
-    font-size: 16px;
-  }
-  .auth_button:hover {
-    background-color: white;
-  }
-  .auth_button:active {
+  .id_button:active {
     background-color: #e1e1e1;
   }
 }
 @media (min-width: 1024px) and (max-width: 1920px) {
-  body {
-    background-color: black;
-  }
-  .findId-main {
+  .findPw-main {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -343,48 +231,45 @@ body {
     max-width: 1920px;
     padding-top: 70px;
     color: #6b6b6b;
-    font-size: 28.43px;
   }
 
-  .find-header {
+  .findPw-header {
     color: var(--white, #fff);
-    /* Heading/Medium */
+
+    /* Heading/XL */
     font-family: Pretendard;
     font-size: 37.897px;
     font-style: normal;
     font-weight: 700;
-    line-height: 140%; /* 22.4px */
-    display: flex;
-    justify-content: center;
+    line-height: 140%; /* 53.056px */
     padding: 0 0 60px;
     margin: 0px;
   }
 
-  .findId-form {
+  .findPw-form {
     display: flex;
     flex-direction: column;
   }
 
-  .find-email-title {
-    color: var(--white, #fff);
+  .find-pw-title {
+    color: #898989;
 
     /* Label/Small */
     font-family: Pretendard;
-    font-size: 29.43px;
+    font-size: 28.43px;
     font-style: normal;
     font-weight: 600;
     line-height: 150%; /* 18.005px */
     margin-bottom: 4px;
   }
 
-  .find-email-title2 {
-    font-size: 21.238px;
+  .find-pw-title {
+    width: 732px;
     margin-bottom: 24px;
-    width: 100%;
   }
 
   /* input */
-  .input_email {
+  .input_id {
     display: flex;
     width: 732px;
     height: 96px;
@@ -395,19 +280,19 @@ body {
     border-radius: 4px;
     background: var(--brand-dark-bg-2, #212121);
     color: white;
-    font-size: 29.32px;
+    font-size: 28.43px;
   }
 
-  #emailInput:focus {
+  #findPw_Input:focus {
     border-color: #e1e1e1;
     outline: none;
   }
 
-  .email-container {
+  .findPw-container {
     position: relative;
     display: inline-block;
 
-    #deletEmail {
+    #delet_findPw {
       appearance: none; /* 기본 스타일 제거 */
       display: flex;
       justify-content: flex-end;
@@ -425,7 +310,7 @@ body {
     }
   }
 
-  .email_button {
+  .id_button {
     width: 100%;
     max-width: 732 px;
     height: 86px;
@@ -436,68 +321,13 @@ body {
     margin-top: 36px;
     cursor: pointer;
     align-self: center;
-    font-size: 29.32px;
+    font-size: 28.43px;
   }
 
-  .email_button:hover {
+  .id_button:hover {
     background-color: white;
   }
-  .email_button:active {
-    background-color: #e1e1e1;
-  }
-
-  .divider {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    width: 100%;
-    height: 156px;
-    font-size: 16px;
-  }
-
-  .divider hr {
-    flex-grow: 1;
-    border: none;
-    border-top: 1px solid #404040; /* 선 색상 */
-    margin: 0 14px; /* 양쪽 간격 */
-  }
-
-  .divider span {
-    color: #404040;
-  }
-
-  .auth-form {
-    display: flex;
-    flex-direction: column;
-    gap: 4;
-    margin: 0;
-
-    h2 {
-      margin: 0 0 4px;
-    }
-    p {
-      font-size: 21.238px;
-      margin: 0 0 36px;
-      width: 100%;
-    }
-  }
-
-  .auth_button {
-    width: 100%;
-    max-width: 732 px;
-    height: 86px;
-    color: black;
-    background-color: #898989;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    align-self: center;
-    font-size: 29.32px;
-  }
-  .auth_button:hover {
-    background-color: white;
-  }
-  .auth_button:active {
+  .id_button:active {
     background-color: #e1e1e1;
   }
 }
