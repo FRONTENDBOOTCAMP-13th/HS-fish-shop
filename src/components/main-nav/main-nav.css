@@ -1,0 +1,42 @@
+main {
+  --mobile-min-w: 20rem;
+  --tablet-min-w: 48rem;
+  --desktop-min-w: 120rem;
+
+  padding: clamp(1.875rem, 4vw, 3.5rem);
+  background-color: #000;
+  width: 100%;
+  overflow: hidden;
+
+  min-width: var(--mobile-min-w);
+
+  /*.main-card-list  */
+  .main-card-list {
+    display: flex;
+    gap: 12px;
+    width: 100%;
+    overflow-x: scroll;
+    white-space: nowrap;
+
+    /* mask-image 속성은 CSS에서 요소의 내용을 "마스크"를 이용해 숨기거나 보여주는 기능 */
+    mask-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0),
+      black 20%,
+      black 80%,
+      rgba(0, 0, 0, 0)
+    );
+    -webkit-mask-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0),
+      black 20%,
+      black 80%,
+      rgba(0, 0, 0, 0)
+    );
+  }
+}
+
+h2 {
+  margin-top: 20px;
+  color: var(--white);
+}
