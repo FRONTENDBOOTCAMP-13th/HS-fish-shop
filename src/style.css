@@ -1,1 +1,7 @@
-/* CSS 스타일을 작성해 주세요. */ 
+@import "./styles/reset.css";
+@import "./styles/theme.css";
+@import "./components/main-visual/main-visual.css";
+@import "./components/main-card/main-card.css";
+@import "./components/footer/footer.css";
+@import "./components/category-contnet-page/category-contnet-page.css";
+@import "./components/main-nav/main-nav.css";
