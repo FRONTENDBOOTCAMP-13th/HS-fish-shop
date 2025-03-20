@@ -11,7 +11,7 @@ export default defineConfig({
         gnbschm: "src/components/gnb-sch-m/gnb-sch-m.html",
         gnbschpc: "src/components/gnb-sch-pc/gnb-sch-pc.html",
         historypage: "src/components/history-page/history-page.html",
-        detailcomponents: "src/components/detail-page/detail-coponents.html",
+        detailcomponents: "src/components/detail-page/detail-components.html",
       },
     },
   },
