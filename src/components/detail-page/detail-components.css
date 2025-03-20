@@ -1,0 +1,524 @@
+.dt-program-wrapper {
+  --dt-visual-w: 100%; /* 비쥬얼 이미지사이즈 */
+  --dt-border-radius: 0.125rem; /* 전체 라운딩 사이즈 */
+  --dt-program-title-w: 10rem; /* 프로그램 타이틀 이미지사이즈 */
+  --dt-program-title-size: 1rem; /* 프로그램 타이틀 텍스트사이즈 */
+  --dt-tiving-only-size: 2.5rem; /* 오직티빙 아이콘 */
+  --dt-program-info-size: 0.75rem; /* 정보텍스트 폰트사이즈 */
+  --dt-program-info-px: 0.375rem; /* 정보텍스트 좌우 패딩 */
+  --dt-program-info-py: 0.25rem; /* 정보텍스트 상하 패딩 */
+  --dt-program-info-gap: 0.375rem; /* 정보텍스트 좌우 갭 */
+  --dt-program-info-img-size: 1.5rem; /* 정보텍스트 피프티이미지 */
+  --dt-program-info-p-size: 0.75rem; /* 출연진 및 요약 텍스트사이즈*/
+
+  --dt-sub-btn-py: 0.875rem; /* 구독버튼 세로 패딩 */
+  --dt-sub-btn-px: 2.5rem; /* 구독버튼 가로 패딩 */
+  --dt-sub-btn-size: 0.875rem; /* 구독버튼 폰트사이즈 */
+
+  --dt-icon-btn-w: 1.375rem; /* 아이콘버튼 가로사이즈 */
+  --dt-icon-btn-size: 0.75rem; /* 아이콘버튼 폰트 사이즈 */
+
+  --dt-youtube-w: 10rem; /* 관련 영상 가로사이즈 */
+  --dt-youtube-size: 0.75rem; /* 관련 영상 텍스트 사이즈 */
+  --dt-youtube-mb: 0.5rem; /* 관련영상 썸네일 하단마진 */
+  --dt-section-header: 1rem; /* 섹션제목사이즈 */
+  --dt-section-program-header-after-size: 0.875rem; /* 섹션제목 총 몇화사이즈 */
+
+  --dt-program-w: 8.625rem; /* 회차 이미지 가로사이즈 */
+  --dt-program-h-size: 1rem; /* 회차 이미지 제목 폰트사이즈 */
+  --dt-program-t-size: 0.75rem; /* 회차 설명 폰트사이즈 */
+  --dt-program-item-gap: 0.75rem; /* 회차 이미지-폰트 갭 */
+  --dt-program-item-ftgap: 0.25rem; /* 회차 폰트-폰트 갭 */
+  --dt-program-time-size: 0.75rem; /* 회차 타임사이즈 */
+
+  --dt-contents-img-w: 6.75rem; /* 비슷한 컨텐츠 가로사이즈 */
+  --dt-contents-font-size: 0.75rem; /* 비슷한 컨텐츠 제목폰트 */
+  --dt-contents-img-bm: 0.5rem; /* 비슷한 컨텐츠 이미지 하단바텀 */
+
+  .dt-hr {
+    display: none;
+  }
+
+  /* 반응형 사이즈 */
+  @media screen and (min-width: 768px) {
+    --dt-border-radius: 0.25rem; /* 전체 라운딩 사이즈 */
+
+    --dt-program-info-size: 0.875rem; /* 정보텍스트 폰트사이즈 */
+    --dt-tiving-only-size: 3.75rem; /* 오직티빙 아이콘 */
+    --dt-program-info-p-size: 0.875rem; /* 출연진 및 요약 텍스트사이즈*/
+
+    --dt-sub-btn-size: 1rem; /* 구독버튼 폰트사이즈 */
+    --dt-sub-btn-py: 1.125rem; /* 구독버튼 세로 패딩 */
+
+    --dt-video-order-font-size: 0.875rem; /* 최신화부터 폰트사이즈 */
+    --dt-video-order-after: 0.125rem; /* 최신화부터 가로점 사이즈 */
+    --dt-video-order-mx: 0.25rem; /* 최신화부터 가로점 좌우 마진 사이즈 */
+
+    --dt-auto-btn-size: 0.875rem; /* 연속재생 폰트사이즈 */
+    --dt-auto-btn-toggle-h: 0.75rem; /* 연속재생 토글버튼 흰원 가로사이즈 */
+    --dt-auto-btn-toggle-w: 1.75rem; /* 연속재생 토글버튼 배경 가로사이즈 */
+    --dt-auto-btn-toggle-ml: 0.25rem; /* 연속재생 토글버튼 오른쪽마진 */
+    --dt-auto-toggle-trans-x: 0.6875rem; /* 토글버튼 이동사이즈 */
+
+    --dt-youtube-w: 15rem; /* 관련 영상 가로사이즈 */
+    --dt-youtube-size: 1rem; /* 관련 영상 텍스트 사이즈 */
+
+    --dt-program-w: 15rem; /* 회차 이미지 가로사이즈 */
+    --dt-program-h-size: 1rem; /* 회차 이미지 제목 폰트사이즈 */
+    --dt-program-t-size: 0.875rem; /* 회차 설명 폰트사이즈 */
+    --dt-program-item-gap: 0.75rem; /* 회차 이미지-폰트 갭 */
+    --dt-program-item-ftgap: 0.25rem; /* 회차 폰트-폰트 갭 */
+
+    --dt-section-header: 1.125rem; /* 섹션제목사이즈 */
+    --dt-section-program-header-after-size: 1rem; /* 섹션제목 총 몇화사이즈 */
+
+    --dt-video-order-font-size: 0.875rem; /* 최신화부터 폰트사이즈 */
+    --dt-video-order-after: 0.125rem; /* 최신화부터 가로점 사이즈 */
+    --dt-video-order-mx: 0.25rem; /* 최신화부터 가로점 좌우 마진 사이즈 */
+
+    --dt-contents-img-w: 8.75rem; /* 비슷한 컨텐츠 가로사이즈 */
+
+    --dt-contents-img-w: 8.75rem; /* 비슷한 컨텐츠 가로사이즈 */
+    --dt-contents-font-size: 0.875rem; /* 비슷한 컨텐츠 제목폰트 */
+    --dt-contents-img-bm: 0.625rem; /* 비슷한 컨텐츠 이미지 하단바텀 */
+
+    /* 공통 트랜지션 */
+    .dt-item-transition {
+      transition: all 0.2s ease-in-out;
+      &:hover {
+        transform: translateY(-0.5rem);
+      }
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    --dt-visual-w: 21.375rem; /* 비쥬얼 이미지사이즈 */
+
+    --dt-program-title-w: 11.25rem; /* 프로그램 타이틀 이미지사이즈 */
+
+    --dt-icon-btn-w: 1.625rem; /* 아이콘버튼 가로사이즈 */
+    --dt-icon-btn-size: 0.875rem; /* 아이콘버튼 폰트 사이즈 */
+    --dt-program-info-size: 1rem; /* 정보텍스트 폰트사이즈 */
+    --dt-program-info-img-size: 1.875rem; /* 정보텍스트 피프티이미지 */
+    --dt-program-info-p-size: 1.375rem; /* 출연진 및 요약 텍스트사이즈*/
+
+    --dt-sub-btn-size: 1.25rem; /* 구독버튼 폰트사이즈 */
+    --dt-sub-btn-px: 4.5rem; /* 구독버튼 가로 패딩 */
+    --dt-sub-btn-py: 1.25rem; /* 구독버튼 세로 패딩 */
+
+    --dt-section-header: 1.625rem; /* 섹션제목사이즈 */
+    --dt-section-program-header-after-size: 1.25rem; /* 섹션제목 총 몇화사이즈 */
+
+    --dt-video-order-font-size: 1.125rem; /* 최신화부터 폰트사이즈 */
+    --dt-video-order-after: 0.25rem; /* 최신화부터 가로점 사이즈 */
+    --dt-video-order-mx: 0.375rem; /* 최신화부터 가로점 좌우 마진 사이즈 */
+
+    --dt-auto-btn-size: 1.125rem; /* 연속재생 폰트사이즈 */
+    --dt-auto-btn-toggle-h: 1rem; /* 연속재생 토글버튼 흰원 가로사이즈 */
+    --dt-auto-btn-toggle-w: 2.25rem; /* 연속재생 토글버튼 배경 가로사이즈 */
+    --dt-auto-btn-toggle-ml: 0.5rem; /* 연속재생 토글버튼 오른쪽마진 */
+    --dt-auto-toggle-trans-x: 1.0625rem; /* 토글버튼 이동사이즈 */
+
+    --dt-youtube-w: 21.875rem; /* 관련 영상 가로사이즈 */
+    --dt-youtube-size: 1.25rem; /* 관련 영상 텍스트 사이즈 */
+
+    --dt-program-w: 21.875rem; /* 회차 이미지 가로사이즈 */
+    --dt-program-h-size: 1.25rem; /* 회차 이미지 제목 폰트사이즈 */
+    --dt-program-t-size: 1.25rem; /* 회차 설명 폰트사이즈 */
+    --dt-program-item-gap: 0.875rem; /* 회차 이미지-폰트 갭 */
+    --dt-program-item-ftgap: 1rem; /* 회차 폰트-폰트 갭 */
+
+    --dt-contents-img-w: 15.5rem; /* 비슷한 컨텐츠 가로사이즈 */
+    --dt-contents-font-size: 1.25rem; /* 비슷한 컨텐츠 제목폰트 */
+    --dt-contents-img-bm: 0.75rem; /* 비슷한 컨텐츠 이미지 하단바텀 */
+
+    /* 수평선 */
+    .dt-hr {
+      display: block;
+      div {
+        height: 1px;
+        background-color: var(--gray--600);
+      }
+      max-width: 1920px;
+      margin: 0 auto;
+      margin-bottom: var(--dt-section-mb);
+    }
+  }
+
+  /* 리셋 */
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  ol,
+  li,
+  ul,
+  dt,
+  dd,
+  dl {
+    text-decoration: none;
+    list-style: none;
+  }
+  img,
+  a {
+    display: block;
+  }
+  picture,
+  figure {
+    display: block;
+  }
+
+  /* 전체 */
+  color: var(--gray--200);
+  line-height: 1.4;
+  font-size: 0.75rem;
+
+  /* 비쥬얼 이미지 */
+  .dt-visual-img {
+    width: var(--dt-visual-w);
+
+    @media screen and (min-width: 1024px) {
+      img {
+        border-radius: var(--dt-border-radius);
+      }
+      box-shadow: 5px 10px 24px 0px rgba(0, 0, 0, 0.75);
+    }
+  }
+
+  /* 드라마 제목 컴포넌트 */
+  .dt-program-title {
+    font-size: var(--dt-program-title-size);
+    color: var(--white);
+
+    /* 타이틀이미지 */
+    .dt-title-img {
+      width: var(--dt-program-title-w);
+      display: none;
+    }
+    /* 오직 티빙 로고 */
+    .dt-tving-only {
+      width: var(--dt-tiving-only-size);
+    }
+    /* 반응형 */
+    @media screen and (min-width: 768px) {
+      .dt-title-img {
+        display: block;
+      }
+      h2 {
+        display: none;
+      }
+    }
+  }
+
+  /* 정보 텍스트 컴포넌트 */
+  .dt-program-info {
+    font-size: var(--dt-program-info-size);
+    gap: var(--dt-program-info-gap);
+    img {
+      width: var(--dt-program-info-img-size);
+    }
+    li:first-child {
+      border: none;
+      padding: 0;
+      /* width: 1.25rem; */
+    }
+    li {
+      border: 1px solid currentColor;
+      border-radius: 0.125rem;
+      padding-inline: var(--dt-program-info-px);
+      padding-block: var(--dt-program-info-py);
+    }
+  }
+
+  /* 제작자 및 출연진 */
+  .dt-cast-list {
+    font-size: var(--dt-program-info-p-size);
+    dt {
+      float: left;
+      margin-right: 0.5rem;
+    }
+  }
+  /* 스토리요약 */
+  .dt-program-story {
+    font-size: var(--dt-program-info-p-size);
+  }
+  /* 링크 컴포넌트 */
+  .dt-sub-btn {
+    text-align: center;
+    background-color: var(--brand--red-1);
+    padding-block: var(--dt-sub-btn-py);
+    color: var(--white);
+    font-size: var(--dt-sub-btn-size);
+    font-weight: 700;
+    border-radius: var(--dt-border-radius);
+    width: 100%;
+
+    @media screen and (min-width: 768px) {
+      display: inline-block;
+      width: fit-content;
+      padding-inline: var(--dt-sub-btn-px);
+      background-color: var(--white);
+      color: var(--brand--dark-bg-1);
+    }
+  }
+
+  .dt-more-btn {
+    text-align: center;
+    border: 1px solid var(--white);
+    color: var(--white);
+    font-size: var(--dt-sub-btn-size);
+    padding-block: var(--dt-sub-btn-py);
+    font-weight: 700;
+    border-radius: var(--dt-border-radius);
+    width: 100%;
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+  }
+
+  /* 아이콘 버튼 컴포넌트 */
+  .dt-icon-btn {
+    appearance: none;
+    outline: none;
+    border: none;
+    background: none;
+
+    font-size: var(--dt-icon-btn-size);
+    color: var(--gray--200);
+
+    display: none;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+    align-items: center;
+
+    gap: 0.25rem;
+    padding: 0.25rem;
+    img {
+      width: var(--dt-icon-btn-w);
+    }
+    @media screen and (min-width: 768px) {
+      display: flex;
+    }
+  }
+  /* 섹션 프로그램 제목 컴포넌트 */
+  .dt-section-program-header {
+    color: var(--white);
+    font-size: var(--dt-section-header);
+    font-weight: 700;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      gap: 4px;
+
+      &::after {
+        content: "(총 10화)";
+        font-size: var(--dt-section-program-header-after-size);
+        color: var(--gray--400);
+      }
+    }
+  }
+  /* 섹션 제목 컴포넌트 */
+  .dt-section--header {
+    color: var(--white);
+    font-size: var(--dt-section-header);
+    font-weight: 700;
+  }
+
+  /* 첫화부터 최신화 버튼 */
+  .dt-video-order {
+    display: none;
+    @media screen and (min-width: 768px) {
+      font-size: var(--dt-video-order-font-size);
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      color: var(--gray--300);
+      font-weight: 600;
+    }
+
+    input:checked + label {
+      color: var(--white);
+    }
+    div:first-child {
+      order: -2;
+    }
+    &::after {
+      content: "";
+      width: var(--dt-video-order-after);
+      aspect-ratio: 1/1;
+      display: block;
+      border-radius: 100%;
+      background-color: var(--gray--400);
+      order: -1;
+      margin-inline: var(--dt-video-order-mx);
+    }
+  }
+
+  /* 연속재생 버튼 */
+  .dt-auto-btn-wrapper {
+    display: none;
+    @media screen and (min-width: 768px) {
+      display: block;
+    }
+    label {
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+
+      font-size: var(--dt-auto-btn-size);
+      color: var(--white);
+      font-weight: 600;
+    }
+    input:checked + label {
+      .at-auto-onoff {
+        background-color: var(--brand--red-1);
+        border: 2px solid var(--brand--red-1);
+        &::after {
+          transform: translateX(0);
+        }
+      }
+    }
+
+    .at-auto-onoff {
+      background-color: var(--gray--400);
+      width: var(--dt-auto-btn-toggle-w);
+      border-radius: 50px;
+      border: 2px solid var(--gray--400);
+      margin-right: var(--dt-auto-btn-toggle-ml);
+      transition: all 0.25s ease-in-out;
+
+      &::after {
+        content: "";
+        width: var(--dt-auto-btn-toggle-h);
+        aspect-ratio: 1/1;
+        display: block;
+        border-radius: 50%;
+        background-color: var(--white);
+        transform: translateX(var(--dt-auto-toggle-trans-x));
+        transition: all 0.25s ease-in-out;
+      }
+    }
+  }
+
+  /* 관련 영상 컴포넌트 */
+  .dt-youtube-item {
+    position: relative;
+    display: inline-block;
+    font-size: var(--dt-youtube-size);
+
+    img {
+      width: var(--dt-youtube-w);
+      margin-bottom: var(--dt-youtube-mb);
+      border-radius: var(--dt-border-radius);
+    }
+    strong {
+      margin-right: 0.5em;
+    }
+
+    &::before {
+      content: "무료";
+      font-weight: 600;
+      color: #00ff40;
+      background-color: rgba(0, 0, 0, 0.875);
+      font-size: 0.75rem;
+      padding: 0.125rem;
+      position: absolute;
+      top: 0.25rem;
+      left: 0.25rem;
+      border-radius: var(--dt-border-radius);
+    }
+    @media screen and (max-width: 768px) {
+      &::after {
+        content: "";
+        display: block;
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+        background: url(../../assets/detail-page/icons/icon-play.svg) no-repeat
+          center 38%/ 20%;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    }
+    &:hover {
+      color: var(--white);
+    }
+  }
+  /* 프로그램 회차 컴포넌트 */
+  .dt-program-item {
+    display: inline-block;
+  }
+  .dt-program-item-fig {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    gap: var(--dt-program-item-gap);
+
+    @media screen and (min-width: 768px) {
+      flex-flow: column nowrap;
+      width: var(--dt-program-w);
+    }
+
+    .dt-program-item-cap {
+      display: flex;
+      flex-flow: column nowrap;
+      gap: var(--dt-program-item-ftgap);
+      font-size: var(--dt-program-t-size);
+    }
+    .dt-program-item-h {
+      display: none;
+      font-size: var(--dt-program-h-size);
+      color: var(--white);
+      font-weight: 600;
+      line-height: 1;
+      @media screen and (min-width: 768px) {
+        display: block;
+      }
+    }
+    .dt-program-item-text {
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      -webkit-line-clamp: 2;
+
+      @media screen and (min-width: 768px) {
+        -webkit-line-clamp: 3;
+      }
+    }
+    img {
+      width: var(--dt-program-w);
+      border: 0.25rem;
+      border-radius: var(--dt-border-radius);
+    }
+    time {
+      font-size: var(--dt-program-time-size);
+      @media screen and (max-width: 768px) {
+        order: -1;
+        vertical-align: middle;
+
+        &::before {
+          content: "1화";
+          vertical-align: middle;
+          font-size: var(--dt-program-h-size);
+          color: var(--white);
+          font-weight: 600;
+          line-height: 1;
+          margin-right: 0.5rem;
+        }
+      }
+    }
+  }
+  /* 비슷한 컨텐츠 */
+  .dt-contents-item {
+    display: inline-block;
+    font-size: var(--dt-contents-font-size);
+    font-weight: 600;
+    img {
+      border-radius: var(--dt-border-radius);
+      width: var(--dt-contents-img-w);
+      margin-bottom: var(--dt-contents-img-bm);
+    }
+  }
+}

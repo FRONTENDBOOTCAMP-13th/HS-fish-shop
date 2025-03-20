@@ -1,0 +1,98 @@
+.sch-m-wrapper {
+  /* 변수모음 */
+  --sch-m-px: 1.25rem; /* 전체 좌우 패딩 */
+  --sch-m-pt: 1.75rem; /* 전체 탑 패딩 */
+  --sch-m-bar-by: 0.625rem; /* 검색창 상하 패딩 */
+  --sch-m-bar-bx: 1.5rem; /* 검색창 whkdn 패딩 */
+  --sch-m-bar-size: 1rem; /* 검색창 폰트사이즈 */
+  --sch-m-head-size: 1rem; /* 실시간인기검색어 */
+  --sch-m-list-bm: 0.5625rem; /* 실시간인기검색어 리스트 갭 */
+  --sch-m-list-px: 0.625rem; /* 실시간인기검색어 전체 좌우 패딩 */
+  --sch-m-list-size: 0.875rem; /* 실시간인기검색어 폰트사이즈 */
+  --sch-m-time: 0.75rem; /* 시간기준 폰트사이즈  */
+  --sch-m-gap: 1.25rem; /* 검색어,헤딩,전체 갭  */
+  --gnb-schm-btn-size: 1.375rem; /* 버튼사이즈
+  /* 리셋 */
+  fieldset,
+  input,
+  button {
+    appearance: none;
+    border: none;
+    background: none;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+  }
+  ol,
+  li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  /* 전체구성 스타일링 */
+  color: var(--gray--300);
+  padding-inline: var(--sch-m-px);
+  padding-block-start: var(--sch-m-pt);
+
+  /* 검색바 폼 */
+  .gnb-sch-m-form {
+    font-size: var(--sch-m-bar-size);
+    font-weight: 600;
+    background-color: var(--gray--800);
+    border-radius: 3.125rem;
+    padding-block: var(--sch-m-bar-by);
+    padding-inline: var(--sch-m-bar-bx);
+    margin-bottom: var(--sch-m-gap);
+    justify-content: space-between;
+    gap: 1rem;
+
+    fieldset {
+      display: contents;
+    }
+
+    .gnb-sch-m-input {
+      color: var(--white);
+      flex-grow: 1;
+
+      &::placeholder {
+        color: var(--gray--300);
+      }
+    }
+
+    /* 버튼 */
+    button {
+      width: var(--gnb-schm-btn-size);
+      height: auto;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  .schm-popular-list {
+    padding-inline: var(--sch-m-list-px);
+
+    header {
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-bottom: var(--sch-m-gap);
+    }
+    header > p {
+      font-weight: 600;
+      font-size: var(--sch-m-head-size);
+    }
+
+    header > time {
+      font-size: var(--sch-m-time);
+    }
+
+    ol > li {
+      font-size: var(--sch-m-list-size);
+      margin-bottom: var(--sch-m-list-bm);
+    }
+  }
+}
