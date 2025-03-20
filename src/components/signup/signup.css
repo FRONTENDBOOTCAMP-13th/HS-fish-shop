@@ -260,6 +260,12 @@ body {
   gap: 4px;
 }
 
+.checkboxSign-label:hover,
+.checkboxSign-label2:hover,
+.checkboxSign-label3:hover {
+  color: white;
+}
+
 .checkboxSign {
   appearance: none; /* 기본 스타일 제거 */
   width: 16px;
@@ -314,7 +320,7 @@ body {
 .passwordSign2Error {
   text-align: start;
   margin-top: 4px;
-  color: orange;
+  color: #ff153c;
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {

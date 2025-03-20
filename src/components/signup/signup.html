@@ -18,13 +18,13 @@
     <link rel="stylesheet" href="/src/styles/reset.css" />
     <link rel="stylesheet" href="/src/components/signup/signup.css" />
     <script type="module" src="./../../main.js"></script>
-    <title>signup</title>
+    <title>Taing signup</title>
   </head>
   <body>
     <main class="signup-main">
       <div class="signup-container">
         <header class="signup-header">타잉 회원가입</header>
-        <form class="signup-form" action="/">
+        <form class="signup-form" action="../login/login.html">
           <label class="signup-title"
             >아이디와 이메일로 간편하게 티빙을 시작하세요!</label
           >
@@ -173,6 +173,7 @@
             <label class="checkboxSign-label">
               <input
                 type="checkbox"
+                id="allAgree"
                 class="circle_checkboxSign"
                 name="keep-sign-in"
               />
@@ -216,6 +217,16 @@
                 [선택] 마케팅 정보 이메일 수신동의
               </label>
             </div>
+            <script>
+              document
+                .getElementById("allAgree")
+                .addEventListener("change", function () {
+                  const checkboxes = document.querySelectorAll(".checkboxSign");
+                  checkboxes.forEach((checkbox) => {
+                    checkbox.checked = this.checked;
+                  });
+                });
+            </script>
           </div>
           <button class="sign_button" type="submit">가입하기</button>
         </form>
