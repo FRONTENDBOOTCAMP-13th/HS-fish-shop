@@ -48,8 +48,30 @@
   <!-- 아이콘 버튼 컴포넌트 -->
   <button class="dt-icon-btn" aria-label="찜"><img src="../../assets/detail-page/icons/icon-plus.svg" alt="찜" />찜</button>
   <button class="dt-icon-btn" aria-label="찜"><img src="../../assets/detail-page/icons/icon-share.svg" alt="공유" />공유</button>
+  <!-- 수평선 컴포넌트 -->
+   <div role="none" class="dt-hr"><div></div></div>
   <!-- 섹션 제목 컴포넌트 -->
-   <h3 class="dt-section-header">관련영상</h3>
+   <h3 class="dt-section-program-header">그놈은 흑염룡</h3>
+   <h3 class="dt-section--header">관련영상</h3>
+
+   <!-- 첫화부터 최신화부터 버튼 -->
+  <form class="dt-video-order">
+    <div>
+      <input type="radio" id="dt-first-video" class="sr-only" name="dt-video" value="first-video" checked>
+      <label for="dt-first-video">첫화부터</label>
+    </div>
+    <div>
+      <input type="radio" id="dt-new-video" class="sr-only" name="dt-video" value="new-video">
+      <label for="dt-new-video">최신화부터</label>
+    </div>
+  </form>
+
+   <!-- 연속재생버튼 -->
+<div class="dt-auto-btn-wrapper">
+  <input type="checkbox" class="sr-only" id="dt-auto-btn" name="dt-auto-btn" role="checkbox" checked/>
+  <label for="dt-auto-btn"><span class="at-auto-onoff"></span>연속재생</label>
+</div>
+
   <!-- 관련 영상 컴포넌트 -->
   <a href="#" target="_self" class="dt-youtube-item dt-item-transition" aria-label="관련영상 보기">
     <figure>

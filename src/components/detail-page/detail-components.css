@@ -22,6 +22,7 @@
   --dt-youtube-size: 0.75rem; /* 관련 영상 텍스트 사이즈 */
   --dt-youtube-mb: 0.5rem; /* 관련영상 썸네일 하단마진 */
   --dt-section-header: 1rem; /* 섹션제목사이즈 */
+  --dt-section-program-header-after-size: 0.875rem; /* 섹션제목 총 몇화사이즈 */
 
   --dt-program-w: 8.625rem; /* 회차 이미지 가로사이즈 */
   --dt-program-h-size: 1rem; /* 회차 이미지 제목 폰트사이즈 */
@@ -34,6 +35,10 @@
   --dt-contents-font-size: 0.75rem; /* 비슷한 컨텐츠 제목폰트 */
   --dt-contents-img-bm: 0.5rem; /* 비슷한 컨텐츠 이미지 하단바텀 */
 
+  .dt-hr {
+    display: none;
+  }
+
   /* 반응형 사이즈 */
   @media screen and (min-width: 768px) {
     --dt-border-radius: 0.25rem; /* 전체 라운딩 사이즈 */
@@ -45,6 +50,16 @@
     --dt-sub-btn-size: 1rem; /* 구독버튼 폰트사이즈 */
     --dt-sub-btn-py: 1.125rem; /* 구독버튼 세로 패딩 */
 
+    --dt-video-order-font-size: 0.875rem; /* 최신화부터 폰트사이즈 */
+    --dt-video-order-after: 0.125rem; /* 최신화부터 가로점 사이즈 */
+    --dt-video-order-mx: 0.25rem; /* 최신화부터 가로점 좌우 마진 사이즈 */
+
+    --dt-auto-btn-size: 0.875rem; /* 연속재생 폰트사이즈 */
+    --dt-auto-btn-toggle-h: 0.75rem; /* 연속재생 토글버튼 흰원 가로사이즈 */
+    --dt-auto-btn-toggle-w: 1.75rem; /* 연속재생 토글버튼 배경 가로사이즈 */
+    --dt-auto-btn-toggle-ml: 0.25rem; /* 연속재생 토글버튼 오른쪽마진 */
+    --dt-auto-toggle-trans-x: 0.6875rem; /* 토글버튼 이동사이즈 */
+
     --dt-youtube-w: 15rem; /* 관련 영상 가로사이즈 */
     --dt-youtube-size: 1rem; /* 관련 영상 텍스트 사이즈 */
 
@@ -55,9 +70,15 @@
     --dt-program-item-ftgap: 0.25rem; /* 회차 폰트-폰트 갭 */
 
     --dt-section-header: 1.125rem; /* 섹션제목사이즈 */
+    --dt-section-program-header-after-size: 1rem; /* 섹션제목 총 몇화사이즈 */
+
+    --dt-video-order-font-size: 0.875rem; /* 최신화부터 폰트사이즈 */
+    --dt-video-order-after: 0.125rem; /* 최신화부터 가로점 사이즈 */
+    --dt-video-order-mx: 0.25rem; /* 최신화부터 가로점 좌우 마진 사이즈 */
 
     --dt-contents-img-w: 8.75rem; /* 비슷한 컨텐츠 가로사이즈 */
 
+    --dt-contents-img-w: 8.75rem; /* 비슷한 컨텐츠 가로사이즈 */
     --dt-contents-font-size: 0.875rem; /* 비슷한 컨텐츠 제목폰트 */
     --dt-contents-img-bm: 0.625rem; /* 비슷한 컨텐츠 이미지 하단바텀 */
 
@@ -84,9 +105,43 @@
     --dt-sub-btn-px: 4.5rem; /* 구독버튼 가로 패딩 */
     --dt-sub-btn-py: 1.25rem; /* 구독버튼 세로 패딩 */
 
-    --dt-section-header: 1.25rem; /* 섹션제목사이즈 */
-    --dt-contents-img-w: 9.5rem; /* 비슷한 컨텐츠 가로사이즈 */
+    --dt-section-header: 1.625rem; /* 섹션제목사이즈 */
+    --dt-section-program-header-after-size: 1.25rem; /* 섹션제목 총 몇화사이즈 */
+
+    --dt-video-order-font-size: 1.125rem; /* 최신화부터 폰트사이즈 */
+    --dt-video-order-after: 0.25rem; /* 최신화부터 가로점 사이즈 */
+    --dt-video-order-mx: 0.375rem; /* 최신화부터 가로점 좌우 마진 사이즈 */
+
+    --dt-auto-btn-size: 1.125rem; /* 연속재생 폰트사이즈 */
+    --dt-auto-btn-toggle-h: 1rem; /* 연속재생 토글버튼 흰원 가로사이즈 */
+    --dt-auto-btn-toggle-w: 2.25rem; /* 연속재생 토글버튼 배경 가로사이즈 */
+    --dt-auto-btn-toggle-ml: 0.5rem; /* 연속재생 토글버튼 오른쪽마진 */
+    --dt-auto-toggle-trans-x: 1.0625rem; /* 토글버튼 이동사이즈 */
+
+    --dt-youtube-w: 21.875rem; /* 관련 영상 가로사이즈 */
+    --dt-youtube-size: 1.25rem; /* 관련 영상 텍스트 사이즈 */
+
+    --dt-program-w: 21.875rem; /* 회차 이미지 가로사이즈 */
+    --dt-program-h-size: 1.25rem; /* 회차 이미지 제목 폰트사이즈 */
+    --dt-program-t-size: 1.25rem; /* 회차 설명 폰트사이즈 */
+    --dt-program-item-gap: 0.875rem; /* 회차 이미지-폰트 갭 */
+    --dt-program-item-ftgap: 1rem; /* 회차 폰트-폰트 갭 */
+
+    --dt-contents-img-w: 15.5rem; /* 비슷한 컨텐츠 가로사이즈 */
+    --dt-contents-font-size: 1.25rem; /* 비슷한 컨텐츠 제목폰트 */
     --dt-contents-img-bm: 0.75rem; /* 비슷한 컨텐츠 이미지 하단바텀 */
+
+    /* 수평선 */
+    .dt-hr {
+      display: block;
+      div {
+        height: 1px;
+        background-color: var(--gray--600);
+      }
+      max-width: 1920px;
+      margin: 0 auto;
+      margin-bottom: var(--dt-section-mb);
+    }
   }
 
   /* 리셋 */
@@ -215,6 +270,9 @@
     font-weight: 700;
     border-radius: var(--dt-border-radius);
     width: 100%;
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
   }
 
   /* 아이콘 버튼 컴포넌트 */
@@ -241,12 +299,108 @@
       display: flex;
     }
   }
+  /* 섹션 프로그램 제목 컴포넌트 */
+  .dt-section-program-header {
+    color: var(--white);
+    font-size: var(--dt-section-header);
+    font-weight: 700;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      gap: 4px;
+
+      &::after {
+        content: "(총 10화)";
+        font-size: var(--dt-section-program-header-after-size);
+        color: var(--gray--400);
+      }
+    }
+  }
   /* 섹션 제목 컴포넌트 */
-  .dt-section-header {
+  .dt-section--header {
     color: var(--white);
     font-size: var(--dt-section-header);
     font-weight: 700;
   }
+
+  /* 첫화부터 최신화 버튼 */
+  .dt-video-order {
+    display: none;
+    @media screen and (min-width: 768px) {
+      font-size: var(--dt-video-order-font-size);
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      color: var(--gray--300);
+      font-weight: 600;
+    }
+
+    input:checked + label {
+      color: var(--white);
+    }
+    div:first-child {
+      order: -2;
+    }
+    &::after {
+      content: "";
+      width: var(--dt-video-order-after);
+      aspect-ratio: 1/1;
+      display: block;
+      border-radius: 100%;
+      background-color: var(--gray--400);
+      order: -1;
+      margin-inline: var(--dt-video-order-mx);
+    }
+  }
+
+  /* 연속재생 버튼 */
+  .dt-auto-btn-wrapper {
+    display: none;
+    @media screen and (min-width: 768px) {
+      display: block;
+    }
+    label {
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+
+      font-size: var(--dt-auto-btn-size);
+      color: var(--white);
+      font-weight: 600;
+    }
+    input:checked + label {
+      .at-auto-onoff {
+        background-color: var(--brand--red-1);
+        border: 2px solid var(--brand--red-1);
+        &::after {
+          transform: translateX(0);
+        }
+      }
+    }
+
+    .at-auto-onoff {
+      background-color: var(--gray--400);
+      width: var(--dt-auto-btn-toggle-w);
+      border-radius: 50px;
+      border: 2px solid var(--gray--400);
+      margin-right: var(--dt-auto-btn-toggle-ml);
+      transition: all 0.25s ease-in-out;
+
+      &::after {
+        content: "";
+        width: var(--dt-auto-btn-toggle-h);
+        aspect-ratio: 1/1;
+        display: block;
+        border-radius: 50%;
+        background-color: var(--white);
+        transform: translateX(var(--dt-auto-toggle-trans-x));
+        transition: all 0.25s ease-in-out;
+      }
+    }
+  }
+
   /* 관련 영상 컴포넌트 */
   .dt-youtube-item {
     position: relative;
@@ -356,9 +510,11 @@
       }
     }
   }
+  /* 비슷한 컨텐츠 */
   .dt-contents-item {
     display: inline-block;
     font-size: var(--dt-contents-font-size);
+    font-weight: 600;
     img {
       border-radius: var(--dt-border-radius);
       width: var(--dt-contents-img-w);
