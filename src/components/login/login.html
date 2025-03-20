@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/favicon.jpg" />
+    <link
+      rel="preload"
+      as="font"
+      href="/public/font/woff2/PretendardVariable.woff2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      as="style"
+      href="/public/font/pretendardvariable.css"
+    />
+    <link rel="stylesheet" href="/src/styles/reset.css" />
+    <link rel="stylesheet" href="/src/components/login/login.css" />
+    <script type="module" src="./../../main.js"></script>
+    <title>Taing login</title>
+  </head>
+  <body>
+    <main class="login-main">
+      <div class="login-container">
+        <header class="login-header">TAING ID 로그인</header>
+        <form class="login-form" action="../../../index.html" method="post">
+          <div class="id-container">
+            <input
+              type="text"
+              id="idInput"
+              class="input_text"
+              placeholder="아이디"
+              name="username"
+              required
+            />
+            <div>
+              <input type="checkbox" id="deletId" />
+            </div>
+          </div>
+          <script>
+            document
+              .getElementById("deletId")
+              .addEventListener("change", function () {
+                const passwordInput = document.getElementById("idInput");
+                if (this.checked) {
+                  passwordInput.value = "";
+                  this.checked = false; // Uncheck the checkbox after clearing the password
+                }
+              });
+          </script>
+          <div class="password-container">
+            <input
+              type="password"
+              id="passwordInput"
+              class="input_text"
+              name="password"
+              placeholder="비밀번호"
+              required
+            />
+            <div class="toggle-password-checkbox">
+              <input type="checkbox" id="showPassword" />
+              <input type="checkbox" id="deletPassword" />
+            </div>
+          </div>
+          <script>
+            document
+              .getElementById("showPassword")
+              .addEventListener("change", function () {
+                const passwordInput = document.getElementById("passwordInput");
+                if (this.checked) {
+                  passwordInput.type = "text";
+                } else {
+                  passwordInput.type = "password";
+                }
+              });
+
+            document
+              .getElementById("deletPassword")
+              .addEventListener("change", function () {
+                const passwordInput = document.getElementById("passwordInput");
+                if (this.checked) {
+                  passwordInput.value = "";
+                  this.checked = false; // Uncheck the checkbox after clearing the password
+                }
+              });
+          </script>
+          <div class="form-group checkbox-group">
+            <label for="keep-logged-in" class="checkbox-label">
+              <input
+                type="checkbox"
+                class="circle_checkbox"
+                id="keep-logged-in"
+                name="keep-logged-in"
+              />
+              자동로그인
+            </label>
+          </div>
+          <button type="submit" class="login_button">로그인하기</button>
+          <ul class="member-link">
+            <li>
+              <a href="../findId/findId.html">아이디 찾기</a>
+            </li>
+            <li>
+              <span aria-hidden="true">|</span>
+              <a href="../findPw/findPw.html">비밀번호 찾기</a>
+            </li>
+          </ul>
+          <ul class="member-link">
+            <li>
+              아직 계정이 없으신가요?
+              <a href="../signup/signup.html">회원가입 하기</a>
+            </li>
+          </ul>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

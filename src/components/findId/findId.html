@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/favicon.jpg" />
+    <link
+      rel="preload"
+      as="font"
+      href="/public/font/woff2/PretendardVariable.woff2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      as="style"
+      href="/public/font/pretendardvariable.css"
+    />
+    <link rel="stylesheet" href="/src/styles/reset.css" />
+    <link rel="stylesheet" href="/src/components/findId/findId.css" />
+    <script type="module" src="./../../main.js"></script>
+    <title>Taing Find ID</title>
+  </head>
+  <body>
+    <main class="findId-main">
+      <div class="findId-container">
+        <h2 class="find-header">아이디 찾기</h2>
+        <form class="findId-form" action="/find-id" method="POST">
+          <label class="find-email-title" for="email">이메일로 찾기</label>
+          <label class="find-email-title2" for="email"
+            >가입 시 등록한 이메일을 입력해주세요.</label
+          >
+          <div class="email-container">
+            <input
+              type="email"
+              id="emailInput"
+              class="input_email"
+              name="email"
+              placeholder="이메일"
+              required
+            />
+            <div>
+              <input type="checkbox" id="deletEmail" />
+            </div>
+          </div>
+          <script>
+            document
+              .getElementById("deletEmail")
+              .addEventListener("change", function () {
+                const passwordInput = document.getElementById("emailInput");
+                if (this.checked) {
+                  passwordInput.value = "";
+                  this.checked = false; // Uncheck the checkbox after clearing the password
+                }
+              });
+          </script>
+          <button class="email_button" type="submit">확인</button>
+          <div class="divider">
+            <hr />
+            <span>또는</span>
+            <hr />
+          </div>
+        </form>
+        <form class="auth-form" action="/verify" method="POST">
+          <h2 class="find-email-title">본인인증으로 찾기</h2>
+          <p>이미 본인인증이 완료된 계정에 한하여 아이디 찾기가 가능합니다.</p>
+          <button type="submit" class="auth_button">본인인증하기</button>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

@@ -12,18 +12,44 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" as="style" href="/font/pretendardvariable.css" />
+    <link rel="stylesheet" href="/src/styles/reset.css" />
+    <link rel="stylesheet" href="/src/styles/index.css" />
     <script type="module" src="/src/main.js"></script>
   </head>
   <body>
-    <h1>Vite + CSS</h1>
-    <ul>
-      <li>컴포넌트를 분리해서 구현해주세요.</li>
-      <li>컴포넌트의 코드 리뷰를 AI를 통해 받은 후 개선해보세요.</li>
-      <li>개선점을 문서화하여 정리해 보세요</li>
-      <li>구현한 컴포넌트를 기반으로 페이지를 만들어주세요.</li>
-      <li>접근성과 성능을 신경써주세요</li>
-      <li>소통하고 화합하며 프로젝트 즐겨주세요.</li>
-      <li>결과보다 과정이 중요합니다.‼️</li>
-    </ul>
+    <div class="index_container">
+      <main class="index_main">
+        <h2>환영합니다! <br />Tving 스타일의 클론 사이트</h2>
+        <img src="./src/styles/index_taingLogo.svg" alt="" />
+        <a href="#" id="index_menuToggle"
+          >[클릭] 하단 메뉴에서 원하는 페이지로 이동하세요</a
+        >
+      </main>
+      <nav class="index_nav_container" id="index_navMenu">
+        <ul class="index_nav">
+          <li><a href="./src/components/">랜딩페이지 </a></li>
+          <li><a href="./src/components/">메인페이지</a></li>
+          <li><a href="./src/components/login/login.html">로그인</a></li>
+          <li>
+            <a href="./src/components/findId/findId.html">아이디찾기</a>
+          </li>
+          <li>
+            <a href="./src/components/findPw/findPw.html">비밀번호찾기</a>
+          </li>
+          <li><a href="./src/components/signup/signup.html">회원가입</a></li>
+          <li><a href="./src/components/">프로필전환</a></li>
+        </ul>
+      </nav>
+    </div>
+    <script>
+      // a 태그 클릭 시 nav 메뉴를 토글
+      const index_menuToggle = document.getElementById("index_menuToggle");
+      const index_navMenu = document.getElementById("index_navMenu");
+
+      index_menuToggle.addEventListener("click", function (e) {
+        e.preventDefault(); // 링크 클릭 기본 동작 막기
+        index_navMenu.classList.toggle("visible"); // 'visible' 클래스 토글
+      });
+    </script>
   </body>
 </html>
