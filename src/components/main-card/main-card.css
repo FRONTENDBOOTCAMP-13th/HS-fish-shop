@@ -84,8 +84,10 @@
 
   font-family: "Pretendard";
   font-weight: var(--card-font-bold-600);
-  flex: 1 1 90px;
+  width: calc(100vw / 6)  ;
+  min-width: 90px;
   list-style: none;
+  flex-shrink: 0;
   border-radius: 6px;
   overflow: hidden;
   z-index: 2;
