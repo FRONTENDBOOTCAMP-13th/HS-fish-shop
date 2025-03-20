@@ -175,7 +175,9 @@
   /* 비쥬얼 이미지 */
   .dt-visual-img {
     width: var(--dt-visual-w);
-
+    @media screen and (max-width: 768px) {
+      margin-top: 70px;
+    }
     @media screen and (min-width: 1024px) {
       img {
         border-radius: var(--dt-border-radius);
