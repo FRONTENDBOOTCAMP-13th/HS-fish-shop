@@ -42,7 +42,6 @@
     --dt-video-header-gap: 1.5rem; /*회차 목록 ul과 header의 간격 */
     --dt-video-ul-gap: 1rem; /*회차 목록 섹션의 ul li 끼리 갭 */
   }
-  background-color: var(--black);
 
   &::after {
     content: "";
@@ -61,11 +60,10 @@
   section {
     margin-bottom: var(--dt-section-mb);
   }
-  .dt-last-padding {
-    padding-bottom: var(--dt-page-pb) !important;
-  }
 }
-
+body {
+  background-color: var(--black);
+}
 /* 1단 */
 .dt-title-info {
   display: flex;
@@ -137,6 +135,42 @@
   li {
     flex-shrink: 0;
   }
+  li:first-child {
+    time {
+      &::before {
+        content: "1화";
+      }
+    }
+  }
+  li:nth-child(2) {
+    time {
+      &::before {
+        content: "2화";
+      }
+    }
+  }
+  li:nth-child(3) {
+    time {
+      &::before {
+        content: "3화";
+      }
+    }
+  }
+  li:nth-child(4) {
+    time {
+      &::before {
+        content: "4화";
+      }
+    }
+  }
+  li:nth-child(5) {
+    time {
+      &::before {
+        content: "5화";
+      }
+    }
+  }
+
   @media screen and (min-width: 768px) {
     li:nth-child(n + 6) {
       display: black;
