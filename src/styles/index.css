@@ -1,0 +1,80 @@
+/* 기본 스타일 */
+.index_container {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: black;
+  color: white;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  height: 100vh;
+}
+
+/* 네비게이션 스타일 */
+.index_nav_container {
+  background-color: #212121;
+
+  margin: 12px;
+  align-self: end;
+  width: 100%;
+  margin: auto;
+}
+
+.index_nav {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 15px;
+  padding: 8px;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.index_nav a {
+  text-decoration: none;
+  color: #898989;
+  font-weight: bold;
+  display: block;
+  padding: 20px;
+
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.index_nav a:hover {
+  background-color: #e50914;
+  color: white;
+}
+
+/* 메인 컨텐츠 */
+.index_main {
+  display: grid;
+  place-items: center;
+
+  text-align: center;
+  padding: 20px;
+
+  a {
+    text-decoration: none;
+    color: #a6a6a6;
+  }
+
+  a:hover {
+    color: #e50914;
+  }
+}
+/* nav 메뉴 기본적으로 숨기기 */
+#index_navMenu {
+  display: none;
+}
+
+/* 'visible' 클래스가 적용되면 nav 보이기 */
+#index_navMenu.visible {
+  display: block;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+  .index_nav {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
+}
