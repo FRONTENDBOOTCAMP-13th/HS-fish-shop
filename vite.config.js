@@ -20,6 +20,10 @@ export default defineConfig({
         historypage: "src/components/history-page/history-page.html",
         detailcomponents: "src/components/detail-page/detail-components.html",
 
+        // 아래부터 페이지입니다
+        myHistory: "src/pages/my-history/my-history.html",
+        programDetail: "src/pages/program-detail/program-detail.html",
+        mobileSearch: "src/pages/mobile-search/mobile-search.html",
       },
     },
   },
