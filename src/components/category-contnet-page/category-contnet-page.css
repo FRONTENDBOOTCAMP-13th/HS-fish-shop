@@ -1,0 +1,157 @@
+.categort-visual-area {
+  --mobile-min-w: 20rem;
+  --tablet-min-w: 48rem;
+  --desktop-min-w: 120rem;
+  padding: 0 50px;
+  @media (min-width: 1024px) {
+    max-width: var(--desktop-min-w);
+  }
+}
+/* category-visual */
+.category-visual {
+  width: 100%;
+  margin: 0 auto;
+
+  .visual-img-list {
+    li {
+      list-style: none;
+    }
+
+    a {
+      display: block;
+      position: relative;
+      width: 100%;
+      max-height: 470px;
+      overflow: hidden;
+      border-radius: 8px;
+      background: linear-gradient(to bottom, #121212 0%, #121212 60%);
+      background: linear-gradient(
+        0deg,
+        rgba(38, 38, 38, 1) 0%,
+        rgba(38, 38, 38, 1) 60%
+      );
+      position: relative;
+      z-index: 1;
+    }
+
+    a::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0) 57.4%,
+        rgba(0, 0, 0, 0.5) 100%
+      );
+    }
+
+    .category-visual-img {
+      object-fit: contain;
+      border-radius: 8px;
+    }
+    .category-visual-img-text {
+      position: absolute;
+      width: 8rem;
+      bottom: 10%;
+      left: 2%;
+
+      @media (min-width: 768px) {
+        width: 18rem;
+      }
+
+      @media (min-width: 1024px) {
+        width: 24rem;
+      }
+    }
+  }
+}
+
+/* sub-category-list */
+.sub-category-list {
+  display: flex;
+  overflow-x: scroll;
+  white-space: nowrap;
+  background-color: #121212;
+
+  .sub-category-button {
+    display: block;
+    border-radius: 30px;
+    /* clamp() 함수는 최소 경계와 최대 경계 사이의 값 범위 내에서 중간 값을 고정합니다.
+     이 함수는 최소값, 선호 값, 최대 허용 값의 세 가지의 값을 이용하는것 */
+    padding: clamp(8px, 1vw, 12px) clamp(10px, 3vw, 30px);
+    color: var(--white);
+    background-color: var(--gray--700);
+    border: 1px solid var(--gray--500);
+
+    font-size: 8px;
+
+    @media (min-width: 768px) {
+      font-size: 14px;
+    }
+  }
+
+  .sub-category-button:hover,
+  .sub-category-button:active {
+    transform: translateY(-10px);
+    transition: all 0.4s ease-in-out;
+  }
+}
+
+/* drama-card-list */
+.category-card-list {
+  display: flex;
+  gap: 8px;
+  overflow-x: scroll;
+  white-space: nowrap;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #000;
+}
+
+.category-ranking-list {
+  li {
+    background-color: #000;
+
+    figure {
+      width: 100%;
+      display: grid;
+      grid-template-columns: auto 1fr;
+      overflow: hidden;
+
+      .ranking-content-img {
+        border-radius: 6px;
+        grid-row: 1/-1;
+        grid-column: 2/3;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+
+    figcaption {
+      color: #fff;
+      grid-column: 1/2;
+      place-self: end;
+      width: fit-content;
+
+      img {
+        height: 100%;
+        min-width: 20px;
+        width: 4vw;
+        object-fit: cover;
+      }
+
+      @media (min-width: 768px) {
+        img {
+          width: 4vw;
+        }
+      }
+
+      @media (min-width: 1024px) {
+        img {
+          width: 4vw;
+        }
+      }
+    }
+  }
+}

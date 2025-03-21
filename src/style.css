@@ -1,1 +1,17 @@
-/* CSS 스타일을 작성해 주세요. */ 
+
+@import "./styles/reset.css";
+@import "./styles/theme.css";
+@import "./components/main-visual/main-visual.css";
+@import "./components/main-card/main-card.css";
+@import "./components/footer/footer.css";
+@import "./components/category-contnet-page/category-contnet-page.css";
+@import "./components/main-nav/main-nav.css";
+@import "./components/gnb-land/gnb-land.css";
+@import "./components/gnb-login/gnb-login.css";
+@import "./components/gnb-main/gnb-main.css";
+@import "./components/gnb-sch-m/gnb-sch-m.css";
+@import "./components/gnb-sch-pc/gnb-sch-pc.css";
+@import "./components/history-page/history-page.css";
+@import "./components/detail-page/detail-components.css";
+@import "./components/detail-page/detail-page.css";
+
