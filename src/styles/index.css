@@ -1,13 +1,14 @@
 /* 기본 스타일 */
 .index_container {
-  margin: 0;
   font-family: Arial, sans-serif;
+  font-size: 12px;
   background-color: black;
   color: white;
   display: grid;
   grid-template-rows: 1fr auto;
   /* grid-template-rows를 1fr auto로 설정 -> 네비가 항상 아래에 위치 */
   height: 100vh;
+  gap: 10px;
 }
 
 /* 네비게이션 스타일 */
@@ -56,7 +57,18 @@
   gap: 36px;
   text-align: center;
   padding-top: 20px;
-  margin: 40px;
+  margin: 30px;
+
+  h2 {
+    color: var(--white, #fff);
+
+    /* Heading/Medium */
+    font-family: Pretendard;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; /* 22.4px */
+  }
 }
 /* 하단 타잉 페이지 바로보기 */
 .index_nav_icon {
@@ -67,7 +79,9 @@
   border-radius: 5px;
   text-align: center;
   transition: background 0.3s;
-  width: 100px;
+  width: fit-content; /* 내용물 크기에 맞게 */
+  justify-self: center; /* 가로 중앙 정렬 */
+  padding: 10px 20px 10px 20px;
   margin: 10px;
 }
 
@@ -85,8 +99,53 @@
 }
 
 /* 반응형 디자인 */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .index_nav {
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
+}
+/* 768px 이상 1024px 이하일 때 */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .index_container {
+    font-size: 16px;
+  }
+  .index_nav {
+    grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+    gap: 10px;
+  }
+
+  .index_header {
+    h2 {
+      font-size: 28.43px;
+    }
+
+    img {
+      width: 372px;
+      height: 146px;
+      width: 100%;
+    }
+  }
+}
+
+/* 1024px 이상일 때 */
+@media (min-width: 1024px) {
+  .index_container {
+    font-size: 29.43px;
+  }
+  .index_nav {
+    grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+    gap: 10px;
+  }
+
+  .index_header {
+    h2 {
+      font-size: 37.897px;
+    }
+
+    img {
+      width: 496px;
+      height: 195px;
+      width: 100%;
+    }
   }
 }
