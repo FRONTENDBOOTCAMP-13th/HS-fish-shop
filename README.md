@@ -2,16 +2,28 @@
 
 # UI Project(CSS) - Tving Clone Project
 
-## 🎣 현수네 생선가게 팀
+## TEAM - 🎣현수네 생선가게
 
-![poister](/public/team-img.png)<br>
+> 나는 정확해. 틀림없지. 다만 운이 좀 없다 뿐이지.<br> 하지만 누가 알아? 어쩌면 오늘은 운이 좋을지도. 아무튼? 하루하루가 새로운 날이니까. <br> 운이 따른다면 더 좋기는 하지. 그래도 나는 신중을 기하겠어.<br> 운은 준비된 자에게 찾아오는 법이니까. 믿음을 가져야 해<br> <br>
+> 헤밍웨이, 노인과바다 中
 
-## ![poster](/public/logo.svg) Clone 프로젝트
+하루하루 거친 파도를 헤쳐 생선가게를 운영하는 어부의 심정으로 학습하는 현수네 생선가게팀 입니다.<br>
+넓고 거친 바다위에서 믿을 수 있는 것은 우리 팀원들 뿐!<br>
+서로 돕고 협력하는 팀이 되어 꿈을 향해 나아가자는 포부를 갖고 있는 팀 입니다.
+
+## 🖥️ 프로젝트소개
 
 - HTML/CSS 학습을 배경으로 티빙 페이지를 클론합니다.
 - 원본페이지 / [티빙](https://www.tving.com/)
 
-### 개발 페이지 구성
+### 📜 개발 페이지 구성
+
+![Main](https://img.shields.io/badge/Main-red?style=for-the-badge)
+![Landing](https://img.shields.io/badge/Landing-red?style=for-the-badge)<br>
+![Login](https://img.shields.io/badge/Login-blue?style=for-the-badge)
+![Signup](https://img.shields.io/badge/Signup-blue)
+![findId](https://img.shields.io/badge/findId-blue)
+![findPw](https://img.shields.io/badge/findPw-blue)
 
 ## 🕰️ 개발기간
 
