@@ -19,7 +19,9 @@ export default defineConfig({
         gnbschpc: "src/components/gnb-sch-pc/gnb-sch-pc.html",
         historypage: "src/components/history-page/history-page.html",
         detailcomponents: "src/components/detail-page/detail-components.html",
-
+        main_page: "src/pages/main-page/main-page.html",
+        drama_page: "src/pages/drama-page/drama-page.html",
+        movie_page: "src/pages/movie-page/movie-page.html",
       },
     },
   },
