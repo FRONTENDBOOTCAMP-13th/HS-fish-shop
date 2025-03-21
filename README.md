@@ -1,4 +1,4 @@
-b###### Likelion Front-end Bootcamp
+###### Likelion Front-end Bootcamp
 
 # UI Project(CSS) - [Tving Clone Project]()
 
@@ -143,7 +143,7 @@ npm i
 
 ### 2.네이밍 규칙
 
-- 모든 네이킹은 **케밥 케이스(kebab-case)**를 사용
+- 모든 네이킹은 **케밥 케이스(kebab-case)** 를 사용
 - 개인 작업 html,css 의 클래스명은 모두 개인 작업 페이지의 단어를 **첫단어**로 사용
   - 예시)gnb-btn / main-card
 
@@ -162,11 +162,11 @@ npm i
 - develop/main 브랜치에 **작업금지**
 - 개인작업은 **issue**를 할당받고, **신규 브런치 생성후** 작업
 - 작업 브랜치는 작업형태에 따라 **분류**하여 네이밍
-  - 얘시) feat/main-page
+  - 예시) feat/main-page
 
 ### 6.코드리뷰
 
-- 모든 작업은 **Pull Request(PR)**를 통해 병합
+- 모든 작업은 **Pull Request(PR)** 를 통해 병합
 - PR 작성 시 규격에 맞춰 제출 후, 팀원에게 리뷰를 요청
 
 ### 7.반응형 브레이크 포인트
