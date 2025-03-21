@@ -1,4 +1,3 @@
-
 @import "./styles/reset.css";
 @import "./styles/theme.css";
 @import "./components/main-visual/main-visual.css";
@@ -14,4 +13,6 @@
 @import "./components/history-page/history-page.css";
 @import "./components/detail-page/detail-components.css";
 @import "./components/detail-page/detail-page.css";
-
+@import "./components/profile/profile.css";
+@import "./components/profile-edit/profile-edit.css";
+@import "./components/profile-edit-sub/profile-edit-sub.css";

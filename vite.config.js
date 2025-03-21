@@ -19,7 +19,9 @@ export default defineConfig({
         gnbschpc: "src/components/gnb-sch-pc/gnb-sch-pc.html",
         historypage: "src/components/history-page/history-page.html",
         detailcomponents: "src/components/detail-page/detail-components.html",
-
+        profile: "src/components/profile/profile.html",
+        profileedit: "src/components/profile-edit/profile-edit.html",
+        profileeditsub: "src/components/profile-edit-sub/profile-edit-sub.html",
       },
     },
   },
