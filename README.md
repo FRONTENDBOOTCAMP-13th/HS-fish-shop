@@ -1,4 +1,4 @@
-###### Likelion Front-end Bootcamp
+b###### Likelion Front-end Bootcamp
 
 # UI Project(CSS) - Tving Clone Project
 
@@ -82,6 +82,28 @@
 ![Netlify](https://img.shields.io/badge/netlify-%23000000.svg?style=for-the-badge&logo=netlify&logoColor=#00C7B7)
 
 ### 파일경로
+
+📦HS-fish-shop</br>
+┣ 📂.github</br>
+┣ 📂node_modules</br>
+┣ 📂public</br>
+┣ 📂src</br>
+┃ ┣ 📂asset</br>
+┃ ┣ 📂compunents</br>
+┃ ┃ ┗ 📂gnb-main</br>
+┃ ┣ 📂pages</br>
+┃ ┃ ┗ 📂main-page</br>
+┃ ┣ 📂styles</br>
+┃ ┣ 📜main.js</br>
+┃ ┗ 📜style.css</br>
+┣ 📜.gitignore</br>
+┣ 📜index.html</br>
+┣ 📜package-lock.json</br>
+┣ 📜package.json</br>
+┣ 📜README.md</br>
+┗ 📜vite.config.js</br>
+
+> 상단 경로는 이해를 돕기위한 트리구조입니다.
 
 ### 개발 시작하기
 
