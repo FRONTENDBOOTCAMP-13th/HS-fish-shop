@@ -14,6 +14,12 @@
   margin-top: 6.875rem;
 }
 
+.profile-layout {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 @media (min-width: 48rem) {
   .profile-selection {
     margin-top: 8.125rem;
@@ -90,7 +96,7 @@
   }
 }
 
-input[type="text"] {
+.input-profile-name {
   width: 23.75rem;
   height: 3.75rem;
   font-size: 1rem;
@@ -103,7 +109,7 @@ input[type="text"] {
 }
 
 @media (min-width: 48rem) {
-  input[type="text"] {
+  .input-profile-name {
     width: 28.125rem;
     height: 3.9375rem;
     font-size: 1.125rem;
@@ -111,7 +117,7 @@ input[type="text"] {
 }
 
 @media (min-width: 64rem) {
-  input[type="text"] {
+  .input-profile-name {
     width: 32.5rem;
     height: 4.0625rem;
     font-size: 1.25rem;
@@ -167,6 +173,7 @@ input[type="text"] {
   text-align: center;
   text-decoration: none;
   margin-top: 3.125rem;
+  margin-bottom: 7.3px;
 }
 
 @media (min-width: 48rem) {
@@ -329,6 +336,10 @@ input[type="text"] {
   transform: scale(1.1);
 }
 
-.profile-options input[type="radio"] {
-  display: none;
+.profile-btn {
+  border: none;
+  background: none;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 10px;
 }
