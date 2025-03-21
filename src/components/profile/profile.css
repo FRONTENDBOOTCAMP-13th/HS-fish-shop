@@ -1,0 +1,209 @@
+.profile-body {
+  margin: 0;
+  background-color: var(--black);
+  color: var(--white);
+  font-family: "Pretendard Variable", sans-serif;
+}
+
+.profile-selection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 6.875rem;
+}
+
+@media (min-width: 48rem) {
+  .profile-selection {
+    margin-top: 8.125rem;
+  }
+}
+
+@media (min-width: 64rem) {
+  .profile-selection {
+    margin-top: 13.75rem;
+  }
+}
+
+.profile-title,
+.profile-text,
+.profile-name {
+  line-height: 140%;
+}
+
+.profile-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.profile-text {
+  font-size: 1rem;
+  color: var(--gray--300);
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+.profile-name {
+  display: block;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  transform: translateX(-50%);
+  left: 50%;
+  color: var(--gray--400);
+  font-size: 1rem;
+  bottom: -2.0625rem;
+}
+
+@media (min-width: 48rem) {
+  .profile-title {
+    font-size: 1.75rem;
+    margin-bottom: 0.625rem;
+  }
+
+  .profile-text {
+    font-size: 1.125rem;
+    margin-bottom: 1.875rem;
+  }
+
+  .profile-name {
+    font-size: 1.125rem;
+    bottom: -2.1875rem;
+  }
+}
+
+@media (min-width: 64rem) {
+  .profile-title {
+    font-size: 2.5rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .profile-text {
+    font-size: 1.75rem;
+    margin-bottom: 2.75rem;
+  }
+
+  .profile-name {
+    font-size: 1.5625rem;
+    bottom: -2.625rem;
+  }
+}
+
+.profile-container {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.875rem;
+}
+
+@media (min-width: 48rem) {
+  .profile-container {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2.5rem;
+  }
+}
+
+@media (min-width: 64rem) {
+  .profile-container {
+    gap: 2.8125rem;
+  }
+}
+
+.profile {
+  position: relative;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  width: 9.375rem;
+  height: 9.375rem;
+  margin-bottom: 2.8125rem;
+}
+
+@media (min-width: 64rem) {
+  .profile {
+    width: 11.25rem;
+    height: 11.25rem;
+  }
+}
+
+.profile img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.625rem;
+  transition: transform 0.2s, filter 0.2s;
+}
+
+.profile.locked img {
+  filter: brightness(0.5);
+}
+
+.lock-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 3.125rem;
+  height: 3.125rem;
+}
+
+@media (min-width: 64rem) {
+  .lock-icon {
+    width: 3.75rem;
+    height: 3.75rem;
+  }
+}
+
+.profile:hover img {
+  transform: scale(1.05);
+}
+
+.profile.highlight:hover img {
+  border: 0.125rem solid var(--white);
+}
+
+.profile.highlight .profile-name {
+  color: var(--white);
+}
+
+.lock-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  width: 11.25rem;
+  height: 3.75rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  border-radius: 0.3125rem;
+  text-align: center;
+  text-decoration: none;
+  color: var(--gray--300);
+  border: 0.0625rem solid var(--gray--300);
+  margin-top: 2.1875rem;
+}
+
+@media (min-width: 48rem) {
+  .lock-button {
+    width: 13.375rem;
+    height: 4.0625rem;
+    font-size: 1.25rem;
+    margin-top: 2.5rem;
+  }
+}
+
+@media (min-width: 64rem) {
+  .lock-button {
+    width: 15.625rem;
+    height: 4.375rem;
+    font-size: 1.375rem;
+    margin-top: 4.375rem;
+  }
+}
+
+.lock-button:hover {
+  border: 0.0625rem solid var(--white);
+  color: var(--white);
+}

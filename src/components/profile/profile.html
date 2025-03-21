@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>프로필 선택</title>
+    <link rel="icon" href="/favicon.jpg" />
+    <link
+      rel="preload"
+      as="font"
+      href="/font/woff2/PretendardVariable.woff2"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" as="style" href="/font/pretendardvariable.css" />
+    <link rel="stylesheet" href="/src/styles/reset.css" />
+    <link rel="stylesheet" href="/src/styles/theme.css" />
+    <script type="module" src="./../../main.js"></script>
+  </head>
+  <body class="profile-body">
+    <section class="profile-selection">
+      <p class="profile-title">프로필 선택</p>
+      <p class="profile-text">시청할 프로필을 선택해주세요.</p>
+      <div class="profile-container">
+        <button class="profile locked">
+          <img
+            src="/src/assets/profile/dk-profile-1.webp"
+            alt="채은 프로필 이미지"
+          />
+          <span class="lock-icon">
+            <img src="/src/assets/profile/lock.svg" alt="" aria-hidden="true" />
+            <span class="sr-only">잠긴 프로필</span>
+          </span>
+          <span class="profile-name">채은</span>
+        </button>
+        <button class="profile locked">
+          <img
+            src="/src/assets/profile/dk-profile-2.webp"
+            alt="경민 프로필 이미지"
+          />
+          <span class="lock-icon">
+            <img src="/src/assets/profile/lock.svg" alt="" aria-hidden="true" />
+            <span class="sr-only">잠긴 프로필</span>
+          </span>
+          <span class="profile-name">경민</span>
+        </button>
+        <button class="profile locked">
+          <img
+            src="/src/assets/profile/dk-profile-3.webp"
+            alt="아현 프로필 이미지"
+          />
+          <span class="lock-icon">
+            <img src="/src/assets/profile/lock.svg" alt="" aria-hidden="true" />
+            <span class="sr-only">잠긴 프로필</span>
+          </span>
+          <span class="profile-name">아현</span>
+        </button>
+
+        <form action="main.html">
+          <button type="submit" class="profile highlight">
+            <img
+              src="/src/assets/profile/dk-profile-4.webp"
+              alt="현수 프로필 이미지"
+            />
+            <span class="profile-name">현수</span>
+          </button>
+        </form>
+      </div>
+      <a
+        href="/src/components/profile-edit/profile-edit.html"
+        class="lock-button"
+      >
+        프로필 편집 <span class="sr-only">편집 페이지로 이동</span>
+      </a>
+    </section>
+  </body>
+</html>
