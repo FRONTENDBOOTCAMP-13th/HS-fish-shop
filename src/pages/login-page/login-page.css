@@ -546,13 +546,13 @@ footer {
       width: 20px;
       height: 20px;
       gap: 12px;
-      background: url("../widget/Icon/text-delet.svg") no-repeat center/contain;
+
       cursor: pointer;
       border: none;
 
       position: absolute;
-      right: 20px;
-      top: 13px;
+      right: 24px;
+      top: 17px;
     }
   }
 
@@ -571,24 +571,21 @@ footer {
       cursor: pointer;
       border: none;
       position: absolute;
-      right: 20px;
-      top: 13px;
+      right: 24px;
+      top: 17px;
     }
 
     #showPassword {
-      background: url("../widget/Icon/text-blind.svg") no-repeat center/contain;
       cursor: pointer;
       border: none;
     }
 
     #deletPassword {
-      background: url("../widget/Icon/text-delet.svg") no-repeat center/contain;
-      cursor: pointer;
       border: none;
 
       position: absolute;
-      right: 56px;
-      top: 13px;
+      right: 60px;
+      top: 17px;
     }
   }
 
@@ -604,16 +601,10 @@ footer {
     appearance: none; /* 기본 스타일 제거 */
     width: 16px;
     height: 16px;
-    background: url("../widget/Icon/circle-unchecked.svg") no-repeat
-      center/contain;
+
     cursor: pointer;
     border: none;
     margin: 0;
-  }
-
-  .circle_checkbox:checked {
-    background: url("../widget/Icon/circle-checked.svg") no-repeat
-      center/contain;
   }
 
   .login_button {
@@ -718,7 +709,6 @@ footer {
       width: 36px;
       height: 36px;
       gap: 12px;
-      background: url("../widget/Icon/text-delet.svg") no-repeat center/contain;
       cursor: pointer;
       border: none;
 
@@ -748,13 +738,11 @@ footer {
     }
 
     #showPassword {
-      background: url("../widget/Icon/text-blind.svg") no-repeat center/contain;
       cursor: pointer;
       border: none;
     }
 
     #deletPassword {
-      background: url("../widget/Icon/text-delet.svg") no-repeat center/contain;
       cursor: pointer;
       border: none;
 
@@ -776,16 +764,9 @@ footer {
     appearance: none; /* 기본 스타일 제거 */
     width: 26px;
     height: 26px;
-    background: url("../widget/Icon/circle-unchecked.svg") no-repeat
-      center/contain;
     cursor: pointer;
     border: none;
     margin: 0;
-  }
-
-  .circle_checkbox:checked {
-    background: url("../widget/Icon/circle-checked.svg") no-repeat
-      center/contain;
   }
 
   .login_button {
