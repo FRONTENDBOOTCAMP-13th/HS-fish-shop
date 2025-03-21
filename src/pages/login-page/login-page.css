@@ -1,0 +1,825 @@
+:root {
+  --gnb-login-h: 2.5rem;
+  height: var(--gnb-login-h);
+
+  @media screen and (min-width: 768px) {
+    --gnb-login-h: 3.75rem;
+  }
+  @media screen and (min-width: 1024px) {
+    --gnb-login-h: 78px;
+  }
+}
+
+body {
+  background-color: black;
+}
+
+/* gnb 공통 / 로고 사이즈 좌우 패딩 / 상단고정*/
+.gnb {
+  --gnb-logo-w: 4rem;
+  --gnb-login-px: 1rem;
+
+  @media screen and (min-width: 768px) {
+    --gnb-logo-w: 6.5rem;
+    --gnb-login-px: 2.25rem;
+  }
+
+  @media screen and (min-width: 1024px) {
+    --gnb-logo-w: 8.75rem;
+    --gnb-login-px: 3.75rem;
+  }
+
+  font-family: "Pretendard Variable", sans-serif;
+  a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+  }
+  ul,
+  li {
+    list-style: none;
+  }
+  img {
+    display: block;
+  }
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  padding-inline: var(--gnb-login-px);
+  z-index: 999;
+
+  /* 공통 반응형 최대 넓이*/
+  .gnb-max-wrapper {
+    max-width: 1920px;
+    height: 100%;
+    margin: 0 auto;
+  }
+
+  /* 공통 로고 사이즈 */
+  .gnb-logo {
+    width: var(--gnb-logo-w);
+    display: block;
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+/* 각 페이지 상단 메뉴 높이 / 정렬*/
+.gnb-login {
+  --gnb-login-h: 2.5rem;
+  height: var(--gnb-login-h);
+
+  @media screen and (min-width: 768px) {
+    --gnb-login-h: 3.75rem;
+  }
+  @media screen and (min-width: 1024px) {
+    --gnb-login-h: 78px;
+  }
+}
+
+/* wrapper에 플렉스 필요하면 추가 */
+.gnb-flex-row {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+.login-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: stretch;
+  width: 100%;
+  max-width: 767px;
+  padding: 28px 0 0 0;
+  margin-top: var(--gnb-login-h);
+  color: #6b6b6b;
+  font-size: 12px;
+}
+
+.login-header {
+  color: var(--white, #fff);
+  /* Heading/Medium */
+  font-family: Pretendard;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%; /* 22.4px */
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.signup-container {
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+  background-color: var(--color-bg);
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(26, 26, 26, 0.6);
+  text-align: center;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* input */
+.input_text {
+  display: flex;
+  width: 288px;
+  height: 46px;
+  padding: 0px 20px 0px 16px;
+  align-items: center;
+  border: 1px solid;
+  border-color: #212121;
+  border-radius: 4px;
+  background: var(--brand-dark-bg-2, #212121);
+  color: white;
+}
+#passwordInput:focus {
+  border-color: #e1e1e1;
+  outline: none;
+}
+#idInput:focus {
+  border-color: #e1e1e1;
+  outline: none;
+}
+
+.id-container {
+  position: relative;
+  display: inline-block;
+
+  #deletId {
+    appearance: none; /* 기본 스타일 제거 */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    gap: 12px;
+    background: url("../widget/Icon/text-delet.svg") no-repeat center/contain;
+    cursor: pointer;
+    border: none;
+
+    position: absolute;
+    right: 24px;
+    top: 13px;
+  }
+}
+
+.password-container {
+  position: relative;
+  display: inline-block;
+
+  .toggle-password-checkbox input {
+    appearance: none; /* 기본 스타일 제거 */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    gap: 12px;
+    cursor: pointer;
+    border: none;
+    position: absolute;
+    right: 24px;
+    top: 13px;
+  }
+
+  #showPassword {
+    background: url("../widget/Icon/text-blind.svg") no-repeat center/contain;
+    cursor: pointer;
+    border: none;
+  }
+
+  #deletPassword {
+    background: url("../widget/Icon/text-delet.svg") no-repeat center/contain;
+    cursor: pointer;
+    border: none;
+
+    position: absolute;
+    right: 56px;
+    top: 13px;
+  }
+}
+
+/* checkbox */
+.checkbox-label {
+  display: flex;
+  justify-content: left; /* 좌우 정렬 */
+  align-items: center; /* 수직 중앙 정렬 */
+  gap: 4px;
+}
+.circle_checkbox {
+  appearance: none; /* 기본 스타일 제거 */
+  width: 16px;
+  height: 16px;
+  background: url("../widget/Icon/circle-unchecked.svg") no-repeat
+    center/contain;
+  cursor: pointer;
+  border: none;
+  margin: 0;
+}
+
+.circle_checkbox:checked {
+  background: url("../widget/Icon/circle-checked.svg") no-repeat center/contain;
+}
+
+.login_button {
+  width: 100%;
+  max-width: 732 px;
+  height: 42px;
+  color: #ffffff;
+  background-color: #ff153c;
+  border: none;
+  border-radius: 4px;
+  margin-top: 8px;
+  cursor: pointer;
+  align-self: center;
+}
+
+.login_button:hover {
+  background-color: #cc1030;
+}
+
+.member-link {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin-top: 12px;
+
+  a {
+    content: "|";
+    padding-left: 12px;
+    padding-right: 12px;
+    text-decoration: none;
+    color: #a6a6a6;
+  }
+  a:hover {
+    color: white;
+  }
+}
+
+footer {
+  --font-size-desktop: 0.875rem;
+  --font-size-tablet: 0.75rem;
+  --font-size-mobile: 0.625rem;
+
+  padding: 3.25rem 1rem !important;
+
+  @media (min-width: 764px) {
+    padding: 4.375rem 2.5rem !important;
+  }
+
+  @media (min-width: 1024px) {
+    padding: 8.75rem 2.5rem !important;
+  }
+  /* border: 1px solid #000; background-color: black; */ /* footer-header */
+
+  .footer-header {
+    font-size: 12px;
+    font-weight: 400;
+
+    @media (min-width: 1024px) {
+      font-size: 21.328px;
+    }
+
+    .notice {
+      display: flex;
+      gap: 20px;
+
+      p:nth-of-type(1) {
+        color: var(--gray--500);
+      }
+      p:nth-of-type(2) {
+        color: var(--gray--200);
+      }
+    }
+  }
+
+  /* footer-line */
+  .footer-line {
+    background: var(--gray-800, #212121);
+    margin: 12px 0;
+    height: 1px;
+  }
+
+  /* footer-nav */
+  .footer-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+
+    ul {
+      display: flex;
+      gap: 4px;
+      flex-direction: column;
+
+      @media (min-width: 768px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+    }
+
+    li {
+      list-style: none;
+      margin-left: 14px;
+      a {
+        text-decoration: none;
+        color: var(--gray-200, #c4c4c4);
+        font-size: var(--font-size-mobile);
+        font-weight: 400;
+
+        @media (min-width: 1024px) {
+          font-size: var(--font-size-desktop);
+        }
+      }
+      a:hover {
+        color: var(--gray--100);
+        font-weight: bold;
+      }
+    }
+
+    /*footer-header-link */
+    .footer-header-link {
+      display: none;
+      white-space: nowrap;
+      flex-shrink: 0;
+
+      @media (min-width: 768px) {
+        display: block;
+        align-self: flex-start;
+      }
+
+      a {
+        color: var(--gray--100);
+        text-decoration: none;
+        font-size: var(--font-size-mobile);
+        font-weight: 400;
+
+        span {
+          margin-left: 1rem;
+        }
+        @media (min-width: 1024px) {
+          font-size: var(--font-size-desktop);
+        }
+      }
+
+      a:hover {
+        color: var(--gray--100);
+        font-weight: bold;
+      }
+
+      .footer-header-link-line {
+        display: inline-block;
+        fill: var(--gray-500, #6b6b6b);
+        stroke-width: 1px;
+        stroke: var(--gray-500, #6b6b6b);
+        padding: 0 0.8125rem;
+      }
+    }
+  }
+
+  /* footer-address */
+  .footer-address {
+    display: none;
+    @media (min-width: 768px) {
+      display: block;
+    }
+
+    margin-top: 1.5rem;
+    address {
+      color: var(--gray-500, #6b6b6b);
+      font-size: var(--font-size-tablet);
+      font-weight: 400;
+      p {
+        margin-bottom: 6px;
+
+        span {
+          position: relative;
+          padding: 0 8px;
+        }
+        span::before {
+          content: "";
+          position: absolute;
+          top: 50%;
+          left: 0px;
+          width: 1px;
+          height: 11px;
+          margin-top: -5px;
+          background-color: rgb(46, 46, 46);
+        }
+        span:nth-of-type(1)::before {
+          content: none;
+        }
+      }
+
+      a {
+        color: inherit;
+      }
+    }
+  }
+
+  /* footer-map */
+  .footer-map {
+    margin-top: 1.5rem;
+    .map-icon-tablet,
+    .map-icon-desktop {
+      display: none;
+    }
+
+    @media (min-width: 768px) {
+      .map-icon-tablet {
+        display: block;
+      }
+      .map-icon-mobile,
+      .map-icon-desktop {
+        display: none;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .map-icon-tablet,
+      .map-icon-mobile {
+        display: none;
+      }
+      .map-icon-desktop {
+        display: block;
+      }
+    }
+  }
+
+  /* footer-copyright */
+  .footer-copyright {
+    .copyright {
+      margin-top: 16px;
+      font-size: var(--font-size-tablet);
+      color: var(--gray-500, #6b6b6b);
+      font-weight: 400;
+    }
+  }
+}
+
+/* Tablet (768px ~ 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .login-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+    width: 100%;
+    max-width: 1023px;
+    padding-top: 28px;
+    color: #6b6b6b;
+    font-size: 16px;
+  }
+
+  .login-header {
+    color: var(--white, #fff);
+    /* Heading/Medium */
+    font-family: Pretendard;
+    font-size: 28.43px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; /* 39.802px */
+    display: flex;
+    justify-content: center;
+    padding-bottom: 24px;
+  }
+
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  /* input */
+  .input_text {
+    display: flex;
+    width: 416px;
+    height: 54px;
+    padding: 0px 20px 0px 16px;
+    align-items: center;
+    border: 1px solid;
+    border-color: #212121;
+    border-radius: 4px;
+    background: var(--brand-dark-bg-2, #212121);
+    color: white;
+    font-size: 16px;
+  }
+  #passwordInput:focus {
+    border-color: #e1e1e1;
+    outline: none;
+  }
+  #idInput:focus {
+    border-color: #e1e1e1;
+    outline: none;
+  }
+
+  .id-container {
+    position: relative;
+    display: inline-block;
+
+    #deletId {
+      appearance: none; /* 기본 스타일 제거 */
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      width: 20px;
+      height: 20px;
+      gap: 12px;
+      background: url("../widget/Icon/text-delet.svg") no-repeat center/contain;
+      cursor: pointer;
+      border: none;
+
+      position: absolute;
+      right: 20px;
+      top: 13px;
+    }
+  }
+
+  .password-container {
+    position: relative;
+    display: inline-block;
+
+    .toggle-password-checkbox input {
+      appearance: none; /* 기본 스타일 제거 */
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      width: 20px;
+      height: 20px;
+      gap: 12px;
+      cursor: pointer;
+      border: none;
+      position: absolute;
+      right: 20px;
+      top: 13px;
+    }
+
+    #showPassword {
+      background: url("../widget/Icon/text-blind.svg") no-repeat center/contain;
+      cursor: pointer;
+      border: none;
+    }
+
+    #deletPassword {
+      background: url("../widget/Icon/text-delet.svg") no-repeat center/contain;
+      cursor: pointer;
+      border: none;
+
+      position: absolute;
+      right: 56px;
+      top: 13px;
+    }
+  }
+
+  /* checkbox */
+  .checkbox-label {
+    display: flex;
+    justify-content: left; /* 좌우 정렬 */
+    align-items: center; /* 수직 중앙 정렬 */
+    gap: 4px;
+    padding-top: 6px;
+  }
+  .circle_checkbox {
+    appearance: none; /* 기본 스타일 제거 */
+    width: 16px;
+    height: 16px;
+    background: url("../widget/Icon/circle-unchecked.svg") no-repeat
+      center/contain;
+    cursor: pointer;
+    border: none;
+    margin: 0;
+  }
+
+  .circle_checkbox:checked {
+    background: url("../widget/Icon/circle-checked.svg") no-repeat
+      center/contain;
+  }
+
+  .login_button {
+    width: 100%;
+    max-width: 732 px;
+    height: 50px;
+    color: #ffffff;
+    background-color: #ff153c;
+    border: none;
+    border-radius: 4px;
+    margin-top: 8px;
+    cursor: pointer;
+    align-self: center;
+    font-size: 16px;
+  }
+  .member-link {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin-bottom: 0;
+    margin-top: 16px;
+
+    a {
+      content: "|";
+      width: 170px;
+      text-decoration: none;
+      color: #a6a6a6;
+    }
+    a:hover {
+      color: white;
+    }
+  }
+}
+
+/* PC (1024px ~ 1920px) */
+@media (min-width: 1024px) {
+  .login-main {
+    width: 100%;
+    max-width: 1920px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+
+    padding-top: 70px;
+    color: #6b6b6b;
+    font-size: 21.328px;
+  }
+
+  .login-header {
+    color: var(--white, #fff);
+
+    /* Heading/XXL */
+    font-family: Pretendard;
+    font-size: 37.897px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; /* 53.056px */
+  }
+
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  /* input */
+  .input_text {
+    display: flex;
+    width: 732px;
+    height: 96px;
+    padding: 0px 30px 0px 24px;
+    align-items: center;
+    border: 1px solid;
+    border-color: #212121;
+    border-radius: 4px;
+    background: var(--brand-dark-bg-2, #212121);
+    color: white;
+    font-size: 28.43px;
+  }
+  #passwordInput:focus {
+    border-color: #e1e1e1;
+    outline: none;
+  }
+  #idInput:focus {
+    border-color: #e1e1e1;
+    outline: none;
+  }
+
+  .id-container {
+    position: relative;
+    display: inline-block;
+
+    #deletId {
+      appearance: none; /* 기본 스타일 제거 */
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      width: 36px;
+      height: 36px;
+      gap: 12px;
+      background: url("../widget/Icon/text-delet.svg") no-repeat center/contain;
+      cursor: pointer;
+      border: none;
+
+      position: absolute;
+      right: 24px;
+      top: 30px;
+    }
+  }
+
+  .password-container {
+    position: relative;
+    display: inline-block;
+
+    .toggle-password-checkbox input {
+      appearance: none; /* 기본 스타일 제거 */
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      width: 36px;
+      height: 36px;
+      gap: 12px;
+      cursor: pointer;
+      border: none;
+      position: absolute;
+      right: 24px;
+      top: 30px;
+    }
+
+    #showPassword {
+      background: url("../widget/Icon/text-blind.svg") no-repeat center/contain;
+      cursor: pointer;
+      border: none;
+    }
+
+    #deletPassword {
+      background: url("../widget/Icon/text-delet.svg") no-repeat center/contain;
+      cursor: pointer;
+      border: none;
+
+      position: absolute;
+      right: 92px;
+      top: 30px;
+    }
+  }
+
+  /* checkbox */
+  .checkbox-label {
+    display: flex;
+    justify-content: left; /* 좌우 정렬 */
+    align-items: center; /* 수직 중앙 정렬 */
+    gap: 14px;
+    margin-top: 1px;
+  }
+  .circle_checkbox {
+    appearance: none; /* 기본 스타일 제거 */
+    width: 26px;
+    height: 26px;
+    background: url("../widget/Icon/circle-unchecked.svg") no-repeat
+      center/contain;
+    cursor: pointer;
+    border: none;
+    margin: 0;
+  }
+
+  .circle_checkbox:checked {
+    background: url("../widget/Icon/circle-checked.svg") no-repeat
+      center/contain;
+  }
+
+  .login_button {
+    width: 100%;
+    max-width: 732 px;
+    height: 86px;
+    padding: 12px;
+    color: #ffffff;
+    background-color: #ff153c;
+    border: none;
+    border-radius: 4px;
+    margin-top: 17px;
+    margin-bottom: 4px;
+    cursor: pointer;
+    align-self: center;
+    font-size: 28.43px;
+  }
+
+  .login_button:hover {
+    background-color: #cc1030;
+  }
+
+  .member-link {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin-top: 33px;
+
+    a {
+      content: "|";
+      width: 170px;
+      text-decoration: none;
+      color: #a6a6a6;
+    }
+    a:hover {
+      color: white;
+    }
+  }
+}
