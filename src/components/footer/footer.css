@@ -4,9 +4,7 @@ footer {
   --font-size-mobile: 0.625rem;
 
   padding: 8.75rem 2.5rem;
-  /* border: 1px solid #000;
-  background-color: black; */
-
+  background-color: #000;
   /* footer-header */
   .footer-header {
     font-size: 12px;
@@ -78,7 +76,7 @@ footer {
       display: none;
       white-space: nowrap;
       flex-shrink: 0;
-      
+
       @media (min-width: 768px) {
         display: block;
         align-self: flex-start;

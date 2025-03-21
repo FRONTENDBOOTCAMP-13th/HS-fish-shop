@@ -197,7 +197,8 @@ body {
     width: 20px;
     height: 20px;
     gap: 12px;
-    background: url("../widget/Icon/text-delet.svg") no-repeat center/contain;
+    background: url("../../components/widget/Icon/text-delet.svg") no-repeat
+      center/contain;
     cursor: pointer;
     border: none;
 
@@ -215,7 +216,8 @@ body {
   gap: 2px;
 
   #showPwSign {
-    background: url("../widget/Icon/text-blind.svg") no-repeat center/contain;
+    background: url("../../components/widget/Icon/text-blind.svg") no-repeat
+      center/contain;
     appearance: none; /* 기본 스타일 제거 */
     display: flex;
     justify-content: flex-end;
@@ -231,7 +233,8 @@ body {
   }
 
   #deletPwSign {
-    background: url("../widget/Icon/text-delet.svg") no-repeat center/contain;
+    background: url("../../components/widget/Icon/text-delet.svg") no-repeat
+      center/contain;
     appearance: none; /* 기본 스타일 제거 */
     display: flex;
     justify-content: flex-end;
@@ -251,7 +254,8 @@ body {
   display: inline-block;
 
   #showPwSign2 {
-    background: url("../widget/Icon/text-blind.svg") no-repeat center/contain;
+    background: url("../../components/widget/Icon/text-blind.svg") no-repeat
+      center/contain;
     appearance: none; /* 기본 스타일 제거 */
     display: flex;
     justify-content: flex-end;
@@ -267,7 +271,8 @@ body {
   }
 
   #deletPwSign2 {
-    background: url("../widget/Icon/text-delet.svg") no-repeat center/contain;
+    background: url("../../components/widget/Icon/text-delet.svg") no-repeat
+      center/contain;
     appearance: none; /* 기본 스타일 제거 */
     display: flex;
     justify-content: flex-end;
@@ -294,7 +299,8 @@ body {
     width: 20px;
     height: 20px;
     gap: 12px;
-    background: url("../widget/Icon/text-delet.svg") no-repeat center/contain;
+    background: url("../../components/widget/Icon/text-delet.svg") no-repeat
+      center/contain;
     cursor: pointer;
     border: none;
 
@@ -333,7 +339,7 @@ body {
   appearance: none; /* 기본 스타일 제거 */
   width: 16px;
   height: 16px;
-  background: url("../widget/Icon/circle-unchecked.svg") no-repeat
+  background: url("../../components/widget/Icon/circle-unchecked.svg") no-repeat
     center/contain;
   cursor: pointer;
   border: none;
@@ -341,7 +347,8 @@ body {
 }
 
 .circle_checkboxSign:checked {
-  background: url("../widget/Icon/circle-checked.svg") no-repeat center/contain;
+  background: url("../../components/widget/Icon/circle-checked.svg") no-repeat
+    center/contain;
 }
 
 .checkboxSign-label2 {
@@ -361,14 +368,16 @@ body {
   appearance: none; /* 기본 스타일 제거 */
   width: 16px;
   height: 16px;
-  background: url("../widget/Icon/unchecked.svg") no-repeat center/contain;
+  background: url("../../components/widget/Icon/unchecked.svg") no-repeat
+    center/contain;
   cursor: pointer;
   border: none;
   margin: 0;
 }
 
 .checkboxSign:checked {
-  background: url("../widget/Icon/checked.svg") no-repeat center/contain;
+  background: url("../../components/widget/Icon/checked.svg") no-repeat
+    center/contain;
 }
 
 .receiveSign {
@@ -528,7 +537,6 @@ footer {
       width: 20px;
       height: 20px;
       gap: 12px;
-      background: url("../widget/Icon/text-delet.svg") no-repeat center/contain;
       cursor: pointer;
       border: none;
 
@@ -546,7 +554,6 @@ footer {
     gap: 2px;
 
     #showPwSign {
-      background: url("../widget/Icon/text-blind.svg") no-repeat center/contain;
       appearance: none; /* 기본 스타일 제거 */
       display: flex;
       justify-content: flex-end;
@@ -562,7 +569,6 @@ footer {
     }
 
     #deletPwSign {
-      background: url("../widget/Icon/text-delet.svg") no-repeat center/contain;
       appearance: none; /* 기본 스타일 제거 */
       display: flex;
       justify-content: flex-end;
@@ -573,7 +579,7 @@ footer {
       cursor: pointer;
       border: none;
       position: absolute;
-      right: 56px;
+      right: 60px;
       top: 17px;
     }
   }
@@ -582,7 +588,6 @@ footer {
     display: inline-block;
 
     #showPwSign2 {
-      background: url("../widget/Icon/text-blind.svg") no-repeat center/contain;
       appearance: none; /* 기본 스타일 제거 */
       display: flex;
       justify-content: flex-end;
@@ -598,7 +603,6 @@ footer {
     }
 
     #deletPwSign2 {
-      background: url("../widget/Icon/text-delet.svg") no-repeat center/contain;
       appearance: none; /* 기본 스타일 제거 */
       display: flex;
       justify-content: flex-end;
@@ -609,7 +613,7 @@ footer {
       cursor: pointer;
       border: none;
       position: absolute;
-      right: 56px;
+      right: 60px;
       top: 17px;
     }
   }
@@ -625,7 +629,6 @@ footer {
       width: 20px;
       height: 20px;
       gap: 12px;
-      background: url("../widget/Icon/text-delet.svg") no-repeat center/contain;
       cursor: pointer;
       border: none;
 
@@ -656,16 +659,9 @@ footer {
     appearance: none; /* 기본 스타일 제거 */
     width: 16px;
     height: 16px;
-    background: url("../widget/Icon/circle-unchecked.svg") no-repeat
-      center/contain;
     cursor: pointer;
     border: none;
     margin: 0;
-  }
-
-  .circle_checkboxSign:checked {
-    background: url("../widget/Icon/circle-checked.svg") no-repeat
-      center/contain;
   }
 
   .checkboxSign-label2 {
@@ -679,14 +675,9 @@ footer {
     appearance: none; /* 기본 스타일 제거 */
     width: 16px;
     height: 16px;
-    background: url("../widget/Icon/unchecked.svg") no-repeat center/contain;
     cursor: pointer;
     border: none;
     margin: 0;
-  }
-
-  .checkboxSign:checked {
-    background: url("../widget/Icon/checked.svg") no-repeat center/contain;
   }
 
   .receiveSign {
@@ -833,7 +824,6 @@ footer {
       width: 36px;
       height: 36px;
       gap: 12px;
-      background: url("../widget/Icon/text-delet.svg") no-repeat center/contain;
       cursor: pointer;
       border: none;
 
@@ -851,7 +841,6 @@ footer {
     gap: 2px;
 
     #showPwSign {
-      background: url("../widget/Icon/text-blind.svg") no-repeat center/contain;
       appearance: none; /* 기본 스타일 제거 */
       display: flex;
       justify-content: flex-end;
@@ -867,7 +856,6 @@ footer {
     }
 
     #deletPwSign {
-      background: url("../widget/Icon/text-delet.svg") no-repeat center/contain;
       appearance: none; /* 기본 스타일 제거 */
       display: flex;
       justify-content: flex-end;
@@ -878,7 +866,7 @@ footer {
       cursor: pointer;
       border: none;
       position: absolute;
-      right: 68px;
+      right: 92px;
       top: 30px;
     }
   }
@@ -887,7 +875,6 @@ footer {
     display: inline-block;
 
     #showPwSign2 {
-      background: url("../widget/Icon/text-blind.svg") no-repeat center/contain;
       appearance: none; /* 기본 스타일 제거 */
       display: flex;
       justify-content: flex-end;
@@ -903,7 +890,6 @@ footer {
     }
 
     #deletPwSign2 {
-      background: url("../widget/Icon/text-delet.svg") no-repeat center/contain;
       appearance: none; /* 기본 스타일 제거 */
       display: flex;
       justify-content: flex-end;
@@ -914,7 +900,7 @@ footer {
       cursor: pointer;
       border: none;
       position: absolute;
-      right: 68px;
+      right: 92px;
       top: 30px;
     }
   }
@@ -930,7 +916,6 @@ footer {
       width: 36px;
       height: 36px;
       gap: 12px;
-      background: url("../widget/Icon/text-delet.svg") no-repeat center/contain;
       cursor: pointer;
       border: none;
 
@@ -969,16 +954,9 @@ footer {
     appearance: none; /* 기본 스타일 제거 */
     width: 26px;
     height: 26px;
-    background: url("../widget/Icon/circle-unchecked.svg") no-repeat
-      center/contain;
     cursor: pointer;
     border: none;
     margin: 0;
-  }
-
-  .circle_checkboxSign:checked {
-    background: url("../widget/Icon/circle-checked.svg") no-repeat
-      center/contain;
   }
 
   .checkboxSign-label2 {
@@ -992,14 +970,9 @@ footer {
     appearance: none; /* 기본 스타일 제거 */
     width: 26px;
     height: 26px;
-    background: url("../widget/Icon/unchecked.svg") no-repeat center/contain;
     cursor: pointer;
     border: none;
     margin: 0;
-  }
-
-  .checkboxSign:checked {
-    background: url("../widget/Icon/checked.svg") no-repeat center/contain;
   }
 
   .receiveSign {

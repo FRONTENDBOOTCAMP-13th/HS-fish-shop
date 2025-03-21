@@ -69,10 +69,12 @@
 
 /* sub-category-list */
 .sub-category-list {
+  padding: 20px;
   display: flex;
   overflow-x: scroll;
   white-space: nowrap;
-  background-color: #121212;
+  gap: 20px;
+  width: 100%;
 
   .sub-category-button {
     display: block;
@@ -97,7 +99,16 @@
     transition: all 0.4s ease-in-out;
   }
 }
-
+.sub-category-list {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  a {
+    text-decoration: none;
+  }
+}
+.sub-category-list::-webkit-scrollbar {
+  display: none;
+}
 /* drama-card-list */
 .category-card-list {
   display: flex;
@@ -105,10 +116,16 @@
   overflow-x: scroll;
   white-space: nowrap;
   width: 100%;
-  padding: 10px;
+  padding: 20px;
   border: 1px solid #000;
 }
-
+.category-card-list {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.category-card-list::-webkit-scrollbar {
+  display: none;
+}
 .category-ranking-list {
   li {
     background-color: #000;
