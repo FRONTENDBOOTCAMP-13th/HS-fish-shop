@@ -18,12 +18,24 @@
 
 ### 📜 개발 페이지 구성
 
-![Main](https://img.shields.io/badge/Main-red?style=for-the-badge)
-![Landing](https://img.shields.io/badge/Landing-red?style=for-the-badge)<br>
-![Login](https://img.shields.io/badge/Login-blue?style=for-the-badge)
-![Signup](https://img.shields.io/badge/Signup-blue)
-![findId](https://img.shields.io/badge/findId-blue)
-![findPw](https://img.shields.io/badge/findPw-blue)
+- 반응형페이지<br>
+  ![Main](https://img.shields.io/badge/Main-red?style=for-the-badge)
+  ![Landing](https://img.shields.io/badge/Landing-red?style=for-the-badge)<br>
+  ![Login](https://img.shields.io/badge/Login-blue?style=for-the-badge)
+  ![Signup](https://img.shields.io/badge/Signup-blue?style=for-the-badge)
+  ![findId](https://img.shields.io/badge/findId-blue?style=for-the-badge)
+  ![findPw](https://img.shields.io/badge/findPw-blue?style=for-the-badge)
+  ![Profile](https://img.shields.io/badge/Profile-blue?style=for-the-badge)<br>
+  ![Drama](https://img.shields.io/badge/Drama-purple?style=for-the-badge)
+  ![Movie](https://img.shields.io/badge/Movie-purple?style=for-the-badge)<br>
+  <br>
+- 모바일에만 구현되는 페이지<br>
+  ![History-mobile](https://img.shields.io/badge/History-orange?style=for-the-badge)
+  ![Search-mobile](https://img.shields.io/badge/Search-orange?style=for-the-badge)<br>
+  <br>
+- 글로벌 컴포넌트<br>
+  ![GNB](https://img.shields.io/badge/GNB-green?style=for-the-badge)
+  ![Footer](https://img.shields.io/badge/Footer-green?style=for-the-badge)
 
 ## 🕰️ 개발기간
 
@@ -42,27 +54,46 @@
 
 ## 🧑‍🤝‍🧑 멤버구성
 
-| 조 이름 | 역할         |            | 개발페이지  | 개발컴포넌트 |
-| ------- | ------------ | ---------- | ----------- | ------------ |
-| 조현수  | 스크럼마스터 | 프론트엔드 | main        | footer/card  |
-| 김경민  | 팀원         | 프론트엔드 | main        | footer       |
-| 송아현  | 팀원         | 프론트엔드 | my-history/ | footer       |
-| 송채은  | 팀원         | 프론트엔드 | main        | footer       |
+| 조 이름 | 역할         |            | 개발페이지                                                                                                                                                                                                    | 글로벌 컴포넌트                                      |
+| ------- | ------------ | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------- |
+| 조현수  | 스크럼마스터 | 프론트엔드 | ![Main](https://img.shields.io/badge/Main-red)![Drama](https://img.shields.io/badge/Drama-purple) ![Movie](https://img.shields.io/badge/Movie-purple)                                                         | ![Footer](https://img.shields.io/badge/Footer-green) |
+| 김경민  | 팀원         | 프론트엔드 | ![Login](https://img.shields.io/badge/Login-blue) ![Signup](https://img.shields.io/badge/Signup-blue) ![findId](https://img.shields.io/badge/findId-blue) ![findPw](https://img.shields.io/badge/findPw-blue) |                                                      |
+| 송아현  | 팀원         | 프론트엔드 | ![Landing](https://img.shields.io/badge/Landing-red) ![Profile](https://img.shields.io/badge/Profile-blue)                                                                                                    |                                                      |
+| 송채은  | 팀원         | 프론트엔드 | ![History-mobile](https://img.shields.io/badge/History-orange) ![Search-mobile](https://img.shields.io/badge/Search-orange)                                                                                   | ![GNB](https://img.shields.io/badge/GNB-green?)      |
 
 ## 🚩 프로젝트개발
 
 ### 개발환경
 
-#### 사용언어
+![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
+![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
+![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
+![NPM](https://img.shields.io/badge/NPM-%23CB3837.svg?style=for-the-badge&logo=npm&logoColor=white)
+![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
 
-### 💾 [저장소](https://github.com/FRONTENDBOOTCAMP-13th/HS-fish-shop.git)
+### 사용언어
+
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+
+### 배포 및 클라우딩
+
+![Github Pages](https://img.shields.io/badge/github%20-121013?style=for-the-badge&logo=github&logoColor=white)
+![Netlify](https://img.shields.io/badge/netlify-%23000000.svg?style=for-the-badge&logo=netlify&logoColor=#00C7B7)
+
+### 파일경로
+
+### 개발 시작하기
 
 ```
 git clone https://github.com/FRONTENDBOOTCAMP-13th/HS-fish-shop.git
+npm i
 ```
 
-##
+## 🐸 커밋 컨벤션
 
-멋쟁이 사자처럼 프론트엔드 부트캠프 13기💕
+## 🐟 코딩 컨벤션
 
-UI 프로젝트 15조 현수네 생선가게 조원분들 화이팅!!!
+## 🎯데일리 스크럼회의
+
+###
