@@ -21,7 +21,9 @@ export default defineConfig({
         detailcomponents: "src/components/detail-page/detail-components.html",
 
         // 아래부터 페이지입니다
-        myhistory: "src/pages/my-history.html",
+        myHistory: "src/pages/my-history/my-history.html",
+        programDetail: "src/pages/program-detail/program-detail.html",
+        mobileSearch: "src/pages/mobile-search/mobile-search.html",
       },
     },
   },
