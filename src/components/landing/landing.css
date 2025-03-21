@@ -264,11 +264,11 @@
   animation-play-state: paused;
 }
 
-.marquee-1 .marquee-content {
+.marquee-top .marquee-content {
   animation: marquee 30s linear infinite;
 }
 
-.marquee-2 .marquee-content {
+.marquee-bottom .marquee-content {
   animation: marquee 20s linear infinite;
 }
 

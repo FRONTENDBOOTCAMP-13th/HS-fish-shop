@@ -6,9 +6,6 @@ export default defineConfig({
       input: {
         index: "index.html", // 기본 index.html
         landing: "src/components/landing/landing.html",
-        profile: "src/components/profile/profile.html",
-        profile-edit: "src/components/profile-edit/profile-edit.html",
-        profile-edit-sub: "src/components/profile-edit-sub/profile-edit-sub.html",
       },
     },
   },
