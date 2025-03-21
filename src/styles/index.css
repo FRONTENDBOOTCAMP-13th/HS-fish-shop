@@ -34,6 +34,29 @@
   border-top-color: #cc1030;
 }
 
+/* Wobble Animation */
+@keyframes wobble {
+  0%,
+  100% {
+    transform: translateX(0%) rotate(0deg);
+  }
+  15% {
+    transform: translateX(-6px) rotate(-5deg);
+  }
+  30% {
+    transform: translateX(4px) rotate(3deg);
+  }
+  45% {
+    transform: translateX(-4px) rotate(-3deg);
+  }
+  60% {
+    transform: translateX(2px) rotate(2deg);
+  }
+  75% {
+    transform: translateX(-2px) rotate(-1deg);
+  }
+}
+
 .index_nav a {
   text-decoration: none;
   color: #898989;
@@ -48,6 +71,8 @@
 .index_nav a:hover {
   background-color: #ff153c;
   color: white;
+  animation: wobble 1.3s infinite ease-in-out;
+  animation-play-state: running;
 }
 
 /* 메인 컨텐츠 */
@@ -85,8 +110,32 @@
   margin: 10px;
 }
 
+@keyframes wobbleY {
+  0%,
+  100% {
+    transform: translateY(0%) rotate(0deg);
+  }
+  15% {
+    transform: translateY(-6px) rotate(-5deg);
+  }
+  30% {
+    transform: translateY(4px) rotate(3deg);
+  }
+  45% {
+    transform: translateY(-4px) rotate(-3deg);
+  }
+  60% {
+    transform: translateY(2px) rotate(2deg);
+  }
+  75% {
+    transform: translateY(-2px) rotate(-1deg);
+  }
+}
+
 .index_nav_icon:hover {
   background-color: #cc1030;
+  animation: wobbleY 1.3s infinite ease-in-out;
+  animation-play-state: running;
 }
 /* nav 메뉴 기본적으로 숨기기 */
 #index_navMenu {
