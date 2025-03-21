@@ -22,11 +22,22 @@ export default defineConfig({
         profileedit: "src/components/profile-edit/profile-edit.html",
         profileeditsub: "src/components/profile-edit-sub/profile-edit-sub.html",
         landing: "src/components/landing/landing.html",
-
         // 아래부터 페이지입니다
         myHistory: "src/pages/my-history/my-history.html",
         programDetail: "src/pages/program-detail/program-detail.html",
         mobileSearch: "src/pages/mobile-search/mobile-search.html",
+        movie_page: "src/pages/movie-page/movie-page.html",
+        drama_page: "src/pages/drama-page/drama-page.html",
+        main_page: "src/pages/main-page/main-page.html",
+        profile: "src/pages/profile-page/profile-page.html",
+        profileedit: "src/pages/profile-edit-page/profile-edit-page.html",
+        profileeditsub:
+          "src/pages/profile-edit-sub-page/profile-edit-sub-page.html",
+        landing: "src/pages/landing-page/landing-page.html",
+        login: "src/pages/login-page/login-page.html",
+        findPw: "src/pages/findPw-page/findPw-page.html",
+        findId: "src/pages/findId-page/findId-page.html",
+        singUp: "src/pages/signup-page/signup-page.html",
       },
     },
   },

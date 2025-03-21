@@ -14,6 +14,12 @@
   margin-top: 6.875rem;
 }
 
+.profile-layout {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 @media (min-width: 48rem) {
   .profile-selection {
     margin-top: 8.125rem;
