@@ -18,13 +18,15 @@ export default defineConfig({
         gnbschpc: "src/components/gnb-sch-pc/gnb-sch-pc.html",
         historypage: "src/components/history-page/history-page.html",
         detailcomponents: "src/components/detail-page/detail-components.html",
+        profile: "src/components/profile/profile.html",
+        profileedit: "src/components/profile-edit/profile-edit.html",
+        profileeditsub: "src/components/profile-edit-sub/profile-edit-sub.html",
         landing: "src/components/landing/landing.html",
-        
+
         // 아래부터 페이지입니다
         myHistory: "src/pages/my-history/my-history.html",
         programDetail: "src/pages/program-detail/program-detail.html",
         mobileSearch: "src/pages/mobile-search/mobile-search.html",
->>>>>>> develop
       },
     },
   },
