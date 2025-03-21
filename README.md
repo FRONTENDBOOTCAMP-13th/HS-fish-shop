@@ -2,20 +2,16 @@
 
 # UI Project(CSS) - Tving Clone Project
 
-TEAM / 🎣현수네 생선가게
+## 🎣 현수네 생선가게 팀
 
-## 🖥️ 프로젝트소개
+![poister](/public/team-img.png)<br>
+
+## ![poster](/public/logo.svg) Clone 프로젝트
 
 - HTML/CSS 학습을 배경으로 티빙 페이지를 클론합니다.
 - 원본페이지 / [티빙](https://www.tving.com/)
 
 ### 개발 페이지 구성
-
-  <div style="padding-inline: 12px; margin-right:2px; padding-block: 4px; background-color: #ffffff; box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px; color:black; border-radius:2px; display:inline-block;">Laning</div>
-  <div style="padding-inline: 12px; margin-right:2px; padding-block: 4px; background-color: #ffffff; box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px; color:black; border-radius:2px; display:inline-block;">Main</div>
-  <div style="padding-inline: 12px; margin-right:2px; padding-block: 4px; background-color: #ffffff; box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px; color:black; border-radius:2px; display:inline-block;">Signup</div>
-  <div style="padding-inline: 12px; margin-right:2px; padding-block: 4px; background-color: #ffffff; box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px; color:black; border-radius:2px; display:inline-block;">Login</div>
-  <div style="padding-inline: 12px; margin-right:2px; padding-block: 4px; background-color: #ffffff; box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px; color:black; border-radius:2px; display:inline-block;">laning</div>
 
 ## 🕰️ 개발기간
 
@@ -41,7 +37,7 @@ TEAM / 🎣현수네 생선가게
 | 송아현  | 팀원         | 프론트엔드 | my-history/ | footer       |
 | 송채은  | 팀원         | 프론트엔드 | main        | footer       |
 
-## 🚩 프로젝트개요
+## 🚩 프로젝트개발
 
 ### 개발환경
 
