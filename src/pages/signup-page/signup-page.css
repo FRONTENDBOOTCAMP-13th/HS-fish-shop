@@ -333,7 +333,7 @@ body {
   appearance: none; /* 기본 스타일 제거 */
   width: 16px;
   height: 16px;
-  background: url("../widget/Icon/circle-unchecked.svg") no-repeat
+  background: url("../../components/widget/Icon/circle-unchecked.svg") no-repeat
     center/contain;
   cursor: pointer;
   border: none;
@@ -341,7 +341,8 @@ body {
 }
 
 .circle_checkboxSign:checked {
-  background: url("../widget/Icon/circle-checked.svg") no-repeat center/contain;
+  background: url("../../components/widget/Icon/circle-checked.svg") no-repeat
+    center/contain;
 }
 
 .checkboxSign-label2 {
@@ -361,14 +362,16 @@ body {
   appearance: none; /* 기본 스타일 제거 */
   width: 16px;
   height: 16px;
-  background: url("../widget/Icon/unchecked.svg") no-repeat center/contain;
+  background: url("../../components/widget/Icon/unchecked.svg") no-repeat
+    center/contain;
   cursor: pointer;
   border: none;
   margin: 0;
 }
 
 .checkboxSign:checked {
-  background: url("../widget/Icon/checked.svg") no-repeat center/contain;
+  background: url("../../components/widget/Icon/checked.svg") no-repeat
+    center/contain;
 }
 
 .receiveSign {

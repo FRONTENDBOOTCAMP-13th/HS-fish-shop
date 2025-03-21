@@ -6,6 +6,7 @@
   color: white;
   display: grid;
   grid-template-rows: 1fr auto;
+  /* grid-template-rows를 1fr auto로 설정 -> 네비가 항상 아래에 위치 */
   height: 100vh;
 }
 
@@ -15,6 +16,7 @@
 
   margin: 12px;
   align-self: end;
+  /* align-self: end 추가 -> grid 내부 하단정렬 */
   width: 100%;
   margin: auto;
 }
@@ -27,6 +29,8 @@
   margin: 0;
   list-style: none;
   text-align: center;
+  border-top: 3px solid;
+  border-top-color: #cc1030;
 }
 
 .index_nav a {
@@ -41,26 +45,34 @@
 }
 
 .index_nav a:hover {
-  background-color: #e50914;
+  background-color: #ff153c;
   color: white;
 }
 
 /* 메인 컨텐츠 */
-.index_main {
+.index_header {
   display: grid;
   place-items: center;
-
+  gap: 36px;
   text-align: center;
-  padding: 20px;
+  padding-top: 20px;
+  margin: 40px;
+}
+/* 하단 타잉 페이지 바로보기 */
+.index_nav_icon {
+  text-decoration: none;
+  color: white;
+  background-color: #ff153c;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  transition: background 0.3s;
+  width: 100px;
+  margin: 10px;
+}
 
-  a {
-    text-decoration: none;
-    color: #a6a6a6;
-  }
-
-  a:hover {
-    color: #e50914;
-  }
+.index_nav_icon:hover {
+  background-color: #cc1030;
 }
 /* nav 메뉴 기본적으로 숨기기 */
 #index_navMenu {

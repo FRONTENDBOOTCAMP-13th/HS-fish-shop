@@ -197,13 +197,15 @@ body {
   }
 
   #showPassword {
-    background: url("../widget/Icon/text-blind.svg") no-repeat center/contain;
+    background: url("../../components/widget/Icon/text-blind.svg") no-repeat
+      center/contain;
     cursor: pointer;
     border: none;
   }
 
   #deletPassword {
-    background: url("../widget/Icon/text-delet.svg") no-repeat center/contain;
+    background: url("../../components/widget/Icon/text-delet.svg") no-repeat
+      center/contain;
     cursor: pointer;
     border: none;
 
@@ -224,7 +226,7 @@ body {
   appearance: none; /* 기본 스타일 제거 */
   width: 16px;
   height: 16px;
-  background: url("../widget/Icon/circle-unchecked.svg") no-repeat
+  background: url("../../components/widget/Icon/circle-unchecked.svg") no-repeat
     center/contain;
   cursor: pointer;
   border: none;
@@ -232,7 +234,8 @@ body {
 }
 
 .circle_checkbox:checked {
-  background: url("../widget/Icon/circle-checked.svg") no-repeat center/contain;
+  background: url("../../components/widget/Icon/circle-checked.svg") no-repeat
+    center/contain;
 }
 
 .login_button {
