@@ -7,10 +7,11 @@
   color: var(--white);
   font-size: var(--gnb-main-font-size);
   position: static;
+  position: fixed;
+  top: 0;
 
   @media screen and (min-width: 768px) {
     --gnb-main-font-size: 1.125rem;
-    position: fixed;
   }
   @media screen and (min-width: 1024px) {
     --gnb-main-font-size: 1.5rem;

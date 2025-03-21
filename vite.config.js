@@ -5,7 +5,6 @@ export default defineConfig({
     rollupOptions: {
       input: {
         index: "index.html", // 기본 index.html
-
         main_visual: "src/components/main-visual/main-visual.html",
         main_card: "src/components/main-card/main-card.html",
         footer: "src/components/footer/footer.html",
@@ -22,6 +21,12 @@ export default defineConfig({
         profile: "src/components/profile/profile.html",
         profileedit: "src/components/profile-edit/profile-edit.html",
         profileeditsub: "src/components/profile-edit-sub/profile-edit-sub.html",
+        landing: "src/components/landing/landing.html",
+
+        // 아래부터 페이지입니다
+        myHistory: "src/pages/my-history/my-history.html",
+        programDetail: "src/pages/program-detail/program-detail.html",
+        mobileSearch: "src/pages/mobile-search/mobile-search.html",
       },
     },
   },
