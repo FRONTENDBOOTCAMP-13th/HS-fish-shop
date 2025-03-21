@@ -1,6 +1,20 @@
 b###### Likelion Front-end Bootcamp
 
-# UI Project(CSS) - Tving Clone Project
+# UI Project(CSS) - [Tving Clone Project]()
+
+- 문서목적 : 팀 소개 및 프로젝트 개요
+- 문서작성자 : 송채은
+
+## 목차
+
+- [1.TEAM 소개 - 🎣현수네 생선가게](#team---현수네-생선가게)
+- [2.프로젝트소개]
+- [3.개발일정]
+- [4.멤버구성]
+- [5.프로젝트개발]
+- [6.코딩 컨벤션]
+- [7.커밋 컨벤션]
+- [8.데일리 스크럼회의]
 
 ## TEAM - 🎣현수네 생선가게
 
@@ -10,6 +24,8 @@ b###### Likelion Front-end Bootcamp
 하루하루 거친 파도를 헤쳐 생선가게를 운영하는 어부의 심정으로 학습하는 현수네 생선가게팀 입니다.<br>
 넓고 거친 바다위에서 믿을 수 있는 것은 우리 팀원들 뿐!<br>
 서로 돕고 협력하는 팀이 되어 꿈을 향해 나아가자는 포부를 갖고 있는 팀 입니다.
+
+### [팀 노션]()
 
 ## 🖥️ 프로젝트소개
 
@@ -37,7 +53,7 @@ b###### Likelion Front-end Bootcamp
   ![GNB](https://img.shields.io/badge/GNB-green?style=for-the-badge)
   ![Footer](https://img.shields.io/badge/Footer-green?style=for-the-badge)
 
-## 🕰️ 개발기간
+## 🕰️ 개발일정
 
 - 2025.03.13 목요일 ~ 2025.13.25 화요일 까지 (약 13일)
 
@@ -56,7 +72,7 @@ b###### Likelion Front-end Bootcamp
 
 | 조 이름 | 역할         |            | 개발페이지                                                                                                                                                                                                    | 글로벌 컴포넌트                                      |
 | ------- | ------------ | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------- |
-| 조현수  | 스크럼마스터 | 프론트엔드 | ![Main](https://img.shields.io/badge/Main-red)![Drama](https://img.shields.io/badge/Drama-purple) ![Movie](https://img.shields.io/badge/Movie-purple)                                                         | ![Footer](https://img.shields.io/badge/Footer-green) |
+| 조현수  | 스크럼마스터 | 프론트엔드 | ![Main](https://img.shields.io/badge/Main-red) ![Drama](https://img.shields.io/badge/Drama-purple) ![Movie](https://img.shields.io/badge/Movie-purple)                                                        | ![Footer](https://img.shields.io/badge/Footer-green) |
 | 김경민  | 팀원         | 프론트엔드 | ![Login](https://img.shields.io/badge/Login-blue) ![Signup](https://img.shields.io/badge/Signup-blue) ![findId](https://img.shields.io/badge/findId-blue) ![findPw](https://img.shields.io/badge/findPw-blue) |                                                      |
 | 송아현  | 팀원         | 프론트엔드 | ![Landing](https://img.shields.io/badge/Landing-red) ![Profile](https://img.shields.io/badge/Profile-blue)                                                                                                    |                                                      |
 | 송채은  | 팀원         | 프론트엔드 | ![History-mobile](https://img.shields.io/badge/History-orange) ![Search-mobile](https://img.shields.io/badge/Search-orange)                                                                                   | ![GNB](https://img.shields.io/badge/GNB-green?)      |
@@ -80,6 +96,12 @@ b###### Likelion Front-end Bootcamp
 
 ![Github Pages](https://img.shields.io/badge/github%20-121013?style=for-the-badge&logo=github&logoColor=white)
 ![Netlify](https://img.shields.io/badge/netlify-%23000000.svg?style=for-the-badge&logo=netlify&logoColor=#00C7B7)
+
+### 소통 및 문서화
+
+![Notion](https://img.shields.io/badge/Notion-%23000000.svg?style=for-the-badge&logo=notion&logoColor=white)
+![Discord](https://img.shields.io/badge/Discord-%235865F2.svg?style=for-the-badge&logo=discord&logoColor=white)
+![Markdown](https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&logo=markdown&logoColor=white)
 
 ### 파일경로
 
@@ -122,6 +144,8 @@ npm i
 ### 2.네이밍 규칙
 
 - 모든 네이킹은 **케밥 케이스(kebab-case)**를 사용
+- 개인 작업 html,css 의 클래스명은 모두 개인 작업 페이지의 단어를 **첫단어**로 사용
+  - 예시)gnb-btn / main-card
 
 ### 3.변수사용 규칙
 
@@ -140,6 +164,15 @@ npm i
 - 작업 브랜치는 작업형태에 따라 **분류**하여 네이밍
   - 얘시) feat/main-page
 
+### 6.코드리뷰
+
+- 모든 작업은 **Pull Request(PR)**를 통해 병합
+- PR 작성 시 규격에 맞춰 제출 후, 팀원에게 리뷰를 요청
+
+### 7.예외 처리
+
+- 위 규칙에 어긋날 경우, 팀원과 소통후 예외처리 가능
+
 ## 🐸 커밋 컨벤션
 
 `🎉 init:` 초기설정</br>
@@ -155,4 +188,7 @@ npm i
 
 ## 🎯데일리 스크럼회의
 
-###
+- 스크럼 회의는 평일 아침 9:30분에 시작합니다.
+- 진행상황 과 하루일정 및 프로젝트 진행사항을 공유합니다.
+
+### 2025.03.13
