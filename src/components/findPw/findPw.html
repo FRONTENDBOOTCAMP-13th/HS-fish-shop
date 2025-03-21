@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/favicon.jpg" />
+    <link
+      rel="preload"
+      as="font"
+      href="/public/font/woff2/PretendardVariable.woff2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      as="style"
+      href="/public/font/pretendardvariable.css"
+    />
+    <link rel="stylesheet" href="/src/styles/reset.css" />
+    <link rel="stylesheet" href="/src/components/findPw/findPw.css" />
+    <script type="module" src="./../../main.js"></script>
+    <title>Taing Find Password</title>
+  </head>
+  <body>
+    <main class="findPw-main">
+      <div class="findPw-container">
+        <h2 class="findPw-header">비밀번호 찾기</h2>
+        <form class="findPw-form" action="/find-Pw" method="POST">
+          <label class="find-pw-title" for="text"
+            >아이디 확인 후 등록된 이메일 주소로 비밀번호 재설정을 위한 인증
+            메일이 발송됩니다. 이메일을 확인하여 12시간 이내에 비밀번호 재설정을
+            완료해주세요.</label
+          >
+          <div class="findPw-container">
+            <input
+              type="text"
+              id="findPw_Input"
+              class="input_id"
+              name="username"
+              placeholder="아이디"
+              required
+            />
+            <div>
+              <input type="checkbox" id="delet_findPw" />
+            </div>
+          </div>
+          <script>
+            document
+              .getElementById("delet_findPw")
+              .addEventListener("change", function () {
+                const passwordInput = document.getElementById("findPw_Input");
+                if (this.checked) {
+                  passwordInput.value = "";
+                  this.checked = false; // Uncheck the checkbox after clearing the password
+                }
+              });
+          </script>
+          <button class="id_button" type="submit">확인</button>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

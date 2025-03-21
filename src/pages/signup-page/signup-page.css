@@ -1,0 +1,1044 @@
+:root {
+  --gnb-login-h: 2.5rem;
+  height: var(--gnb-login-h);
+
+  @media screen and (min-width: 768px) {
+    --gnb-login-h: 3.75rem;
+  }
+  @media screen and (min-width: 1024px) {
+    --gnb-login-h: 78px;
+  }
+}
+
+body {
+  background-color: black;
+}
+
+/* gnb 공통 / 로고 사이즈 좌우 패딩 / 상단고정*/
+.gnb {
+  --gnb-logo-w: 4rem;
+  --gnb-login-px: 1rem;
+
+  @media screen and (min-width: 768px) {
+    --gnb-logo-w: 6.5rem;
+    --gnb-login-px: 2.25rem;
+  }
+
+  @media screen and (min-width: 1024px) {
+    --gnb-logo-w: 8.75rem;
+    --gnb-login-px: 3.75rem;
+  }
+
+  font-family: "Pretendard Variable", sans-serif;
+  a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+  }
+  ul,
+  li {
+    list-style: none;
+  }
+  img {
+    display: block;
+  }
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  padding-inline: var(--gnb-login-px);
+  z-index: 999;
+
+  /* 공통 반응형 최대 넓이*/
+  .gnb-max-wrapper {
+    max-width: 1920px;
+    height: 100%;
+    margin: 0 auto;
+  }
+
+  /* 공통 로고 사이즈 */
+  .gnb-logo {
+    width: var(--gnb-logo-w);
+    display: block;
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+/* 각 페이지 상단 메뉴 높이 / 정렬*/
+.gnb-login {
+  --gnb-login-h: 2.5rem;
+  height: var(--gnb-login-h);
+
+  @media screen and (min-width: 768px) {
+    --gnb-login-h: 3.75rem;
+  }
+  @media screen and (min-width: 1024px) {
+    --gnb-login-h: 78px;
+  }
+}
+
+/* wrapper에 플렉스 필요하면 추가 */
+.gnb-flex-row {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
+.signup-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: stretch;
+  width: 100%;
+  max-width: 767px;
+  padding: 28px 0 0 0;
+  margin-top: var(--gnb-login-h);
+  color: #6b6b6b;
+  font-size: 12px;
+}
+
+.signup-header {
+  color: var(--white, #fff);
+  /* Heading/Medium */
+  font-family: Pretendard;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%; /* 22.4px */
+  display: flex;
+  justify-content: center;
+  padding-bottom: 16px;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.signup-container {
+  width: 100%;
+  max-width: 288px;
+  background-color: var(--color-bg);
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(26, 26, 26, 0.6);
+  text-align: center;
+}
+
+.signup-title {
+  color: var(--gray-400, #898989);
+
+  /* Label/Small */
+  font-family: Pretendard;
+  font-size: 12.003px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 18.005px */
+}
+
+.input_sign_wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  margin-top: 25px;
+}
+
+/* input */
+.input_sign {
+  display: flex;
+  width: 288px;
+  height: 46px;
+  padding: 0px 20px 0px 16px;
+  align-items: center;
+  border: 1px solid;
+  border-color: #212121;
+  border-radius: 4px;
+  background: var(--brand-dark-bg-2, #212121);
+  color: white;
+}
+#passwordSign:focus {
+  border-color: #e1e1e1;
+  outline: none;
+}
+#passwordSign2:focus {
+  border-color: #e1e1e1;
+  outline: none;
+}
+#idSign:focus {
+  border-color: #e1e1e1;
+  outline: none;
+}
+#emailSign:focus {
+  border-color: #e1e1e1;
+  outline: none;
+}
+
+.idContainerSign {
+  position: relative;
+  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+
+  #deletIdSign {
+    appearance: none; /* 기본 스타일 제거 */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    gap: 12px;
+    background: url("../widget/Icon/text-delet.svg") no-repeat center/contain;
+    cursor: pointer;
+    border: none;
+
+    position: absolute;
+    right: 24px;
+    top: 13px;
+  }
+}
+.pwContainerSign {
+  position: relative;
+  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+
+  #showPwSign {
+    background: url("../widget/Icon/text-blind.svg") no-repeat center/contain;
+    appearance: none; /* 기본 스타일 제거 */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    gap: 12px;
+    cursor: pointer;
+    border: none;
+    position: absolute;
+    right: 24px;
+    top: 13px;
+  }
+
+  #deletPwSign {
+    background: url("../widget/Icon/text-delet.svg") no-repeat center/contain;
+    appearance: none; /* 기본 스타일 제거 */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    gap: 12px;
+    cursor: pointer;
+    border: none;
+    position: absolute;
+    right: 56px;
+    top: 13px;
+  }
+}
+.pwContainerSign2 {
+  position: relative;
+  display: inline-block;
+
+  #showPwSign2 {
+    background: url("../widget/Icon/text-blind.svg") no-repeat center/contain;
+    appearance: none; /* 기본 스타일 제거 */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    gap: 12px;
+    cursor: pointer;
+    border: none;
+    position: absolute;
+    right: 24px;
+    top: 13px;
+  }
+
+  #deletPwSign2 {
+    background: url("../widget/Icon/text-delet.svg") no-repeat center/contain;
+    appearance: none; /* 기본 스타일 제거 */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    gap: 12px;
+    cursor: pointer;
+    border: none;
+    position: absolute;
+    right: 56px;
+    top: 13px;
+  }
+}
+.emContainerSign {
+  position: relative;
+  display: inline-block;
+
+  #deletEmailSign {
+    appearance: none; /* 기본 스타일 제거 */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    gap: 12px;
+    background: url("../widget/Icon/text-delet.svg") no-repeat center/contain;
+    cursor: pointer;
+    border: none;
+
+    position: absolute;
+    right: 24px;
+    top: 13px;
+  }
+}
+
+.check_signup {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* 왼쪽 정렬 */
+  gap: 8px; /* 각 항목 간 간격 */
+  color: var(--gray-500, #6b6b6b);
+
+  /* Label/Small */
+  font-family: Pretendard;
+  font-size: 12.003px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 18.005px */
+}
+
+.checkboxSign-label {
+  display: flex;
+  justify-content: left; /* 좌우 정렬 */
+  align-items: center; /* 수직 중앙 정렬 */
+  padding: 8px 0 8px 0;
+  margin-top: 8px;
+  gap: 4px;
+  color: var(--gray-300, #a6a6a6);
+}
+
+.circle_checkboxSign {
+  appearance: none; /* 기본 스타일 제거 */
+  width: 16px;
+  height: 16px;
+  background: url("../widget/Icon/circle-unchecked.svg") no-repeat
+    center/contain;
+  cursor: pointer;
+  border: none;
+  margin: 0;
+}
+
+.circle_checkboxSign:checked {
+  background: url("../widget/Icon/circle-checked.svg") no-repeat center/contain;
+}
+
+.checkboxSign-label2 {
+  display: flex;
+  justify-content: left; /* 좌우 정렬 */
+  align-items: center; /* 수직 중앙 정렬 */
+  gap: 4px;
+}
+
+.checkboxSign-label:hover,
+.checkboxSign-label2:hover,
+.checkboxSign-label3:hover {
+  color: white;
+}
+
+.checkboxSign {
+  appearance: none; /* 기본 스타일 제거 */
+  width: 16px;
+  height: 16px;
+  background: url("../widget/Icon/unchecked.svg") no-repeat center/contain;
+  cursor: pointer;
+  border: none;
+  margin: 0;
+}
+
+.checkboxSign:checked {
+  background: url("../widget/Icon/checked.svg") no-repeat center/contain;
+}
+
+.receiveSign {
+  padding-left: 16px;
+}
+
+.checkboxSign-label3 {
+  display: flex;
+  justify-content: left; /* 좌우 정렬 */
+  align-items: center; /* 수직 중앙 정렬 */
+  gap: 4px;
+  padding-top: 8px;
+}
+
+.sign_button {
+  width: 100%;
+  max-width: 732 px;
+  height: 42px;
+  color: #898989;
+  background-color: #404040;
+  border: none;
+  border-radius: 4px;
+  margin-top: 16px;
+  cursor: pointer;
+  align-self: center;
+  font-family: Pretendard;
+  font-size: 12.003px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 18.005px */
+}
+
+.sign_button:hover {
+  background-color: white;
+}
+.sign_button:active {
+  background-color: #e1e1e1;
+}
+
+.passwordSign2Error {
+  text-align: start;
+  margin-top: 4px;
+  color: #ff153c;
+}
+
+footer {
+  padding: 3.25rem 1rem !important;
+
+  @media (min-width: 764px) {
+    padding: 4.375rem 2.5rem !important;
+  }
+
+  @media (min-width: 1024px) {
+    padding: 8.75rem 2.5rem !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .signup-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+    width: 100%;
+    max-width: 1023px;
+    padding-top: 44px;
+    color: #6b6b6b;
+    font-size: 12px;
+  }
+
+  .signup-header {
+    color: var(--white, #fff);
+    /* Heading/Medium */
+    font-family: Pretendard;
+    font-size: 28.43px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; /* 22.4px */
+    display: flex;
+    justify-content: center;
+    padding-bottom: 8px;
+  }
+
+  .signup-container {
+    width: 100%;
+    max-width: 416px;
+    background-color: var(--color-bg);
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(26, 26, 26, 0.6);
+    text-align: center;
+  }
+
+  .signup-title {
+    color: var(--gray-400, #898989);
+
+    /* Label/Small */
+    font-family: Pretendard;
+    font-size: 12.003px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 18.005px */
+  }
+
+  .input_sign_wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+    margin-top: 25px;
+  }
+
+  /* input */
+  .input_sign {
+    display: flex;
+    width: 416px;
+    height: 54px;
+    padding: 0px 20px 0px 16px;
+    align-items: center;
+    border: 1px solid;
+    border-color: #212121;
+    border-radius: 4px;
+    background: var(--brand-dark-bg-2, #212121);
+    color: white;
+    font-size: 16px;
+  }
+  #passwordSign:focus {
+    border-color: #e1e1e1;
+    outline: none;
+  }
+  #passwordSign2:focus {
+    border-color: #e1e1e1;
+    outline: none;
+  }
+  #idSign:focus {
+    border-color: #e1e1e1;
+    outline: none;
+  }
+  #emailSign:focus {
+    border-color: #e1e1e1;
+    outline: none;
+  }
+
+  .idContainerSign {
+    position: relative;
+    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+
+    #deletIdSign {
+      appearance: none; /* 기본 스타일 제거 */
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      width: 20px;
+      height: 20px;
+      gap: 12px;
+      background: url("../widget/Icon/text-delet.svg") no-repeat center/contain;
+      cursor: pointer;
+      border: none;
+
+      position: absolute;
+      right: 24px;
+      top: 17px;
+    }
+  }
+  .pwContainerSign {
+    position: relative;
+    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+
+    #showPwSign {
+      background: url("../widget/Icon/text-blind.svg") no-repeat center/contain;
+      appearance: none; /* 기본 스타일 제거 */
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      width: 20px;
+      height: 20px;
+      gap: 12px;
+      cursor: pointer;
+      border: none;
+      position: absolute;
+      right: 24px;
+      top: 17px;
+    }
+
+    #deletPwSign {
+      background: url("../widget/Icon/text-delet.svg") no-repeat center/contain;
+      appearance: none; /* 기본 스타일 제거 */
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      width: 20px;
+      height: 20px;
+      gap: 12px;
+      cursor: pointer;
+      border: none;
+      position: absolute;
+      right: 56px;
+      top: 17px;
+    }
+  }
+  .pwContainerSign2 {
+    position: relative;
+    display: inline-block;
+
+    #showPwSign2 {
+      background: url("../widget/Icon/text-blind.svg") no-repeat center/contain;
+      appearance: none; /* 기본 스타일 제거 */
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      width: 20px;
+      height: 20px;
+      gap: 12px;
+      cursor: pointer;
+      border: none;
+      position: absolute;
+      right: 24px;
+      top: 17px;
+    }
+
+    #deletPwSign2 {
+      background: url("../widget/Icon/text-delet.svg") no-repeat center/contain;
+      appearance: none; /* 기본 스타일 제거 */
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      width: 20px;
+      height: 20px;
+      gap: 12px;
+      cursor: pointer;
+      border: none;
+      position: absolute;
+      right: 56px;
+      top: 17px;
+    }
+  }
+  .emContainerSign {
+    position: relative;
+    display: inline-block;
+
+    #deletEmailSign {
+      appearance: none; /* 기본 스타일 제거 */
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      width: 20px;
+      height: 20px;
+      gap: 12px;
+      background: url("../widget/Icon/text-delet.svg") no-repeat center/contain;
+      cursor: pointer;
+      border: none;
+
+      position: absolute;
+      right: 24px;
+      top: 17px;
+    }
+  }
+
+  .check_signup {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* 왼쪽 정렬 */
+    gap: 8px; /* 각 항목 간 간격 */
+  }
+
+  .checkboxSign-label {
+    display: flex;
+    justify-content: left; /* 좌우 정렬 */
+    align-items: center; /* 수직 중앙 정렬 */
+    padding: 8px 0 8px 0;
+    margin-top: 8px;
+    gap: 4px;
+    color: var(--gray-300, #a6a6a6);
+  }
+
+  .circle_checkboxSign {
+    appearance: none; /* 기본 스타일 제거 */
+    width: 16px;
+    height: 16px;
+    background: url("../widget/Icon/circle-unchecked.svg") no-repeat
+      center/contain;
+    cursor: pointer;
+    border: none;
+    margin: 0;
+  }
+
+  .circle_checkboxSign:checked {
+    background: url("../widget/Icon/circle-checked.svg") no-repeat
+      center/contain;
+  }
+
+  .checkboxSign-label2 {
+    display: flex;
+    justify-content: left; /* 좌우 정렬 */
+    align-items: center; /* 수직 중앙 정렬 */
+    gap: 12px;
+  }
+
+  .checkboxSign {
+    appearance: none; /* 기본 스타일 제거 */
+    width: 16px;
+    height: 16px;
+    background: url("../widget/Icon/unchecked.svg") no-repeat center/contain;
+    cursor: pointer;
+    border: none;
+    margin: 0;
+  }
+
+  .checkboxSign:checked {
+    background: url("../widget/Icon/checked.svg") no-repeat center/contain;
+  }
+
+  .receiveSign {
+    padding-left: 36px;
+  }
+
+  .checkboxSign-label3 {
+    display: flex;
+    justify-content: left; /* 좌우 정렬 */
+    align-items: center; /* 수직 중앙 정렬 */
+    gap: 12px;
+    padding-top: 8px;
+  }
+
+  .sign_button {
+    width: 100%;
+    max-width: 732 px;
+    height: 42px;
+    color: #898989;
+    background-color: #404040;
+    border: none;
+    border-radius: 4px;
+    margin-top: 21px;
+    cursor: pointer;
+    align-self: center;
+    color: var(--gray-400, #898989);
+
+    /* Label/Medium */
+    font-family: Pretendard;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 24px */
+  }
+
+  .sign_button:hover {
+    background-color: white;
+  }
+  .sign_button:active {
+    background-color: #e1e1e1;
+  }
+}
+@media (min-width: 1023px) and (max-width: 1920px) {
+  .signup-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+    width: 100%;
+    max-width: 1920px;
+    padding-top: 70px;
+    color: #6b6b6b;
+    font-size: 21.328px;
+  }
+
+  .signup-header {
+    color: #fff;
+
+    /* Heading/XXL */
+    font-family: Pretendard;
+    font-size: 37.897px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; /* 53.056px */
+    display: flex;
+    justify-content: center;
+    padding-bottom: 28px;
+  }
+
+  .signup-container {
+    width: 100%;
+    max-width: 732px;
+    background-color: var(--color-bg);
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(26, 26, 26, 0.6);
+    text-align: center;
+  }
+
+  .signup-title {
+    color: var(--gray-400, #898989);
+    text-align: center;
+
+    /* Label/XL */
+    font-family: Pretendard;
+    font-size: 28.43px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 42.645px */
+  }
+
+  .input_sign_wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 34px;
+    margin-top: 60px;
+  }
+
+  /* input */
+  .input_sign {
+    display: flex;
+    width: 732px;
+    height: 96px;
+    padding: 0px 30px 0px 24px;
+    align-items: center;
+    border: 1px solid;
+    border-color: #212121;
+    border-radius: 4px;
+    background: var(--brand-dark-bg-2, #212121);
+    color: white;
+    font-size: 28.43px;
+  }
+  #passwordSign:focus {
+    border-color: #e1e1e1;
+    outline: none;
+  }
+  #passwordSign2:focus {
+    border-color: #e1e1e1;
+    outline: none;
+  }
+  #idSign:focus {
+    border-color: #e1e1e1;
+    outline: none;
+  }
+  #emailSign:focus {
+    border-color: #e1e1e1;
+    outline: none;
+  }
+
+  .idContainerSign {
+    position: relative;
+    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+
+    #deletIdSign {
+      appearance: none; /* 기본 스타일 제거 */
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      width: 36px;
+      height: 36px;
+      gap: 12px;
+      background: url("../widget/Icon/text-delet.svg") no-repeat center/contain;
+      cursor: pointer;
+      border: none;
+
+      position: absolute;
+      right: 24px;
+      top: 30px;
+    }
+  }
+  .pwContainerSign {
+    position: relative;
+    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+
+    #showPwSign {
+      background: url("../widget/Icon/text-blind.svg") no-repeat center/contain;
+      appearance: none; /* 기본 스타일 제거 */
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      width: 36px;
+      height: 36px;
+      gap: 12px;
+      cursor: pointer;
+      border: none;
+      position: absolute;
+      right: 24px;
+      top: 30px;
+    }
+
+    #deletPwSign {
+      background: url("../widget/Icon/text-delet.svg") no-repeat center/contain;
+      appearance: none; /* 기본 스타일 제거 */
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      width: 36px;
+      height: 36px;
+      gap: 12px;
+      cursor: pointer;
+      border: none;
+      position: absolute;
+      right: 68px;
+      top: 30px;
+    }
+  }
+  .pwContainerSign2 {
+    position: relative;
+    display: inline-block;
+
+    #showPwSign2 {
+      background: url("../widget/Icon/text-blind.svg") no-repeat center/contain;
+      appearance: none; /* 기본 스타일 제거 */
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      width: 36px;
+      height: 36px;
+      gap: 12px;
+      cursor: pointer;
+      border: none;
+      position: absolute;
+      right: 24px;
+      top: 30px;
+    }
+
+    #deletPwSign2 {
+      background: url("../widget/Icon/text-delet.svg") no-repeat center/contain;
+      appearance: none; /* 기본 스타일 제거 */
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      width: 36px;
+      height: 36px;
+      gap: 12px;
+      cursor: pointer;
+      border: none;
+      position: absolute;
+      right: 68px;
+      top: 30px;
+    }
+  }
+  .emContainerSign {
+    position: relative;
+    display: inline-block;
+
+    #deletEmailSign {
+      appearance: none; /* 기본 스타일 제거 */
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      width: 36px;
+      height: 36px;
+      gap: 12px;
+      background: url("../widget/Icon/text-delet.svg") no-repeat center/contain;
+      cursor: pointer;
+      border: none;
+
+      position: absolute;
+      right: 24px;
+      top: 30px;
+    }
+  }
+
+  .check_signup {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* 왼쪽 정렬 */
+    gap: 8px; /* 각 항목 간 간격 */
+    color: var(--gray-500, #6b6b6b);
+
+    /* Label/Large */
+    font-family: Pretendard;
+    font-size: 21.328px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 31.992px */
+  }
+
+  .checkboxSign-label {
+    display: flex;
+    justify-content: left; /* 좌우 정렬 */
+    align-items: center; /* 수직 중앙 정렬 */
+    padding: 0 0 16px 0;
+    margin-top: 28px;
+    gap: 12px;
+    color: var(--gray-300, #a6a6a6);
+  }
+
+  .circle_checkboxSign {
+    appearance: none; /* 기본 스타일 제거 */
+    width: 26px;
+    height: 26px;
+    background: url("../widget/Icon/circle-unchecked.svg") no-repeat
+      center/contain;
+    cursor: pointer;
+    border: none;
+    margin: 0;
+  }
+
+  .circle_checkboxSign:checked {
+    background: url("../widget/Icon/circle-checked.svg") no-repeat
+      center/contain;
+  }
+
+  .checkboxSign-label2 {
+    display: flex;
+    justify-content: left; /* 좌우 정렬 */
+    align-items: center; /* 수직 중앙 정렬 */
+    gap: 12px;
+  }
+
+  .checkboxSign {
+    appearance: none; /* 기본 스타일 제거 */
+    width: 26px;
+    height: 26px;
+    background: url("../widget/Icon/unchecked.svg") no-repeat center/contain;
+    cursor: pointer;
+    border: none;
+    margin: 0;
+  }
+
+  .checkboxSign:checked {
+    background: url("../widget/Icon/checked.svg") no-repeat center/contain;
+  }
+
+  .receiveSign {
+    padding-left: 36px;
+  }
+
+  .checkboxSign-label3 {
+    display: flex;
+    justify-content: left; /* 좌우 정렬 */
+    align-items: center; /* 수직 중앙 정렬 */
+    gap: 12px;
+    padding-top: 8px;
+  }
+
+  .sign_button {
+    width: 100%;
+    max-width: 732 px;
+    height: 86px;
+    color: #898989;
+    background-color: #404040;
+    border: none;
+    border-radius: 4px;
+    margin-top: 21px;
+    cursor: pointer;
+    align-self: center;
+    color: var(--gray-400, #898989);
+
+    /* Label/XL */
+    font-family: Pretendard;
+    font-size: 28.43px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 42.645px */
+  }
+
+  .sign_button:hover {
+    background-color: white;
+  }
+  .sign_button:active {
+    background-color: #e1e1e1;
+  }
+}

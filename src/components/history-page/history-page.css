@@ -1,0 +1,164 @@
+.hst-nav {
+  width: 100%;
+  border-bottom: 1px solid var(--gray--500);
+  color: var(--gray--300);
+  gap: 1.5rem;
+  padding-inline: 0.625rem;
+  padding-top: 1rem;
+
+  .hst-nav-btn {
+    font-size: 1rem;
+    padding-block: 0.625rem;
+  }
+
+  .hst-nav-btn:has(input:checked) {
+    color: var(--white);
+    font-weight: 600;
+    border-bottom: 4px solid var(--white);
+  }
+}
+/* 버튼눌렀을때 시리즈없어요 옆으로 이동하게 하기 */
+/* 화면 */
+.hat-no-container {
+  width: 100%;
+  overflow: hidden;
+}
+/* 긴그림 */
+.hat-no-wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+  transition: all 0.3s ease-in-out;
+}
+/* 기능 */
+.hst-nav:has(#hst-nav-1:checked) + .hat-no-container {
+  .hat-no-wrapper {
+    transform: translate(0);
+  }
+}
+.hst-nav:has(#hst-nav-2:checked) + .hat-no-container {
+  .hat-no-wrapper {
+    transform: translate(-100vw);
+  }
+}
+.hst-nav:has(#hst-nav-3:checked) + .hat-no-container {
+  .hat-no-wrapper {
+    transform: translate(-200vw);
+  }
+}
+.hst-nav:has(#hst-nav-4:checked) + .hat-no-container {
+  .hat-no-wrapper {
+    transform: translate(-300vw);
+  }
+}
+/* 그림낱개 */
+.hst-no-series {
+  --hst-px: 1rem; /* 없어요 전체 가로 패딩 */
+  --hst-pt: 2.25rem; /* 없어요 전체 탑 패딩 */
+  --hst-title-size: 1.25rem; /* 없어요 제목 사이즈 */
+  --hst-p-size: 1rem; /* 없어요 본문 / 버튼텍스트 사이즈 */
+  --hst-look-px: 2.5rem; /* 버튼 세로 패딩 */
+  --hst-look-py: 1rem; /* 버튼 가로패딩 */
+  flex-shrink: 0;
+  width: 100vw;
+  color: var(--gray--200);
+  line-height: 1.25;
+  padding-inline: var(--hst-px);
+  padding-top: var(--hst-pt);
+  .hst-no-title {
+    font-size: var(--hst-title-size);
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+  }
+  .hst-no-p {
+    font-size: var(--hst-p-size);
+  }
+
+  .hst-look-go {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    border: 1px solid currentColor;
+    font-size: var(--hst-p-size);
+    padding-inline: var(--hst-look-px);
+    padding-block: var(--hst-look-py);
+    border-radius: 0.25rem;
+    margin-top: 64px;
+  }
+}
+
+/* 전체 버튼(열기버튼) */
+.hst-open-btn {
+  color: var(--black);
+  background-color: var(--white);
+  position: fixed;
+  bottom: 5rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50px;
+  /* 리셋 */
+  img {
+    display: block;
+  }
+
+  .hst-open-btn-label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 0.125rem;
+    font-weight: 600;
+    padding-inline: 1rem;
+    padding-block: 0.5rem;
+    line-height: 1;
+  }
+}
+.hst-list-modal {
+  /* 초기화 */
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  ul,
+  li {
+    list-style: none;
+  }
+
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--black);
+  color: var(--gray--500);
+  font-size: 1.25rem;
+
+  ul > li {
+    text-align: center;
+    margin: 0.75rem;
+    padding: 0.25rem;
+  }
+  .hst-list-active {
+    color: white;
+    font-weight: bold;
+  }
+
+  /* 버튼 여닫기 기능 */
+  &:has(.hst-list-close-input:checked) {
+    display: none;
+  }
+  .hst-list-close-label {
+    position: fixed;
+    bottom: 5rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 4rem;
+    aspect-ratio: 1/1;
+    img {
+      width: 100%;
+    }
+  }
+}

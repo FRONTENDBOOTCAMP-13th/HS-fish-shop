@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/favicon.jpg" />
+    <link
+      rel="preload"
+      as="font"
+      href="/public/font/woff2/PretendardVariable.woff2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      as="style"
+      href="/public/font/pretendardvariable.css"
+    />
+    <link rel="stylesheet" href="/src/components/widget/widget-icon.css" />
+
+    <script type="module" src="./../../main.js"></script>
+    <title>Widget</title>
+  </head>
+  <body>
+    <h2>위젯</h2>
+    <div>
+      <h3>checkbox</h3>
+      <input type="checkbox" class="circle_checkbox-L" />
+      <input type="checkbox" class="circle_checkbox-S" />
+      <input type="checkbox" class="checkbox-L" />
+      <input type="checkbox" class="checkbox-S" />
+    </div>
+    <br />
+    <h3>PW</h3>
+    <div class="password-container">
+      <input
+        type="password"
+        id="passwordInput"
+        class="input_text"
+        placeholder="비밀번호입력"
+      />
+      <div class="toggle-password-checkbox">
+        <input type="checkbox" id="showPassword" />
+        <input type="checkbox" id="deletPassword" />
+      </div>
+    </div>
+    <script>
+      document
+        .getElementById("showPassword")
+        .addEventListener("change", function () {
+          const passwordInput = document.getElementById("passwordInput");
+          if (this.checked) {
+            passwordInput.type = "text";
+          } else {
+            passwordInput.type = "password";
+          }
+        });
+
+      document
+        .getElementById("deletPassword")
+        .addEventListener("change", function () {
+          const passwordInput = document.getElementById("passwordInput");
+          if (this.checked) {
+            passwordInput.value = "";
+            this.checked = false; // Uncheck the checkbox after clearing the password
+          }
+        });
+    </script>
+    <h3>ID</h3>
+    <div class="id-container">
+      <input
+        type="text"
+        id="idInput"
+        class="input_text"
+        placeholder="아이디 입력"
+      />
+      <div>
+        <input type="checkbox" id="deletId" />
+      </div>
+    </div>
+    <script>
+      document
+        .getElementById("deletId")
+        .addEventListener("change", function () {
+          const passwordInput = document.getElementById("idInput");
+          if (this.checked) {
+            passwordInput.value = "";
+            this.checked = false; // Uncheck the checkbox after clearing the password
+          }
+        });
+    </script>
+  </body>
+</html>

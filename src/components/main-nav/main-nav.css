@@ -1,0 +1,19 @@
+main {
+  --mobile-min-w: 20rem;
+  --tablet-min-w: 48rem;
+  --desktop-min-w: 120rem;
+
+  padding: clamp(1.875rem, 4vw, 3.5rem);
+  background-color: #000;
+  width: 100%;
+  overflow: hidden;
+
+  min-width: var(--mobile-min-w);
+
+  
+}
+
+h2 {
+  margin-top: 20px;
+  color: var(--white);
+}
