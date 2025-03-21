@@ -88,6 +88,13 @@
 
   /* mask-image 속성은 CSS에서 요소의 내용을 "마스크"를 이용해 숨기거나 보여주는 기능 */
 }
+.main-card-list {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.main-card-list::-webkit-scrollbar {
+  display: none;
+}
 /* card desgin */
 .card {
   --card-font-desektop: 1.333rem;
@@ -160,7 +167,8 @@
     --play-img-w-mobile: 3.125rem;
     --play-img-w-tablet: 4.375rem;
     --play-img-w-desktop: 6.25rem;
-
+    background: none;
+    border: none;
     position: absolute;
     width: var(--play-img-w-mobile);
     top: 30%;
@@ -198,7 +206,9 @@
       min-width: 0.9375rem;
       width: 1vw;
       height: 100%;
-
+      background: none;
+      border: none;
+      
       @media (min-width: 768px) {
         width: 2vw;
       }
