@@ -172,7 +172,8 @@ body {
     width: 20px;
     height: 20px;
     gap: 12px;
-    background: url("../widget/Icon/text-delet.svg") no-repeat center/contain;
+    background: url("../../components/widget/Icon/text-delet.svg") no-repeat
+      center/contain;
     cursor: pointer;
     border: none;
 
@@ -347,7 +348,6 @@ footer {
       width: 20px;
       height: 20px;
       gap: 12px;
-      background: url("../widget/Icon/text-delet.svg") no-repeat center/contain;
       cursor: pointer;
       border: none;
 
@@ -518,7 +518,6 @@ footer {
       width: 36px;
       height: 36px;
       gap: 12px;
-      background: url("../widget/Icon/text-delet.svg") no-repeat center/contain;
       cursor: pointer;
       border: none;
 
