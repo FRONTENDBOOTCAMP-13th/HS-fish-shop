@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="/favicon.jpg" />
+    <link rel="icon" href="./src/assets/intro/imoji.png" />
     <link
       rel="preload"
       as="font"
@@ -15,10 +15,103 @@
       as="style"
       href="/public/font/pretendardvariable.css"
     />
-    <link rel="stylesheet" href="./src/styles/reset.css" />
-    <link rel="stylesheet" href="./src/styles/intro.css" />
-    <script type="module" src="./../../main.js"></script>
-    <title>Intro-15팀</title>
+    <script type="module" src="/src/main.js"></script>
+    <title>현수네 생선가게</title>
   </head>
-  <body></body>
+  <body style="background-color: black" class="intro-page">
+    <h1 class="sr-only">현수네 생선가게 팀 소개 및 프로젝트 개요</h1>
+    <div class="intro-page-quick-wrapper">
+      <a
+        class="intro-page-quick flex-row-center intro-text-bold"
+        href="src/pages/landing-page/landing-page.html"
+        ><img
+          src="/logo-white.svg"
+          alt="티빙클론 페이지"
+          aria-label="티빙 클론페이지 이동하기"
+        /><sapn>제작 페이지</sapn></a
+      >
+    </div>
+    <header class="intro-header">
+      <div class="max-w-1200 flex-row-between h-100">
+        <a href="./index.html">
+          <img class="intro-header-logo" src="/logo.svg" alt="티빙" />
+        </a>
+        <ul class="flex-row-between">
+          <li class="header-btn"><a href="/index.html">프로젝트 결과</a></li>
+          <li class="header-btn header-btn-red">
+            <a href="./intro.html">팀소개</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <section class="first-section">
+      <div class="intro-visual flex-col-between max-w-1200">
+        <header class="intro-visual-header flex-col">
+          <img src="/logo.svg" class="visual-logo" alt="로고" />
+          <h2 class="intro-visual-header">UI Project</h2>
+          <p class="intro-font-gray intro-text-regular intro-font-sm">
+            2025.03.13~2025.03.25
+          </p>
+        </header>
+        <blockquote class="line-140">
+          나는 정확해. 틀림없지. 다만 운이 좀 없다 뿐이지. <br />
+          하지만 누가 알아? 어쩌면 오늘은 운이 좋을지도. 아무튼?<br />
+          하루하루가 새로운 날이니까.운이 따른다면 더 좋기는 하지.<br />
+          그래도 나는 신중을 기하겠어.<br />
+          운은 준비된 자에게 찾아오는 법이니까. 믿음을 가져야 해.<br /><br />
+          <cite>- 헤밍웨이, 노인과바다 中</cite>
+        </blockquote>
+        <div class="intro-visual-main flex-col">
+          <h3 class="intro-font-gray intro-text-regular intro-font-sm">
+            Like lion Frontend Bootcamp Team #15
+          </h3>
+          <h2 class="intro-text-bold">현수네 생선가게</h2>
+          <ul class="intro-font-m intro-text-bold intro-visual-list line-140">
+            <li>
+              <strong class="intro-font-red intro-position">Scrum Master</strong
+              ><span>조현수</span>
+            </li>
+            <li>
+              <strong class="intro-font-red intro-position">Developer</strong
+              ><span>김경민</span><span>송아현</span><span>송채은</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h3>🎣 현수네 생선가게 Team Behind Story</h3>
+      <p>
+        하루하루 거친 파도를 헤쳐 생선가게를 운영하는
+        <strong>어부의 심정</strong>으로 학습하는 현수네 생선가게팀 입니다.<br />
+        넓고 거친 바다위에서 믿을 수 있는 것은
+        <strong>우리 팀원들 뿐</strong>!<br />
+        서로 돕고 <strong>협력하는 팀</strong>이 되어
+        <strong>꿈을 향해 나아가자</strong>는 포부를 갖고 있는 팀 입니다.<br />
+      </p>
+    </section>
+    <section>
+      <h3>Team Members</h3>
+      <ul>
+        <li>
+          <header>
+            <h4>Scrum Master</h4>
+            <p>스크럼 마스터/팀장</p>
+          </header>
+          <figure>
+            <img src="./src/assets/intro/48.png" alt="누구누구 프로필이미지" />
+            <figcaption>
+              <h4>조현수</h4>
+              <p>Frontend Developer</p>
+              <p>
+                여기에 이정도되는 자기소개글 쓰기 마구쓰기 마구마구 쓰기 근데
+                너무많이 쓰지는 말고 딱 이정도만쓰기 이것도 글자가 너무
+                작은것같긴한데 그래도 이정도만쓰기.
+              </p>
+            </figcaption>
+          </figure>
+        </li>
+      </ul>
+    </section>
+  </body>
 </html>

@@ -1,0 +1,295 @@
+.intro-page {
+  --intro-gray-400: #bababa;
+  --intro-gray-700: #1d1d1d;
+  --intro-gray-800: #131313;
+
+  --quick-w: 15rem; /* 퀵버튼 가로길이 */
+  --quick-px: 0.625rem; /* 퀵버튼 상하패딩 */
+  --quick-text-size: 1.25rem; /* 퀵버튼 폰트사이즈 */
+  --quick-back-pt: 0.625rem; /* 퀵버튼 배경상단 패딩 */
+  --quick-back-pb: 1.25rem; /* 퀵버튼 배경하단 패딩 */
+  --quick-img-gap: 0.625rem; /* 퀵버튼 이미지 글자사이간격 */
+  --quick-img-w: 5rem; /* 퀵버튼 이미지 가로사이즈 */
+
+  --header-h: 2.5rem; /* 상단고정메뉴 높이 */
+  --header-px: 0.625rem; /* 상단고정메뉴 좌우패딩*/
+  --header-text-size: 0.875rem; /* 폰트사이즈 */
+  --header-a-px: 0.5rem; /* 버튼 좌우 패딩 */
+  --header-a-py: 0.25rem; /* 버튼 상하패딩 */
+  --header-a-mx: 0.5rem; /* 버튼 좌우 마진 */
+  --header-logo-w: 4.5rem; /* 헤더 로고사이즈 */
+
+  --rounding-m: 0.25rem; /* 모바일 라운딩 */
+  --section-px: 0.625rem; /* 섹션상단 */
+  --section-in-px: 0.625rem; /* 섹션좌우(안쪽) */
+
+  --intro-visual-height: 22.875rem; /* 비쥬얼 섹션 높이 */
+  --intro-visual-py: 1.25rem; /* 비쥬얼 상하패딩 */
+  --visual-logo-w: 6.75rem; /* 로고 가로사이즈 */
+  --intro-visual-header-size: 1.75rem; /* UI Project 글자크기 */
+  --intro-font-sm: 0.75rem; /* 날짜,프론트엔드 폰트크기 */
+  --intro-font-m: 0.875rem; /* 조원이름 폰트사이즈 */
+  --intro-text-gap: 0.25rem; /* text 세로줄 간격 */
+  --intro-position-w: 6.875rem; /* 역할 가로사이즈 */
+
+  @media screen and (min-width: 768px) {
+    --quick-w: 20rem; /* 퀵버튼 가로길이 */
+    --quick-px: 0.75rem; /* 퀵버튼 상하패딩 */
+    --quick-text-size: 1.375rem; /* 퀵버튼 폰트사이즈 */
+    --quick-back-pt: 0.625rem; /* 퀵버튼 배경상단 패딩 */
+    --quick-back-pb: 1.25rem; /* 퀵버튼 배경하단 패딩 */
+    --quick-img-gap: 0.625rem; /* 퀵버튼 이미지 글자사이간격 */
+    --quick-img-w: 7.5rem; /* 퀵버튼 이미지 가로사이즈 */
+    --header-logo-w: 4.5rem; /* 헤더 로고사이즈 */
+
+    --header-h: 3.125rem; /* 상단고정메뉴 높이 */
+    --header-px: 1.25rem; /* 상단고정메뉴 좌우패딩*/
+
+    --rounding-m: 0.25rem; /* 모바일 라운딩 */
+    --section-px: 1.25rem; /* 섹션좌우(바깥) */
+    --section-in-px: 1.25rem; /* 섹션좌우(안쪽) */
+
+    --intro-visual-height: 22.875rem; /* 비쥬얼 섹션 높이 */
+    --intro-visual-py: 1.75rem; /* 비쥬얼 상하패딩 */
+    --visual-logo-w: 8.75rem; /* 로고 가로사이즈 */
+    --intro-visual-header-size: 2rem; /* UI Project 글자크기 */
+    --intro-font-sm: 0.875rem; /* 날짜,프론트엔드 폰트크기 */
+    --intro-font-m: 1rem; /* 조원이름 폰트사이즈 */
+    --intro-text-gap: 0.25rem; /* text 세로줄 간격 */
+    --intro-position-w: 7.5rem; /* 역할 가로사이즈 */
+  }
+
+  @media screen and (min-width: 1200px) {
+    --quick-w: 15rem; /* 퀵버튼 가로길이 */
+    --quick-px: 0.625rem; /* 퀵버튼 상하패딩 */
+    --quick-text-size: 1.25rem; /* 퀵버튼 폰트사이즈 */
+    --quick-back-pt: 0.625rem; /* 퀵버튼 배경상단 패딩 */
+    --quick-back-pb: 1.25rem; /* 퀵버튼 배경하단 패딩 */
+    --quick-img-gap: 0.625rem; /* 퀵버튼 이미지 글자사이간격 */
+    --quick-img-w: 5rem; /* 퀵버튼 이미지 가로사이즈 */
+
+    --header-h: 4.375rem; /* 상단고정메뉴 높이 */
+    --header-px: 0; /* 상단고정메뉴 좌우패딩 */
+    --header-text-size: 1.125rem; /* 폰트사이즈 */
+    --header-a-px: 0.75rem; /* 버튼 좌우 패딩 */
+    --header-a-py: 0.25rem; /* 버튼 상하패딩 */
+    --header-a-mx: 0.5rem; /* 버튼 좌우 마진 */
+    --header-logo-w: 7.5rem; /* 헤더 로고사이즈 */
+
+    --rounding-m: 0.375rem; /* 모바일 라운딩 */
+    --section-px: 1.875rem; /* 섹션상단 */
+    --section-in-px: 2.375rem; /* 섹션좌우(안쪽) */
+
+    --intro-visual-height: 31.25rem; /* 비쥬얼 섹션 높이 */
+    --intro-visual-py: 1.875rem; /* 비쥬얼 상하패딩 */
+    --visual-logo-w: 9.5rem; /* 로고 가로사이즈 */
+    --intro-visual-header-size: 2.25rem; /* UI Project 글자크기 */
+    --intro-font-sm: 0.875rem; /* 날짜,프론트엔드 폰트크기 */
+    --intro-font-m: 1rem; /* 조원이름 폰트사이즈 */
+    --intro-text-gap: 0.25rem; /* text 세로줄 간격 */
+    --intro-position-w: 7.5rem; /* 역할 가로사이즈 */
+  }
+
+  /* 공통 스타일 */
+  background-color: var(--black);
+  color: var(--white);
+  line-height: auto;
+
+  /* 리셋 */
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  ul,
+  li,
+  dl,
+  dt,
+  dd {
+    list-style: none;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0;
+    padding: 0;
+  }
+  /* 자주쓰는 공통 스타일 */
+  .max-w-1200 {
+    max-width: 75rem;
+    margin: 0 auto;
+  }
+  .h-100 {
+    height: 100%;
+  }
+  .line-140 {
+    line-height: 140%;
+  }
+  .flex-row-between {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .flex-row-center {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .flex-col {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+  .flex-col-between {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+  }
+  .intro-font-gray {
+    color: var(--intro-gray-400);
+  }
+  .intro-font-red {
+    color: var(--brand--red-1);
+  }
+  .intro-text-bold {
+    font-weight: 700;
+  }
+  .intro-text-regular {
+    font-weight: 400;
+  }
+  section {
+    padding-inline: var(--section-px);
+  }
+  .first-section {
+    padding-top: calc(var(--header-h) + var(--section-px));
+  }
+  /* 하단 고정버튼 */
+  .intro-page-quick-wrapper {
+    padding-top: var(--quick-back-pt);
+    padding-bottom: var(--quick-back-pb);
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    background: linear-gradient(
+      180deg,
+      rgba(217, 217, 217, 0) 0%,
+      rgba(0, 0, 0, 0.6) 100%
+    );
+  }
+  .intro-page-quick {
+    line-height: 100%;
+    background-color: var(--brand--red-1);
+    width: var(--quick-w);
+    border-radius: 120px;
+    margin: 0 auto;
+    padding-block: var(--quick-px);
+    font-size: var(--quick-text-size);
+    gap: var(--quick-img-gap);
+
+    img,
+    span {
+      display: block;
+    }
+    img {
+      width: var(--quick-img-w);
+    }
+  }
+  /* 헤더부분 (상단 고정메뉴) */
+  .intro-header {
+    background: linear-gradient(90deg, #000 0%, #202020 100%);
+    width: 100%;
+    height: var(--header-h);
+    padding-inline: var(--header-px);
+    font-size: var(--header-text-size);
+    position: fixed;
+    top: 0;
+
+    .intro-header-logo {
+      width: var(--header-logo-w);
+    }
+
+    .header-btn-red {
+      background-color: var(--brand--red-1);
+    }
+
+    .header-btn {
+      padding-inline: var(--header-a-px);
+      padding-block: var(--header-a-py);
+      border-radius: var(--rounding-m);
+    }
+    ul {
+      gap: 4px;
+    }
+    img {
+      width: --header-logo-w;
+    }
+  }
+
+  /* 첫번째 섹션 */
+  .intro-visual {
+    background: url(../assets/intro/fishing.webp) center / cover,
+      rgba(0, 0, 0, 0.402);
+    background-blend-mode: overlay;
+    border-radius: var(--rounding-m);
+    width: 100%;
+    height: var(--intro-visual-height);
+    padding-inline: var(--section-in-px);
+    padding-block: var(--intro-visual-py);
+    @media screen and (min-width: 1200px) {
+      background-color: var(--intro-gray-800);
+      background-image: url(../assets/intro/fishing2.jpg);
+      background-repeat: no-repeat;
+      background-position: right center;
+      background-size: auto 100%;
+      background-blend-mode: normal;
+    }
+
+    .intro-visual-header {
+      font-size: var(--intro-visual-header-size);
+    }
+    .intro-visual-header,
+    .intro-visual-main {
+      gap: var(--intro-text-gap);
+    }
+    .visual-logo {
+      display: block;
+      width: var(--visual-logo-w);
+    }
+    .intro-font-sm {
+      font-size: var(--intro-font-sm);
+    }
+    .intro-font-m {
+      font-size: var(--intro-font-m);
+    }
+
+    blockquote {
+      display: none;
+
+      @media screen and (min-width: 1200px) {
+        display: block;
+        color: #646464;
+        font-size: 14px;
+      }
+    }
+    .intro-visual-list {
+      li {
+        span {
+          margin-right: 0.5rem;
+          display: inline-block;
+        }
+      }
+    }
+    .intro-position {
+      width: var(--intro-position-w);
+      display: inline-block;
+    }
+  }
+}
