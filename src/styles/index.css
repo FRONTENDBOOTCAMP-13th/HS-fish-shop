@@ -34,12 +34,13 @@
   border-top: 3px solid;
   border-top-color: #cc1030;
 
-  /* grid 영역 설정 */
+  grid-template-columns: repeat(4, 1fr);
   grid-template-areas:
-    "main-card main-visual main-nav modal . ."
-    "landing main drama movie history search"
-    "login findid findpw signup . ."
-    "profile profile-edit subprofile . . .";
+    "main-card main-visual main-nav modal"
+    "landing main drama movie "
+    "history search program-detail ."
+    "login signup findid findpw"
+    "profile profile-edit subprofile .";
 }
 
 .index_nav li:nth-child(1) {
@@ -73,24 +74,27 @@
   grid-area: search;
 }
 .index_nav li:nth-child(11) {
-  grid-area: login;
+  grid-area: program-detail;
 }
 .index_nav li:nth-child(12) {
-  grid-area: findid;
+  grid-area: login;
 }
 .index_nav li:nth-child(13) {
-  grid-area: findpw;
+  grid-area: findid;
 }
 .index_nav li:nth-child(14) {
-  grid-area: signup;
+  grid-area: findpw;
 }
 .index_nav li:nth-child(15) {
-  grid-area: profile;
+  grid-area: signup;
 }
 .index_nav li:nth-child(16) {
-  grid-area: profile-edit;
+  grid-area: profile;
 }
 .index_nav li:nth-child(17) {
+  grid-area: profile-edit;
+}
+.index_nav li:nth-child(18) {
   grid-area: subprofile;
 }
 
@@ -100,17 +104,17 @@
   background-color: #36050d; /* 1번째 줄 배경 색 */
 }
 
-.index_nav > li:nth-child(n + 5):nth-child(-n + 10) {
+.index_nav > li:nth-child(n + 5):nth-child(-n + 11) {
   /* 2번째 줄 */
   background-color: #4e0713; /* 2번째 줄 배경 색 */
 }
 
-.index_nav > li:nth-child(n + 11):nth-child(-n + 14) {
+.index_nav > li:nth-child(n + 12):nth-child(-n + 15) {
   /* 3번째 줄 */
   background-color: #730b1c; /* 3번째 줄 배경 색 */
 }
 
-.index_nav > li:nth-child(n + 15):nth-child(-n + 24) {
+.index_nav > li:nth-child(n + 16):nth-child(-n + 24) {
   /* 4번째 줄 */
   background-color: #a21029; /* 4번째 줄 배경 색 */
 }
@@ -243,6 +247,7 @@
       "landing main"
       "movie drama"
       "history search"
+      "program-detail ."
       "login signup"
       "findid findpw"
       "profile profile-edit"
@@ -258,10 +263,9 @@
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas:
       "main-card main-visual main-nav modal"
-      "landing main drama ."
-      "movie history search ."
-      "login signup . ."
-      "findid findpw . ."
+      "landing main drama movie "
+      "history search program-detail ."
+      "login signup findid findpw"
       "profile profile-edit subprofile .";
   }
 
