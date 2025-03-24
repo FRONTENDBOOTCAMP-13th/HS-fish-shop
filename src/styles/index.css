@@ -112,7 +112,7 @@
 
 .index_nav > li:nth-child(n + 15):nth-child(-n + 24) {
   /* 4번째 줄 */
-  background-color: #900e24; /* 4번째 줄 배경 색 */
+  background-color: #a21029; /* 4번째 줄 배경 색 */
 }
 
 /* Wobble Animation */
