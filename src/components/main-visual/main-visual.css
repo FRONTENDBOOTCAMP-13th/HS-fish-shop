@@ -11,7 +11,9 @@
   @media (min-width: 1024px) {
     max-width: var(--desktop-min-w);
   }
-
+  @media (min-width: 1961px) {
+    max-width: 100%;
+  }
   /* main-visual */
   .main-visual {
     border-radius: 20px;
