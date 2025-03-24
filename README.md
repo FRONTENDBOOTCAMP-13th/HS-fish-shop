@@ -36,7 +36,9 @@
 
 - 반응형페이지<br>
   ![Main](https://img.shields.io/badge/Main-red?style=for-the-badge)
-  ![Landing](https://img.shields.io/badge/Landing-red?style=for-the-badge)<br>
+  ![Landing](https://img.shields.io/badge/Landing-red?style=for-the-badge)
+  ![Project Index](https://img.shields.io/badge/ProjectIndex-red?style=for-the-badge)
+  ![TeamIntro](https://img.shields.io/badge/Team-Intro-red?style=for-the-badge)<br>
   ![Login](https://img.shields.io/badge/Login-blue?style=for-the-badge)
   ![Signup](https://img.shields.io/badge/Signup-blue?style=for-the-badge)
   ![findId](https://img.shields.io/badge/findId-blue?style=for-the-badge)
