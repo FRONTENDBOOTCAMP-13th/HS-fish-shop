@@ -52,7 +52,7 @@
 - 글로벌 컴포넌트<br>
   ![GNB](https://img.shields.io/badge/GNB-green?style=for-the-badge)
   ![Footer](https://img.shields.io/badge/Footer-green?style=for-the-badge)
-
+  ![Modal](https://img.shields.io/badge/Modal-green?style=for-the-badge)
 ## 🕰️ 개발일정
 
 - 2025.03.13 목요일 ~ 2025.13.25 화요일 까지 (약 13일)
@@ -65,14 +65,14 @@
 | 컴포넌트 제작        | 2025.03.13 | 2025.03.20 |
 | 페이지 레이아웃 구성 | 2025.03.20 | 2025.03.21 |
 | 중간배포             | 2025.03.21 | 2025.03.22 |
-| 검수 및 수정         | 2025.03.24 | 2025.03.25 |
-| 최종 배포            | 2025.03.25 | 2025.03.25 |
+| 검수 및 수정         | 2025.03.24 | 2025.03.24 |
+| 최종 배포            | 2025.03.24 | 2025.03.25 |
 
 ## 🧑‍🤝‍🧑 멤버구성
 
 | 조 이름 | 역할         |            | 개발페이지                                                                                                                                                                                                    | 글로벌 컴포넌트                                      |
 | ------- | ------------ | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------- |
-| 조현수  | 스크럼마스터 | 프론트엔드 | ![Main](https://img.shields.io/badge/Main-red) ![Drama](https://img.shields.io/badge/Drama-purple) ![Movie](https://img.shields.io/badge/Movie-purple)                                                        | ![Footer](https://img.shields.io/badge/Footer-green) |
+| 조현수  | 스크럼마스터 | 프론트엔드 | ![Main](https://img.shields.io/badge/Main-red) ![Drama](https://img.shields.io/badge/Drama-purple) ![Movie](https://img.shields.io/badge/Movie-purple)                                                        | ![Footer](https://img.shields.io/badge/Footer-green)  ![Modal](https://img.shields.io/badge/Modal-green?style=for-the-badge)|
 | 김경민  | 팀원         | 프론트엔드 | ![Login](https://img.shields.io/badge/Login-blue) ![Signup](https://img.shields.io/badge/Signup-blue) ![findId](https://img.shields.io/badge/findId-blue) ![findPw](https://img.shields.io/badge/findPw-blue) |                                                      |
 | 송아현  | 팀원         | 프론트엔드 | ![Landing](https://img.shields.io/badge/Landing-red) ![Profile](https://img.shields.io/badge/Profile-blue)                                                                                                    |                                                      |
 | 송채은  | 팀원         | 프론트엔드 | ![History-mobile](https://img.shields.io/badge/History-orange) ![Search-mobile](https://img.shields.io/badge/Search-orange)                                                                                   | ![GNB](https://img.shields.io/badge/GNB-green?)      |
