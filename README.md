@@ -1,9 +1,10 @@
 ###### Likelion Front-end Bootcamp
 
-# UI Project(CSS) - [Tving Clone Project]()
+# UI Project(CSS) - [Tving Clone Project](https://fish-shop-taving.netlify.app/)
 
 - 문서목적 : 팀 소개 및 프로젝트 개요
 - 문서작성자 : 송채은
+- [배포 사이트로 이동](https://fish-shop-taving.netlify.app/)
 
 ## 목차
 
@@ -25,7 +26,7 @@
 넓고 거친 바다위에서 믿을 수 있는 것은 우리 팀원들 뿐!<br>
 서로 돕고 협력하는 팀이 되어 꿈을 향해 나아가자는 포부를 갖고 있는 팀 입니다.
 
-### [팀 노션]()
+### [팀 노션](https://www.notion.so/15-1b573873401a80988787da985a7f50ca)
 
 ## 🖥️ 프로젝트소개
 
