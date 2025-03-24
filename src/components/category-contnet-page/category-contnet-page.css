@@ -75,7 +75,9 @@
   white-space: nowrap;
   gap: 20px;
   width: 100%;
-
+  max-width: 120rem;
+  margin: 0 auto;
+  
   .sub-category-button {
     display: block;
     border-radius: 30px;
