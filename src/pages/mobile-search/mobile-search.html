@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="/favicon.jpg" />
+  <link rel="preload" as="font" href="/font/woff2/PretendardVariable.woff2" crossorigin="anonymous" /> 
+  <link rel="stylesheet" as="style" href="/font/pretendardvariable.css" />
+  <script type="module" src="./../../main.js"/></script>
+  <title>검색 | TAING</title>
+</head>
+<body style="background-color: black;">
+  <div class="sch-m-wrapper">
+    <!-- 모바일 검색창 컴포넌트 -->
+      <!-- 검색창 폼 -->
+    <form action="#" class="gnb-flex-row gnb-sch-m-form">
+      <fieldset>
+        <legend class="sr-only">검색</legend>
+        <input type="search" class="gnb-sch-m-input" id="gnb-sch-m" placeholder="제목, 인물명을 입력해보세요" />
+        <label for="gnb-sch-m"><span class="sr-only">검색</span></label>
+        <button type="submit" aria-label="검색하기" ><img src="../../assets/gnb-main/search-md-hover.svg" alt="검색하기" /></button>
+      </fieldset>
+    </form>
+    <!-- 실시간 인기검색어 -->
+    <div class="schm-popular-list">
+      <header class="gnb-flex-row">
+        <!-- 인기검색어 헤딩 컴포넌트 -->
+        <p role="heading">실시간 인기 검색어</p>
+        <!-- 타임 컴포넌트 -->
+        <time datetime="2022-12-24T03:04:00">2022.12.24 오전 03:04기준</time>
+      </header>
+      <ol>
+        <li><a href="#"><span class="serch-list-num">1</span>재벌집 막내아들</a></li>
+        <li><a href="#"><span class="serch-list-num">2</span>미스터트롯2:새로운 전설의 시작</a></li>
+        <li><a href="#"><span class="serch-list-num">3</span>유 퀴즈 온 더 블럭</a></li>
+        <li><a href="#"><span class="serch-list-num">4</span>대행사</a></li>
+        <li><a href="#"><span class="serch-list-num">5</span>SHOW ME THE MONEY 11</a></li>
+        <li><a href="#"><span class="serch-list-num">6</span>미씽:그들이 있었다2</a></li>
+        <li><a href="#"><span class="serch-list-num">7</span>술꾼도시여자들2</a></li>
+        <li><a href="#"><span class="serch-list-num">8</span>캐나다 체크인</a></li>
+        <li><a href="#"><span class="serch-list-num">9</span>미씽:그들이 있었다-그들을 다만나다</a></li>
+        <li><a href="#"><span class="serch-list-num">10</span>술꾼도시여자들</a></li>
+      </ol>
+    </div>
+  </div>
+  <!-- 실시간 인기 검색어 하단 버튼 -->
+     <nav class="gnb-main-quick">
+    <ul class="gnb-flex-row gnb-main-quick-ul">
+      <li><a href="../main-page/main-page.html"><img src="../../assets/gnb-quick/home-btn-defualt.svg" alt="홈"/>홈</a></li>
+      <li><a href="#"><img src="../../assets/gnb-quick/shorts-btn-defualt.svg" alt="쇼츠" />쇼츠</a></li>
+      <li><a href="#"><img src="../../assets/gnb-quick/live-btn-defualt.svg" alt="라이브" />라이브</a></li>
+      <li class="quick-active"><a href="#"><img src="../../assets/gnb-quick/search-btn-active.svg" alt="검색" />검색</a></li>
+      <li><a href="../my-history/my-history.html"><img src="../../assets/gnb-quick/hitory-btn-defualt.svg" alt="기록" />기록</a></li>
+    </ul>
+  </nav>
+</body>
+</html>

@@ -1,0 +1,421 @@
+:root {
+  --gnb-login-h: 2.5rem;
+  height: var(--gnb-login-h);
+
+  @media screen and (min-width: 768px) {
+    --gnb-login-h: 3.75rem;
+  }
+  @media screen and (min-width: 1024px) {
+    --gnb-login-h: 78px;
+  }
+}
+
+/* gnb 공통 / 로고 사이즈 좌우 패딩 / 상단고정*/
+.gnb {
+  --gnb-logo-w: 4rem;
+  --gnb-login-px: 1rem;
+
+  @media screen and (min-width: 768px) {
+    --gnb-logo-w: 6.5rem;
+    --gnb-login-px: 2.25rem;
+  }
+
+  @media screen and (min-width: 1024px) {
+    --gnb-logo-w: 8.75rem;
+    --gnb-login-px: 3.75rem;
+  }
+
+  font-family: "Pretendard Variable", sans-serif;
+  a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+  }
+  ul,
+  li {
+    list-style: none;
+  }
+  img {
+    display: block;
+  }
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  padding-inline: var(--gnb-login-px);
+  z-index: 999;
+
+  /* 공통 반응형 최대 넓이*/
+  .gnb-max-wrapper {
+    max-width: 1920px;
+    height: 100%;
+    margin: 0 auto;
+  }
+
+  /* 공통 로고 사이즈 */
+  .gnb-logo {
+    width: var(--gnb-logo-w);
+    display: block;
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+/* 각 페이지 상단 메뉴 높이 / 정렬*/
+.gnb-login {
+  --gnb-login-h: 2.5rem;
+  height: var(--gnb-login-h);
+
+  @media screen and (min-width: 768px) {
+    --gnb-login-h: 3.75rem;
+  }
+  @media screen and (min-width: 1024px) {
+    --gnb-login-h: 78px;
+  }
+}
+
+/* wrapper에 플렉스 필요하면 추가 */
+.gnb-flex-row {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
+body {
+  background-color: black;
+}
+.findPw-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: stretch;
+  width: 100%;
+
+  padding: 28px 0 0 0;
+  margin-top: var(--gnb-login-h);
+  color: #6b6b6b;
+  font-size: 12px;
+}
+
+.findPw-header {
+  color: var(--white, #fff);
+  /* Heading/Medium */
+  font-family: Pretendard;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%; /* 22.4px */
+  display: flex;
+  justify-content: center;
+  padding: 0 0 28px;
+  margin: 0px;
+}
+
+.findPw-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.find-pw-title {
+  color: #898989;
+
+  /* Label/Small */
+  font-family: Pretendard;
+  font-size: 12.003px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 18.005px */
+  margin-bottom: 16px;
+  width: 288px;
+}
+
+/* input */
+.input_id {
+  display: flex;
+  width: 288px;
+  height: 46px;
+  padding: 0px 20px 0px 16px;
+  align-items: center;
+  border: 1px solid;
+  border-color: #212121;
+  border-radius: 4px;
+  background: var(--brand-dark-bg-2, #212121);
+  color: white;
+  font-size: 12px;
+}
+
+#findPw_Input:focus {
+  border-color: #e1e1e1;
+  outline: none;
+}
+
+.findPw-container {
+  position: relative;
+  display: inline-block;
+
+  #delet_findPw {
+    appearance: none; /* 기본 스타일 제거 */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    gap: 12px;
+    background: url("../../components/widget/Icon/text-delet.svg") no-repeat
+      center/contain;
+    cursor: pointer;
+    border: none;
+
+    position: absolute;
+    right: 24px;
+    top: 13px;
+  }
+}
+
+.id_button {
+  width: 100%;
+  max-width: 732 px;
+  height: 42px;
+  color: #898989;
+  background-color: #404040;
+  border: none;
+  border-radius: 4px;
+  margin-top: 20px;
+  cursor: pointer;
+  align-self: center;
+  font-size: 12px;
+}
+
+.id_button:hover {
+  background-color: white;
+}
+.id_button:active {
+  background-color: #e1e1e1;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .findPw-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+    width: 100%;
+    max-width: 1023px;
+    padding-top: 44px;
+    color: #6b6b6b;
+  }
+
+  .findPw-header {
+    color: var(--white, #fff);
+
+    /* Heading/XL */
+    font-family: Pretendard;
+    font-size: 28.43px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; /* 39.802px */
+    padding: 0 0 28px;
+    margin: 0px;
+  }
+
+  .findPw-form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .find-pw-title {
+    color: #898989;
+
+    /* Label/Small */
+    font-family: Pretendard;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 18.005px */
+    margin-bottom: 4px;
+  }
+
+  .find-pw-title {
+    width: 416px;
+    margin-bottom: 16px;
+  }
+
+  /* input */
+  .input_id {
+    display: flex;
+    width: 416px;
+    height: 54px;
+    padding: 0px 20px 0px 16px;
+    align-items: center;
+    border: 1px solid;
+    border-color: #212121;
+    border-radius: 4px;
+    background: var(--brand-dark-bg-2, #212121);
+    color: white;
+    font-size: 16px;
+  }
+
+  #findPw_Input:focus {
+    border-color: #e1e1e1;
+    outline: none;
+  }
+
+  .findPw-container {
+    position: relative;
+    display: inline-block;
+
+    #delet_findPw {
+      appearance: none; /* 기본 스타일 제거 */
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      width: 20px;
+      height: 20px;
+      gap: 12px;
+      cursor: pointer;
+      border: none;
+
+      position: absolute;
+      right: 24px;
+      top: 17px;
+    }
+  }
+
+  .id_button {
+    width: 100%;
+    max-width: 732 px;
+    height: 50px;
+    color: #898989;
+    background-color: #404040;
+    border: none;
+    border-radius: 4px;
+    margin-top: 20px;
+    cursor: pointer;
+    align-self: center;
+    font-size: 16px;
+  }
+
+  .id_button:hover {
+    background-color: white;
+  }
+  .id_button:active {
+    background-color: #e1e1e1;
+  }
+}
+@media (min-width: 1024px) {
+  .findPw-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+    width: 100%;
+    padding-top: 70px;
+    color: #6b6b6b;
+  }
+
+  .findPw-header {
+    color: var(--white, #fff);
+
+    /* Heading/XL */
+    font-family: Pretendard;
+    font-size: 37.897px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; /* 53.056px */
+    padding: 0 0 60px;
+    margin: 0px;
+  }
+
+  .findPw-form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .find-pw-title {
+    color: #898989;
+
+    /* Label/Small */
+    font-family: Pretendard;
+    font-size: 28.43px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 18.005px */
+    margin-bottom: 4px;
+  }
+
+  .find-pw-title {
+    width: 732px;
+    margin-bottom: 24px;
+  }
+
+  /* input */
+  .input_id {
+    display: flex;
+    width: 732px;
+    height: 96px;
+    padding: 0px 20px 0px 30px;
+    align-items: center;
+    border: 1px solid;
+    border-color: #212121;
+    border-radius: 4px;
+    background: var(--brand-dark-bg-2, #212121);
+    color: white;
+    font-size: 28.43px;
+  }
+
+  #findPw_Input:focus {
+    border-color: #e1e1e1;
+    outline: none;
+  }
+
+  .findPw-container {
+    position: relative;
+    display: inline-block;
+
+    #delet_findPw {
+      appearance: none; /* 기본 스타일 제거 */
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      width: 36px;
+      height: 36px;
+      gap: 12px;
+      cursor: pointer;
+      border: none;
+
+      position: absolute;
+      right: 24px;
+      top: 30px;
+    }
+  }
+
+  .id_button {
+    width: 100%;
+    max-width: 732 px;
+    height: 86px;
+    color: #898989;
+    background-color: #404040;
+    border: none;
+    border-radius: 4px;
+    margin-top: 36px;
+    cursor: pointer;
+    align-self: center;
+    font-size: 28.43px;
+  }
+
+  .id_button:hover {
+    background-color: white;
+  }
+  .id_button:active {
+    background-color: #e1e1e1;
+  }
+}

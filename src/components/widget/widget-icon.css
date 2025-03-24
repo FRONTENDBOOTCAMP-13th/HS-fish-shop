@@ -1,0 +1,135 @@
+body {
+  background-color: black;
+}
+/* checkbox */
+.circle_checkbox-L {
+  appearance: none; /* 기본 스타일 제거 */
+  width: 26px;
+  height: 26px;
+  background: url("./Icon/circle-unchecked.svg") no-repeat center/contain;
+  cursor: pointer;
+  border: none;
+}
+
+.circle_checkbox-L:checked {
+  background: url("./Icon/circle-checked.svg") no-repeat center/contain;
+}
+
+.circle_checkbox-S {
+  appearance: none; /* 기본 스타일 제거 */
+  width: 16px;
+  height: 16px;
+  background: url("./Icon/circle-unchecked.svg") no-repeat center/contain;
+  cursor: pointer;
+  border: none;
+}
+
+.circle_checkbox-S:checked {
+  background: url("./Icon/circle-checked.svg") no-repeat center/contain;
+}
+
+.checkbox-L {
+  appearance: none; /* 기본 스타일 제거 */
+  width: 26px;
+  height: 26px;
+  background: url("./Icon/unchecked.svg") no-repeat center/contain;
+  cursor: pointer;
+  border: none;
+}
+
+.checkbox-L:checked {
+  background: url("./Icon/checked.svg") no-repeat center/contain;
+}
+
+.checkbox-S {
+  appearance: none; /* 기본 스타일 제거 */
+  width: 16px;
+  height: 16px;
+  background: url("./Icon/unchecked.svg") no-repeat center/contain;
+  cursor: pointer;
+  border: none;
+}
+
+.checkbox-S:checked {
+  background: url("./Icon/checked.svg") no-repeat center/contain;
+}
+
+/* input */
+.input_text {
+  display: flex;
+  width: 287px;
+  height: 46px;
+  padding: 0px 20px 0px 16px;
+  align-items: center;
+  border: 1px solid;
+  border-color: #212121;
+  border-radius: 4px;
+  background: var(--brand-dark-bg-2, #212121);
+  color: white;
+}
+#passwordInput:focus {
+  border-color: #e1e1e1;
+  outline: none;
+}
+#idInput:focus {
+  border-color: #e1e1e1;
+  outline: none;
+}
+
+.password-container {
+  position: relative;
+  display: inline-block;
+
+  .toggle-password-checkbox input {
+    appearance: none; /* 기본 스타일 제거 */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    gap: 12px;
+    cursor: pointer;
+    border: none;
+    position: absolute;
+    right: 24px;
+    top: 13px;
+  }
+
+  #showPassword {
+    background: url("./Icon/text-blind.svg") no-repeat center/contain;
+    cursor: pointer;
+    border: none;
+  }
+
+  #deletPassword {
+    background: url("./Icon/text-delet.svg") no-repeat center/contain;
+    cursor: pointer;
+    border: none;
+
+    position: absolute;
+    right: 56px;
+    top: 13px;
+  }
+}
+
+.id-container {
+  position: relative;
+  display: inline-block;
+
+  #deletId {
+    appearance: none; /* 기본 스타일 제거 */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    gap: 12px;
+    background: url("./Icon/text-delet.svg") no-repeat center/contain;
+    cursor: pointer;
+    border: none;
+
+    position: absolute;
+    right: 24px;
+    top: 13px;
+  }
+}

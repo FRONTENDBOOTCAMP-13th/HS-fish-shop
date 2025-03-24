@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>landing</title>
+    <link rel="icon" href="/favicon.jpg" />
+    <link
+      rel="preload"
+      as="font"
+      href="/font/woff2/PretendardVariable.woff2"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" as="style" href="/font/pretendardvariable.css" />
+    <link rel="stylesheet" href="/src/styles/reset.css" />
+    <link rel="stylesheet" href="/src/styles/theme.css" />
+    <script type="module" src="./../../main.js"></script>
+  </head>
+  <body class="landing-container">
+    <!-- gnb -->
+    <div class="gnb gnb-land">
+      <div class="gnb-max-wrapper gnb-flex-row">
+        <a
+          class="gnb-logo"
+          href="/src/pages/landing-page/landing-page.html"
+          target="_self"
+        >
+          <img src="../../../public/logo.svg" alt="티빙" />
+        </a>
+        <ul class="gnb-land-nav">
+          <li>
+            <a
+              href="/src/pages/signup-page/signup-page.html"
+              target="_self"
+              class="gnb-land-btn gnb-red-btn"
+              >지금 가입</a
+            >
+          </li>
+          <li>
+            <a
+              href="/src/pages/login-page/login-page.html"
+              target="_self"
+              class="gnb-land-btn"
+              >로그인</a
+            >
+          </li>
+          <li><a href="#" target="_self" class="gnb-land-btn">이벤트</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- main -->
+    <main class="landing-main">
+      <section class="section-main">
+        <div class="main-wrap">
+          <div>
+            <p class="main-title">
+              타잉 오리지널 콘텐츠,<br />
+              방송, 영화, 해외시리즈까지!<br />
+              재미를 플레이해보세요.
+            </p>
+            <p class="main-subtitle">
+              간편하게 가입하고, 원하실 때 해지할 수 있어요.
+            </p>
+          </div>
+          <a
+            href="/src/pages/login-page/login-page.html"
+            role="button"
+            type="submit"
+            class="main-button"
+            tabindex="0"
+            aria-label="로그인 페이지로 이동"
+          >
+            새로워진 타잉을 만나보세요!
+            <span class="sr-only">서비스 시작 버튼</span>
+          </a>
+        </div>
+      </section>
+      <section>
+        <div class="original-container">
+          <div>
+            <p class="landing-title">타잉에만 있는 재미</p>
+            <p class="landing-subtitle">오리지널 콘텐츠를 만나보세요!</p>
+            <p class="landing-text">차별화된 웰메이드 오리지널 콘텐츠</p>
+          </div>
+          <div class="original-image">
+            <picture>
+              <source
+                srcset="/src/assets/landing/dk-Scandal-of-Chunhwa.webp"
+                media="(min-width: 768px)"
+              />
+              <img
+                src="/src/assets/landing/mb-Scandal-of-Chunhwa.webp"
+                alt="춘화연애담 콘텐츠 포스터"
+                class="img-lovecatcher"
+              />
+            </picture>
+            <picture>
+              <source
+                srcset="/src/assets/landing/dk-StudyGroup.webp"
+                media="(min-width: 768px)"
+              />
+              <img
+                src="/src/assets/landing/mb-StudyGroup.webp"
+                alt="스터디그룹 콘텐츠 포스터"
+                class="img-treasurehunt"
+              />
+            </picture>
+            <picture>
+              <source
+                srcset="/src/assets/landing/dk-Pyramid-Game.webp"
+                media="(min-width: 768px)"
+              />
+              <img
+                src="/src/assets/landing/mb-Pyramid-Game.webp"
+                alt="피라미드게임 콘텐츠 포스터"
+                class="img-drunkgirl"
+              />
+            </picture>
+          </div>
+        </div>
+      </section>
+      <section class="landing-section">
+        <div>
+          <div>
+            <p class="landing-title">내가 찾던 재미</p>
+            <p class="landing-subtitle">보고 싶은 콘텐츠를 발견하세요!</p>
+            <p class="landing-text">
+              최신, 인기 TV프로그램, 영화, 해외시리즈, 파라마운트+ 오리지널 및
+              독점
+            </p>
+          </div>
+          <div class="marquee marquee-top">
+            <ul class="marquee-content">
+              <li class="marquee-item">
+                <img
+                  src="/src/assets/landing/m-Dearest-Nemesis.webp"
+                  alt="그놈은 흑염룡 콘텐츠 포스터 "
+                />
+              </li>
+              <li class="marquee-item">
+                <img
+                  src="/src/assets/landing/m-Lovely-Runner.webp"
+                  alt="선재업고튀어 콘텐츠 포스터"
+                />
+              </li>
+              <li class="marquee-item">
+                <img
+                  src="/src/assets/landing/m-Yumis-Cells.webp"
+                  alt="유미의 세포들 콘텐츠 포스터"
+                />
+              </li>
+              <li class="marquee-item">
+                <img
+                  src="/src/assets/landing/m-Jeongnyeon.webp"
+                  alt="정년이 콘텐츠 포스터"
+                />
+              </li>
+              <li class="marquee-item">
+                <img
+                  src="/src/assets/landing/m-youquiz.webp"
+                  alt="유 퀴즈 온 더 블럭 콘텐츠 포스터"
+                />
+              </li>
+            </ul>
+            <ul class="marquee-content">
+              <li class="marquee-item">
+                <img
+                  src="/src/assets/landing/m-Dearest-Nemesis.webp"
+                  alt="그놈은 흑염룡 콘텐츠 포스터 "
+                />
+              </li>
+              <li class="marquee-item">
+                <img
+                  src="/src/assets/landing/m-Lovely-Runner.webp"
+                  alt="선재업고튀어 콘텐츠 포스터"
+                />
+              </li>
+              <li class="marquee-item">
+                <img
+                  src="/src/assets/landing/m-Yumis-Cells.webp"
+                  alt="유미의 세포들 콘텐츠 포스터"
+                />
+              </li>
+              <li class="marquee-item">
+                <img
+                  src="/src/assets/landing/m-Jeongnyeon.webp"
+                  alt="정년이 콘텐츠 포스터"
+                />
+              </li>
+              <li class="marquee-item">
+                <img
+                  src="/src/assets/landing/m-youquiz.webp"
+                  alt="유 퀴즈 온 더 블럭 콘텐츠 포스터"
+                />
+              </li>
+            </ul>
+            <span class="sr-only"
+              >타잉에서 추천하는 보고 싶은 콘텐츠 목록이 스크롤 되고
+              있습니다.</span
+            >
+          </div>
+          <div class="marquee marquee-bottom">
+            <ul class="marquee-content">
+              <li class="marquee-item">
+                <img
+                  src="/src/assets/landing/m-Highschool.webp"
+                  alt="언더커버 하이스쿨 콘텐츠 포스터"
+                />
+              </li>
+              <li class="marquee-item">
+                <img
+                  src="/src/assets/landing/m-manager.webp"
+                  alt="연예인 매니저로 살아남기 콘텐츠 포스터"
+                />
+              </li>
+              <li class="marquee-item">
+                <img
+                  src="/src/assets/landing/m-Pyramid-Game.webp"
+                  alt="피라미드 게임 콘텐츠 포스터"
+                />
+              </li>
+              <li class="marquee-item">
+                <img
+                  src="/src/assets/landing/m-StudyGroup.webp"
+                  alt="스터디그룹 콘텐츠 포스터"
+                />
+              </li>
+              <li class="marquee-item">
+                <img
+                  src="/src/assets/landing/m-CrimeScene3.webp"
+                  alt="크라임씬3 콘텐츠 포스터"
+                />
+              </li>
+            </ul>
+            <ul class="marquee-content">
+              <li class="marquee-item">
+                <img
+                  src="/src/assets/landing/m-Highschool.webp"
+                  alt="언더커버 하이스쿨 콘텐츠 포스터"
+                />
+              </li>
+              <li class="marquee-item">
+                <img
+                  src="/src/assets/landing/m-manager.webp"
+                  alt="연예인 매니저로 살아남기 콘텐츠 포스터"
+                />
+              </li>
+              <li class="marquee-item">
+                <img
+                  src="/src/assets/landing/m-Pyramid-Game.webp"
+                  alt="피라미드 게임 콘텐츠 포스터"
+                />
+              </li>
+              <li class="marquee-item">
+                <img
+                  src="/src/assets/landing/m-StudyGroup.webp"
+                  alt="스터디그룹 콘텐츠 포스터"
+                />
+              </li>
+              <li class="marquee-item">
+                <img
+                  src="/src/assets/landing/m-CrimeScene3.webp"
+                  alt="크라임씬3 콘텐츠 포스터"
+                />
+              </li>
+            </ul>
+            <span class="sr-only"
+              >타잉에서 추천하는 보고 싶은 콘텐츠 목록이 스크롤 되고
+              있습니다.</span
+            >
+          </div>
+        </div>
+      </section>
+      <section class="landing-section landing-start">
+        <img
+          src="/src/assets/landing/no1-tainglogo.svg"
+          alt="TAING"
+          class="reveal"
+        />
+        <p class="start-title">지금 시작해보세요</p>
+        <a
+          href="/src/pages/login-page/login-page.html"
+          role="button"
+          type="submit"
+          class="main-button"
+          tabindex="0"
+          aria-label="로그인 페이지로 이동"
+        >
+          새로워진 타잉을 만나보세요!
+        </a>
+      </section>
+    </main>
+    <!-- footer -->
+    <footer>
+      <div class="clone-modal-wrapper">
+        <button type="button" class="clone-modal-open">공지사항</button>
+        <dialog class="clone-modal">
+          <h3 class="clone-modal-title">
+            해당사이트는 공식 사이트가아닌, 학습을 위해 제작된 클론
+            사이트입니다.
+          </h3>
+          <form action="" method="dialog">
+            <button type="button" class="clone-modal-close">
+              하루 이창 보지않기
+            </button>
+          </form>
+        </dialog>
+      </div>
+      <div class="footer-line"></div>
+      <section class="footer-nav">
+        <ul>
+          <li><a href="/">고객센터</a></li>
+          <li><a href="/">이용약관</a></li>
+          <li><a href="/">개인정보처리방침</a></li>
+          <li><a href="/">청소년 보호정책</a></li>
+          <li><a href="/">법적고지</a></li>
+          <li><a href="/">이벤트</a></li>
+          <li><a href="/">인재채용</a></li>
+        </ul>
+        <div class="footer-header-link">
+          <a href="">브랜드 바로가기 <span>+</span></a>
+          <div class="footer-header-link-line">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="2"
+              height="20"
+              viewBox="0 0 2 26"
+              fill="none"
+            >
+              <path d="M1 0.578125L0.999999 25.4199" stroke="#6B6B6B" />
+            </svg>
+          </div>
+          <a href="">그룹 계열사 바로가기 <span>+</span></a>
+        </div>
+      </section>
+      <section class="footer-address">
+        <address>
+          <p>
+            <span>대표이사 : YANG JIEUL</span>
+            <span><a href="/">사업자정보확인</a></span>
+            <span>사업자등록번호 : 188-88-01893</span>
+            <span>통신판매신고번호 : 2020-서울마포-3641호</span>
+          </p>
+          <p>
+            <span
+              >사업장 : 서울특별시 마포구 상암산로 34, DMC디지털큐브
+              15층(상암동)
+            </span>
+            <span>호스팅사업자 : 씨제이올리브네트웍스(주)</span>
+          </p>
+          <p>
+            <span><a href="/">고객문의 바로가기</a></span>
+            <span
+              ><a href="mailto:tving@cj.net">대표메일 : ting@cj.net</a></span
+            >
+            <span
+              ><a href="tel:1670-1525"
+                >고객센터 : 1670-1525 (평일/주말 09시~18시, 공휴일 휴무)</a
+              ></span
+            >
+          </p>
+          <p>
+            <span
+              >ENM 시청자 상담실 (편성 문의 및 시청자 의견) : 080-080-0780</span
+            >
+            <span>Mnet 고객센터(반송편성문의) : 1855-1631</span>
+          </p>
+        </address>
+      </section>
+      <section class="footer-map">
+        <div class="map-icon-mobile">
+          <img
+            src="./../../assets/map-icon/footer-map-icons.webp"
+            usemap="#image-map-mobile"
+          />
+          <map name="image-map-mobile">
+            <area
+              target="_blank"
+              alt="TVING Youtube"
+              title="TVING Youtube"
+              href="https://www.youtube.com/c/TVING_official"
+              coords="12,12,11"
+              shape="circle"
+            />
+            <area
+              target="_blank"
+              alt="TVING Instagram"
+              title="TVING Instagram"
+              href="https://www.instagram.com/tving.official/"
+              coords="57,12,12"
+              shape="circle"
+            />
+            <area
+              target="_blank"
+              alt="TVING Twitter"
+              title="TVING Twitter"
+              href="https://x.com/tvingdotcom?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+              coords="102,12,11"
+              shape="circle"
+            />
+            <area
+              target="_blank"
+              alt="TVING Facebook"
+              title="TVING Facebook"
+              href="https://www.facebook.com/CJTVING/?locale=ko_KR"
+              coords="147,12,12"
+              shape="circle"
+            />
+          </map>
+        </div>
+        <div class="map-icon-tablet">
+          <img
+            src="./../../assets/map-icon/footer-map-icons-tablet.webp"
+            usemap="#image-map-tablet"
+          />
+          <map name="image-map-tablet">
+            <area
+              target="_blank"
+              alt="TVING Youtube"
+              title="TVING Youtube"
+              href="https://www.youtube.com/c/TVING_official"
+              coords="15,15,15"
+              shape="circle"
+            />
+            <area
+              target="_blank"
+              alt="TVING Instagram"
+              title="TVING Instagram"
+              href="https://www.instagram.com/tving.official/"
+              coords="66,15,15"
+              shape="circle"
+            />
+            <area
+              target="_blank"
+              alt="TVING Twitter"
+              title="TVING Twitter"
+              href="https://x.com/tvingdotcom?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+              coords="117,15,14"
+              shape="circle"
+            />
+            <area
+              target="_blank"
+              alt="TVING Facebook"
+              title="TVING Facebook"
+              href="https://www.facebook.com/CJTVING/?locale=ko_KR"
+              coords="168,15,14"
+              shape="circle"
+            />
+          </map>
+        </div>
+        <div class="map-icon-desktop">
+          <img
+            src="./../../assets/map-icon/footer-map-icons-desktop.webp"
+            usemap="#image-map-desktop"
+          />
+          <map name="image-map-desktop">
+            <area
+              target="_blank"
+              alt="TVING Youtube"
+              title="TVING Youtube"
+              href="https://www.youtube.com/c/TVING_official"
+              coords="26,26,25"
+              shape="circle"
+            />
+            <area
+              target="_blank"
+              alt="TVING Instagram"
+              title="TVING Instagram"
+              href="https://www.instagram.com/tving.official/"
+              coords="99,26,26"
+              shape="circle"
+            />
+            <area
+              target="_blank"
+              alt="TVING Twitter"
+              title="TVING Twitter"
+              href="https://x.com/tvingdotcom?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+              coords="172,26,26"
+              shape="circle"
+            />
+            <area
+              target="_blank"
+              alt="TVING Facebook"
+              title="TVING Facebook"
+              href="https://www.facebook.com/CJTVING/?locale=ko_KR"
+              coords="244,26,25"
+              shape="circle"
+            />
+          </map>
+        </div>
+      </section>
+      <section class="footer-copyright">
+        <p class="copyright">Copyright © 주식회사 티빙 All right reserved.</p>
+      </section>
+    </footer>
+  </body>
+</html>

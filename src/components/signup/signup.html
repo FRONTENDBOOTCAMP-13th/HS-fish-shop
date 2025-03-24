@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/favicon.jpg" />
+    <link
+      rel="preload"
+      as="font"
+      href="/public/font/woff2/PretendardVariable.woff2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      as="style"
+      href="/public/font/pretendardvariable.css"
+    />
+    <link rel="stylesheet" href="/src/styles/reset.css" />
+    <link rel="stylesheet" href="/src/components/signup/signup.css" />
+    <script type="module" src="./../../main.js"></script>
+    <title>Taing signup</title>
+  </head>
+  <body>
+    <main class="signup-main">
+      <div class="signup-container">
+        <header class="signup-header">타잉 회원가입</header>
+        <form class="signup-form" action="../login/login.html">
+          <label class="signup-title"
+            >아이디와 이메일로 간편하게 티빙을 시작하세요!</label
+          >
+          <div class="input_sign_wrap">
+            <div class="idContainerSign">
+              <input
+                type="text"
+                id="idSign"
+                class="input_sign"
+                placeholder="아이디"
+                name="username"
+                required
+                pattern="^[A-Za-z][A-Za-z\d]{5,11}$"
+                title="영문 또는 영문+숫자 조합 6~12자리 입력하세요."
+              />
+              <input type="checkbox" id="deletIdSign" />
+              <lable for="text">영문 또는 영문, 숫자 조합 6~12자리</lable>
+            </div>
+            <div class="pwContainerSign">
+              <input
+                type="password"
+                id="passwordSign"
+                class="input_sign"
+                name="password"
+                placeholder="비밀번호"
+                required
+                pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[~!@#$%^&*])[A-Za-z\d~!@#$%^&*]{8,15}$"
+                title="영문, 숫자, 특수문자(~!@#$%^&*) 조합 8~15자리 입력하세요."
+              />
+              <div class="toggle-pw-checkbox">
+                <input type="checkbox" id="deletPwSign" />
+                <input type="checkbox" id="showPwSign" />
+              </div>
+              <label>영문, 숫자, 특수문자(~!@#$%^&*)조합 8~15자리</label>
+            </div>
+            <div class="pwContainerSign2">
+              <input
+                type="password"
+                id="passwordSign2"
+                class="input_sign"
+                name="password"
+                placeholder="비밀번호 확인"
+                required
+                pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[~!@#$%^&*])[A-Za-z\d~!@#$%^&*]{8,15}$"
+                title="영문, 숫자, 특수문자(~!@#$%^&*) 조합 8~15자리 입력하세요."
+              />
+              <p id="passwordSign2Error" class="passwordSign2Error"></p>
+
+              <div class="toggle-pw-checkbox">
+                <input type="checkbox" id="showPwSign2" />
+                <input type="checkbox" id="deletPwSign2" />
+              </div>
+            </div>
+            <div class="emContainerSign">
+              <input
+                type="email"
+                id="emailSign"
+                class="input_sign"
+                name="email"
+                placeholder="이메일"
+                required
+              />
+              <input type="checkbox" id="deletEmailSign" />
+            </div>
+            <script>
+              document
+                .getElementById("deletIdSign")
+                .addEventListener("change", function () {
+                  const passwordInput = document.getElementById("idSign");
+                  if (this.checked) {
+                    passwordInput.value = "";
+                    this.checked = false; // Uncheck the checkbox after clearing the password
+                  }
+                });
+              document
+                .getElementById("showPwSign")
+                .addEventListener("change", function () {
+                  const passwordInput = document.getElementById("passwordSign");
+                  if (this.checked) {
+                    passwordInput.type = "text";
+                  } else {
+                    passwordInput.type = "password";
+                  }
+                });
+
+              document
+                .getElementById("deletPwSign")
+                .addEventListener("change", function () {
+                  const passwordInput = document.getElementById("passwordSign");
+                  if (this.checked) {
+                    passwordInput.value = "";
+                    this.checked = false; // Uncheck the checkbox after clearing the password
+                  }
+                });
+              document
+                .getElementById("showPwSign2")
+                .addEventListener("change", function () {
+                  const passwordInput =
+                    document.getElementById("passwordSign2");
+                  if (this.checked) {
+                    passwordInput.type = "text";
+                  } else {
+                    passwordInput.type = "password";
+                  }
+                });
+
+              document
+                .getElementById("deletPwSign2")
+                .addEventListener("change", function () {
+                  const passwordInput =
+                    document.getElementById("passwordSign2");
+                  if (this.checked) {
+                    passwordInput.value = "";
+                    this.checked = false; // Uncheck the checkbox after clearing the password
+                  }
+                });
+
+              document
+                .getElementById("passwordSign2")
+                .addEventListener("input", function () {
+                  const password =
+                    document.getElementById("passwordSign").value;
+                  const confirmPassword = this.value;
+                  const errorMessage =
+                    document.getElementById("passwordSign2Error");
+
+                  if (password !== confirmPassword) {
+                    errorMessage.textContent = "비밀번호가 일치하지 않습니다.";
+                  } else {
+                    errorMessage.textContent = "";
+                  }
+                });
+
+              document
+                .getElementById("deletEmailSign")
+                .addEventListener("change", function () {
+                  const passwordInput = document.getElementById("emailSign");
+                  if (this.checked) {
+                    passwordInput.value = "";
+                    this.checked = false; // Uncheck the checkbox after clearing the password
+                  }
+                });
+            </script>
+          </div>
+          <div class="check_signup">
+            <label class="checkboxSign-label">
+              <input
+                type="checkbox"
+                id="allAgree"
+                class="circle_checkboxSign"
+                name="keep-sign-in"
+              />
+              모두 동의합니다.
+            </label>
+            <label class="checkboxSign-label2">
+              <input type="checkbox" class="checkboxSign" name="keep-sign-in" />
+              만 14세 이상입니다.
+            </label>
+            <label class="checkboxSign-label2">
+              <input type="checkbox" class="checkboxSign" name="keep-sign-in" />
+              [필수] 서비스 이용약관동의
+            </label>
+            <label class="checkboxSign-label2">
+              <input type="checkbox" class="checkboxSign" name="keep-sign-in" />
+              [필수] 개인정보 수집 및 서비스 활용 동의 </label
+            ><label class="checkboxSign-label2">
+              <input type="checkbox" class="checkboxSign" name="keep-sign-in" />
+              [필수] 채널 홈페이지 개인정보 제 3자 제공동의 </label
+            ><label class="checkboxSign-label2">
+              <input type="checkbox" class="checkboxSign" name="keep-sign-in" />
+              [선택] 개인정보 제 3자 제공동의 </label
+            ><label class="checkboxSign-label2">
+              <input type="checkbox" class="checkboxSign" name="keep-sign-in" />
+              [선택] 개인정보 및 서비스 활용 동의
+            </label>
+            <div class="receiveSign">
+              <label class="checkboxSign-label2">
+                <input
+                  type="checkbox"
+                  class="checkboxSign"
+                  name="keep-sign-in"
+                />
+                [선택] 마케팅 정보 SMS 수신동의 </label
+              ><label class="checkboxSign-label3">
+                <input
+                  type="checkbox"
+                  class="checkboxSign"
+                  name="keep-sign-in"
+                />
+                [선택] 마케팅 정보 이메일 수신동의
+              </label>
+            </div>
+            <script>
+              document
+                .getElementById("allAgree")
+                .addEventListener("change", function () {
+                  const checkboxes = document.querySelectorAll(".checkboxSign");
+                  checkboxes.forEach((checkbox) => {
+                    checkbox.checked = this.checked;
+                  });
+                });
+            </script>
+          </div>
+          <button class="sign_button" type="submit">가입하기</button>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

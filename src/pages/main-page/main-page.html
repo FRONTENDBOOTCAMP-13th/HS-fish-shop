@@ -1,0 +1,1900 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/favicon.jpg" />
+    <link
+      rel="preload"
+      as="font"
+      href="/font/woff2/PretendardVariable.woff2"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" as="style" href="/font/pretendardvariable.css" />
+    <script type="module" src="./../../main.js"></script>
+    <title>TAING</title>
+  </head>
+  <body>
+    <!-- 메인 상단 gnb메뉴 -->
+    <div class="gnb gnb-main">
+      <div class="gnb-max-wrapper gnb-grid">
+        <!-- 로고 -->
+        <a class="gnb-logo" href="./../main-page/main-page.html" target="_self">
+          <img src="../../../public/logo.svg" alt="티빙" />
+        </a>
+        <!-- 모바일:화면공유 공통:프로필 pc,태블릿: -->
+        <div class="gnb-flex-row gnb-icons">
+          <div class="gnb-btn-sch">
+            <input
+              type="checkbox"
+              role="button"
+              class="gnb-sch-input"
+              id="gnb-sch-check"
+              name="gnb-sch-check"
+            />
+            <label for="gnb-sch-check" class="gnb-sch-label"
+              ><span class="sr-only">검색</span></label
+            >
+          </div>
+          <button
+            type="button"
+            class="screen-btn"
+            role="button"
+            aria-label="다른 디바이스와 화면 공유"
+          >
+            <img
+              src="../../assets/gnb-main/screen-icon.svg"
+              alt="다른디스플레이와 화면공유"
+            />
+          </button>
+          <a
+            href="../profile-page/profile-page.html"
+            role="link"
+            class="gnb-profile-btn"
+            aria-label="프로필 편집"
+            ><img
+              src="../../assets/gnb-main/mgnb-profile-desktop.webp"
+              alt="프로필 편집"
+          /></a>
+        </div>
+        <nav>
+          <ul class="gnb-flex-row gnb-main-nav">
+            <li><a href="./../drama-page/drama-page.html">드라마</a></li>
+            <li><a href="./../movie-page/movie-page.html">영화</a></li>
+            <li><a href="#">예능</a></li>
+            <li><a href="#">스포츠</a></li>
+            <li><a href="#">애니</a></li>
+            <li><a href="#">뉴스</a></li>
+            <li><a href="#">라이브</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="gnb-sch-wrapper">
+      <div class="gnb-sch-pc-wrapper">
+        <div class="gnb-sch-pc">
+          <!-- 검색창 폼 -->
+          <form action="#" class="gnb-flex-row gnb-sch-pc-form">
+            <fieldset>
+              <legend class="sr-only">검색</legend>
+              <input
+                type="search"
+                class="gnb-sch-pc-input"
+                id="gnb-sch-pc"
+                placeholder="TV프로그램,영화 제목 및 출연진으로 검색해보세요"
+              />
+              <label for="gnb-sch-pc"
+                ><span class="sr-only"
+                  >TV프로그램,영화 제목 및 출연진으로 검색해보세요</span
+                ></label
+              >
+              <button type="submit" aria-label="검색하기">
+                <img
+                  src="../../assets/gnb-main/search-md-hover.svg"
+                  alt="검색하기"
+                />
+              </button>
+            </fieldset>
+          </form>
+          <!-- 최근 검색어 -->
+          <div class="serch-result">
+            <header>최근 검색어</header>
+            <p>검색 내역이 없습니다.</p>
+          </div>
+          <!-- 중앙라인 -->
+          <div class="search-line"></div>
+          <!-- 실시간 인기검색어 -->
+          <div class="search-popular-list">
+            <header>실시간 인기 검색어</header>
+            <ol>
+              <li>
+                <a href="#"
+                  ><span class="serch-list-num">1</span>재벌집 막내아들</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><span class="serch-list-num">2</span>미스터트롯2:새로운
+                  전설의 시작</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><span class="serch-list-num">3</span>유 퀴즈 온 더 블럭</a
+                >
+              </li>
+              <li>
+                <a href="#"><span class="serch-list-num">4</span>대행사</a>
+              </li>
+              <li>
+                <a href="#"
+                  ><span class="serch-list-num">5</span>SHOW ME THE MONEY 11</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><span class="serch-list-num">6</span>미씽:그들이 있었다2</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><span class="serch-list-num">7</span>술꾼도시여자들2</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><span class="serch-list-num">8</span>캐나다 체크인</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><span class="serch-list-num">9</span>미씽:그들이
+                  있었다-그들을 다만나다</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><span class="serch-list-num">10</span>술꾼도시여자들</a
+                >
+              </li>
+            </ol>
+            <time datetime="2022-12-24T03:04:00"
+              >2022.12.24 오전 03:04기준</time
+            >
+          </div>
+        </div>
+      </div>
+      <div class="gnb-sch-pc-back" role="none"></div>
+    </div>
+
+    <!-- 모바일 하단 퀵버튼 -->
+    <nav class="gnb-main-quick">
+      <ul class="gnb-flex-row gnb-main-quick-ul">
+        <li class="quick-active">
+          <a href="./../main-page/main-page.html"
+            ><img
+              src="../../assets/gnb-quick/home-btn-active.svg"
+              alt="홈"
+            />홈</a
+          >
+        </li>
+        <li>
+          <a href="./../main-page/main-page.html"
+            ><img
+              src="../../assets/gnb-quick/shorts-btn-defualt.svg"
+              alt="쇼츠"
+            />쇼츠</a
+          >
+        </li>
+        <li>
+          <a href="./../main-page/main-page.html"
+            ><img
+              src="../../assets/gnb-quick/live-btn-defualt.svg"
+              alt="라이브"
+            />라이브</a
+          >
+        </li>
+        <li>
+          <a href="./../mobile-search/mobile-search.html"
+            ><img
+              src="../../assets/gnb-quick/search-btn-defualt.svg"
+              alt="검색"
+            />검색</a
+          >
+        </li>
+        <li>
+          <a href="./../my-history/my-history.html"
+            ><img
+              src="../../assets/gnb-quick/hitory-btn-defualt.svg"
+              alt="기록"
+            />기록</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <main>
+      <section class="main-visual-area">
+        <div class="main-visual">
+          <img
+            src="./../../assets/main-card-images/main-visual-img.webp"
+            alt="taing 메인페이지 비쥬얼 이미지 중 협상의 기술 드라마 이미지"
+          />
+        </div>
+        <div class="main-visual-button-wrap">
+          <button type="button" class="main-visual-button-left">
+            <svg
+              width="70"
+              height="70"
+              viewBox="0 0 70 70"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_158_6408)">
+                <g opacity="0.7">
+                  <path
+                    d="M44.13 16.7393L25.8691 35.0001"
+                    stroke="#898989"
+                    stroke-width="2"
+                    stroke-linecap="square"
+                  />
+                  <path
+                    d="M25.8691 35L44.13 53.2609"
+                    stroke="#898989"
+                    stroke-width="2"
+                    stroke-linecap="square"
+                  />
+                </g>
+              </g>
+              <defs>
+                <clipPath id="clip0_158_6408">
+                  <rect width="70" height="70" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </button>
+
+          <button type="button" class="main-visual-button-right">
+            <svg
+              width="70"
+              height="70"
+              viewBox="0 0 70 70"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_158_6402)">
+                <path
+                  d="M25.8691 16.7373L44.13 34.9982"
+                  stroke="#898989"
+                  stroke-width="2"
+                  stroke-linecap="square"
+                />
+                <path
+                  d="M44.13 34.998L25.8691 53.2589"
+                  stroke="#898989"
+                  stroke-width="2"
+                  stroke-linecap="square"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_158_6402">
+                  <rect width="70" height="70" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </button>
+        </div>
+        <div class="main-visual-img-text">
+          <img
+            src="./../../assets/main-card-images/main-visual-text.webp"
+            alt="협상의 기술 텍스트 이미지"
+          />
+        </div>
+        <div class="main-visual-text">
+          <p>천재적 협상가로 돌아온 이제훈의 복귀작!</p>
+        </div>
+      </section>
+
+      <section class="card-wrapper tving-content">
+        <h2>지금 방영중인 티빙 콘텐츠</h2>
+        <ul class="main-card-list main-card-list">
+          <li class="card">
+            <a href="./../program-detail/program-detail.html" class="card-link">
+              <figure>
+                <img
+                  src="./../../assets/main-card-images/tving-content/tving-content-1.webp"
+                  alt="드라마 언더커버 하이스쿨 포스터"
+                />
+                <figcaption class="sr-only">언더커버 하이스쿨</figcaption>
+              </figure>
+            </a>
+          </li>
+          <li class="card">
+            <a href="./../program-detail/program-detail.html" class="card-link">
+              <figure>
+                <img
+                  src="./../../assets/main-card-images/tving-content/tving-content-2.webp"
+                  alt="드라마 라이딩 인생 포스터"
+                />
+                <figcaption class="sr-only">라이딩 인생</figcaption>
+              </figure>
+            </a>
+          </li>
+          <li class="card">
+            <a href="./../program-detail/program-detail.html" class="card-link">
+              <figure>
+                <img
+                  src="./../../assets/main-card-images/tving-content/tving-content-3.webp"
+                  alt="드라마 선의의 경쟁 포스터"
+                />
+                <figcaption class="sr-only">선의의 경쟁</figcaption>
+              </figure>
+            </a>
+          </li>
+          <li class="card">
+            <a href="./../program-detail/program-detail.html" class="card-link">
+              <figure>
+                <img
+                  src="./../../assets/main-card-images/tving-content/tving-content-4.webp"
+                  alt="예능 김성근의 겨울방학 포스터"
+                />
+                <figcaption class="sr-only">김성근의 겨울방학</figcaption>
+              </figure>
+            </a>
+          </li>
+          <li class="card">
+            <a href="./../program-detail/program-detail.html" class="card-link">
+              <figure>
+                <img
+                  src="./../../assets/main-card-images/tving-content/tving-content-5.webp"
+                  alt="예능 냉장고를 부탁해 포스터"
+                />
+                <figcaption class="sr-only">냉장고를 부탁해</figcaption>
+              </figure>
+            </a>
+          </li>
+          <li class="card">
+            <a href="./../program-detail/program-detail.html" class="card-link">
+              <figure>
+                <img
+                  src="./../../assets/main-card-images/tving-content/tving-content-6.webp"
+                  alt="이혼숙려 캠프 포스터"
+                />
+                <figcaption class="sr-only">예능 이혼숙려 캠프</figcaption>
+              </figure>
+            </a>
+          </li>
+          <li class="card">
+            <a href="./../program-detail/program-detail.html" class="card-link">
+              <figure>
+                <img
+                  src="./../../assets/main-card-images/tving-content/tving-content-7.webp"
+                  alt="드라마 감자연구소 포스터"
+                />
+                <figcaption class="sr-only">감자연구소</figcaption>
+              </figure>
+            </a>
+          </li>
+          <li class="card">
+            <a href="./../program-detail/program-detail.html" class="card-link">
+              <figure>
+                <img
+                  src="./../../assets/main-card-images/tving-content/tving-content-8.webp"
+                  alt="예능 커플팰리스2 포스터"
+                />
+                <figcaption class="sr-only">커플팰리스2</figcaption>
+              </figure>
+            </a>
+          </li>
+          <li class="card">
+            <a href="./../program-detail/program-detail.html" class="card-link">
+              <figure>
+                <img
+                  src="./../../assets/main-card-images/tving-content/tving-content-9.webp"
+                  alt="예능 환승연애 포스터"
+                />
+                <figcaption class="sr-only">환승연에</figcaption>
+              </figure>
+            </a>
+          </li>
+          <li class="card">
+            <a href="./../program-detail/program-detail.html" class="card-link">
+              <figure>
+                <img
+                  src="./../../assets/main-card-images/tving-content/tving-content-10.webp"
+                  alt="예능 벌거벗은 세계사 포스터"
+                />
+                <figcaption class="sr-only">벌거벗은 세계사</figcaption>
+              </figure>
+            </a>
+          </li>
+        </ul>
+        <div class="card-move-buttons">
+          <button type="button" class="left">
+            <svg
+              width="70"
+              height="70"
+              viewBox="0 0 70 70"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_158_6408)">
+                <g opacity="0.7">
+                  <path
+                    d="M44.13 16.7393L25.8691 35.0001"
+                    stroke="#ffffff"
+                    stroke-width="4"
+                    stroke-linecap="square"
+                  />
+                  <path
+                    d="M25.8691 35L44.13 53.2609"
+                    stroke="#ffffff"
+                    stroke-width="4"
+                    stroke-linecap="square"
+                  />
+                </g>
+              </g>
+              <defs>
+                <clipPath id="clip0_158_6408">
+                  <rect width="70" height="70" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </button>
+          <button type="button" class="right">
+            <svg
+              width="70"
+              height="70"
+              viewBox="0 0 70 70"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_158_6402)">
+                <path
+                  d="M25.8691 16.7373L44.13 34.9982"
+                  stroke="#ffffff"
+                  stroke-width="4"
+                  stroke-linecap="square"
+                />
+                <path
+                  d="M44.13 34.998L25.8691 53.2589"
+                  stroke="#ffffff"
+                  stroke-width="4"
+                  stroke-linecap="square"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_158_6402">
+                  <rect width="70" height="70" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </button>
+        </div>
+      </section>
+
+      <section class="card-wrapper quick-VOD">
+        <h2>Quick VOD</h2>
+        <ul class="main-card-list quick-VOD-card-list">
+          <li class="card">
+            <a href="./../program-detail/program-detail.html" class="card-link">
+              <figure>
+                <img
+                  src="./../../assets/main-card-images/quick-VOD/quick-VOD-1.webp"
+                  alt="페이퍼 보이 사형수의 편지 포스터"
+                />
+                <figcaption class="sr-only">
+                  페이퍼 보이 사형수의 편지 포스터
+                </figcaption>
+              </figure>
+            </a>
+          </li>
+          <li class="card">
+            <a href="./../program-detail/program-detail.html" class="card-link">
+              <figure>
+                <img
+                  src="./../../assets/main-card-images/quick-VOD/quick-VOD-2.webp"
+                  alt="워커맨 포스터"
+                />
+                <figcaption class="sr-only">워커맨</figcaption>
+              </figure>
+            </a>
+          </li>
+          <li class="card">
+            <a href="./../program-detail/program-detail.html" class="card-link">
+              <figure>
+                <img
+                  src="./../../assets/main-card-images/quick-VOD/quick-VOD-3.webp"
+                  alt="악질 경찰 포스터"
+                />
+                <figcaption class="sr-only">악질경철</figcaption>
+              </figure>
+            </a>
+          </li>
+          <li class="card">
+            <a href="./../program-detail/program-detail.html" class="card-link">
+              <figure>
+                <img
+                  src="./../../assets/main-card-images/quick-VOD/quick-VOD-4.webp"
+                  alt="영화 해빙 포스터"
+                />
+                <figcaption class="sr-only">해빙</figcaption>
+              </figure>
+            </a>
+          </li>
+          <li class="card">
+            <a href="./../program-detail/program-detail.html" class="card-link">
+              <figure>
+                <img
+                  src="./../../assets/main-card-images/quick-VOD/quick-VOD-5.webp"
+                  alt="영화 용서는 없다 포스터"
+                />
+                <figcaption class="sr-only">용서는 없다</figcaption>
+              </figure>
+            </a>
+          </li>
+          <li class="card">
+            <a href="./../program-detail/program-detail.html" class="card-link">
+              <figure>
+                <img
+                  src="./../../assets/main-card-images/quick-VOD/quick-VOD-6.webp"
+                  alt="영화 사채소년 포스터"
+                />
+                <figcaption class="sr-only">사채소년</figcaption>
+              </figure>
+            </a>
+          </li>
+          <li class="card">
+            <a href="./../program-detail/program-detail.html" class="card-link">
+              <figure>
+                <img
+                  src="./../../assets/main-card-images/quick-VOD/quick-VOD-7.webp"
+                  alt="영화 황해 포스터"
+                />
+                <figcaption class="sr-only">황해</figcaption>
+              </figure>
+            </a>
+          </li>
+          <li class="card">
+            <a href="./../program-detail/program-detail.html" class="card-link">
+              <figure>
+                <img
+                  src="./../../assets/main-card-images/quick-VOD/quick-VOD-8.webp"
+                  alt="영화 앵커 포스터"
+                />
+                <figcaption class="sr-only">앵커</figcaption>
+              </figure>
+            </a>
+          </li>
+          <li class="card">
+            <a href="./../program-detail/program-detail.html" class="card-link">
+              <figure>
+                <img
+                  src="./../../assets/main-card-images/quick-VOD/quick-VOD-9.webp"
+                  alt="예능 놀라운 토요일 포스터"
+                />
+                <figcaption class="sr-only">놀라운 토요일</figcaption>
+              </figure>
+            </a>
+          </li>
+          <li class="card">
+            <a href="./../program-detail/program-detail.html" class="card-link">
+              <figure>
+                <img
+                  src="./../../assets/main-card-images/quick-VOD/quick-VOD-10.webp"
+                  alt="드라마 멜로가 체질 포스터"
+                />
+                <figcaption class="sr-only">멜로가 체질</figcaption>
+              </figure>
+            </a>
+          </li>
+        </ul>
+        <div class="card-move-buttons">
+          <button type="button" class="left">
+            <svg
+              width="70"
+              height="70"
+              viewBox="0 0 70 70"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_158_6408)">
+                <g opacity="0.7">
+                  <path
+                    d="M44.13 16.7393L25.8691 35.0001"
+                    stroke="#ffffff"
+                    stroke-width="4"
+                    stroke-linecap="square"
+                  />
+                  <path
+                    d="M25.8691 35L44.13 53.2609"
+                    stroke="#ffffff"
+                    stroke-width="4"
+                    stroke-linecap="square"
+                  />
+                </g>
+              </g>
+              <defs>
+                <clipPath id="clip0_158_6408">
+                  <rect width="70" height="70" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </button>
+          <button type="button" class="right">
+            <svg
+              width="70"
+              height="70"
+              viewBox="0 0 70 70"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_158_6402)">
+                <path
+                  d="M25.8691 16.7373L44.13 34.9982"
+                  stroke="#ffffff"
+                  stroke-width="4"
+                  stroke-linecap="square"
+                />
+                <path
+                  d="M44.13 34.998L25.8691 53.2589"
+                  stroke="#ffffff"
+                  stroke-width="4"
+                  stroke-linecap="square"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_158_6402">
+                  <rect width="70" height="70" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </button>
+        </div>
+      </section>
+
+      <section class="card-wrapper only-tving">
+        <h2>오로지 티빙에서만</h2>
+        <ul class="main-card-list only-tving-card-list">
+          <li class="card">
+            <a href="./../program-detail/program-detail.html" class="card-link">
+              <figure>
+                <img
+                  src="./../../assets/main-card-images/only-tving/only-tving-1.webp"
+                  alt="드라마 내 아이디는 강남미인 포스터"
+                />
+                <figcaption class="sr-only">내 아이디는 강남미인</figcaption>
+              </figure>
+            </a>
+          </li>
+          <li class="card">
+            <a href="./../program-detail/program-detail.html" class="card-link">
+              <figure>
+                <img
+                  src="./../../assets/main-card-images/only-tving/only-tving-2.webp"
+                  alt="드라마 사랑은 계속 될꺼야 언제까지나 포스터"
+                />
+                <figcaption class="sr-only">
+                  사랑은 계속 될꺼야 언제까지나
+                </figcaption>
+              </figure>
+            </a>
+          </li>
+          <li class="card">
+            <a href="./../program-detail/program-detail.html" class="card-link">
+              <figure>
+                <img
+                  src="./../../assets/main-card-images/only-tving/only-tving-3.webp"
+                  alt="드라마 아가능 유도료 구성 포스터"
+                />
+                <figcaption class="sr-only">아가능유도료구성</figcaption>
+              </figure>
+            </a>
+          </li>
+          <li class="card">
+            <a href="./../program-detail/program-detail.html" class="card-link">
+              <figure>
+                <img
+                  src="./../../assets/main-card-images/only-tving/only-tving-4.webp"
+                  alt="드라마 시그널 강제미제 사건 수사반(중국) 포스터"
+                />
+                <figcaption class="sr-only">
+                  시그널 강제미제 사건 수사반
+                </figcaption>
+              </figure>
+            </a>
+          </li>
+          <li class="card">
+            <a href="./../program-detail/program-detail.html" class="card-link">
+              <figure>
+                <img
+                  src="./../../assets/main-card-images/only-tving/only-tving-5.webp"
+                  alt="드라마 인데버 시즌2 포스터"
+                />
+                <figcaption class="sr-only">인데버 시즌2</figcaption>
+              </figure>
+            </a>
+          </li>
+          <li class="card">
+            <a href="./../program-detail/program-detail.html" class="card-link">
+              <figure>
+                <img
+                  src="./../../assets/main-card-images/only-tving/only-tving-6.webp"
+                  alt="드라마 머독 미스터리 시즌7 포스터"
+                />
+                <figcaption class="sr-only">머독 미스터리 시즌7</figcaption>
+              </figure>
+            </a>
+          </li>
+          <li class="card">
+            <a href="./../program-detail/program-detail.html" class="card-link">
+              <figure>
+                <img
+                  src="./../../assets/main-card-images/only-tving/only-tving-7.webp"
+                  alt="영화 알리바이를 깨드립니다 포스터"
+                />
+                <figcaption class="sr-only">알리바이를 깨드립니다</figcaption>
+              </figure>
+            </a>
+          </li>
+          <li class="card">
+            <a href="./../program-detail/program-detail.html" class="card-link">
+              <figure>
+                <img
+                  src="./../../assets/main-card-images/only-tving/only-tving-8.webp"
+                  alt="영화 사대명포 포스터"
+                />
+                <figcaption class="sr-only">사대명포</figcaption>
+              </figure>
+            </a>
+          </li>
+          <li class="card">
+            <a href="./../program-detail/program-detail.html" class="card-link">
+              <figure>
+                <img
+                  src="./../../assets/main-card-images/only-tving/only-tving-9.webp"
+                  alt="드라마 영매탐정 조즈카 히스이 포스터"
+                />
+                <figcaption class="sr-only"></figcaption>
+              </figure>
+            </a>
+          </li>
+          <li class="card">
+            <a href="./../program-detail/program-detail.html" class="card-link">
+              <figure>
+                <img
+                  src="./../../assets/main-card-images/only-tving/only-tving-10.webp"
+                  alt="영화 메디치 마스터즈 오브 플로렌스 포스터"
+                />
+                <figcaption class="sr-only">
+                  메디치 마스터즈 오브 플로렌스
+                </figcaption>
+              </figure>
+            </a>
+          </li>
+        </ul>
+        <div class="card-move-buttons">
+          <button type="button" class="left">
+            <svg
+              width="70"
+              height="70"
+              viewBox="0 0 70 70"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_158_6408)">
+                <g opacity="0.7">
+                  <path
+                    d="M44.13 16.7393L25.8691 35.0001"
+                    stroke="#ffffff"
+                    stroke-width="4"
+                    stroke-linecap="square"
+                  />
+                  <path
+                    d="M25.8691 35L44.13 53.2609"
+                    stroke="#ffffff"
+                    stroke-width="4"
+                    stroke-linecap="square"
+                  />
+                </g>
+              </g>
+              <defs>
+                <clipPath id="clip0_158_6408">
+                  <rect width="70" height="70" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </button>
+          <button type="button" class="right">
+            <svg
+              width="70"
+              height="70"
+              viewBox="0 0 70 70"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_158_6402)">
+                <path
+                  d="M25.8691 16.7373L44.13 34.9982"
+                  stroke="#ffffff"
+                  stroke-width="4"
+                  stroke-linecap="square"
+                />
+                <path
+                  d="M44.13 34.998L25.8691 53.2589"
+                  stroke="#ffffff"
+                  stroke-width="4"
+                  stroke-linecap="square"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_158_6402">
+                  <rect width="70" height="70" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </button>
+        </div>
+      </section>
+
+      <section class="banner-area">
+        <div class="banner-card">
+          <a href="./../program-detail/program-detail.html" class="card-link">
+            <figure>
+              <img
+                src="./../../assets/main-card-images/banner/banner.webp"
+                alt="티빙 스포츠 경기 생중게 배너 "
+              />
+              <figcaption class="sr-only">banner-title</figcaption>
+            </figure>
+          </a>
+        </div>
+      </section>
+
+      <section class="card-wrapper user-watching-content">
+        <h2>프로필님이 시청중인 콘텐츠</h2>
+        <ul class="main-card-list user-watching-card-list">
+          <li class="card">
+            <a href="./../program-detail/program-detail.html" class="card-link">
+              <figure>
+                <img
+                  src="./../../assets/main-card-images/user-watching-content/user-watching-content-1.webp"
+                  alt="드라마 우리들의 블루스 포스터"
+                />
+                <div class="watching-card-bottom">
+                  <figcaption>9화</figcaption>
+                  <button type="button" class="watching-content-card-info">
+                    <img
+                      src="./../../assets/main-card-images/user-watching-content/wactching-content-card-info.svg"
+                      alt="더보기 버튼 이미지"
+                    />
+                  </button>
+                  <button type="button" class="play-svg-img">
+                    <img
+                      src="./../../assets/main-card-images/user-watching-content/play-icon.svg"
+                      alt="플레이 버튼 이미지"
+                    />
+                  </button>
+                </div>
+              </figure>
+            </a>
+          </li>
+          <li class="card">
+            <a href="./../program-detail/program-detail.html" class="card-link">
+              <figure>
+                <img
+                  src="./../../assets/main-card-images/user-watching-content/user-watching-content-2.webp"
+                  alt="드라마 웰컴 투 삼달리 포스터"
+                />
+                <div class="watching-card-bottom">
+                  <figcaption>3화</figcaption>
+                  <button type="button" class="watching-content-card-info">
+                    <img
+                      src="./../../assets/main-card-images/user-watching-content/wactching-content-card-info.svg"
+                      alt="더보기 버튼 이미지"
+                    />
+                  </button>
+                  <button type="button" class="play-svg-img">
+                    <img
+                      src="./../../assets/main-card-images/user-watching-content/play-icon.svg"
+                      alt="플레이 버튼 이미지"
+                    />
+                  </button>
+                </div>
+              </figure>
+            </a>
+          </li>
+          <li class="card">
+            <a href="./../program-detail/program-detail.html" class="card-link">
+              <figure>
+                <img
+                  src="./../../assets/main-card-images/user-watching-content/user-watching-content-3.webp"
+                  alt="드라마 청춘기록 포스터"
+                />
+                <div class="watching-card-bottom">
+                  <figcaption>7화</figcaption>
+                  <button type="button" class="watching-content-card-info">
+                    <img
+                      src="./../../assets/main-card-images/user-watching-content/wactching-content-card-info.svg"
+                      alt="더보기 버튼 이미지"
+                    />
+                  </button>
+                  <button type="button" class="play-svg-img">
+                    <img
+                      src="./../../assets/main-card-images/user-watching-content/play-icon.svg"
+                      alt="플레이 버튼 이미지"
+                    />
+                  </button>
+                </div>
+              </figure>
+            </a>
+          </li>
+          <li class="card">
+            <a href="./../program-detail/program-detail.html" class="card-link">
+              <figure>
+                <img
+                  src="./../../assets/main-card-images/user-watching-content/user-watching-content-4.webp"
+                  alt="영화 아무도 없는 곳 포스터 "
+                />
+                <div class="watching-card-bottom">
+                  <figcaption>45분 남음</figcaption>
+                  <button type="button" class="watching-content-card-info">
+                    <img
+                      src="./../../assets/main-card-images/user-watching-content/wactching-content-card-info.svg"
+                      alt="더보기 버튼 이미지"
+                    />
+                  </button>
+                  <button type="button" class="play-svg-img">
+                    <img
+                      src="./../../assets/main-card-images/user-watching-content/play-icon.svg"
+                      alt="플레이 버튼 이미지"
+                    />
+                  </button>
+                </div>
+              </figure>
+            </a>
+          </li>
+          <li class="card">
+            <a href="./../program-detail/program-detail.html" class="card-link">
+              <figure>
+                <img
+                  src="./../../assets/main-card-images/user-watching-content/user-watching-content-5.webp"
+                  alt="드라마 미생 포스터"
+                />
+                <div class="watching-card-bottom">
+                  <figcaption>12회</figcaption>
+                  <button type="button" class="watching-content-card-info">
+                    <img
+                      src="./../../assets/main-card-images/user-watching-content/wactching-content-card-info.svg"
+                      alt="더보기 버튼 이미지"
+                    />
+                  </button>
+                  <button type="button" class="play-svg-img">
+                    <img
+                      src="./../../assets/main-card-images/user-watching-content/play-icon.svg"
+                      alt="플레이 버튼 이미지"
+                    />
+                  </button>
+                </div>
+              </figure>
+            </a>
+          </li>
+          <li class="card">
+            <a href="./../program-detail/program-detail.html" class="card-link">
+              <figure>
+                <img
+                  src="./../../assets/main-card-images/user-watching-content/user-watching-content-6.webp"
+                  alt="예능 내편하자 4 포스터"
+                />
+                <div class="watching-card-bottom">
+                  <figcaption>1화</figcaption>
+                  <button type="button" class="watching-content-card-info">
+                    <img
+                      src="./../../assets/main-card-images/user-watching-content/wactching-content-card-info.svg"
+                      alt="더보기 버튼 이미지"
+                    />
+                  </button>
+                  <button type="button" class="play-svg-img">
+                    <img
+                      src="./../../assets/main-card-images/user-watching-content/play-icon.svg"
+                      alt="플레이 버튼 이미지"
+                    />
+                  </button>
+                </div>
+              </figure>
+            </a>
+          </li>
+          <li class="card">
+            <a href="./../program-detail/program-detail.html" class="card-link">
+              <figure>
+                <img
+                  src="./../../assets/main-card-images/user-watching-content/user-watching-content-7.webp"
+                  alt="드라마 그놈은 흑염룡 포스터"
+                />
+                <div class="watching-card-bottom">
+                  <figcaption>7화</figcaption>
+                  <button type="button" class="watching-content-card-info">
+                    <img
+                      src="./../../assets/main-card-images/user-watching-content/wactching-content-card-info.svg"
+                      alt="더보기 버튼 이미지"
+                    />
+                  </button>
+                  <button type="button" class="play-svg-img">
+                    <img
+                      src="./../../assets/main-card-images/user-watching-content/play-icon.svg"
+                      alt="플레이 버튼 이미지"
+                    />
+                  </button>
+                </div>
+              </figure>
+            </a>
+          </li>
+          <li class="card">
+            <a href="./../program-detail/program-detail.html" class="card-link">
+              <figure>
+                <img
+                  src="./../../assets/main-card-images/user-watching-content/user-watching-content-8.webp"
+                  alt="예능 나는 SOLO 그후(사랑은 계속 된다.) 포스터"
+                />
+                <div class="watching-card-bottom">
+                  <figcaption>2화</figcaption>
+                  <button type="button" class="watching-content-card-info">
+                    <img
+                      src="./../../assets/main-card-images/user-watching-content/wactching-content-card-info.svg"
+                      alt="더보기 버튼 이미지"
+                    />
+                  </button>
+                  <button type="button" class="play-svg-img">
+                    <img
+                      src="./../../assets/main-card-images/user-watching-content/play-icon.svg"
+                      alt="플레이 버튼 이미지"
+                    />
+                  </button>
+                </div>
+              </figure>
+            </a>
+          </li>
+          <li class="card">
+            <a href="./../program-detail/program-detail.html" class="card-link">
+              <figure>
+                <img
+                  src="./../../assets/main-card-images/user-watching-content/user-watching-content-9.webp"
+                  alt="예능 에드워드리의 컨츄리 쿡 포스터"
+                />
+                <div class="watching-card-bottom">
+                  <figcaption>3화</figcaption>
+                  <button type="button" class="watching-content-card-info">
+                    <img
+                      src="./../../assets/main-card-images/user-watching-content/wactching-content-card-info.svg"
+                      alt="더보기 버튼 이미지"
+                    />
+                  </button>
+                  <button type="button" class="play-svg-img">
+                    <img
+                      src="./../../assets/main-card-images/user-watching-content/play-icon.svg"
+                      alt="플레이 버튼 이미지"
+                    />
+                  </button>
+                </div>
+              </figure>
+            </a>
+          </li>
+          <li class="card">
+            <a href="./../program-detail/program-detail.html" class="card-link">
+              <figure>
+                <img
+                  src="./../../assets/main-card-images/user-watching-content/user-watching-content-10.webp"
+                  alt="예능 아는 형님 포스터"
+                />
+                <div class="watching-card-bottom">
+                  <figcaption>123화</figcaption>
+                  <button type="button" class="watching-content-card-info">
+                    <img
+                      src="./../../assets/main-card-images/user-watching-content/wactching-content-card-info.svg"
+                      alt=""
+                    />
+                  </button>
+                  <button type="button" class="play-svg-img">
+                    <img
+                      src="./../../assets/main-card-images/user-watching-content/play-icon.svg"
+                      alt=""
+                    />
+                  </button>
+                </div>
+              </figure>
+            </a>
+          </li>
+        </ul>
+        <div class="card-move-buttons">
+          <button type="button" class="left">
+            <svg
+              width="70"
+              height="70"
+              viewBox="0 0 70 70"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_158_6408)">
+                <g opacity="0.7">
+                  <path
+                    d="M44.13 16.7393L25.8691 35.0001"
+                    stroke="#ffffff"
+                    stroke-width="4"
+                    stroke-linecap="square"
+                  />
+                  <path
+                    d="M25.8691 35L44.13 53.2609"
+                    stroke="#ffffff"
+                    stroke-width="4"
+                    stroke-linecap="square"
+                  />
+                </g>
+              </g>
+              <defs>
+                <clipPath id="clip0_158_6408">
+                  <rect width="70" height="70" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </button>
+          <button type="button" class="right">
+            <svg
+              width="70"
+              height="70"
+              viewBox="0 0 70 70"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_158_6402)">
+                <path
+                  d="M25.8691 16.7373L44.13 34.9982"
+                  stroke="#ffffff"
+                  stroke-width="4"
+                  stroke-linecap="square"
+                />
+                <path
+                  d="M44.13 34.998L25.8691 53.2589"
+                  stroke="#ffffff"
+                  stroke-width="4"
+                  stroke-linecap="square"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_158_6402">
+                  <rect width="70" height="70" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </button>
+        </div>
+      </section>
+
+      <section class="card-wrapper live-ranking">
+        <h2>오늘의 티빙 TOP 10</h2>
+        <ul class="main-card-list live-ranking-card-list">
+          <li class="card">
+            <a href="./../program-detail/program-detail.html" class="card-link">
+              <figure>
+                <img
+                  src="./../../assets/main-card-images/live-ranking/live-ranking-1.webp"
+                  alt="드라마 그농은 흑염룡 포스터"
+                  class="ranking-content-img"
+                />
+                <figcaption>
+                  <img
+                    src="./../../assets/numder-icon/num-1.svg"
+                    alt="랭킹 1 텍스트"
+                  />
+                </figcaption>
+              </figure>
+            </a>
+          </li>
+          <li class="card">
+            <a href="./../program-detail/program-detail.html" class="card-link">
+              <figure>
+                <img
+                  src="./../../assets/main-card-images/live-ranking/live-ranking-2.webp"
+                  alt="드라마 협상의 기술 포스터"
+                  class="ranking-content-img"
+                />
+                <figcaption>
+                  <img
+                    src="./../../assets/numder-icon/num-2.svg"
+                    alt="랭킹 2 텍스트"
+                  />
+                </figcaption>
+              </figure>
+            </a>
+          </li>
+          <li class="card">
+            <a href="./../program-detail/program-detail.html" class="card-link">
+              <figure>
+                <img
+                  src="./../../assets/main-card-images/live-ranking/live-ranking-3.webp"
+                  alt="드라마 꽃파당 포스터"
+                  class="ranking-content-img"
+                />
+                <figcaption>
+                  <img
+                    src="./../../assets/numder-icon/num-3.svg"
+                    alt="랭킹 3 텍스트"
+                  />
+                </figcaption>
+              </figure>
+            </a>
+          </li>
+          <li class="card">
+            <a href="./../program-detail/program-detail.html" class="card-link">
+              <figure>
+                <img
+                  src="./../../assets/main-card-images/live-ranking/live-ranking-4.webp"
+                  alt="영화 그놈이다 포스터"
+                  class="ranking-content-img"
+                />
+                <figcaption>
+                  <img
+                    src="./../../assets/numder-icon/num-4.svg"
+                    alt="랭킹 4 텍스트"
+                  />
+                </figcaption>
+              </figure>
+            </a>
+          </li>
+          <li class="card">
+            <a href="./../program-detail/program-detail.html" class="card-link">
+              <figure>
+                <img
+                  src="./../../assets/main-card-images/live-ranking/live-ranking-5.webp"
+                  alt="영화 오살 포스터"
+                  class="ranking-content-img"
+                />
+                <figcaption>
+                  <img
+                    src="./../../assets/numder-icon/num-5.svg"
+                    alt="랭킹 5 이미지"
+                  />
+                </figcaption>
+              </figure>
+            </a>
+          </li>
+          <li class="card">
+            <a href="./../program-detail/program-detail.html" class="card-link">
+              <figure>
+                <img
+                  src="./../../assets/main-card-images/live-ranking/live-ranking-6.webp"
+                  alt="영화 친절한 금자씨 포스터"
+                  class="ranking-content-img"
+                />
+                <figcaption>
+                  <img
+                    src="./../../assets/numder-icon/num-6.svg"
+                    alt="랭킹 6 텍스트"
+                  />
+                </figcaption>
+              </figure>
+            </a>
+          </li>
+          <li class="card">
+            <a href="./../program-detail/program-detail.html" class="card-link">
+              <figure>
+                <img
+                  src="./../../assets/main-card-images/live-ranking/live-ranking-7.webp"
+                  alt="드라마 18 어게인 포스터"
+                  class="ranking-content-img"
+                />
+                <figcaption>
+                  <img
+                    src="./../../assets/numder-icon/num-7.svg"
+                    alt="랭킹 7 텍스트"
+                  />
+                </figcaption>
+              </figure>
+            </a>
+          </li>
+          <li class="card">
+            <a href="./../program-detail/program-detail.html" class="card-link">
+              <figure>
+                <img
+                  src="./../../assets/main-card-images/live-ranking/live-ranking-8.webp"
+                  alt="영화 서복 포스터"
+                  class="ranking-content-img"
+                />
+                <figcaption>
+                  <img
+                    src="./../../assets/numder-icon/num-8.svg"
+                    alt="랭킹 8 텍스트"
+                  />
+                </figcaption>
+              </figure>
+            </a>
+          </li>
+          <li class="card">
+            <a href="./../program-detail/program-detail.html" class="card-link">
+              <figure>
+                <img
+                  src="./../../assets/main-card-images/live-ranking/live-ranking-9.webp"
+                  alt="드라마 협상의 기술 포스터"
+                  class="ranking-content-img"
+                />
+                <figcaption>
+                  <img
+                    src="./../../assets/numder-icon/num-9.svg"
+                    alt="랭킹 9 텍스트"
+                  />
+                </figcaption>
+              </figure>
+            </a>
+          </li>
+          <li class="card">
+            <a href="./../program-detail/program-detail.html" class="card-link">
+              <figure>
+                <img
+                  src="./../../assets/main-card-images/live-ranking/live-ranking-10.webp"
+                  alt="예능 놀라운 토요일 포스터"
+                  class="ranking-content-img"
+                />
+                <figcaption>
+                  <img
+                    src="./../../assets/numder-icon/num-10.svg"
+                    alt="랭킹 10 텍스트"
+                  />
+                </figcaption>
+              </figure>
+            </a>
+          </li>
+        </ul>
+        <div class="card-move-buttons">
+          <button type="button" class="left">
+            <svg
+              width="70"
+              height="70"
+              viewBox="0 0 70 70"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_158_6408)">
+                <g opacity="0.7">
+                  <path
+                    d="M44.13 16.7393L25.8691 35.0001"
+                    stroke="#ffffff"
+                    stroke-width="4"
+                    stroke-linecap="square"
+                  />
+                  <path
+                    d="M25.8691 35L44.13 53.2609"
+                    stroke="#ffffff"
+                    stroke-width="4"
+                    stroke-linecap="square"
+                  />
+                </g>
+              </g>
+              <defs>
+                <clipPath id="clip0_158_6408">
+                  <rect width="70" height="70" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </button>
+          <button type="button" class="right">
+            <svg
+              width="70"
+              height="70"
+              viewBox="0 0 70 70"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_158_6402)">
+                <path
+                  d="M25.8691 16.7373L44.13 34.9982"
+                  stroke="#ffffff"
+                  stroke-width="4"
+                  stroke-linecap="square"
+                />
+                <path
+                  d="M44.13 34.998L25.8691 53.2589"
+                  stroke="#ffffff"
+                  stroke-width="4"
+                  stroke-linecap="square"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_158_6402">
+                  <rect width="70" height="70" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </button>
+        </div>
+      </section>
+
+      <section class="card-wrapper live-channel">
+        <h2>실시간 인기 LIVE</h2>
+        <ul class="main-card-list live-channel-card-list">
+          <li class="card">
+            <a href="./../program-detail/program-detail.html" class="card-link">
+              <figure>
+                <img
+                  src="./../../assets/main-card-images/live-channel/live-channel-1.webp"
+                  alt="라이브 에드워드리의 컨츄리쿡 영상 썸네일"
+                />
+                <div class="rank-channel-text">
+                  <figcaption>tv n</figcaption>
+                  <p class="subtitle">에드워드리의 컨츄리쿡</p>
+                  <p class="ranking">
+                    <img
+                      src="./../../assets/numder-icon/num-1.svg"
+                      alt="랭킹 1 텍스트"
+                    />
+                  </p>
+                  <p class="viewer">12.7%</p>
+                </div>
+              </figure>
+            </a>
+          </li>
+          <li class="card">
+            <a href="./../program-detail/program-detail.html" class="card-link">
+              <figure>
+                <img
+                  src="./../../assets/main-card-images/live-channel/live-channel-2.webp"
+                  alt="라이브 연합뉴스 TV 뉴스센터 영상 썸네일"
+                />
+                <div class="rank-channel-text">
+                  <figcaption>연합뉴스 TV</figcaption>
+                  <p class="subtitle">뉴스 센터</p>
+                  <p class="ranking">
+                    <img
+                      src="./../../assets/numder-icon/num-2.svg"
+                      alt="랭킹 2 텍스트"
+                    />
+                  </p>
+                  <p class="viewer">11.6</p>
+                </div>
+              </figure>
+            </a>
+          </li>
+          <li class="card">
+            <a href="./../program-detail/program-detail.html" class="card-link">
+              <figure>
+                <img
+                  src="./../../assets/main-card-images/live-channel/live-channel-3.webp"
+                  alt="라이브 신서유기4 영상 썸네일"
+                />
+                <div class="rank-channel-text">
+                  <figcaption>tvN SHOW</figcaption>
+                  <p class="subtitle">신서유기4 3화</p>
+                  <p class="ranking">
+                    <img
+                      src="./../../assets/numder-icon/num-3.svg"
+                      alt="랭킹 3 텍스트"
+                    />
+                  </p>
+                  <p class="viewer">17.4%</p>
+                </div>
+              </figure>
+            </a>
+          </li>
+          <li class="card">
+            <a href="./../program-detail/program-detail.html" class="card-link">
+              <figure>
+                <img
+                  src="./../../assets/main-card-images/live-channel/live-channel-4.webp"
+                  alt="라이브 YTN 뉴스 NOW 영상 썸네일"
+                />
+                <div class="rank-channel-text">
+                  <figcaption>YTN</figcaption>
+                  <p class="subtitle">뉴스 NOW</p>
+                  <p class="ranking">
+                    <img src="./../../assets/numder-icon/num-4.svg" alt="" />
+                  </p>
+                  <p class="viewer"></p>
+                </div>
+              </figure>
+            </a>
+          </li>
+          <li class="card">
+            <a href="./../program-detail/program-detail.html" class="card-link">
+              <figure>
+                <img
+                  src="./../../assets/main-card-images/live-channel/live-channel-5.webp"
+                  alt="라이브 channel A 신랑수업 영상 썸네일"
+                />
+                <div class="rank-channel-text">
+                  <figcaption>channel A</figcaption>
+                  <p class="subtitle">신랑수업 2화</p>
+                  <p class="ranking">
+                    <img
+                      src="./../../assets/numder-icon/num-5.svg"
+                      alt="랭킹 5 텍스트"
+                    />
+                  </p>
+                  <p class="viewer">5.7%</p>
+                </div>
+              </figure>
+            </a>
+          </li>
+          <li class="card">
+            <a href="./../program-detail/program-detail.html" class="card-link">
+              <figure>
+                <img
+                  src="./../../assets/main-card-images/live-channel/live-channel-6.webp"
+                  alt="라이브 JTBC 이혼 숙려 캠프 영상 썸네일"
+                />
+                <div class="rank-channel-text">
+                  <figcaption>JTBC</figcaption>
+                  <p class="subtitle">이혼숙려 캠프 3화</p>
+                  <p class="ranking">
+                    <img
+                      src="./../../assets/numder-icon/num-6.svg"
+                      alt="랭킹 6 텍스트"
+                    />
+                  </p>
+                  <p class="viewer">2.7%</p>
+                </div>
+              </figure>
+            </a>
+          </li>
+          <li class="card">
+            <a href="./../program-detail/program-detail.html" class="card-link">
+              <figure>
+                <img
+                  src="./../../assets/main-card-images/live-channel/live-channel-7.webp"
+                  alt="라이브 JTBC2 프리드라이프 광고 영상 썸네일"
+                />
+                <div class="rank-channel-text">
+                  <figcaption>JTBC2</figcaption>
+                  <p class="subtitle">프리드 라이프 홈쇼핑</p>
+                  <p class="ranking">
+                    <img
+                      src="./../../assets/numder-icon/num-7.svg"
+                      alt="랭킹 7 텍스트"
+                    />
+                  </p>
+                  <p class="viewer"></p>
+                </div>
+              </figure>
+            </a>
+          </li>
+          <li class="card">
+            <a href="./../program-detail/program-detail.html" class="card-link">
+              <figure>
+                <img
+                  src="./../../assets/main-card-images/live-channel/live-channel-8.webp"
+                  alt="라이브 LifeTime 용감한 형사들4 영상 썸네일"
+                />
+                <div class="rank-channel-text">
+                  <figcaption>LifeTime</figcaption>
+                  <p class="subtitle">용감한 형사들4 2화</p>
+                  <p class="ranking">
+                    <img
+                      src="./../../assets/numder-icon/num-8.svg"
+                      alt="랭킹 8 텍스트"
+                    />
+                  </p>
+                  <p class="viewer">7.3%</p>
+                </div>
+              </figure>
+            </a>
+          </li>
+          <li class="card">
+            <a href="./../program-detail/program-detail.html" class="card-link">
+              <figure>
+                <img
+                  src="./../../assets/main-card-images/live-channel/live-channel-9.webp"
+                  alt="라이브 MBN Live 프레스룸 Live 영상 썸네일"
+                />
+                <div class="rank-channel-text">
+                  <figcaption>MBN Live</figcaption>
+                  <p class="subtitle">프레스룸 Live</p>
+                  <p class="ranking">
+                    <img
+                      src="./../../assets/numder-icon/num-9.svg"
+                      alt="랭킹 9 텍스트"
+                    />
+                  </p>
+                  <p class="viewer">11.2%</p>
+                </div>
+              </figure>
+            </a>
+          </li>
+          <li class="card">
+            <a href="./../program-detail/program-detail.html" class="card-link">
+              <figure>
+                <img
+                  src="./../../assets/main-card-images/live-channel/live-channel-10.webp"
+                  alt="라이브 OCN Movies 보디가드 영상 썸네일"
+                />
+                <div class="rank-channel-text">
+                  <figcaption>OCN Movies</figcaption>
+                  <p class="subtitle">보디가드</p>
+                  <p class="ranking">
+                    <img
+                      src="./../../assets/numder-icon/num-10.svg"
+                      alt="랭킹 10 텍스트"
+                    />
+                  </p>
+                  <p class="viewer"></p>
+                </div>
+              </figure>
+            </a>
+          </li>
+        </ul>
+        <div class="card-move-buttons">
+          <button type="button" class="left">
+            <svg
+              width="70"
+              height="70"
+              viewBox="0 0 70 70"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_158_6408)">
+                <g opacity="0.7">
+                  <path
+                    d="M44.13 16.7393L25.8691 35.0001"
+                    stroke="#ffffff"
+                    stroke-width="4"
+                    stroke-linecap="square"
+                  />
+                  <path
+                    d="M25.8691 35L44.13 53.2609"
+                    stroke="#ffffff"
+                    stroke-width="4"
+                    stroke-linecap="square"
+                  />
+                </g>
+              </g>
+              <defs>
+                <clipPath id="clip0_158_6408">
+                  <rect width="70" height="70" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </button>
+          <button type="button" class="right">
+            <svg
+              width="70"
+              height="70"
+              viewBox="0 0 70 70"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_158_6402)">
+                <path
+                  d="M25.8691 16.7373L44.13 34.9982"
+                  stroke="#ffffff"
+                  stroke-width="4"
+                  stroke-linecap="square"
+                />
+                <path
+                  d="M44.13 34.998L25.8691 53.2589"
+                  stroke="#ffffff"
+                  stroke-width="4"
+                  stroke-linecap="square"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_158_6402">
+                  <rect width="70" height="70" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="clone-modal-wrapper">
+        <button type="button" class="clone-modal-open">공지사항</button>
+        <dialog class="clone-modal">
+          <h3 class="clone-modal-title">
+            해당사이트는 공식 사이트가아닌, 학습을 위해 제작된 클론
+            사이트입니다.
+          </h3>
+          <form action="" method="dialog">
+            <button type="button" class="clone-modal-close">
+              하루 이창 보지않기
+            </button>
+          </form>
+        </dialog>
+      </div>
+
+      <div class="footer-line"></div>
+
+      <section class="footer-nav">
+        <ul>
+          <li><a href="/">고객센터</a></li>
+          <li><a href="/">이용약관</a></li>
+          <li><a href="/">개인정보처리방침</a></li>
+          <li><a href="/">청소년 보호정책</a></li>
+          <li><a href="/">법적고지</a></li>
+          <li><a href="/">이벤트</a></li>
+          <li><a href="/">인재채용</a></li>
+        </ul>
+
+        <div class="footer-header-link">
+          <a href="">브랜드 바로가기 <span>+</span></a>
+          <div class="footer-header-link-line">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="2"
+              height="20"
+              viewBox="0 0 2 26"
+              fill="none"
+            >
+              <path d="M1 0.578125L0.999999 25.4199" stroke="#6B6B6B" />
+            </svg>
+          </div>
+          <a href="">그룹 계열사 바로가기 <span>+</span></a>
+        </div>
+      </section>
+
+      <section class="footer-address">
+        <address>
+          <p>
+            <span>대표이사 : YANG JIEUL</span>
+            <span><a href="/">사업자정보확인</a></span>
+            <span>사업자등록번호 : 188-88-01893</span>
+            <span>통신판매신고번호 : 2020-서울마포-3641호</span>
+          </p>
+          <p>
+            <span
+              >사업장 : 서울특별시 마포구 상암산로 34, DMC디지털큐브
+              15층(상암동)
+            </span>
+            <span>호스팅사업자 : 씨제이올리브네트웍스(주)</span>
+          </p>
+          <p>
+            <span><a href="/">고객문의 바로가기</a></span>
+            <span
+              ><a href="mailto:tving@cj.net">대표메일 : ting@cj.net</a></span
+            >
+            <span
+              ><a href="tel:1670-1525"
+                >고객센터 : 1670-1525 (평일/주말 09시~18시, 공휴일 휴무)</a
+              ></span
+            >
+          </p>
+          <p>
+            <span
+              >ENM 시청자 상담실 (편성 문의 및 시청자 의견) : 080-080-0780</span
+            >
+            <span>Mnet 고객센터(반송편성문의) : 1855-1631</span>
+          </p>
+        </address>
+      </section>
+
+      <section class="footer-map">
+        <div class="map-icon-mobile">
+          <img
+            src="./../../assets/map-icon/footer-map-icons.webp"
+            usemap="#image-map-mobile"
+          />
+
+          <map name="image-map-mobile">
+            <area
+              target="_blank"
+              alt="TVING Youtube"
+              title="TVING Youtube"
+              href="https://www.youtube.com/c/TVING_official"
+              coords="12,12,11"
+              shape="circle"
+            />
+            <area
+              target="_blank"
+              alt="TVING Instagram"
+              title="TVING Instagram"
+              href="https://www.instagram.com/tving.official/"
+              coords="57,12,12"
+              shape="circle"
+            />
+            <area
+              target="_blank"
+              alt="TVING Twitter"
+              title="TVING Twitter"
+              href="https://x.com/tvingdotcom?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+              coords="102,12,11"
+              shape="circle"
+            />
+            <area
+              target="_blank"
+              alt="TVING Facebook"
+              title="TVING Facebook"
+              href="https://www.facebook.com/CJTVING/?locale=ko_KR"
+              coords="147,12,12"
+              shape="circle"
+            />
+          </map>
+        </div>
+
+        <div class="map-icon-tablet">
+          <img
+            src="./../../assets/map-icon/footer-map-icons-tablet.webp"
+            usemap="#image-map-tablet"
+          />
+
+          <map name="image-map-tablet">
+            <area
+              target="_blank"
+              alt="TVING Youtube"
+              title="TVING Youtube"
+              href="https://www.youtube.com/c/TVING_official"
+              coords="15,15,15"
+              shape="circle"
+            />
+            <area
+              target="_blank"
+              alt="TVING Instagram"
+              title="TVING Instagram"
+              href="https://www.instagram.com/tving.official/"
+              coords="66,15,15"
+              shape="circle"
+            />
+            <area
+              target="_blank"
+              alt="TVING Twitter"
+              title="TVING Twitter"
+              href="https://x.com/tvingdotcom?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+              coords="117,15,14"
+              shape="circle"
+            />
+            <area
+              target="_blank"
+              alt="TVING Facebook"
+              title="TVING Facebook"
+              href="https://www.facebook.com/CJTVING/?locale=ko_KR"
+              coords="168,15,14"
+              shape="circle"
+            />
+          </map>
+        </div>
+
+        <div class="map-icon-desktop">
+          <img
+            src="./../../assets/map-icon/footer-map-icons-desktop.webp"
+            usemap="#image-map-desktop"
+          />
+
+          <map name="image-map-desktop">
+            <area
+              target="_blank"
+              alt="TVING Youtube"
+              title="TVING Youtube"
+              href="https://www.youtube.com/c/TVING_official"
+              coords="26,26,25"
+              shape="circle"
+            />
+            <area
+              target="_blank"
+              alt="TVING Instagram"
+              title="TVING Instagram"
+              href="https://www.instagram.com/tving.official/"
+              coords="99,26,26"
+              shape="circle"
+            />
+            <area
+              target="_blank"
+              alt="TVING Twitter"
+              title="TVING Twitter"
+              href="https://x.com/tvingdotcom?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+              coords="172,26,26"
+              shape="circle"
+            />
+            <area
+              target="_blank"
+              alt="TVING Facebook"
+              title="TVING Facebook"
+              href="https://www.facebook.com/CJTVING/?locale=ko_KR"
+              coords="244,26,25"
+              shape="circle"
+            />
+          </map>
+        </div>
+      </section>
+
+      <section class="footer-copyright">
+        <p class="copyright">Copyright © 주식회사 티빙 All right reserved.</p>
+      </section>
+    </footer>
+  </body>
+</html>

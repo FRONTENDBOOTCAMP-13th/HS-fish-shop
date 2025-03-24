@@ -5,20 +5,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>UI 프로젝트 - CSS</title>
     <link rel="icon" href="/vite.svg" />
-    <link rel="preload" as="font" href="/font/woff2/PretendardVariable.woff2" crossorigin="anonymous" /> 
+    <link
+      rel="preload"
+      as="font"
+      href="/font/woff2/PretendardVariable.woff2"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" as="style" href="/font/pretendardvariable.css" />
-		<script type="module" src="/src/main.js"></script>
+    <link rel="stylesheet" href="/src/styles/reset.css" />
+    <link rel="stylesheet" href="/src/styles/index.css" />
+    <script type="module" src="/src/main.js"></script>
   </head>
   <body>
-		<h1>Vite + CSS</h1>
-    <ul>
-      <li>컴포넌트를 분리해서 구현해주세요.</li>
-      <li>컴포넌트의 코드 리뷰를 AI를 통해 받은 후 개선해보세요.</li>
-      <li>개선점을 문서화하여 정리해 보세요</li>
-      <li>구현한 컴포넌트를 기반으로 페이지를 만들어주세요.</li>
-      <li>접근성과 성능을 신경써주세요</li>
-      <li>소통하고 화합하며 프로젝트 즐겨주세요.</li>
-      <li>결과보다 과정이 중요합니다.‼️</li>
-    </ul>
+    <div class="index_container">
+      <header class="index_header">
+        <h2>환영합니다! <br />Tving 스타일의 클론 사이트</h2>
+        <img src="./src/styles/index_taingLogo.svg" alt="" />
+      </header>
+      
+      <a href="./intro.html" class="index_nav_icon">15팀 소개
+      </a>
+      <a href="#" class="index_nav_icon" id="index_menuToggle"
+          >타잉 페이지 바로보기</a
+        >
+
+      </main>
+      <nav class="index_nav_container" id="index_navMenu">
+        <ul class="index_nav">
+          <li><a href="./src/components/main-card/main-card.html">메인페이지 - 카드(컴포넌트)</a></li>
+          <li><a href="./src/components/main-visual/main-visual.html">메인페이지 - 비쥬얼 이미지(컴포넌트)</a></li>
+          <li><a href="./src/components/main-nav/main-nav.html">메인페이지 - 카드 리스트(컴포넌트)</a></li>
+          <li><a href="./src/components/clone-modal/clone-modal.html">모달(컴포넌트)</a></li>
+          <li>
+            <a href="./src/pages/landing-page/landing-page.html">랜딩 페이지(페이지)</a>
+          </li>
+          <li><a href="./src/pages/main-page/main-page.html">메인 페이지(페이지)</a></li>
+          <li><a href="./src/pages/drama-page/drama-page.html">드라마 페이지(페이지)</a></li>
+          <li><a href="./src/pages/movie-page/movie-page.html">영화 페이지(페이지)</a></li>
+          <li><a href="./src/pages/my-history/my-history.html">기록 페이지(페이지)</a></li>
+          <li><a href="./src/pages/mobile-search/mobile-search.html">모바일 검색(페이지)</a></li>
+          <li><a href="./src/pages/program-detail/program-detail.html">드라마 상세페이지(페이지)</a></li>
+          <li>
+            <a href="./src/pages/login-page/login-page.html">로그인(페이지)</a>
+          </li>
+          <li>
+            <a href="./src/pages/findId-page/findId-page.html">아이디 찾기(페이지)</a>
+          </li>
+          <li>
+            <a href="./src/pages/findPw-page/findPw-page.html">비밀번호 찾기(페이지)</a>
+          </li>
+          <li>
+            <a href="./src/pages/signup-page/signup-page.html">회원가입(페이지)</a>
+          </li>
+          <li>
+            <a href="./src/pages/profile-page/profile-page.html">프로필 전환(페이지)</a>
+          </li>
+          <li>
+            <a href="./src/pages/profile-edit-page/profile-edit-page.html">프로필 수정(페이지)</a>
+          </li>
+          <li>
+            <a href="./src/pages/profile-edit-sub-page/profile-edit-sub-page.html">서브 프로필 수정(페이지)</a>
+          </li>
+        </ul>
+      </nav>
+
+    </div>
+    <script>
+      // a 태그 클릭 시 nav 메뉴를 토글
+      const index_menuToggle = document.getElementById("index_menuToggle");
+      const index_navMenu = document.getElementById("index_navMenu");
+
+      index_menuToggle.addEventListener("click", function (e) {
+        e.preventDefault(); // 링크 클릭 기본 동작 막기
+        index_navMenu.classList.toggle("visible"); // 'visible' 클래스 토글
+      });
+    </script>
   </body>
-</html> 
+</html>

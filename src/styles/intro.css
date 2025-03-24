@@ -1,0 +1,688 @@
+.intro-page {
+  --intro-gray-400: #bababa;
+  --intro-gray-700: #1d1d1d;
+  --intro-gray-800: #131313;
+
+  --quick-w: 15rem; /* 퀵버튼 가로길이 */
+  --quick-px: 0.625rem; /* 퀵버튼 상하패딩 */
+  --quick-text-size: 1.25rem; /* 퀵버튼 폰트사이즈 */
+  --quick-back-pt: 0.625rem; /* 퀵버튼 배경상단 패딩 */
+  --quick-back-pb: 1.25rem; /* 퀵버튼 배경하단 패딩 */
+  --quick-img-gap: 0.625rem; /* 퀵버튼 이미지 글자사이간격 */
+  --quick-img-w: 5rem; /* 퀵버튼 이미지 가로사이즈 */
+
+  --header-h: 2.5rem; /* 상단고정메뉴 높이 */
+  --header-px: 0.625rem; /* 상단고정메뉴 좌우패딩*/
+
+  --header-text-size: 0.875rem; /* 폰트사이즈 */
+  --header-a-px: 0.5rem; /* 버튼 좌우 패딩 */
+  --header-a-py: 0.25rem; /* 버튼 상하패딩 */
+  --header-a-mx: 0.5rem; /* 버튼 좌우 마진 */
+  --header-logo-w: 4.5rem; /* 헤더 로고사이즈 */
+
+  --rounding-m: 0.25rem; /* 모바일 라운딩 */
+  --section-px: 0.625rem; /* 섹션상단 */
+  --section-in-px: 0.625rem; /* 섹션좌우(안쪽) */
+
+  --section-title-size: 1.125rem; /* 섹션 영어제목사이즈 */
+  --section-title-mb: 14px; /* 하단 바텀*/
+  --intro-section-tm: 0.625rem; /*섹션간 간격, 좁은 버전*/
+  --intro-section-tm-lg: 2.125rem; /*섹션간 간격, 넓은 버전*/
+
+  --intro-visual-height: 22.875rem; /* 비쥬얼 섹션 높이 */
+  --intro-visual-py: 1.25rem; /* 비쥬얼 상하패딩 */
+  --visual-logo-w: 6.75rem; /* 로고 가로사이즈 */
+  --intro-visual-header-size: 1.75rem; /* UI Project 글자크기 */
+  --intro-font-sm: 0.75rem; /* 날짜,프론트엔드 폰트크기 */
+  --intro-font-m: 0.875rem; /* 조원이름 폰트사이즈 */
+  --intro-text-gap: 0.25rem; /* text 세로줄 간격 */
+  --intro-position-w: 6.875rem; /* 역할 가로사이즈 */
+
+  --intro-team-py: 1rem; /* 팀소개 섹션 세로 패딩 */
+  --intro-team-size: 0.75rem; /* 팀소개 본문 패딩사이즈 */
+
+  --intro-mem-img-w: 3rem; /* 프사 사이즈 */
+  --intro-mem-pro-p: 0.75rem; /* 카드 안 옅은 회색부분 패딩 / 헤더 하단 바텀*/
+  --intro-mem-header-red: 0.875rem; /* 빨간 스크럼마스터 폰트사이즈*/
+  --intro-mem-header-red-px: 10px; /* 빨간 스크럼마스터 패딩가로*/
+  --intro-mem-header-red-py: 4px; /* 빨간 스크럼마스터 패딩세로*/
+  --intro-mem-gray-size: 0.75rem; /* 카드안 회색글자 폰트사이즈 */
+  --intro-card-gap: 0.625rem; /* 이미지,와 글자사이갭*/
+  --intro-card-text-gap: 0.25rem; /* 글자사이갭*/
+  --intro-mem-name: 1.25rem; /* 이름크기 */
+  --intro-mem-text: 0.875rem; /* 자기소개크기 */
+  --intro-card-padding: 0.75rem; /* 카드안 패딩 */
+  --intro-card-out-gap: 0.5rem; /* 카드끼리갭 */
+
+  --intro-goal-gap: 0.625rem; /* 목표카드끼리갭 */
+  --intro-goal-py: 1.25rem; /* 카드 세로 갭*/
+  --intro-goal-icon-gap: 0.75rem; /* 아이콘 글자사이갭*/
+  --intro-goal-icon-p: 0.875rem; /* 아이콘 패딩*/
+  --intro-goal-text-size: 1rem; /* 폰트 사이즈*/
+
+  --intro-scope-page-head: 0.875rem; /* 하위메뉴제목사이즈*/
+  --intro-scope-page-li-px: 0.5rem; /* 색깔 페이지들 가로 패딩*/
+  --intro-scope-page-li-py: 0.25rem; /* 색깔 페이지들 세로 패딩*/
+  --intro-scope-page-gap: 1rem; /* 페이지 1단 갭*/
+  --intro-scope-box-gap: 0.25rem; /*색깔 버튼사이갭*/
+  --intro-scope-box-size: 0.75rem; /*색깔 버튼 폰트사이즈*/
+
+  --tool-icon: 0.875rem;
+
+  @media screen and (min-width: 768px) {
+    --quick-w: 20rem; /* 퀵버튼 가로길이 */
+    --quick-px: 0.75rem; /* 퀵버튼 상하패딩 */
+    --quick-text-size: 1.375rem; /* 퀵버튼 폰트사이즈 */
+    --quick-back-pt: 0.625rem; /* 퀵버튼 배경상단 패딩 */
+    --quick-back-pb: 1.25rem; /* 퀵버튼 배경하단 패딩 */
+    --quick-img-gap: 0.625rem; /* 퀵버튼 이미지 글자사이간격 */
+    --quick-img-w: 7.5rem; /* 퀵버튼 이미지 가로사이즈 */
+    --header-logo-w: 4.5rem; /* 헤더 로고사이즈 */
+
+    --header-h: 3.125rem; /* 상단고정메뉴 높이 */
+    --header-px: 1.25rem; /* 상단고정메뉴 좌우패딩*/
+
+    --rounding-m: 0.25rem; /* 모바일 라운딩 */
+    --section-px: 1.25rem; /* 섹션좌우(바깥) */
+    --section-in-px: 1.25rem; /* 섹션좌우(안쪽) */
+
+    --section-title-size: 1.375rem; /* 섹션 영어제목사이즈 */
+    --section-title-mb: 1.125rem; /* 하단 바텀*/
+    --intro-section-tm: 1.25rem; /*섹션간 간격, 좁은 버전*/
+    --intro-section-tm-lg: 3.125rem; /*섹션간 간격, 넓은 버전*/
+
+    --intro-visual-height: 22.875rem; /* 비쥬얼 섹션 높이 */
+    --intro-visual-py: 1.75rem; /* 비쥬얼 상하패딩 */
+    --visual-logo-w: 8.75rem; /* 로고 가로사이즈 */
+    --intro-visual-header-size: 2rem; /* UI Project 글자크기 */
+    --intro-font-sm: 0.875rem; /* 날짜,프론트엔드 폰트크기 */
+    --intro-font-m: 1rem; /* 조원이름 폰트사이즈 */
+    --intro-text-gap: 0.25rem; /* text 세로줄 간격 */
+    --intro-position-w: 7.5rem; /* 역할 가로사이즈 */
+
+    --intro-team-py: 1.25rem; /* 팀소개 섹션 세로 패딩 */
+    --intro-team-size: 0.875rem; /* 팀소개 본문 폰트사이즈 */
+
+    --intro-mem-img-w: 3rem; /* 프사 사이즈 */
+    --intro-mem-pro-p: 0.75rem; /* 카드 안 옅은 회색부분 패딩 / 헤더 하단 바텀*/
+    --intro-mem-header-red: 1rem; /* 빨간 스크럼마스터 폰트사이즈*/
+    --intro-mem-header-red-px: 10px; /* 빨간 스크럼마스터 패딩가로*/
+    --intro-mem-header-red-py: 4px; /* 빨간 스크럼마스터 패딩세로*/
+    --intro-mem-gray-size: 0.875rem; /* 카드안 회색글자 폰트사이즈 */
+    --intro-card-gap: 0.625rem; /* 이미지,와 글자사이갭*/
+    --intro-card-text-gap: 0.25rem; /* 글자사이갭*/
+    --intro-mem-name: 1.375rem; /* 이름크기 */
+    --intro-mem-text: 14px; /* 자기소개크기 */
+    --intro-card-padding: 0.75rem; /* 카드안 패딩 */
+    --intro-card-out-gap: 0.5rem; /* 카드끼리갭 */
+
+    --intro-goal-gap: 0.875rem; /* 목표카드끼리갭 */
+    --intro-goal-py: 1.625rem; /* 카드 세로 패딩*/
+    --intro-goal-icon-gap: 0.875rem; /* 아이콘 글자사이갭*/
+    --intro-goal-icon-p: 1.125rem; /* 아이콘 패딩*/
+    --intro-goal-text-size: 1.25rem; /* 폰트 사이즈*/
+    --intro-goal-card-w: 11.25rem; /*카드가로사이즈*/
+
+    --intro-scope-page-head: 1.125rem; /* 하위메뉴제목사이즈*/
+    --intro-scope-page-li-px: 0.625rem; /* 색깔 페이지들 가로 패딩*/
+    --intro-scope-page-li-py: 0.25rem; /* 색깔 페이지들 세로 패딩*/
+    --intro-scope-page-gap: 1.75rem; /* 페이지 1단 갭*/
+    --intro-scope-box-gap: 0.5rem; /*색깔 버튼사이갭*/
+    --intro-scope-box-size: 1.125rem; /*색깔 버튼 폰트사이즈*/
+
+    --tool-icon: 1.25rem;
+  }
+
+  @media screen and (min-width: 1200px) {
+    --quick-w: 15rem; /* 퀵버튼 가로길이 */
+    --quick-px: 0.625rem; /* 퀵버튼 상하패딩 */
+    --quick-text-size: 1.25rem; /* 퀵버튼 폰트사이즈 */
+    --quick-back-pt: 0.625rem; /* 퀵버튼 배경상단 패딩 */
+    --quick-back-pb: 1.25rem; /* 퀵버튼 배경하단 패딩 */
+    --quick-img-gap: 0.625rem; /* 퀵버튼 이미지 글자사이간격 */
+    --quick-img-w: 5rem; /* 퀵버튼 이미지 가로사이즈 */
+
+    --header-h: 4.375rem; /* 상단고정메뉴 높이 */
+    --header-px: 0; /* 상단고정메뉴 좌우패딩 */
+    --header-text-size: 1.125rem; /* 폰트사이즈 */
+    --header-a-px: 0.75rem; /* 버튼 좌우 패딩 */
+    --header-a-py: 0.25rem; /* 버튼 상하패딩 */
+    --header-a-mx: 0.5rem; /* 버튼 좌우 마진 */
+    --header-logo-w: 7.5rem; /* 헤더 로고사이즈 */
+
+    --rounding-m: 0.375rem; /* 모바일 라운딩 */
+    --section-px: 1.875rem; /* 섹션상단 */
+    --section-in-px: 2.375rem; /* 섹션좌우(안쪽) */
+
+    --section-title-size: 1.75rem; /* 섹션 영어제목사이즈 */
+    --section-title-mb: 1.75rem; /* 하단 바텀*/
+    --intro-section-tm: 2rem; /*섹션간 간격, 좁은 버전*/
+    --intro-section-tm-lg: 3.125rem; /*섹션간 간격, 넓은 버전*/
+
+    --intro-visual-height: 31.25rem; /* 비쥬얼 섹션 높이 */
+    --intro-visual-py: 1.875rem; /* 비쥬얼 상하패딩 */
+    --visual-logo-w: 9.5rem; /* 로고 가로사이즈 */
+    --intro-visual-header-size: 2.25rem; /* UI Project 글자크기 */
+    --intro-font-sm: 0.875rem; /* 날짜,프론트엔드 폰트크기 */
+    --intro-font-m: 1rem; /* 조원이름 폰트사이즈 */
+    --intro-text-gap: 0.25rem; /* text 세로줄 간격 */
+    --intro-position-w: 7.5rem; /* 역할 가로사이즈 */
+
+    --intro-team-py: 2rem; /* 팀소개 섹션 세로 패딩 */
+    --intro-team-size: 1.25rem; /* 팀소개 본문 폰트사이즈 */
+
+    --intro-mem-header-red: 1.375rem; /* 빨간 스크럼마스터 폰트사이즈*/
+    --intro-mem-header-red-px: 14px; /* 빨간 스크럼마스터 패딩가로*/
+    --intro-mem-header-red-py: 6px; /* 빨간 스크럼마스터 패딩세로*/
+    --intro-mem-img-w: 5rem; /* 프사 사이즈 */
+    --intro-mem-pro-p: 1.25rem; /* 카드 안 옅은 회색부분 패딩 / 헤더 하단 바텀*/
+    --intro-mem-gray-size: 1rem; /* 카드안 회색글자 폰트사이즈 */
+    --intro-card-gap: 1rem; /* 이미지,와 글자사이갭*/
+    --intro-card-text-gap: 0.5rem; /* 글자사이갭*/
+    --intro-mem-name: 1.5rem; /* 이름크기 */
+    --intro-mem-text: 1rem; /* 자기소개크기 */
+    --intro-card-padding: 1.25rem; /* 카드안 패딩 */
+    --intro-card-out-gap: 1.25rem; /* 카드끼리갭 */
+
+    --intro-goal-gap: 1rem; /* 목표카드끼리갭 */
+    --intro-goal-py: 36px; /* 카드 세로 패딩*/
+    --intro-goal-icon-gap: 1rem; /* 아이콘 글자사이갭*/
+    --intro-goal-icon-p: 1.625rem; /* 아이콘 패딩*/
+    --intro-goal-text-size: 1.5rem; /* 폰트 사이즈*/
+    --intro-goal-card-w: 13.125rem; /*카드가로사이즈*/
+
+    --intro-scope-page-head: 1.5rem; /* 하위메뉴제목사이즈*/
+    --intro-scope-page-li-px: 1rem; /* 색깔 페이지들 가로 패딩*/
+    --intro-scope-page-li-py: 0.5rem; /* 색깔 페이지들 세로 패딩*/
+    --intro-scope-page-gap: 1.75rem; /* 페이지 1단 갭*/
+    --intro-scope-box-gap: 0.5rem; /*색깔 버튼사이갭*/
+    --intro-scope-box-size: 1.125rem; /*색깔 버튼 폰트사이즈*/
+
+    --tool-icon: 1.5rem;
+  }
+
+  /* 공통 스타일 */
+  background-color: var(--black);
+  color: var(--white);
+  line-height: auto;
+
+  /* 리셋 */
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  ul,
+  li,
+  dl,
+  dt,
+  dd {
+    list-style: none;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0;
+    padding: 0;
+  }
+  /* 자주쓰는 공통 스타일 */
+  .max-w-1200 {
+    max-width: 75rem;
+    margin: 0 auto;
+  }
+  .intro-section-title {
+    font-size: var(--section-title-size);
+    color: var(--white);
+    font-weight: 700;
+    margin-bottom: var(--section-title-mb);
+  }
+  .h-100 {
+    height: 100%;
+  }
+  .line-140 {
+    line-height: 140%;
+  }
+  .flex-row-between {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .flex-row-center {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .flex-col {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+  .flex-col-between {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+  }
+  .intro-font-gray {
+    color: var(--intro-gray-400);
+  }
+  .intro-font-red {
+    color: var(--brand--red-1);
+  }
+  .intro-text-bold {
+    font-weight: 700;
+  }
+  .intro-text-regular {
+    font-weight: 400;
+  }
+  section {
+    padding-inline: var(--section-px);
+  }
+  .first-section {
+    padding-top: calc(var(--header-h) + var(--section-px));
+  }
+  /* 하단 고정버튼 */
+  .intro-page-quick-wrapper {
+    padding-top: var(--quick-back-pt);
+    padding-bottom: var(--quick-back-pb);
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    background: linear-gradient(
+      180deg,
+      rgba(217, 217, 217, 0) 0%,
+      rgba(0, 0, 0, 0.6) 100%
+    );
+  }
+  .intro-page-quick {
+    line-height: 100%;
+    background-color: var(--brand--red-1);
+    width: var(--quick-w);
+    border-radius: 120px;
+    margin: 0 auto;
+    padding-block: var(--quick-px);
+    font-size: var(--quick-text-size);
+    gap: var(--quick-img-gap);
+
+    img,
+    span {
+      display: block;
+    }
+    img {
+      width: var(--quick-img-w);
+    }
+  }
+  /* 헤더부분 (상단 고정메뉴) */
+  .intro-header {
+    background: linear-gradient(90deg, #000 0%, #202020 100%);
+    width: 100%;
+    height: var(--header-h);
+    padding-inline: var(--header-px);
+    font-size: var(--header-text-size);
+    position: fixed;
+    top: 0;
+
+    .intro-header-logo {
+      width: var(--header-logo-w);
+    }
+
+    .header-btn-red {
+      background-color: var(--brand--red-1);
+    }
+
+    .header-btn {
+      padding-inline: var(--header-a-px);
+      padding-block: var(--header-a-py);
+      border-radius: var(--rounding-m);
+    }
+    ul {
+      gap: 4px;
+    }
+    img {
+      width: --header-logo-w;
+    }
+  }
+
+  /* 첫번째 섹션 */
+  .intro-visual {
+    background: url(../assets/intro/fishing.webp) center / cover,
+      rgba(0, 0, 0, 0.402);
+    background-blend-mode: overlay;
+    border-radius: var(--rounding-m);
+    width: 100%;
+    height: var(--intro-visual-height);
+    padding-inline: var(--section-in-px);
+    padding-block: var(--intro-visual-py);
+    @media screen and (min-width: 1200px) {
+      background-color: var(--intro-gray-800);
+      background-image: url(../assets/intro/fishing2.jpg);
+      background-repeat: no-repeat;
+      background-position: right center;
+      background-size: auto 100%;
+      background-blend-mode: normal;
+    }
+
+    .intro-visual-header {
+      font-size: var(--intro-visual-header-size);
+    }
+    .intro-visual-header,
+    .intro-visual-main {
+      gap: var(--intro-text-gap);
+    }
+    .visual-logo {
+      display: block;
+      width: var(--visual-logo-w);
+    }
+    .intro-font-sm {
+      font-size: var(--intro-font-sm);
+    }
+    .intro-font-m {
+      font-size: var(--intro-font-m);
+    }
+
+    blockquote {
+      display: none;
+
+      @media screen and (min-width: 1200px) {
+        display: block;
+        color: #646464;
+        font-size: 14px;
+      }
+    }
+    .intro-visual-list {
+      li {
+        span {
+          margin-right: 0.5rem;
+          display: inline-block;
+        }
+      }
+    }
+    .intro-position {
+      width: var(--intro-position-w);
+      display: inline-block;
+    }
+  }
+
+  /* 팀소개 섹션 */
+  .intro-team-section-wrapper {
+    margin-top: var(--intro-section-tm);
+    margin-bottom: var(--intro-section-tm-lg);
+  }
+  .intro-team-section {
+    border-radius: var(--rounding-m);
+    background: linear-gradient(
+      180deg,
+      var(--gray-700, #222222) 0%,
+      #0e0e0e 100%
+    );
+    @media screen and (min-width: 768px) {
+      background: linear-gradient(
+        90deg,
+        var(--gray-800, #131313) 0%,
+        var(--gray-800, #131313) 6.5%,
+        #000 100%
+      );
+    }
+    padding-inline: var(--section-in-px);
+    padding-block: var(--intro-team-py);
+
+    p {
+      font-size: var(--intro-team-size);
+      color: var(--intro-gray-400);
+      font-weight: 400;
+
+      strong {
+        font-weight: 700;
+        color: var(--white);
+      }
+    }
+  }
+  /* 맴바소기 */
+  .intro-members {
+    margin-bottom: var(--intro-section-tm-lg);
+    h3 {
+      @media screen and (min-width: 1200px) {
+        padding-inline: 0;
+      }
+    }
+    .intro-mem-gray {
+      color: var(--intro-gray-400);
+      font-size: var(--intro-mem-gray-size);
+    }
+
+    ul {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--intro-card-out-gap);
+      @media screen and (min-width: 768px) {
+        grid-template-columns: 1fr 1fr;
+      }
+      li {
+        padding: var(--intro-card-padding);
+        width: 100%;
+        border-top: 2px solid var(--brand--red-1);
+        background: var(
+          --gradiant,
+          linear-gradient(180deg, var(--gray-800, #131313) 0%, #000 100%)
+        );
+        .intro-mem-header {
+          margin-bottom: var(--intro-mem-pro-p);
+          display: flex;
+          flex-flow: row nowrap;
+          align-items: flex-end;
+          justify-content: space-between;
+
+          h4 {
+            background-color: var(--brand--red-1);
+            font-weight: 700;
+            font-size: var(--intro-mem-header-red);
+            padding-inline: var(--intro-mem-header-red-px);
+            padding-block: var(--intro-mem-header-red-py);
+            border-radius: var(--rounding-m);
+          }
+        }
+        .intro-mem-pro {
+          background-color: var(--intro-gray-700);
+          border-radius: var(--rounding-m);
+          padding: var(--intro-card-padding);
+          display: flex;
+          flex-flow: row nowrap;
+          justify-content: flex-start;
+          align-items: flex-start;
+          gap: var(--intro-card-gap);
+        }
+        .intro-mem-img {
+          width: var(--intro-mem-img-w);
+          aspect-ratio: 1/1;
+          border-radius: 100%;
+        }
+        .intro-mem-pro-text {
+          display: flex;
+          flex-flow: column nowrap;
+          gap: var(--intro-card-text-gap);
+
+          h4 {
+            font-size: var(--intro-mem-name);
+          }
+          p {
+            font-size: var(--intro-mem-text);
+            color: var(--intro-gray-400);
+          }
+        }
+      }
+    }
+  }
+
+  .intro-goal {
+    margin-bottom: var(--intro-section-tm-lg);
+    ul {
+      display: flex;
+      justify-content: space-between;
+      gap: var(--intro-goal-gap);
+
+      @media screen and (min-width: 768px) {
+        justify-content: flex-start;
+      }
+    }
+    li {
+      background: linear-gradient(157deg, #2c2c2c 1.23%, #0e0e0e 98.95%);
+      border-radius: var(--rounding-m);
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+      padding-block: var(--intro-goal-py);
+      gap: var(--intro-goal-icon-gap);
+      font-size: var(--intro-goal-text-size);
+      width: 100%;
+      @media screen and (min-width: 768px) {
+        width: var(--intro-goal-card-w);
+      }
+      span {
+        font-weight: 700;
+      }
+
+      .intro-icon {
+        padding: var(--intro-goal-icon-p);
+        background-color: #0e0e0e;
+        aspect-ratio: 1/1;
+        width: 50%;
+        border-radius: 100%;
+
+        img {
+          width: 100%;
+          display: block;
+        }
+      }
+
+      .intro-goal-text {
+        text-align: center;
+      }
+    }
+  }
+  .intro-scope {
+    margin-bottom: var(--intro-section-tm-lg);
+
+    .intro-scope-page-wrapper {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--intro-scope-page-gap);
+
+      @media screen and (min-width: 768px) {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+    .intro-scope-page {
+      h4 {
+        font-size: var(--intro-scope-page-head);
+        font-weight: 400;
+        margin-bottom: var(--intro-scope-box-gap);
+      }
+    }
+    .intro-pages {
+      .intro-bg-red {
+        background-color: var(--brand--red-1);
+      }
+      .intro-bg-blue {
+        background-color: #2286f8;
+      }
+      .intro-bg-purple {
+        background-color: #bd15ff;
+      }
+      .intro-bg-orange {
+        background-color: #ff5315;
+      }
+
+      li {
+        font-size: var(--intro-scope-box-size);
+        border-radius: var(--rounding-m);
+        padding-inline: var(--intro-scope-page-li-px);
+        padding-block: var(--intro-scope-page-li-py);
+        display: inline-block;
+        margin-right: var(--intro-scope-box-gap);
+        margin-bottom: var(--intro-scope-box-gap);
+      }
+    }
+  }
+
+  .intro-develop {
+    margin-bottom: var(--intro-section-tm-lg);
+
+    .vs-code {
+      background-color: #2286f8;
+    }
+    .vite {
+      background-color: var(--intro-gray-700);
+    }
+    .git {
+      background-color: #f05033;
+    }
+    .npm {
+      background-color: #cb3837;
+    }
+    .node {
+      background-color: #6da55f;
+    }
+    .intro-tool {
+      li {
+        span {
+          display: inline-block;
+        }
+        display: flex;
+        align-items: center;
+        line-height: 10%;
+        img {
+          width: var(--tool-icon);
+          aspect-ratio: 1/1;
+        }
+        font-size: var(--intro-scope-box-size);
+        border-radius: var(--rounding-m);
+        padding-inline: var(--intro-scope-page-li-px);
+        padding-block: var(--intro-scope-page-li-py);
+        display: inline-block;
+        margin-right: var(--intro-scope-box-gap);
+        margin-bottom: var(--intro-scope-box-gap);
+      }
+    }
+  }
+  .html {
+    background-color: #e34f26;
+  }
+  .css {
+    background-color: #1572b6;
+  }
+  .netlify {
+    background-color: #00c7b7;
+  }
+  .discord {
+    background-color: #5865f2;
+  }
+  .markdown {
+    background-color: #224df8;
+  }
+
+  .intro-footer {
+    width: 100%;
+    padding-inline: var(--section-in-px);
+    display: flex;
+    padding-top: 10px;
+    gap: 4px;
+    img {
+      width: 130px;
+    }
+    border-top: 2px solid var(--intro-gray-700);
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 150px;
+    padding-bottom: 200px;
+    font-size: 12px;
+    color: #333;
+  }
+}

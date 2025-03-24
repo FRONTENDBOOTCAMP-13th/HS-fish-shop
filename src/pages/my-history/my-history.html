@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="/favicon.jpg" />
+  <link rel="preload" as="font" href="/font/woff2/PretendardVariable.woff2" crossorigin="anonymous" /> 
+  <link rel="stylesheet" as="style" href="/font/pretendardvariable.css" />
+  <script type="module" src="./../../main.js"/></script>
+  <title>기록 | TAING</title>
+</head>
+<body style="background-color: black;">
+  <!-- 기록페이지 nav -->
+  <form action="#" class="hst-nav gnb-flex-row">
+    <div class="hst-nav-btn">
+      <input type="radio" id="hst-nav-1" class="sr-only" role="navigation" name="hst-nav" checked/>
+      <label for="hst-nav-1">시청내역</label>
+    </div>
+    <div class="hst-nav-btn">
+      <input type="radio" id="hst-nav-2" class="sr-only" role="navigation" name="hst-nav" />
+      <label for="hst-nav-2">구매내역</label>
+    </div>
+    <div class="hst-nav-btn">
+      <input type="radio" id="hst-nav-3" class="sr-only" role="navigation" name="hst-nav" />
+      <label for="hst-nav-3">찜한 시리즈</label>
+    </div>
+    <div class="hst-nav-btn">
+      <input type="radio" id="hst-nav-4" class="sr-only" role="navigation" name="hst-nav" />
+      <label for="hst-nav-4">찜한 영화</label>
+    </div>
+  </form>
+<div class="hat-no-container">
+  <div class="hat-no-wrapper">
+      <!-- --한 시리즈가 없어요 -->
+      <div class="hst-no-series">
+        <p class="hst-no-title" role="heading">시청 내역이<br>없어요</p>
+        <p class="hst-no-p" role="text">재미있는 시리즈를 시청해보세요.<br>지금 볼 만한 시리즈를 추천해드릴까요</p>
+        <a href="#" class="hst-look-go">시리즈 보러가기</a>
+      </div>
+      <div class="hst-no-series">
+        <p class="hst-no-title" role="heading">구매 내역이<br>없어요</p>
+        <p class="hst-no-p" role="text">재미있는 콘텐츠를 추천해드릴게요.<br>오늘 영화 한 편 보는 건 어떠세요?</p>
+        <a href="#" class="hst-look-go">영화 보러가기</a>
+      </div>
+      <div class="hst-no-series">
+        <p class="hst-no-title" role="heading">찜한 시리즈가<br>없어요</p>
+        <p class="hst-no-p" role="text">좋아하는 시리즈를 찜하면<br>시리즈 소식을 알려드려요.</p>
+        <a href="#" class="hst-look-go">시리즈 보러가기</a>
+      </div>
+      <div class="hst-no-series">
+        <p class="hst-no-title" role="heading">찜한 영화가<br>없어요</p>
+        <p class="hst-no-p" role="text">보고 싶은 영화를 찜하여<br>잊지말고 시청하세요!</p>
+        <a href="#" class="hst-look-go">영화 보러가기</a>
+      </div>
+  </div>
+</div>
+
+
+<!-- 여는 버튼 -->
+<div class="hst-open-btn">
+  <input type="radio" class="sr-only" role="button" id="hst-list-open" name="hst-list" value="hst-list-open">
+  <label for="hst-list-open" class="hst-open-btn-label"><span>전체</span><img src="../../assets/history-page/list-icon.svg" alt="전체" /></label>
+</div>
+
+<div role="dialog" class="hst-list-modal">
+  <ul>
+    <li class="hst-list-active"><a href="#">전체</a></li>
+    <li><a href="#">시리즈</a></li>
+    <li><a href="#">영화</a></li>
+  </ul>
+  <!-- 닫는 버튼 -->
+  <div class="hst-close-btn">
+    <input type="radio" class="hst-list-close-input sr-only" role="button" id="hst-list-close" name="hst-list" value="hst-list-close" checked>
+    <label for="hst-list-close" class="hst-list-close-label"><img src="../../assets/history-page/list-close.svg" alt="닫기" /></label>
+  </div>
+</div>
+
+  <!-- 모바일 하단 퀵버튼 -->
+  <nav class="gnb-main-quick">
+    <ul class="gnb-flex-row gnb-main-quick-ul">
+      <li><a href="../main-page/main-page.html"><img src="../../assets/gnb-quick/home-btn-defualt.svg" alt="홈"/>홈</a></li>
+      <li><a href="#"><img src="../../assets/gnb-quick/shorts-btn-defualt.svg" alt="쇼츠" />쇼츠</a></li>
+      <li><a href="#"><img src="../../assets/gnb-quick/live-btn-defualt.svg" alt="라이브" />라이브</a></li>
+      <li><a href="../mobile-search/mobile-search.html"><img src="../../assets/gnb-quick/search-btn-defualt.svg" alt="검색" />검색</a></li>
+      <li class="quick-active"><a href="../my-history/my-history.html"><img src="../../assets/gnb-quick/hitory-btn-active.svg" alt="기록" />기록</a></li>
+    </ul>
+  </nav>
+
+</body>
+</html>

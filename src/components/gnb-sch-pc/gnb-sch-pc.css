@@ -1,0 +1,170 @@
+body {
+  font-family: "Pretendard Variable", sans-serif;
+}
+
+/* 전체(배경) wrapper */
+.gnb-sch-pc-wrapper {
+  --gnb-sch-py: 0.75rem; /* 검색창 상하패딩*/
+  --gnb-sch-mw: 34.5rem; /* 검색 콘텐츠 최대 넓이*/
+  --gnb-sch-font-size: 1.25rem; /* 검색창 폰트사이즈*/
+  --gnb-sech-btn-size: 1.75rem; /* 검색하기버튼사이즈 */
+  --gnb-sch-line-gap: 4.375rem; /* 검색 콘텐츠 가운데 줄 */
+  --gnb-sch-pt: 1.75rem; /* 검색콘텐츠 탑패딩 */
+  --gnb-sch-pb: 3.25rem; /* 검색콘탠츠 바텀패딩 */
+  --gnb-row-gap: 3rem; /* 검색창 / 콘텐츠 로우갭 */
+  --gnb-sch-head: 1rem; /* 검색창 / 헤더사이즈 */
+  --gnb-sch-text: 0.75rem; /* 검색창 / 본문사이즈 */
+  --gnb-result-head-mb: 1.25rem; /* 최근검색어 헤더 바텀 마진 */
+  --gnb-list-head-mb: 1.25rem; /* 인기검색어 헤더 바텀 마진 */
+  --gnb-list-li-mb: 0.5625rem; /* 인기검색어 li 갭간격 */
+  --gnb-list-lastli-mb: 1.125rem; /* 인기검색어 마지막 li 바텀마진 */
+  --gnb-time-size: 0.75rem; /* 실시간검색어 폰트사이즈 */
+  --gnb-main-height: 4.375rem; /* 메인gnb높이 */
+
+  @media screen and (min-width: 1024px) {
+    --gnb-sch-py: 1rem; /* 검색창 상하패딩*/
+    --gnb-sch-mw: 61.25rem; /* 검색 콘텐츠 최대 넓이*/
+    --gnb-sch-font-size: 2.375rem; /* 검색창 폰트사이즈*/
+    --gnb-sech-btn-size: 3.125rem; /* 검색하기버튼사이즈 */
+    --gnb-sch-line-gap: 7.5rem; /* 검색 콘텐츠 가운데 줄 */
+    --gnb-sch-pt: 3.25rem; /* 검색콘텐츠 탑패딩 */
+    --gnb-sch-pb: 5.875rem; /* 검색콘탠츠 바텀패딩 */
+    --gnb-row-gap: 6.125rem; /* 검색창 / 콘텐츠 로우갭 */
+    --gnb-sch-head: 1.75rem; /* 검색창 / 헤더사이즈 */
+    --gnb-sch-text: 1.375rem; /* 검색창 / 본문사이즈 */
+    --gnb-result-head-mb: 1.25rem; /* 최근검색어 헤더 바텀 마진 */
+    --gnb-list-head-mb: 2.25rem; /* 인기검색어 헤더 바텀 마진 */
+    --gnb-list-li-mb: 1rem; /* 인기검색어 li 갭간격 */
+    --gnb-list-lastli-mb: 1rem; /* 인기검색어 마지막 li 바텀마진 */
+    --gnb-time-size: 1.375rem; /* 실시간검색어 폰트사이즈 */
+    --gnb-main-height: 6.25rem; /* 메인gnb높이 */
+  }
+
+  color: var(--gray--200);
+  background-color: var(--brand--dark-bg-1);
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+  top: var(--gnb-main-height);
+
+  /* 리셋 */
+  fieldset,
+  input,
+  button {
+    appearance: none;
+    border: none;
+    background: none;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  ol,
+  li {
+    list-style: none;
+  }
+
+  /* 레이아웃 wrapper */
+  .gnb-sch-pc {
+    max-width: var(--gnb-sch-mw);
+    margin: 0 auto;
+    padding-top: var(--gnb-sch-pt);
+    padding-bottom: var(--gnb-sch-pb);
+    display: grid;
+    grid-template-columns: 1fr 70px 1fr;
+    row-gap: var(--gnb-row-gap);
+
+    /* 화면고정 */
+  }
+  /* 검색창 */
+  .gnb-sch-pc-form {
+    grid-column: span 3;
+    padding-block: var(--gnb-sch-py);
+    font-size: var(--gnb-sch-font-size);
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 4px solid var(--white);
+    font-weight: 600;
+
+    fieldset {
+      display: contents;
+    }
+
+    button {
+      width: var(--gnb-sech-btn-size);
+      height: auto;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  .gnb-sch-pc-input {
+    /* max-width: 26.25rem; */
+    flex-grow: 1;
+    color: var(--white);
+  }
+
+  .gnb-sch-pc-input::placeholder {
+    color: var(--gray--700);
+  }
+
+  /* 중앙라인 */
+  .search-line {
+    width: 2px;
+    height: 100%;
+    background-color: var(--gray--800);
+  }
+
+  /* 최근검색어 */
+  .serch-result {
+    font-size: var(--gnb-sch-text);
+
+    header {
+      font-size: var(--gnb-sch-head);
+      font-weight: 600;
+      margin-bottom: var(--gnb-result-head-mb);
+    }
+  }
+
+  /* 실시간 인기검색어 */
+  .search-popular-list {
+    font-size: var(--gnb-sch-text);
+
+    header {
+      font-size: var(--gnb-sch-head);
+      font-weight: 600;
+      margin-bottom: var(--gnb-list-head-mb);
+    }
+
+    li {
+      margin-bottom: var(--gnb-list-li-mb);
+    }
+
+    li:last-child {
+      margin-bottom: var(--gnb-list-lastli-mb);
+    }
+    time {
+      color: var(--gray--500);
+      font-size: var(--gnb-time-size);
+    }
+  }
+}
+.serch-list-num {
+  color: var(--brand--red-1);
+  font-weight: bold;
+  display: inline-block;
+  width: 1.25em;
+}
+
+.gnb-sch-pc-back {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9;
+  position: fixed;
+  top: 0;
+  left: 0;
+}

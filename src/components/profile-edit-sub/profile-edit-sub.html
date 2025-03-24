@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>프로필 편집</title>
+    <link rel="icon" href="/favicon.jpg" />
+    <link
+      rel="preload"
+      as="font"
+      href="/font/woff2/PretendardVariable.woff2"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" as="style" href="/font/pretendardvariable.css" />
+    <link rel="stylesheet" href="/src/styles/reset.css" />
+    <link rel="stylesheet" href="/src/styles/theme.css" />
+    <script type="module" src="./../../main.js"></script>
+  </head>
+  <body class="profile-body profile-layout">
+    <section class="profile-selection">
+      <p class="profile-title">프로필 편집</p>
+      <span class="sr-only">프로필 사진 및 이름 수정</span>
+      <label for="profile-modal-toggle" class="profile-image">
+        <img
+          src="/src/assets/profile/dk-profile-4.webp"
+          alt="현수 프로필 이미지"
+          class="profile-blurred"
+        />
+        <span class="edit-icon">
+          <img src="/src/assets/profile/edit.svg" alt="편집 아이콘" />
+        </span>
+      </label>
+      <input type="checkbox" id="profile-modal-toggle" class="modal-toggle" />
+      <div class="profile-modal">
+        <div class="modal-content">
+          <label
+            for="profile-modal-toggle"
+            class="modal-close"
+            aria-label="모달 닫기"
+          >
+            <img
+              src="/src/assets/profile/modal-close.svg"
+              alt="닫기 아이콘"
+              class="close-icon"
+            />
+          </label>
+          <p class="modal-title">프로필 사진 선택</p>
+          <div class="profile-options">
+            <button class="profile-btn" aria-pressed="false">
+              <img
+                src="/src/assets/profile/dk-profile-1.webp"
+                alt="여자 프로필 이미지 - 1번"
+              />
+            </button>
+            <button class="profile-btn" aria-pressed="false">
+              <img
+                src="/src/assets/profile/dk-profile-2.webp"
+                alt="남자 프로필 이미지 - 2번"
+              />
+            </button>
+            <button class="profile-btn" aria-pressed="false">
+              <img
+                src="/src/assets/profile/dk-profile-3.webp"
+                alt="곰돌이 프로필 이미지 - 3번"
+              />
+            </button>
+            <button class="profile-btn" aria-pressed="false">
+              <img
+                src="/src/assets/profile/dk-profile-4.webp"
+                alt="타잉 로고 프로필 이미지 - 4번"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+      <form>
+        <input
+          type="text"
+          id="profile-name"
+          class="input-profile-name"
+          placeholder="프로필 이름"
+          minlength="2"
+          maxlength="10"
+          required
+        />
+        <label for="profile-name" class="sr-only">프로필 이름</label>
+        <p class="info-text">
+          * 2자 이상 10자 이내의 한글, 영문, 숫자만 입력 가능합니다.
+        </p>
+        <div class="button-group">
+          <a
+            href="/src/components/profile/profile.html"
+            class="btn-edit-sub btn-confirm"
+            >확인</a
+          >
+          <a
+            href="/src/components/profile-edit/profile-edit.html"
+            class="btn-edit-sub btn-cancel"
+            >취소</a
+          >
+        </div>
+      </form>
+    </section>
+  </body>
+</html>
