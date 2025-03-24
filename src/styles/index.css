@@ -24,7 +24,8 @@
 
 .index_nav {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  grid-template-columns: repeat(6, 1fr); /* 한 줄에 6개의 버튼 */
+  grid-template-rows: repeat(4, auto); /* 4줄로 정리 */
   gap: 15px;
   padding: 8px;
   margin: 0;
@@ -32,6 +33,83 @@
   text-align: center;
   border-top: 3px solid;
   border-top-color: #cc1030;
+
+  /* grid 영역 설정 */
+  grid-template-areas:
+    "main-card main-visual main-nav . . ."
+    "landing main drama movie history search"
+    "login findid findpw signup . ."
+    "profile profile-edit subprofile . . .";
+}
+
+.index_nav li:nth-child(1) {
+  grid-area: main-card;
+}
+.index_nav li:nth-child(2) {
+  grid-area: main-visual;
+}
+.index_nav li:nth-child(3) {
+  grid-area: main-nav;
+}
+.index_nav li:nth-child(4) {
+  grid-area: landing;
+}
+.index_nav li:nth-child(5) {
+  grid-area: main;
+}
+.index_nav li:nth-child(6) {
+  grid-area: drama;
+}
+.index_nav li:nth-child(7) {
+  grid-area: movie;
+}
+.index_nav li:nth-child(8) {
+  grid-area: history;
+}
+.index_nav li:nth-child(9) {
+  grid-area: search;
+}
+.index_nav li:nth-child(10) {
+  grid-area: login;
+}
+.index_nav li:nth-child(11) {
+  grid-area: findid;
+}
+.index_nav li:nth-child(12) {
+  grid-area: findpw;
+}
+.index_nav li:nth-child(13) {
+  grid-area: signup;
+}
+.index_nav li:nth-child(14) {
+  grid-area: profile;
+}
+.index_nav li:nth-child(15) {
+  grid-area: profile-edit;
+}
+.index_nav li:nth-child(16) {
+  grid-area: subprofile;
+}
+
+/* 각 줄에 배경 색을 다르게 적용 */
+.index_nav > li:nth-child(-n + 3) {
+  /* 1번째 줄 */
+  background-color: #36050d; /* 1번째 줄 배경 색 */
+}
+
+.index_nav > li:nth-child(n + 4):nth-child(-n + 9) {
+  /* 2번째 줄 */
+  background-color: #4e0713; /* 2번째 줄 배경 색 */
+}
+
+.index_nav > li:nth-child(n + 10):nth-child(-n + 13) {
+  /* 3번째 줄 */
+  background-color: #730b1c; /* 3번째 줄 배경 색 */
+}
+
+.index_nav > li:nth-child(n + 14):nth-child(-n + 24) {
+  /* 4번째 줄 */
+  background-color: #900e24; /* 4번째 줄 배경 색 */
 }
 
 /* Wobble Animation */
@@ -59,18 +137,23 @@
 
 .index_nav a {
   text-decoration: none;
-  color: #898989;
+  color: #aaaaaa;
   font-weight: bold;
   display: block;
   padding: 20px;
 
   border-radius: 5px;
-  transition: background 0.3s;
+  transition: background 0.3s, color 0.3s;
 }
 
 .index_nav a:hover {
-  background-color: #ff153c;
   color: white;
+}
+.index_nav li {
+  border-radius: 5px;
+}
+.index_nav li:hover {
+  background-color: #ff153c !important;
   animation: wobble 1.3s infinite ease-in-out;
   animation-play-state: running;
 }
@@ -150,7 +233,16 @@
 /* 반응형 디자인 */
 @media (max-width: 767px) {
   .index_nav {
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "main-card main-visual"
+      "main-nav landing"
+      "main drama"
+      "movie history"
+      "search login"
+      "findid findpw"
+      "signup profile"
+      "profile-edit subprofile";
   }
 }
 /* 768px 이상 1024px 이하일 때 */
@@ -159,8 +251,14 @@
     font-size: 16px;
   }
   .index_nav {
-    grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
-    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+      "main-card main-visual main-nav"
+      "landing main drama"
+      "movie history search"
+      "login signup ."
+      "findid findpw ."
+      "profile profile-edit subprofile";
   }
 
   .index_header {
@@ -179,7 +277,7 @@
 /* 1024px 이상일 때 */
 @media (min-width: 1024px) {
   .index_container {
-    font-size: 29.43px;
+    font-size: 20.43px;
   }
   .index_nav {
     grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
