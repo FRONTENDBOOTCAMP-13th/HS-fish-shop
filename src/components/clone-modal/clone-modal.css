@@ -1,0 +1,102 @@
+.clone-modal-h1 {
+  color: #fff;
+}
+/* animation */
+@-webkit-keyframes swing-out-top-bck {
+  0% {
+    -webkit-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    -webkit-transform-origin: top;
+    transform-origin: top;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotateX(-100deg);
+    transform: rotateX(-100deg);
+    -webkit-transform-origin: top;
+    transform-origin: top;
+    opacity: 0;
+  }
+}
+@keyframes swing-out-top-bck {
+  0% {
+    -webkit-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    -webkit-transform-origin: top;
+    transform-origin: top;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotateX(-100deg);
+    transform: rotateX(-100deg);
+    -webkit-transform-origin: top;
+    transform-origin: top;
+    opacity: 0;
+  }
+}
+.swing-out-top-bck {
+  -webkit-animation: swing-out-top-bck 0.45s
+    cubic-bezier(0.6, -0.28, 0.735, 0.045) both;
+  animation: swing-out-top-bck 0.45s cubic-bezier(0.6, -0.28, 0.735, 0.045) both;
+}
+
+/* clone-modal-wrapper */
+.clone-modal-wrapper {
+  .clone-modal-open {
+    background-color: #e02f2b;
+    padding: clamp(5px, 1vw, 10px) clamp(8px, 3vw, 25px);
+    text-align: center;
+    border: 2px solid #3a0000;
+    box-shadow: 3px 4px #430000;
+    border-radius: 6px;
+    color: #000;
+    transition: all 0.3s;
+    font-weight: bold;
+    &:hover {
+      background-color: #802927;
+    }
+    &:active {
+      border-color: rgba(0, 0, 0, 0.582) rgba(0, 0, 0, 0.795)
+        rgba(0, 0, 0, 0.486);
+      box-shadow: 0 1px 0 rgba(0, 0, 0, 0.89), 0 1px rgba(0, 0, 0, 0.05) inset;
+      position: relative;
+      transition: all 0.3s;
+    }
+  }
+
+  .clone-modal {
+    border: 3px solid #9b9b9b;
+    border-radius: 20px;
+    margin: auto;
+    padding: 5vw;
+    background-color: #000;
+    text-align: center;
+
+    .clone-modal-title {
+      color: #e8e8e8;
+    }
+    .clone-modal-close {
+      margin-top: 1.875rem;
+      background-color: #ff153c;
+      padding: clamp(5px, 1vw, 10px) clamp(8px, 3vw, 25px);
+      text-align: center;
+      border: 2px solid #3a0000;
+      box-shadow: 3px 4px #8b0c21;
+      border-radius: 6px;
+      color: #fff;
+      transition: all 0.3s;
+      font-weight: bold;
+
+      &:hover {
+        background-color: #611e1d;
+      }
+      &:active {
+        border-color: rgba(0, 0, 0, 0.582) rgba(0, 0, 0, 0.795)
+          rgba(0, 0, 0, 0.486);
+        box-shadow: 0 1px 0 rgba(0, 0, 0, 0.89), 0 1px rgba(0, 0, 0, 0.05) inset;
+        position: relative;
+        transition: all 0.3s;
+      }
+    }
+  }
+}
