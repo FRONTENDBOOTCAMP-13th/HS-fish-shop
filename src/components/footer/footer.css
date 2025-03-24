@@ -7,6 +7,7 @@ footer {
   margin: 0 auto;
   background-color: #000;
   max-width: var(--desktop-min-w);
+  width: 100%;
   /* footer-header */
   .footer-header {
     font-size: 12px;
