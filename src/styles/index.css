@@ -36,7 +36,7 @@
 
   /* grid 영역 설정 */
   grid-template-areas:
-    "main-card main-visual main-nav . . ."
+    "main-card main-visual main-nav modal . ."
     "landing main drama movie history search"
     "login findid findpw signup . ."
     "profile profile-edit subprofile . . .";
@@ -52,64 +52,67 @@
   grid-area: main-nav;
 }
 .index_nav li:nth-child(4) {
-  grid-area: landing;
+  grid-area: modal;
 }
 .index_nav li:nth-child(5) {
-  grid-area: main;
+  grid-area: landing;
 }
 .index_nav li:nth-child(6) {
-  grid-area: drama;
+  grid-area: main;
 }
 .index_nav li:nth-child(7) {
-  grid-area: movie;
+  grid-area: drama;
 }
 .index_nav li:nth-child(8) {
-  grid-area: history;
+  grid-area: movie;
 }
 .index_nav li:nth-child(9) {
-  grid-area: search;
+  grid-area: history;
 }
 .index_nav li:nth-child(10) {
-  grid-area: login;
+  grid-area: search;
 }
 .index_nav li:nth-child(11) {
-  grid-area: findid;
+  grid-area: login;
 }
 .index_nav li:nth-child(12) {
-  grid-area: findpw;
+  grid-area: findid;
 }
 .index_nav li:nth-child(13) {
-  grid-area: signup;
+  grid-area: findpw;
 }
 .index_nav li:nth-child(14) {
-  grid-area: profile;
+  grid-area: signup;
 }
 .index_nav li:nth-child(15) {
-  grid-area: profile-edit;
+  grid-area: profile;
 }
 .index_nav li:nth-child(16) {
+  grid-area: profile-edit;
+}
+.index_nav li:nth-child(17) {
   grid-area: subprofile;
 }
 
 /* 각 줄에 배경 색을 다르게 적용 */
-.index_nav > li:nth-child(-n + 3) {
+.index_nav > li:nth-child(-n + 4) {
   /* 1번째 줄 */
   background-color: #36050d; /* 1번째 줄 배경 색 */
 }
 
-.index_nav > li:nth-child(n + 4):nth-child(-n + 9) {
+.index_nav > li:nth-child(n + 5):nth-child(-n + 10) {
   /* 2번째 줄 */
   background-color: #4e0713; /* 2번째 줄 배경 색 */
 }
 
-.index_nav > li:nth-child(n + 10):nth-child(-n + 13) {
+.index_nav > li:nth-child(n + 11):nth-child(-n + 14) {
   /* 3번째 줄 */
   background-color: #730b1c; /* 3번째 줄 배경 색 */
 }
 
-.index_nav > li:nth-child(n + 14):nth-child(-n + 24) {
+.index_nav > li:nth-child(n + 15):nth-child(-n + 24) {
   /* 4번째 줄 */
-  background-color: #900e24; /* 4번째 줄 배경 색 */
+  background-color: #a21029; /* 4번째 줄 배경 색 */
 }
 
 /* Wobble Animation */
@@ -236,13 +239,14 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas:
       "main-card main-visual"
-      "main-nav landing"
-      "main drama"
-      "movie history"
-      "search login"
+      "main-nav modal"
+      "landing main"
+      "movie drama"
+      "history search"
+      "login signup"
       "findid findpw"
-      "signup profile"
-      "profile-edit subprofile";
+      "profile profile-edit"
+      "subprofile .";
   }
 }
 /* 768px 이상 1024px 이하일 때 */
@@ -251,14 +255,14 @@
     font-size: 16px;
   }
   .index_nav {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-areas:
-      "main-card main-visual main-nav"
-      "landing main drama"
-      "movie history search"
-      "login signup ."
-      "findid findpw ."
-      "profile profile-edit subprofile";
+      "main-card main-visual main-nav modal"
+      "landing main drama ."
+      "movie history search ."
+      "login signup . ."
+      "findid findpw . ."
+      "profile profile-edit subprofile .";
   }
 
   .index_header {
