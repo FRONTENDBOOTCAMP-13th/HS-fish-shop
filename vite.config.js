@@ -22,6 +22,7 @@ export default defineConfig({
         profileedit: "src/components/profile-edit/profile-edit.html",
         profileeditsub: "src/components/profile-edit-sub/profile-edit-sub.html",
         landing: "src/components/landing/landing.html",
+        clone_modal: "src/components/clone-modal/clone-modal.html",
         // 아래부터 페이지입니다
         myHistory: "src/pages/my-history/my-history.html",
         programDetail: "src/pages/program-detail/program-detail.html",
