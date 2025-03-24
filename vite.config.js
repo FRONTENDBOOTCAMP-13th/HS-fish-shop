@@ -39,6 +39,7 @@ export default defineConfig({
         findPw: "src/pages/findPw-page/findPw-page.html",
         findId: "src/pages/findId-page/findId-page.html",
         singUp: "src/pages/signup-page/signup-page.html",
+        intro: "intro.html",
       },
     },
   },
