@@ -1,522 +1,1063 @@
 <!DOCTYPE html>
 <html lang="ko-KR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" href="/favicon.jpg" />
-  <link rel="preload" as="font" href="/font/woff2/PretendardVariable.woff2" crossorigin="anonymous" /> 
-  <link rel="stylesheet" as="style" href="/font/pretendardvariable.css" />
-  <script type="module" src="./../../main.js"/></script>
-  <title>그놈은 흑염룡</title>
-</head>
-<body >
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/favicon.jpg" />
+    <link
+      rel="preload"
+      as="font"
+      href="/font/woff2/PretendardVariable.woff2"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" as="style" href="/font/pretendardvariable.css" />
+    <script type="module" src="./../../main.js"></script>
+    <title>그놈은 흑염룡</title>
+  </head>
+  <body>
     <!-- 메인 상단 gnb메뉴 -->
-  <header class="gnb gnb-main">  
-    <div class="gnb-max-wrapper gnb-grid">
-      <!-- 로고 -->
-      <a class="gnb-logo" href="../main-page/main-page.html" target="_self">
-        <img src="/logo.svg" alt="티빙" />
-      </a>
-      <!-- 모바일:화면공유 공통:프로필 pc,태블릿: -->
-      <div class="gnb-flex-row gnb-icons">
-        <div class="gnb-btn-sch">
-          <input type="checkbox" role="button" class="gnb-sch-input" id="gnb-sch-check" name="gnb-sch-check"/>
-          <label for="gnb-sch-check" class="gnb-sch-label" ><span class="sr-only">검색</span></label>
+    <header class="gnb gnb-main">
+      <div class="gnb-max-wrapper gnb-grid">
+        <!-- 로고 -->
+        <a class="gnb-logo" href="../main-page/main-page.html" target="_self">
+          <img src="/logo.svg" alt="티빙" />
+        </a>
+        <!-- 모바일:화면공유 공통:프로필 pc,태블릿: -->
+        <div class="gnb-flex-row gnb-icons">
+          <div class="gnb-btn-sch">
+            <input
+              type="checkbox"
+              role="button"
+              class="gnb-sch-input"
+              id="gnb-sch-check"
+              name="gnb-sch-check"
+            />
+            <label for="gnb-sch-check" class="gnb-sch-label"
+              ><span class="sr-only">검색</span></label
+            >
+          </div>
+          <button
+            type="button"
+            class="screen-btn"
+            role="button"
+            aria-label="다른 디바이스와 화면 공유"
+          >
+            <img
+              src="../../assets/gnb-main/screen-icon.svg"
+              alt="다른디스플레이와 화면공유"
+            />
+          </button>
+          <a
+            href="../profile-page/profile-page.html"
+            role="link"
+            class="gnb-profile-btn"
+            aria-label="프로필 편집"
+            ><img
+              src="../../assets/gnb-main/mgnb-profile-desktop.webp"
+              alt="프로필 편집"
+          /></a>
         </div>
-        <button type="button" class="screen-btn" role="button" aria-label="다른 디바이스와 화면 공유"><img src="../../assets/gnb-main/screen-icon.svg" alt="다른디스플레이와 화면공유" /></button>
-        <a href="../profile-page/profile-page.html" role="link" class="gnb-profile-btn" aria-label="프로필 편집"><img src="../../assets/gnb-main/mgnb-profile-desktop.webp" alt="프로필 편집" /></a>
+        <nav>
+          <ul class="gnb-flex-row gnb-main-nav">
+            <li><a href="../drama-page/drama-page.html">드라마</a></li>
+            <li><a href="../movie-page/movie-page.html">영화</a></li>
+            <li><a href="#">예능</a></li>
+            <li><a href="#">스포츠</a></li>
+            <li><a href="#">애니</a></li>
+            <li><a href="#">뉴스</a></li>
+            <li><a href="#">라이브</a></li>
+          </ul>
+        </nav>
       </div>
-      <nav>
-        <ul class="gnb-flex-row gnb-main-nav">
-          <li><a href="../drama-page/drama-page.html">드라마</a></li>
-          <li><a href="../movie-page/movie-page.html">영화</a></li>
-          <li><a href="#">예능</a></li>
-          <li><a href="#">스포츠</a></li>
-          <li><a href="#">애니</a></li>
-          <li><a href="#">뉴스</a></li>
-          <li><a href="#">라이브</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+    </header>
     <div class="gnb-sch-wrapper">
-    <div class="gnb-sch-pc-wrapper">
-      <div class="gnb-sch-pc">
-        <!-- 검색창 폼 -->
-        <form action="#" class="gnb-flex-row gnb-sch-pc-form">
-          <fieldset>
-            <legend class="sr-only">검색</legend>
-            <input type="search" class="gnb-sch-pc-input" id="gnb-sch-pc" placeholder="TV프로그램,영화 제목 및 출연진으로 검색해보세요" />
-            <label for="gnb-sch-pc"><span class="sr-only">TV프로그램,영화 제목 및 출연진으로 검색해보세요</span></label>
-            <button type="submit" aria-label="검색하기" ><img src="../../assets/gnb-main/search-md-hover.svg" alt="검색하기" /></button>
-          </fieldset>
-        </form>
-        <!-- 최근 검색어 -->
-        <div class="serch-result">
-          <header>최근 검색어</header>
-          <p>검색 내역이 없습니다.</p>
-        </div>
-        <!-- 중앙라인 -->
-         <div class="search-line"></div>
-        <!-- 실시간 인기검색어 -->
-         <div class="search-popular-list">
-          <header>실시간 인기 검색어</header>
-           <ol>
-            <li><a href="#"><span class="serch-list-num">1</span>재벌집 막내아들</a></li>
-            <li><a href="#"><span class="serch-list-num">2</span>미스터트롯2:새로운 전설의 시작</a></li>
-            <li><a href="#"><span class="serch-list-num">3</span>유 퀴즈 온 더 블럭</a></li>
-            <li><a href="#"><span class="serch-list-num">4</span>대행사</a></li>
-            <li><a href="#"><span class="serch-list-num">5</span>SHOW ME THE MONEY 11</a></li>
-            <li><a href="#"><span class="serch-list-num">6</span>미씽:그들이 있었다2</a></li>
-            <li><a href="#"><span class="serch-list-num">7</span>술꾼도시여자들2</a></li>
-            <li><a href="#"><span class="serch-list-num">8</span>캐나다 체크인</a></li>
-            <li><a href="#"><span class="serch-list-num">9</span>미씽:그들이 있었다-그들을 다만나다</a></li>
-            <li><a href="#"><span class="serch-list-num">10</span>술꾼도시여자들</a></li>
-           </ol>
-           <time datetime="2022-12-24T03:04:00">2022.12.24 오전 03:04기준</time>
-         </div>
-      </div>
-    </div>
-    <div class="gnb-sch-pc-back" role="none"></div>
-  </div>
-  <h1 class="sr-only">오직 티빙에서만! 그놈은 흑염룡</h1>
- <div class="dt-program-wrapper">
-    <!-- 1단 -->
-    <section class="dt-title-info" role="heading">
-        <!-- 비쥬얼 이미지 컴포넌트-->
-      <picture class="dt-visual-img">
-        <source srcset="../../assets/detail-page/1-visual-pc-1.webp" media="(min-width:1024px)"/>
-        <img src="../../assets/detail-page/1-visual-m-1.webp" alt="그놈은 흑염룡" />
-      </picture>
-      <!-- 정보 텍스트 묶음 -->
-      <div class="dt-title-info-text" role="contentinfo">
-        <!-- 드라마 제목 컴포넌트 -->
-        <figure role="heading" class="dt-program-title">
-          <img class="dt-tving-only" src="../../assets/detail-page/icons/tving-only.svg" alt="티빙 단독 공개" />
-          <img class="dt-title-img" src="../../assets/detail-page/1-vixual-pc-title.webp" alt="그놈은 흑염룡" />
-        <h2>그놈은 흑염룡</h2>
-        </figure>
-        <!-- 정보 텍스트 컴포넌트 -->
-        <ul class="dt-program-info gnb-flex-row" role="contentinfo">
-          <li><img src="../../assets/detail-page/icons/icon-fifteen.svg" alt="15세 이상 관람가" /></li>
-          <li>월화 오후8:50</li>
-          <li>드라마</li>
-          <li>tvN</li>
-          <li>시즌 1개</li>
-          <li>해설 자막</li>
-        </ul>
-          <!-- 제작자 및 출연진 -->
-        <dl class="dt-cast-list" role="contentinfo">
-          <dt id="creator">크리에이터</dt>
-          <dd aria-labelledby="creator">이수현, 김수연</dd>
-          <dt id="cast">출연</dt>
-          <dd aria-labelledby="cast">문가영, 최현욱, 임세미, 곽시양</dd>
-        </dl>
-        <!-- 스토리 요약 -->
-        <div class="dt-program-story" role="contentinfo"><p>
-          새로 온 본부장에게서 최악의 첫사랑, '흑염룡'의 기운이 느껴진다? 흑역사에 고통받는 '본부장 킬러' 팀장 백수정과 가슴에 흑염룡을 품은 '재벌 3세'본부장 반주연의 봉인해제 로맨스
-        </p></div>
-        <!-- 버튼 묶음 -->
-        <div class="dt-btn-wrapper gnb-flex-row">
-          <!-- 링크 컴포넌트 -->
-          <a href="#" target="_self" role="link" class="dt-sub-btn">이용권 구독하기</a>
-          <!-- 아이콘 버튼 컴포넌트 -->
-          <button class="dt-icon-btn" aria-label="찜"><img src="../../assets/detail-page/icons/icon-plus.svg" alt="찜" />찜</button>
-          <button class="dt-icon-btn" aria-label="찜"><img src="../../assets/detail-page/icons/icon-share.svg" alt="공유" />공유</button>
-        </div>
-      </div>
-    </section>
-      <!-- 수평선 컴포넌트 -->
-     <div role="none" class="dt-hr"><div></div></div>
-     <!-- 2단시작 / 그놈은 흑염룡 ~~화 -->
-     <section class="dt-video-section">
-      <header>
-        <h3 class="dt-section-program-header">그놈은 흑염룡</h3>
-        <div class="dt-videosec-btn">
-          <!-- 첫화부터 최신화부터 버튼 -->
-          <form class="dt-video-order">
-            <div>
-              <input type="radio" id="dt-first-video" class="sr-only" name="dt-video" value="first-video" checked>
-              <label for="dt-first-video">첫화부터</label>
-            </div>
-            <div>
-              <input type="radio" id="dt-new-video" class="sr-only" name="dt-video" value="new-video">
-              <label for="dt-new-video">최신화부터</label>
-            </div>
+      <div class="gnb-sch-pc-wrapper">
+        <div class="gnb-sch-pc">
+          <!-- 검색창 폼 -->
+          <form action="#" class="gnb-flex-row gnb-sch-pc-form">
+            <fieldset>
+              <legend class="sr-only">검색</legend>
+              <input
+                type="search"
+                class="gnb-sch-pc-input"
+                id="gnb-sch-pc"
+                placeholder="TV프로그램,영화 제목 및 출연진으로 검색해보세요"
+              />
+              <label for="gnb-sch-pc"
+                ><span class="sr-only"
+                  >TV프로그램,영화 제목 및 출연진으로 검색해보세요</span
+                ></label
+              >
+              <button type="submit" aria-label="검색하기">
+                <img
+                  src="../../assets/gnb-main/search-md-hover.svg"
+                  alt="검색하기"
+                />
+              </button>
+            </fieldset>
           </form>
-          <!-- 연속재생버튼 -->
-          <div class="dt-auto-btn-wrapper">
-            <input type="checkbox" class="sr-only" id="dt-auto-btn" name="dt-auto-btn" role="checkbox" checked/>
-            <label for="dt-auto-btn"><span class="at-auto-onoff"></span>연속재생</label>
+          <!-- 최근 검색어 -->
+          <div class="serch-result">
+            <header>최근 검색어</header>
+            <p>검색 내역이 없습니다.</p>
+          </div>
+          <!-- 중앙라인 -->
+          <div class="search-line"></div>
+          <!-- 실시간 인기검색어 -->
+          <div class="search-popular-list">
+            <header>실시간 인기 검색어</header>
+            <ol>
+              <li>
+                <a href="#"
+                  ><span class="serch-list-num">1</span>재벌집 막내아들</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><span class="serch-list-num">2</span>미스터트롯2:새로운
+                  전설의 시작</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><span class="serch-list-num">3</span>유 퀴즈 온 더 블럭</a
+                >
+              </li>
+              <li>
+                <a href="#"><span class="serch-list-num">4</span>대행사</a>
+              </li>
+              <li>
+                <a href="#"
+                  ><span class="serch-list-num">5</span>SHOW ME THE MONEY 11</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><span class="serch-list-num">6</span>미씽:그들이 있었다2</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><span class="serch-list-num">7</span>술꾼도시여자들2</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><span class="serch-list-num">8</span>캐나다 체크인</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><span class="serch-list-num">9</span>미씽:그들이
+                  있었다-그들을 다만나다</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><span class="serch-list-num">10</span>술꾼도시여자들</a
+                >
+              </li>
+            </ol>
+            <time datetime="2022-12-24T03:04:00"
+              >2022.12.24 오전 03:04기준</time
+            >
           </div>
         </div>
-      </header>
-      <!-- 회차리스트 -->
-      <div class="dt-video-order-list-wrapper">
-        <ul>
-          <li>
-              <a href="#" target="_self" class="dt-program-item dt-item-transition" aria-label="그놈은 흑염룡 1화 보기">
-                <figure class="dt-program-item-fig">
-                  <img src="../../assets/detail-page/2-thummail-1.webp" alt="그놈은 흑염룡 1화 썸네일" />
-                  <figcaption class="dt-program-item-cap">
-                    <p class="dt-program-item-h" role="heading">1. 그놈은 흑염룡 1화</p>
-                    <p class="dt-program-item-text">돌아가신 엄마의 몫까지 대신하며 정신없이 살아온 열아홉 수정. 우연히 시작한 게임에서 첫 사랑, '흑염룡'을 만난다. 그러나 설렘 가득했...</p>
-                    <time datetime="2025-02-17T00:00:00">2025.02.17 월&#183;61분</time>
-                  </figcaption>
-                </figure>
-            </a>
-          </li>
-          <li>
-              <a href="#" target="_self" class="dt-program-item dt-item-transition" aria-label="그놈은 흑염룡 2화 보기">
-                <figure class="dt-program-item-fig">
-                  <img src="../../assets/detail-page/2-thummail-2.webp" alt="그놈은 흑염룡 2화 썸네일" />
-                  <figcaption class="dt-program-item-cap">
-                    <p class="dt-program-item-h" role="heading">2. 그놈은 흑염룡 2화</p>
-                    <p class="dt-program-item-text">수정은 첫 단추부터 잘못 끼운 주연과의 관계를 회복하려 하지만 쉽지 않다. 들키고 싶지 않은 비밀이 있는 주연에게 수정은 눈엣가시일 뿐이다...</p>
-                    <time datetime="2025-02-18T00:00:00">2025.02.18 화&#183;62분</time>
-                  </figcaption>
-                </figure>
-            </a>
-          </li>
-          <li>
-              <a href="#" target="_self" class="dt-program-item dt-item-transition" aria-label="그놈은 흑염룡 3화 보기">
-                <figure class="dt-program-item-fig">
-                  <img src="../../assets/detail-page/2-thummail-3.webp" alt="그놈은 흑염룡 3화 썸네일" />
-                  <figcaption class="dt-program-item-cap">
-                    <p class="dt-program-item-h" role="heading">3. 그놈은 흑염룡 3화</p>
-                    <p class="dt-program-item-text">주연을 필두로 용성백화점 대규모 리뉴얼 프로젝트가 진행된다. 일을 하며 점점 가까워지는 주연과 수정. 자신을 이해해 주는 수정의 모습에 주...</p>
-                    <time datetime="2025-02-24T00:00:00">2025.02.24 월&#183;59분</time>
-                  </figcaption>
-                </figure>
-            </a>
-          </li>
-          <li>
-              <a href="#" target="_self" class="dt-program-item dt-item-transition" aria-label="그놈은 흑염룡 4화 보기">
-                <figure class="dt-program-item-fig">
-                  <img src="../../assets/detail-page/2-thummail-4.webp" alt="그놈은 흑염룡 4화 썸네일" />
-                  <figcaption class="dt-program-item-cap">
-                    <p class="dt-program-item-h" role="heading">4. 그놈은 흑염룡 4화</p>
-                    <p class="dt-program-item-text">결국 '비밀의 방'까지 오픈되고. 갑작스러운 일로 주연의 도움을 받게 된 수정. 주연의 새로운 모습에 자꾸만 웃음이 나는데.. 한편, 신원은 하진 ...</p>
-                    <time datetime="2025-02-25T00:00:00">2025.02.25 화&#183;61분</time>
-                  </figcaption>
-                </figure>
-            </a>
-          </li>
-          <li>
-              <a href="#" target="_self" class="dt-program-item dt-item-transition" aria-label="그놈은 흑염룡 5화 보기">
-                <figure class="dt-program-item-fig">
-                  <img src="../../assets/detail-page/2-thummail-5.webp" alt="그놈은 흑염룡 5화 썸네일" />
-                  <figcaption class="dt-program-item-cap">
-                    <p class="dt-program-item-h" role="heading">5. 그놈은 흑염룡 5화</p>
-                    <p class="dt-program-item-text">수정과 주연이 함께 있는 모습을 목격한 하진. 두 사람이 서로의 정체를 눈치채기 전에 떨어뜨려 놔야 한다. 신원까지 동원된 하진의 방해 작전!...</p>
-                    <time datetime="2025-03-03T00:00:00">2025.03.03 월&#183;64분</time>
-                  </figcaption>
-                </figure>
-            </a>
-          </li>
-          <li>
-              <a href="#" target="_self" class="dt-program-item dt-item-transition" aria-label="그놈은 흑염룡 6화 보기">
-                <figure class="dt-program-item-fig">
-                  <img src="../../assets/detail-page/2-thummail-6.webp" alt="그놈은 흑염룡 6화 썸네일" />
-                  <figcaption class="dt-program-item-cap">
-                    <p class="dt-program-item-h" role="heading">6. 그놈은 흑염룡 6화</p>
-                    <p class="dt-program-item-text">도데체 키스는 왜 한 걸까? 어젯밤 벌어진 일 때문에 당혹스러운 수정. 주연이 고백이든 해명이든 할 거라 믿었지만, 주연은 아무말이 업다. 심...</p>
-                    <time datetime="2025-03-04T00:00:00">2025.03.04 화&#183;61분</time>
-                  </figcaption>
-                </figure>
-            </a>
-          </li>
-          <li>
-              <a href="#" target="_self" class="dt-program-item dt-item-transition" aria-label="그놈은 흑염룡 7화 보기">
-                <figure class="dt-program-item-fig">
-                  <img src="../../assets/detail-page/2-thummail-7.webp" alt="그놈은 흑염룡 7화 썸네일" />
-                  <figcaption class="dt-program-item-cap">
-                    <p class="dt-program-item-h" role="heading">7. 그놈은 흑염룡 7화</p>
-                    <p class="dt-program-item-text">수정에 대한 마음을 숨기지 않는 주연. 그러나 '연하남'이 흑역사로 남은 수정은 어떻게든 주연을 밀어낸다. 그러던 중, 주연은 효선에게 비밀을...</p>
-                    <time datetime="2025-03-10T00:00:00">2025.03.10 월&#183;63분</time>
-                  </figcaption>
-                </figure>
-            </a>
-          </li>
-          <li>
-              <a href="#" target="_self" class="dt-program-item dt-item-transition" aria-label="그놈은 흑염룡 8화 보기">
-                <figure class="dt-program-item-fig">
-                  <img src="../../assets/detail-page/2-thummail-8.webp" alt="그놈은 흑염룡 8화 썸네일" />
-                  <figcaption class="dt-program-item-cap">
-                    <p class="dt-program-item-h" role="heading">8. 그놈은 흑염룡 8화</p>
-                    <p class="dt-program-item-text">드디어 서로의 마음을 확인한 수정과 주연, 아슬 아슬한 비밀연애가 시작된다. 모두에게 숨겨야 하는 연애지만, 함께할 수 있어서 행복한데... ...</p>
-                    <time datetime="2025-03-11T00:00:00">2025.03.11 화&#183;63분</time>
-                  </figcaption>
-                </figure>
-            </a>
-          </li>
-          <li>
-              <a href="#" target="_self" class="dt-program-item dt-item-transition" aria-label="그놈은 흑염룡 9화 보기">
-                <figure class="dt-program-item-fig">
-                  <img src="../../assets/detail-page/2-thummail-9.webp" alt="그놈은 흑염룡 9화 썸네일" />
-                  <figcaption class="dt-program-item-cap">
-                    <p class="dt-program-item-h" role="heading">9. 그놈은 흑염룡 9화</p>
-                    <p class="dt-program-item-text">다시 마주하게 된 '딸기'와 '흑염룡'. 과거의 상처가 되살아나며 수정과 주연의 갈등은 점점 깊어져 간다. 이대로 끝인가 싶은데... 설상가상, 두...</p>
-                    <time datetime="2025-03-17T00:00:00">2025.03.17 월&#183;63분</time>
-                  </figcaption>
-                </figure>
-            </a>
-          </li>
-          <li>
-              <a href="#" target="_self" class="dt-program-item dt-item-transition" aria-label="그놈은 흑염룡 10화 보기">
-                <figure class="dt-program-item-fig">
-                  <img src="../../assets/detail-page/2-thummail-10.webp" alt="그놈은 흑염룡 10화 썸네일" />
-                  <figcaption class="dt-program-item-cap">
-                    <p class="dt-program-item-h" role="heading">10. 그놈은 흑염룡 10화</p>
-                    <p class="dt-program-item-text">해임된 주연. 결국 효선에게 버림받고 혼자가 된다. 수정은 자신의 앞에 닥친 위기를 숨긴 채, 주연을 위해 애쓴다. 한편, 술로에 하진의 전남편...</p>
-                    <time datetime="2025-02-17T00:00:00">2025.03.18 월&#183;60분</time>
-                  </figcaption>
-                </figure>
-            </a>
-          </li>
-        </ul>
       </div>
-      <!-- 구독하기버튼 -->
-      <a href="#" target="_self" role="link" class="dt-more-btn">더 많은 회차가 보고싶다면, 지금 구독하기</a>
-     </section>
-     <!-- 수평선 컴포넌트 -->
-     <div role="none" class="dt-hr"><div></div></div>
-     <!-- 관련영상섹션 -->
-     <section class="dt-youtube-section">
-      <header>
-        <h3 class="dt-section--header">관련영상</h3>
-      </header>
-      <div class="dt-youtube-list-wrapper">
-        <ul>
-          <li>
-            <a href="#" target="_self" class="dt-youtube-item dt-item-transition" aria-label="관련영상 보기">
-              <figure>
-                <img src="../../assets/detail-page/3-youtube-1.webp" alt="은밀한 사생활 눈감아 줄게요, 그놈은 흑염룡 티저영상" />
-                <figcaption>
-                  <p role="heading"><strong>[봉인해제 티저]</strong>그놈은 흑염룡</p>
-                </figcaption>
-              </figure>
-            </a>
-          </li>
-          <li>
-            <a href="#" target="_self" class="dt-youtube-item dt-item-transition" aria-label="관련영상 보기">
-              <figure>
-                <img src="../../assets/detail-page/3-youtube-2.webp" alt="본부장의 이중생활 탐구 시작, 백수정 티저영상" />
-                <figcaption>
-                  <p role="heading"><strong>[백수정 티저]</strong>그놈은 흑염룡</p>
-                </figcaption>
-              </figure>
-            </a>
-          </li>
-          <li>
-            <a href="#" target="_self" class="dt-youtube-item dt-item-transition" aria-label="관련영상 보기">
-              <figure>
-                <img src="../../assets/detail-page/3-youtube-3.webp" alt="본부장의 완벽한 이중생활!, 반주연 티저영상" />
-                <figcaption>
-                  <p role="heading"><strong>[반주연 티저]</strong>그놈은 흑염룡</p>
-                </figcaption>
-              </figure>
-            </a>
-          </li>
-          <li>
-            <a href="#" target="_self" class="dt-youtube-item dt-item-transition" aria-label="관련영상 보기">
-              <figure>
-                <img src="../../assets/detail-page/3-youtube-4.webp" alt="새 본부장의 이중생활 목격?! 온앤오프 티저영상" />
-                <figcaption>
-                  <p role="heading"><strong>[온앤오프 티저]</strong>그놈은 흑염룡</p>
-                </figcaption>
-              </figure>
-            </a>
-          </li>
-          <li>
-            <a href="#" target="_self" class="dt-youtube-item dt-item-transition" aria-label="관련영상 보기">
-              <figure>
-                <img src="../../assets/detail-page/3-youtube-5.webp" alt="흑염룡, 나의 빌어먹을 흑역사, 그놈은 흑염룡 첫사랑 티저영상" />
-                <figcaption>
-                  <p role="heading"><strong>[첫사랑 티저]</strong>그놈은 흑염룡</p>
-                </figcaption>
-              </figure>
-            </a>
-          </li>
-        </ul>
-      </div>
-     </section>
-     <!-- 비슷한 영상 -->
-     <section class="dt-youtube-section dt-last-padding">
-      <header>
-        <h3 class="dt-section--header">비슷한 콘텐츠</h3>
-      </header>
-      <div class="dt-youtube-list-wrapper">
-        <ul>
-         <li>
-            <a href="#" target="_self" class="dt-contents-item dt-item-transition" aria-label="삼생 초월 로맨스 우룡">
-              <figure>
-                <img src="../../assets/detail-page/4-contents-1.webp" alt="삼생 초월 로맨스 우룡" />
-                <figcaption><p>삼생 초월 로맨스 우룡</p></figcaption>
-              </figure>
-            </a>
-         </li>
-         <li>
-            <a href="#" target="_self" class="dt-contents-item dt-item-transition" aria-label="유리미인살">
-              <figure>
-                <img src="../../assets/detail-page/4-contents-2.webp" alt="유리미인살" />
-                <figcaption><p>유리미인살</p></figcaption>
-              </figure>
-            </a>
-         </li>
-         <li>
-            <a href="#" target="_self" class="dt-contents-item dt-item-transition" aria-label="장안소년행">
-              <figure>
-                <img src="../../assets/detail-page/4-contents-3.webp" alt="장안소년행" />
-                <figcaption><p>장안소년행</p></figcaption>
-              </figure>
-            </a>
-         </li>
-         <li>
-            <a href="#" target="_self" class="dt-contents-item dt-item-transition" aria-label="반격리만사:반전의 로맨스">
-              <figure>
-                <img src="../../assets/detail-page/4-contents-4.webp" alt="반격리만사:반전의 로맨스" />
-                <figcaption><p>반격리만사:반전의 로맨스</p></figcaption>
-              </figure>
-            </a>
-         </li>
-         <li>
-            <a href="#" target="_self" class="dt-contents-item dt-item-transition" aria-label="묘절호인연">
-              <figure>
-                <img src="../../assets/detail-page/4-contents-5.webp" alt="묘절호인연" />
-                <figcaption><p>묘절호인연</p></figcaption>
-              </figure>
-            </a>
-         </li>
-         <li>
-            <a href="#" target="_self" class="dt-contents-item dt-item-transition" aria-label="옥루춘">
-              <figure>
-                <img src="../../assets/detail-page/4-contents-6.webp" alt="옥루춘" />
-                <figcaption><p>옥루춘</p></figcaption>
-              </figure>
-            </a>
-         </li>
-         <li>
-            <a href="#" target="_self" class="dt-contents-item dt-item-transition" aria-label="차청봉명">
-              <figure>
-                <img src="../../assets/detail-page/4-contents-7.webp" alt="차청봉명" />
-                <figcaption><p>차청봉명</p></figcaption>
-              </figure>
-            </a>
-         </li>
-         <li>
-            <a href="#" target="_self" class="dt-contents-item dt-item-transition" aria-label="청설루">
-              <figure>
-                <img src="../../assets/detail-page/4-contents-8.webp" alt="청설루" />
-                <figcaption><p>청설루</p></figcaption>
-              </figure>
-            </a>
-         </li>
-         <li>
-            <a href="#" target="_self" class="dt-contents-item dt-item-transition" aria-label="신상사">
-              <figure>
-                <img src="../../assets/detail-page/4-contents-9.webp" alt="신상사" />
-                <figcaption><p>신상사</p></figcaption>
-              </figure>
-            </a>
-         </li>
-         <li>
-            <a href="#" target="_self" class="dt-contents-item dt-item-transition" aria-label="오! 나의 황제폐하">
-              <figure>
-                <img src="../../assets/detail-page/4-contents-10.webp" alt="오! 나의 황제폐하" />
-                <figcaption><p>오! 나의 황제폐하</p></figcaption>
-              </figure>
-            </a>
-         </li>
-         <li>
-            <a href="#" target="_self" class="dt-contents-item dt-item-transition" aria-label="체크인 한양">
-              <figure>
-                <img src="../../assets/detail-page/4-contents-11.webp" alt="체크인 한양" />
-                <figcaption><p>체크인 한양</p></figcaption>
-              </figure>
-            </a>
-         </li>
-         <li>
-            <a href="#" target="_self" class="dt-contents-item dt-item-transition" aria-label="맹의첨처">
-              <figure>
-                <img src="../../assets/detail-page/4-contents-12.webp" alt="맹의첨처" />
-                <figcaption><p>맹의첨처</p></figcaption>
-              </figure>
-            </a>
-         </li>
-         <li>
-            <a href="#" target="_self" class="dt-contents-item dt-item-transition" aria-label="모백수">
-              <figure>
-                <img src="../../assets/detail-page/4-contents-13.webp" alt="모백수" />
-                <figcaption><p>모백수</p></figcaption>
-              </figure>
-            </a>
-         </li>
-         <li>
-            <a href="#" target="_self" class="dt-contents-item dt-item-transition" aria-label="호호생활:아름다운 인생">
-              <figure>
-                <img src="../../assets/detail-page/4-contents-14.webp" alt="호호생활:아름다운 인생" />
-                <figcaption><p>호호생활:아름다운 인생</p></figcaption>
-              </figure>
-            </a>
-         </li>
-         <li>
-            <a href="#" target="_self" class="dt-contents-item dt-item-transition" aria-label="일촌상사:나의소녀">
-              <figure>
-                <img src="../../assets/detail-page/4-contents-15.webp" alt="일촌상사:나의소녀" />
-                <figcaption><p>일촌상사:나의소녀</p></figcaption>
-              </figure>
-            </a>
-         </li>
-         <li>
-            <a href="#" target="_self" class="dt-contents-item dt-item-transition" aria-label="네가 필요해 : 삼삼래료">
-              <figure>
-                <img src="../../assets/detail-page/4-contents-16.webp" alt="네가 필요해 : 삼삼래료" />
-                <figcaption><p>네가 필요해 : 삼삼래료</p></figcaption>
-              </figure>
-            </a>
-         </li>
-         <li>
-            <a href="#" target="_self" class="dt-contents-item dt-item-transition" aria-label="공작성사청동심:성사님,...">
-              <figure>
-                <img src="../../assets/detail-page/4-contents-17.webp" alt="공작성사청동심:성사님,..." />
-                <figcaption><p>공작성사청동심:성사님,...</p></figcaption>
-              </figure>
-            </a>
-         </li>
-         <li>
-            <a href="#" target="_self" class="dt-contents-item dt-item-transition" aria-label="심도:두근거려">
-              <figure>
-                <img src="../../assets/detail-page/4-contents-18.webp" alt="심도:두근거려" />
-                <figcaption><p>심도:두근거려</p></figcaption>
-              </figure>
-            </a>
-         </li>
-        </ul>
-      </div>
-     </section>
- </div>
-
-     <!-- 모바일 하단 퀵버튼 -->
-  <nav class="gnb-main-quick">
-    <ul class="gnb-flex-row gnb-main-quick-ul">
-      <li  class="quick-active"><a href="../main-page/main-page.html"><img src="../../assets/gnb-quick/home-btn-active.svg" alt="홈"/>홈</a></li>
-      <li><a href="#"><img src="../../assets/gnb-quick/shorts-btn-defualt.svg" alt="쇼츠" />쇼츠</a></li>
-      <li><a href="#"><img src="../../assets/gnb-quick/live-btn-defualt.svg" alt="라이브" />라이브</a></li>
-      <li><a href="../mobile-search/mobile-search.html"><img src="../../assets/gnb-quick/search-btn-defualt.svg" alt="검색" />검색</a></li>
-      <li><a href="../my-history/my-history.html"><img src="../../assets/gnb-quick/hitory-btn-defualt.svg" alt="기록" />기록</a></li>
-    </ul>
-  </nav>
-
-      <footer>
-      <section class="footer-header-area">
-        <div class="footer-header">
-          <div class="notice">
-            <p>공지사항</p>
-            <p>테스트</p>
+      <div class="gnb-sch-pc-back" role="none"></div>
+    </div>
+    <h1 class="sr-only">오직 티빙에서만! 그놈은 흑염룡</h1>
+    <div class="dt-program-wrapper">
+      <!-- 1단 -->
+      <section class="dt-title-info" role="heading">
+        <!-- 비쥬얼 이미지 컴포넌트-->
+        <picture class="dt-visual-img">
+          <source
+            srcset="../../assets/detail-page/1-visual-pc-1.webp"
+            media="(min-width:1024px)"
+          />
+          <img
+            src="../../assets/detail-page/1-visual-m-1.webp"
+            alt="그놈은 흑염룡"
+          />
+        </picture>
+        <!-- 정보 텍스트 묶음 -->
+        <div class="dt-title-info-text" role="contentinfo">
+          <!-- 드라마 제목 컴포넌트 -->
+          <figure role="heading" class="dt-program-title">
+            <img
+              class="dt-tving-only"
+              src="../../assets/detail-page/icons/tving-only.svg"
+              alt="티빙 단독 공개"
+            />
+            <img
+              class="dt-title-img"
+              src="../../assets/detail-page/1-vixual-pc-title.webp"
+              alt="그놈은 흑염룡"
+            />
+            <h2>그놈은 흑염룡</h2>
+          </figure>
+          <!-- 정보 텍스트 컴포넌트 -->
+          <ul class="dt-program-info gnb-flex-row" role="contentinfo">
+            <li>
+              <img
+                src="../../assets/detail-page/icons/icon-fifteen.svg"
+                alt="15세 이상 관람가"
+              />
+            </li>
+            <li>월화 오후8:50</li>
+            <li>드라마</li>
+            <li>tvN</li>
+            <li>시즌 1개</li>
+            <li>해설 자막</li>
+          </ul>
+          <!-- 제작자 및 출연진 -->
+          <dl class="dt-cast-list" role="contentinfo">
+            <dt id="creator">크리에이터</dt>
+            <dd aria-labelledby="creator">이수현, 김수연</dd>
+            <dt id="cast">출연</dt>
+            <dd aria-labelledby="cast">문가영, 최현욱, 임세미, 곽시양</dd>
+          </dl>
+          <!-- 스토리 요약 -->
+          <div class="dt-program-story" role="contentinfo">
+            <p>
+              새로 온 본부장에게서 최악의 첫사랑, '흑염룡'의 기운이 느껴진다?
+              흑역사에 고통받는 '본부장 킬러' 팀장 백수정과 가슴에 흑염룡을 품은
+              '재벌 3세'본부장 반주연의 봉인해제 로맨스
+            </p>
+          </div>
+          <!-- 버튼 묶음 -->
+          <div class="dt-btn-wrapper gnb-flex-row">
+            <!-- 링크 컴포넌트 -->
+            <a href="#" target="_self" role="link" class="dt-sub-btn"
+              >이용권 구독하기</a
+            >
+            <!-- 아이콘 버튼 컴포넌트 -->
+            <button class="dt-icon-btn" aria-label="찜">
+              <img
+                src="../../assets/detail-page/icons/icon-plus.svg"
+                alt="찜"
+              />찜
+            </button>
+            <button class="dt-icon-btn" aria-label="찜">
+              <img
+                src="../../assets/detail-page/icons/icon-share.svg"
+                alt="공유"
+              />공유
+            </button>
           </div>
         </div>
       </section>
+      <!-- 수평선 컴포넌트 -->
+      <div role="none" class="dt-hr"><div></div></div>
+      <!-- 2단시작 / 그놈은 흑염룡 ~~화 -->
+      <section class="dt-video-section">
+        <header>
+          <h3 class="dt-section-program-header">그놈은 흑염룡</h3>
+          <div class="dt-videosec-btn">
+            <!-- 첫화부터 최신화부터 버튼 -->
+            <form class="dt-video-order">
+              <div>
+                <input
+                  type="radio"
+                  id="dt-first-video"
+                  class="sr-only"
+                  name="dt-video"
+                  value="first-video"
+                  checked
+                />
+                <label for="dt-first-video">첫화부터</label>
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  id="dt-new-video"
+                  class="sr-only"
+                  name="dt-video"
+                  value="new-video"
+                />
+                <label for="dt-new-video">최신화부터</label>
+              </div>
+            </form>
+            <!-- 연속재생버튼 -->
+            <div class="dt-auto-btn-wrapper">
+              <input
+                type="checkbox"
+                class="sr-only"
+                id="dt-auto-btn"
+                name="dt-auto-btn"
+                role="checkbox"
+                checked
+              />
+              <label for="dt-auto-btn"
+                ><span class="at-auto-onoff"></span>연속재생</label
+              >
+            </div>
+          </div>
+        </header>
+        <!-- 회차리스트 -->
+        <div class="dt-video-order-list-wrapper">
+          <ul>
+            <li>
+              <a
+                href="#"
+                target="_self"
+                class="dt-program-item dt-item-transition"
+                aria-label="그놈은 흑염룡 1화 보기"
+              >
+                <figure class="dt-program-item-fig">
+                  <img
+                    src="../../assets/detail-page/2-thummail-1.webp"
+                    alt="그놈은 흑염룡 1화 썸네일"
+                  />
+                  <figcaption class="dt-program-item-cap">
+                    <p class="dt-program-item-h" role="heading">
+                      1. 그놈은 흑염룡 1화
+                    </p>
+                    <p class="dt-program-item-text">
+                      돌아가신 엄마의 몫까지 대신하며 정신없이 살아온 열아홉
+                      수정. 우연히 시작한 게임에서 첫 사랑, '흑염룡'을 만난다.
+                      그러나 설렘 가득했...
+                    </p>
+                    <time datetime="2025-02-17T00:00:00"
+                      >2025.02.17 월&#183;61분</time
+                    >
+                  </figcaption>
+                </figure>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                target="_self"
+                class="dt-program-item dt-item-transition"
+                aria-label="그놈은 흑염룡 2화 보기"
+              >
+                <figure class="dt-program-item-fig">
+                  <img
+                    src="../../assets/detail-page/2-thummail-2.webp"
+                    alt="그놈은 흑염룡 2화 썸네일"
+                  />
+                  <figcaption class="dt-program-item-cap">
+                    <p class="dt-program-item-h" role="heading">
+                      2. 그놈은 흑염룡 2화
+                    </p>
+                    <p class="dt-program-item-text">
+                      수정은 첫 단추부터 잘못 끼운 주연과의 관계를 회복하려
+                      하지만 쉽지 않다. 들키고 싶지 않은 비밀이 있는 주연에게
+                      수정은 눈엣가시일 뿐이다...
+                    </p>
+                    <time datetime="2025-02-18T00:00:00"
+                      >2025.02.18 화&#183;62분</time
+                    >
+                  </figcaption>
+                </figure>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                target="_self"
+                class="dt-program-item dt-item-transition"
+                aria-label="그놈은 흑염룡 3화 보기"
+              >
+                <figure class="dt-program-item-fig">
+                  <img
+                    src="../../assets/detail-page/2-thummail-3.webp"
+                    alt="그놈은 흑염룡 3화 썸네일"
+                  />
+                  <figcaption class="dt-program-item-cap">
+                    <p class="dt-program-item-h" role="heading">
+                      3. 그놈은 흑염룡 3화
+                    </p>
+                    <p class="dt-program-item-text">
+                      주연을 필두로 용성백화점 대규모 리뉴얼 프로젝트가
+                      진행된다. 일을 하며 점점 가까워지는 주연과 수정. 자신을
+                      이해해 주는 수정의 모습에 주...
+                    </p>
+                    <time datetime="2025-02-24T00:00:00"
+                      >2025.02.24 월&#183;59분</time
+                    >
+                  </figcaption>
+                </figure>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                target="_self"
+                class="dt-program-item dt-item-transition"
+                aria-label="그놈은 흑염룡 4화 보기"
+              >
+                <figure class="dt-program-item-fig">
+                  <img
+                    src="../../assets/detail-page/2-thummail-4.webp"
+                    alt="그놈은 흑염룡 4화 썸네일"
+                  />
+                  <figcaption class="dt-program-item-cap">
+                    <p class="dt-program-item-h" role="heading">
+                      4. 그놈은 흑염룡 4화
+                    </p>
+                    <p class="dt-program-item-text">
+                      결국 '비밀의 방'까지 오픈되고. 갑작스러운 일로 주연의
+                      도움을 받게 된 수정. 주연의 새로운 모습에 자꾸만 웃음이
+                      나는데.. 한편, 신원은 하진 ...
+                    </p>
+                    <time datetime="2025-02-25T00:00:00"
+                      >2025.02.25 화&#183;61분</time
+                    >
+                  </figcaption>
+                </figure>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                target="_self"
+                class="dt-program-item dt-item-transition"
+                aria-label="그놈은 흑염룡 5화 보기"
+              >
+                <figure class="dt-program-item-fig">
+                  <img
+                    src="../../assets/detail-page/2-thummail-5.webp"
+                    alt="그놈은 흑염룡 5화 썸네일"
+                  />
+                  <figcaption class="dt-program-item-cap">
+                    <p class="dt-program-item-h" role="heading">
+                      5. 그놈은 흑염룡 5화
+                    </p>
+                    <p class="dt-program-item-text">
+                      수정과 주연이 함께 있는 모습을 목격한 하진. 두 사람이
+                      서로의 정체를 눈치채기 전에 떨어뜨려 놔야 한다. 신원까지
+                      동원된 하진의 방해 작전!...
+                    </p>
+                    <time datetime="2025-03-03T00:00:00"
+                      >2025.03.03 월&#183;64분</time
+                    >
+                  </figcaption>
+                </figure>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                target="_self"
+                class="dt-program-item dt-item-transition"
+                aria-label="그놈은 흑염룡 6화 보기"
+              >
+                <figure class="dt-program-item-fig">
+                  <img
+                    src="../../assets/detail-page/2-thummail-6.webp"
+                    alt="그놈은 흑염룡 6화 썸네일"
+                  />
+                  <figcaption class="dt-program-item-cap">
+                    <p class="dt-program-item-h" role="heading">
+                      6. 그놈은 흑염룡 6화
+                    </p>
+                    <p class="dt-program-item-text">
+                      도데체 키스는 왜 한 걸까? 어젯밤 벌어진 일 때문에
+                      당혹스러운 수정. 주연이 고백이든 해명이든 할 거라
+                      믿었지만, 주연은 아무말이 업다. 심...
+                    </p>
+                    <time datetime="2025-03-04T00:00:00"
+                      >2025.03.04 화&#183;61분</time
+                    >
+                  </figcaption>
+                </figure>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                target="_self"
+                class="dt-program-item dt-item-transition"
+                aria-label="그놈은 흑염룡 7화 보기"
+              >
+                <figure class="dt-program-item-fig">
+                  <img
+                    src="../../assets/detail-page/2-thummail-7.webp"
+                    alt="그놈은 흑염룡 7화 썸네일"
+                  />
+                  <figcaption class="dt-program-item-cap">
+                    <p class="dt-program-item-h" role="heading">
+                      7. 그놈은 흑염룡 7화
+                    </p>
+                    <p class="dt-program-item-text">
+                      수정에 대한 마음을 숨기지 않는 주연. 그러나 '연하남'이
+                      흑역사로 남은 수정은 어떻게든 주연을 밀어낸다. 그러던 중,
+                      주연은 효선에게 비밀을...
+                    </p>
+                    <time datetime="2025-03-10T00:00:00"
+                      >2025.03.10 월&#183;63분</time
+                    >
+                  </figcaption>
+                </figure>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                target="_self"
+                class="dt-program-item dt-item-transition"
+                aria-label="그놈은 흑염룡 8화 보기"
+              >
+                <figure class="dt-program-item-fig">
+                  <img
+                    src="../../assets/detail-page/2-thummail-8.webp"
+                    alt="그놈은 흑염룡 8화 썸네일"
+                  />
+                  <figcaption class="dt-program-item-cap">
+                    <p class="dt-program-item-h" role="heading">
+                      8. 그놈은 흑염룡 8화
+                    </p>
+                    <p class="dt-program-item-text">
+                      드디어 서로의 마음을 확인한 수정과 주연, 아슬 아슬한
+                      비밀연애가 시작된다. 모두에게 숨겨야 하는 연애지만, 함께할
+                      수 있어서 행복한데... ...
+                    </p>
+                    <time datetime="2025-03-11T00:00:00"
+                      >2025.03.11 화&#183;63분</time
+                    >
+                  </figcaption>
+                </figure>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                target="_self"
+                class="dt-program-item dt-item-transition"
+                aria-label="그놈은 흑염룡 9화 보기"
+              >
+                <figure class="dt-program-item-fig">
+                  <img
+                    src="../../assets/detail-page/2-thummail-9.webp"
+                    alt="그놈은 흑염룡 9화 썸네일"
+                  />
+                  <figcaption class="dt-program-item-cap">
+                    <p class="dt-program-item-h" role="heading">
+                      9. 그놈은 흑염룡 9화
+                    </p>
+                    <p class="dt-program-item-text">
+                      다시 마주하게 된 '딸기'와 '흑염룡'. 과거의 상처가
+                      되살아나며 수정과 주연의 갈등은 점점 깊어져 간다. 이대로
+                      끝인가 싶은데... 설상가상, 두...
+                    </p>
+                    <time datetime="2025-03-17T00:00:00"
+                      >2025.03.17 월&#183;63분</time
+                    >
+                  </figcaption>
+                </figure>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                target="_self"
+                class="dt-program-item dt-item-transition"
+                aria-label="그놈은 흑염룡 10화 보기"
+              >
+                <figure class="dt-program-item-fig">
+                  <img
+                    src="../../assets/detail-page/2-thummail-10.webp"
+                    alt="그놈은 흑염룡 10화 썸네일"
+                  />
+                  <figcaption class="dt-program-item-cap">
+                    <p class="dt-program-item-h" role="heading">
+                      10. 그놈은 흑염룡 10화
+                    </p>
+                    <p class="dt-program-item-text">
+                      해임된 주연. 결국 효선에게 버림받고 혼자가 된다. 수정은
+                      자신의 앞에 닥친 위기를 숨긴 채, 주연을 위해 애쓴다. 한편,
+                      술로에 하진의 전남편...
+                    </p>
+                    <time datetime="2025-02-17T00:00:00"
+                      >2025.03.18 월&#183;60분</time
+                    >
+                  </figcaption>
+                </figure>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- 구독하기버튼 -->
+        <a href="#" target="_self" role="link" class="dt-more-btn"
+          >더 많은 회차가 보고싶다면, 지금 구독하기</a
+        >
+      </section>
+      <!-- 수평선 컴포넌트 -->
+      <div role="none" class="dt-hr"><div></div></div>
+      <!-- 관련영상섹션 -->
+      <section class="dt-youtube-section">
+        <header>
+          <h3 class="dt-section--header">관련영상</h3>
+        </header>
+        <div class="dt-youtube-list-wrapper">
+          <ul>
+            <li>
+              <a
+                href="#"
+                target="_self"
+                class="dt-youtube-item dt-item-transition"
+                aria-label="관련영상 보기"
+              >
+                <figure>
+                  <img
+                    src="../../assets/detail-page/3-youtube-1.webp"
+                    alt="은밀한 사생활 눈감아 줄게요, 그놈은 흑염룡 티저영상"
+                  />
+                  <figcaption>
+                    <p role="heading">
+                      <strong>[봉인해제 티저]</strong>그놈은 흑염룡
+                    </p>
+                  </figcaption>
+                </figure>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                target="_self"
+                class="dt-youtube-item dt-item-transition"
+                aria-label="관련영상 보기"
+              >
+                <figure>
+                  <img
+                    src="../../assets/detail-page/3-youtube-2.webp"
+                    alt="본부장의 이중생활 탐구 시작, 백수정 티저영상"
+                  />
+                  <figcaption>
+                    <p role="heading">
+                      <strong>[백수정 티저]</strong>그놈은 흑염룡
+                    </p>
+                  </figcaption>
+                </figure>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                target="_self"
+                class="dt-youtube-item dt-item-transition"
+                aria-label="관련영상 보기"
+              >
+                <figure>
+                  <img
+                    src="../../assets/detail-page/3-youtube-3.webp"
+                    alt="본부장의 완벽한 이중생활!, 반주연 티저영상"
+                  />
+                  <figcaption>
+                    <p role="heading">
+                      <strong>[반주연 티저]</strong>그놈은 흑염룡
+                    </p>
+                  </figcaption>
+                </figure>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                target="_self"
+                class="dt-youtube-item dt-item-transition"
+                aria-label="관련영상 보기"
+              >
+                <figure>
+                  <img
+                    src="../../assets/detail-page/3-youtube-4.webp"
+                    alt="새 본부장의 이중생활 목격?! 온앤오프 티저영상"
+                  />
+                  <figcaption>
+                    <p role="heading">
+                      <strong>[온앤오프 티저]</strong>그놈은 흑염룡
+                    </p>
+                  </figcaption>
+                </figure>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                target="_self"
+                class="dt-youtube-item dt-item-transition"
+                aria-label="관련영상 보기"
+              >
+                <figure>
+                  <img
+                    src="../../assets/detail-page/3-youtube-5.webp"
+                    alt="흑염룡, 나의 빌어먹을 흑역사, 그놈은 흑염룡 첫사랑 티저영상"
+                  />
+                  <figcaption>
+                    <p role="heading">
+                      <strong>[첫사랑 티저]</strong>그놈은 흑염룡
+                    </p>
+                  </figcaption>
+                </figure>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- 비슷한 영상 -->
+      <section class="dt-youtube-section dt-last-padding">
+        <header>
+          <h3 class="dt-section--header">비슷한 콘텐츠</h3>
+        </header>
+        <div class="dt-youtube-list-wrapper">
+          <ul>
+            <li>
+              <a
+                href="#"
+                target="_self"
+                class="dt-contents-item dt-item-transition"
+                aria-label="삼생 초월 로맨스 우룡"
+              >
+                <figure>
+                  <img
+                    src="../../assets/detail-page/4-contents-1.webp"
+                    alt="삼생 초월 로맨스 우룡"
+                  />
+                  <figcaption><p>삼생 초월 로맨스 우룡</p></figcaption>
+                </figure>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                target="_self"
+                class="dt-contents-item dt-item-transition"
+                aria-label="유리미인살"
+              >
+                <figure>
+                  <img
+                    src="../../assets/detail-page/4-contents-2.webp"
+                    alt="유리미인살"
+                  />
+                  <figcaption><p>유리미인살</p></figcaption>
+                </figure>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                target="_self"
+                class="dt-contents-item dt-item-transition"
+                aria-label="장안소년행"
+              >
+                <figure>
+                  <img
+                    src="../../assets/detail-page/4-contents-3.webp"
+                    alt="장안소년행"
+                  />
+                  <figcaption><p>장안소년행</p></figcaption>
+                </figure>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                target="_self"
+                class="dt-contents-item dt-item-transition"
+                aria-label="반격리만사:반전의 로맨스"
+              >
+                <figure>
+                  <img
+                    src="../../assets/detail-page/4-contents-4.webp"
+                    alt="반격리만사:반전의 로맨스"
+                  />
+                  <figcaption><p>반격리만사:반전의 로맨스</p></figcaption>
+                </figure>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                target="_self"
+                class="dt-contents-item dt-item-transition"
+                aria-label="묘절호인연"
+              >
+                <figure>
+                  <img
+                    src="../../assets/detail-page/4-contents-5.webp"
+                    alt="묘절호인연"
+                  />
+                  <figcaption><p>묘절호인연</p></figcaption>
+                </figure>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                target="_self"
+                class="dt-contents-item dt-item-transition"
+                aria-label="옥루춘"
+              >
+                <figure>
+                  <img
+                    src="../../assets/detail-page/4-contents-6.webp"
+                    alt="옥루춘"
+                  />
+                  <figcaption><p>옥루춘</p></figcaption>
+                </figure>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                target="_self"
+                class="dt-contents-item dt-item-transition"
+                aria-label="차청봉명"
+              >
+                <figure>
+                  <img
+                    src="../../assets/detail-page/4-contents-7.webp"
+                    alt="차청봉명"
+                  />
+                  <figcaption><p>차청봉명</p></figcaption>
+                </figure>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                target="_self"
+                class="dt-contents-item dt-item-transition"
+                aria-label="청설루"
+              >
+                <figure>
+                  <img
+                    src="../../assets/detail-page/4-contents-8.webp"
+                    alt="청설루"
+                  />
+                  <figcaption><p>청설루</p></figcaption>
+                </figure>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                target="_self"
+                class="dt-contents-item dt-item-transition"
+                aria-label="신상사"
+              >
+                <figure>
+                  <img
+                    src="../../assets/detail-page/4-contents-9.webp"
+                    alt="신상사"
+                  />
+                  <figcaption><p>신상사</p></figcaption>
+                </figure>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                target="_self"
+                class="dt-contents-item dt-item-transition"
+                aria-label="오! 나의 황제폐하"
+              >
+                <figure>
+                  <img
+                    src="../../assets/detail-page/4-contents-10.webp"
+                    alt="오! 나의 황제폐하"
+                  />
+                  <figcaption><p>오! 나의 황제폐하</p></figcaption>
+                </figure>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                target="_self"
+                class="dt-contents-item dt-item-transition"
+                aria-label="체크인 한양"
+              >
+                <figure>
+                  <img
+                    src="../../assets/detail-page/4-contents-11.webp"
+                    alt="체크인 한양"
+                  />
+                  <figcaption><p>체크인 한양</p></figcaption>
+                </figure>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                target="_self"
+                class="dt-contents-item dt-item-transition"
+                aria-label="맹의첨처"
+              >
+                <figure>
+                  <img
+                    src="../../assets/detail-page/4-contents-12.webp"
+                    alt="맹의첨처"
+                  />
+                  <figcaption><p>맹의첨처</p></figcaption>
+                </figure>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                target="_self"
+                class="dt-contents-item dt-item-transition"
+                aria-label="모백수"
+              >
+                <figure>
+                  <img
+                    src="../../assets/detail-page/4-contents-13.webp"
+                    alt="모백수"
+                  />
+                  <figcaption><p>모백수</p></figcaption>
+                </figure>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                target="_self"
+                class="dt-contents-item dt-item-transition"
+                aria-label="호호생활:아름다운 인생"
+              >
+                <figure>
+                  <img
+                    src="../../assets/detail-page/4-contents-14.webp"
+                    alt="호호생활:아름다운 인생"
+                  />
+                  <figcaption><p>호호생활:아름다운 인생</p></figcaption>
+                </figure>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                target="_self"
+                class="dt-contents-item dt-item-transition"
+                aria-label="일촌상사:나의소녀"
+              >
+                <figure>
+                  <img
+                    src="../../assets/detail-page/4-contents-15.webp"
+                    alt="일촌상사:나의소녀"
+                  />
+                  <figcaption><p>일촌상사:나의소녀</p></figcaption>
+                </figure>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                target="_self"
+                class="dt-contents-item dt-item-transition"
+                aria-label="네가 필요해 : 삼삼래료"
+              >
+                <figure>
+                  <img
+                    src="../../assets/detail-page/4-contents-16.webp"
+                    alt="네가 필요해 : 삼삼래료"
+                  />
+                  <figcaption><p>네가 필요해 : 삼삼래료</p></figcaption>
+                </figure>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                target="_self"
+                class="dt-contents-item dt-item-transition"
+                aria-label="공작성사청동심:성사님,..."
+              >
+                <figure>
+                  <img
+                    src="../../assets/detail-page/4-contents-17.webp"
+                    alt="공작성사청동심:성사님,..."
+                  />
+                  <figcaption><p>공작성사청동심:성사님,...</p></figcaption>
+                </figure>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                target="_self"
+                class="dt-contents-item dt-item-transition"
+                aria-label="심도:두근거려"
+              >
+                <figure>
+                  <img
+                    src="../../assets/detail-page/4-contents-18.webp"
+                    alt="심도:두근거려"
+                  />
+                  <figcaption><p>심도:두근거려</p></figcaption>
+                </figure>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+
+    <!-- 모바일 하단 퀵버튼 -->
+    <nav class="gnb-main-quick">
+      <ul class="gnb-flex-row gnb-main-quick-ul">
+        <li class="quick-active">
+          <a href="../main-page/main-page.html"
+            ><img
+              src="../../assets/gnb-quick/home-btn-active.svg"
+              alt="홈"
+            />홈</a
+          >
+        </li>
+        <li>
+          <a href="#"
+            ><img
+              src="../../assets/gnb-quick/shorts-btn-defualt.svg"
+              alt="쇼츠"
+            />쇼츠</a
+          >
+        </li>
+        <li>
+          <a href="#"
+            ><img
+              src="../../assets/gnb-quick/live-btn-defualt.svg"
+              alt="라이브"
+            />라이브</a
+          >
+        </li>
+        <li>
+          <a href="../mobile-search/mobile-search.html"
+            ><img
+              src="../../assets/gnb-quick/search-btn-defualt.svg"
+              alt="검색"
+            />검색</a
+          >
+        </li>
+        <li>
+          <a href="../my-history/my-history.html"
+            ><img
+              src="../../assets/gnb-quick/hitory-btn-defualt.svg"
+              alt="기록"
+            />기록</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <footer>
+      <div class="clone-modal-wrapper">
+        <button type="button" class="clone-modal-open">공지사항</button>
+        <dialog class="clone-modal">
+          <h3 class="clone-modal-title">
+            해당사이트는 공식 사이트가아닌, 학습을 위해 제작된 클론
+            사이트입니다.
+          </h3>
+          <form action="" method="dialog">
+            <button type="button" class="clone-modal-close">
+              하루 이창 보지않기
+            </button>
+          </form>
+        </dialog>
+      </div>
 
       <div class="footer-line"></div>
 
@@ -715,7 +1256,5 @@
         <p class="copyright">Copyright © 주식회사 티빙 All right reserved.</p>
       </section>
     </footer>
-
-
-</body>
+  </body>
 </html>
