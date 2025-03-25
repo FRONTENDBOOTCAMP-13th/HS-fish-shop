@@ -30,16 +30,16 @@
     </header>
     <main class="findId-main">
       <div class="findId-container">
-        <h2 class="find-header">아이디 찾기</h2>
+        <h1 class="find-header">아이디 찾기</h1>
         <form
           class="findId-form"
           action="../login-page/login-page.html"
           method="get"
         >
-          <label class="find-email-title" for="email">이메일로 찾기</label>
-          <label class="find-email-title2" for="email"
-            >가입 시 등록한 이메일을 입력해주세요.</label
-          >
+          <h2 class="find-email-title" for="email">이메일로 찾기</h2>
+          <h3 class="find-email-title2" for="email">
+            가입 시 등록한 이메일을 입력해주세요.
+          </h3>
           <div class="email-container">
             <input
               type="email"
@@ -48,9 +48,10 @@
               name="email"
               placeholder="이메일"
               required
+              aria-label="이메일 입력"
             />
             <div>
-              <input type="checkbox" id="deletEmail" />
+              <input type="checkbox" id="deletEmail" aria-label="텍스트 지움" />
             </div>
           </div>
           <script>
@@ -77,7 +78,9 @@
           method="get"
         >
           <h2 class="find-email-title">본인인증으로 찾기</h2>
-          <p>이미 본인인증이 완료된 계정에 한하여 아이디 찾기가 가능합니다.</p>
+          <h3 class="find-email-title2">
+            이미 본인인증이 완료된 계정에 한하여 아이디 찾기가 가능합니다.
+          </h3>
           <button type="submit" class="auth_button">본인인증하기</button>
         </form>
       </div>
@@ -90,7 +93,7 @@
             해당사이트는 공식 사이트가아닌, 학습을 위해 제작된 클론
             사이트입니다.
           </h3>
-          <form action="" method="dialog">
+          <form method="dialog">
             <button type="button" class="clone-modal-close">
               하루 이창 보지않기
             </button>
@@ -168,6 +171,7 @@
           <img
             src="./../../assets/map-icon/footer-map-icons.webp"
             usemap="#image-map-mobile"
+            alt="map-image-mobile"
           />
 
           <map name="image-map-mobile">
@@ -210,6 +214,7 @@
           <img
             src="./../../assets/map-icon/footer-map-icons-tablet.webp"
             usemap="#image-map-tablet"
+            alt="map-image-tablet"
           />
 
           <map name="image-map-tablet">
@@ -252,6 +257,7 @@
           <img
             src="./../../assets/map-icon/footer-map-icons-desktop.webp"
             usemap="#image-map-desktop"
+            alt="map-image-desktop"
           />
 
           <map name="image-map-desktop">
@@ -290,7 +296,7 @@
           </map>
         </div>
       </section>
-
+      
       <section class="footer-copyright">
         <p class="copyright">Copyright © 주식회사 티빙 All right reserved.</p>
       </section>

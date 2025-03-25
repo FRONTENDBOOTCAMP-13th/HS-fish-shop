@@ -30,17 +30,17 @@
     </header>
     <main class="findPw-main">
       <div class="findPw-container">
-        <h2 class="findPw-header">비밀번호 찾기</h2>
+        <h1 class="findPw-header">비밀번호 찾기</h1>
         <form
           class="findPw-form"
           action="../login-page/login-page.html"
           method="get"
         >
-          <label class="find-pw-title" for="text"
-            >아이디 확인 후 등록된 이메일 주소로 비밀번호 재설정을 위한 인증
+          <h2 class="find-pw-title" for="text">
+            아이디 확인 후 등록된 이메일 주소로 비밀번호 재설정을 위한 인증
             메일이 발송됩니다. 이메일을 확인하여 12시간 이내에 비밀번호 재설정을
-            완료해주세요.</label
-          >
+            완료해주세요.
+          </h2>
           <div class="findPw-container">
             <input
               type="text"
@@ -49,9 +49,14 @@
               name="username"
               placeholder="아이디"
               required
+              aria-label="아이디 입력"
             />
             <div>
-              <input type="checkbox" id="delet_findPw" />
+              <input
+                type="checkbox"
+                id="delet_findPw"
+                aria-label="텍스트 지움"
+              />
             </div>
           </div>
           <script>
@@ -77,7 +82,7 @@
             해당사이트는 공식 사이트가아닌, 학습을 위해 제작된 클론
             사이트입니다.
           </h3>
-          <form action="" method="dialog">
+          <form method="dialog">
             <button type="button" class="clone-modal-close">
               하루 이창 보지않기
             </button>
@@ -150,11 +155,12 @@
         </address>
       </section>
 
-      <section class="footer-map">
+     <section class="footer-map">
         <div class="map-icon-mobile">
           <img
             src="./../../assets/map-icon/footer-map-icons.webp"
             usemap="#image-map-mobile"
+            alt="map-image-mobile"
           />
 
           <map name="image-map-mobile">
@@ -197,6 +203,7 @@
           <img
             src="./../../assets/map-icon/footer-map-icons-tablet.webp"
             usemap="#image-map-tablet"
+            alt="map-image-tablet"
           />
 
           <map name="image-map-tablet">
@@ -239,6 +246,7 @@
           <img
             src="./../../assets/map-icon/footer-map-icons-desktop.webp"
             usemap="#image-map-desktop"
+            alt="map-image-desktop"
           />
 
           <map name="image-map-desktop">
@@ -277,7 +285,6 @@
           </map>
         </div>
       </section>
-
       <section class="footer-copyright">
         <p class="copyright">Copyright © 주식회사 티빙 All right reserved.</p>
       </section>
