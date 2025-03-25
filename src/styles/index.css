@@ -174,7 +174,7 @@
   padding-top: 20px;
   margin: 30px;
 
-  h2 {
+  h1 {
     color: var(--white, #fff);
 
     /* Heading/Medium */
@@ -270,7 +270,7 @@
   }
 
   .index_header {
-    h2 {
+    h1 {
       font-size: 28.43px;
     }
 
@@ -293,7 +293,7 @@
   }
 
   .index_header {
-    h2 {
+    h1 {
       font-size: 37.897px;
     }
 

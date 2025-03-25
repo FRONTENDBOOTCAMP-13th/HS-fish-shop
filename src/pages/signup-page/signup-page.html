@@ -10,11 +10,7 @@
       href="/public/font/woff2/PretendardVariable.woff2"
       crossorigin="anonymous"
     />
-    <link
-      rel="stylesheet"
-      as="style"
-      href="/public/font/pretendardvariable.css"
-    />
+    <link rel="stylesheet" href="/public/font/pretendardvariable.css" />
     <link rel="stylesheet" href="/src/styles/reset.css" />
     <link rel="stylesheet" href="/src/pages/signup-page/signup-page.css" />
     <script type="module" src="./../../main.js"></script>
@@ -36,9 +32,9 @@
           action="../login-page/login-page.html"
           method="get"
         >
-          <label class="signup-title"
-            >아이디와 이메일로 간편하게 티빙을 시작하세요!</label
-          >
+          <h1 class="signup-title">
+            아이디와 이메일로 간편하게 티빙을 시작하세요!
+          </h1>
           <div class="input_sign_wrap">
             <div class="idContainerSign">
               <input
@@ -50,9 +46,14 @@
                 required
                 pattern="^[A-Za-z][A-Za-z\d]{5,11}$"
                 title="영문 또는 영문+숫자 조합 6~12자리 입력하세요."
+                aria-label="아이디 입력"
               />
-              <input type="checkbox" id="deletIdSign" />
-              <lable for="text">영문 또는 영문, 숫자 조합 6~12자리</lable>
+              <input
+                type="checkbox"
+                id="deletIdSign"
+                aria-label="텍스트 지움"
+              />
+              <lable for="idSign">영문 또는 영문, 숫자 조합 6~12자리</lable>
             </div>
             <div class="pwContainerSign">
               <input
@@ -64,12 +65,23 @@
                 required
                 pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[~!@#$%^&*])[A-Za-z\d~!@#$%^&*]{8,15}$"
                 title="영문, 숫자, 특수문자(~!@#$%^&*) 조합 8~15자리 입력하세요."
+                aria-label="비밀번호 입력"
               />
               <div class="toggle-pw-checkbox">
-                <input type="checkbox" id="deletPwSign" />
-                <input type="checkbox" id="showPwSign" />
+                <input
+                  type="checkbox"
+                  id="deletPwSign"
+                  aria-label="텍스트 지움"
+                />
+                <input
+                  type="checkbox"
+                  id="showPwSign"
+                  aria-label="비밀번호 보기"
+                />
               </div>
-              <label>영문, 숫자, 특수문자(~!@#$%^&*)조합 8~15자리</label>
+              <label for="passwordSign"
+                >영문, 숫자, 특수문자(~!@#$%^&*)조합 8~15자리</label
+              >
             </div>
             <div class="pwContainerSign2">
               <input
@@ -81,12 +93,21 @@
                 required
                 pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[~!@#$%^&*])[A-Za-z\d~!@#$%^&*]{8,15}$"
                 title="영문, 숫자, 특수문자(~!@#$%^&*) 조합 8~15자리 입력하세요."
+                aria-label="비밀번호 확인 입력"
               />
               <p id="passwordSign2Error" class="passwordSign2Error"></p>
 
               <div class="toggle-pw-checkbox">
-                <input type="checkbox" id="showPwSign2" />
-                <input type="checkbox" id="deletPwSign2" />
+                <input
+                  type="checkbox"
+                  id="showPwSign2"
+                  aria-label="비밀번호 보기"
+                />
+                <input
+                  type="checkbox"
+                  id="deletPwSign2"
+                  aria-label="텍스트 지움"
+                />
               </div>
             </div>
             <div class="emContainerSign">
@@ -97,8 +118,13 @@
                 name="email"
                 placeholder="이메일"
                 required
+                aria-label="이메일 입력"
               />
-              <input type="checkbox" id="deletEmailSign" />
+              <input
+                type="checkbox"
+                id="deletEmailSign"
+                aria-label="텍스트 지움"
+              />
             </div>
             <script>
               document
@@ -187,6 +213,7 @@
                 id="allAgree"
                 class="circle_checkboxSign"
                 name="keep-sign-in"
+                aria-label="모두 동의"
               />
               모두 동의합니다.
             </label>
@@ -251,7 +278,7 @@
             해당사이트는 공식 사이트가아닌, 학습을 위해 제작된 클론
             사이트입니다.
           </h3>
-          <form action="" method="dialog">
+          <form method="dialog">
             <button type="button" class="clone-modal-close">
               하루 이창 보지않기
             </button>
@@ -328,6 +355,7 @@
           <img
             src="./../../assets/map-icon/footer-map-icons.webp"
             usemap="#image-map-mobile"
+            alt="map-image-mobile"
           />
 
           <map name="image-map-mobile">
@@ -370,6 +398,7 @@
           <img
             src="./../../assets/map-icon/footer-map-icons-tablet.webp"
             usemap="#image-map-tablet"
+            alt="map-image-tablet"
           />
 
           <map name="image-map-tablet">
@@ -412,6 +441,7 @@
           <img
             src="./../../assets/map-icon/footer-map-icons-desktop.webp"
             usemap="#image-map-desktop"
+            alt="map-image-desktop"
           />
 
           <map name="image-map-desktop">

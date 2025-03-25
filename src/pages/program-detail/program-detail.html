@@ -4,13 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="/favicon.jpg" />
-    <link
-      rel="preload"
-      as="font"
-      href="/font/woff2/PretendardVariable.woff2"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" as="style" href="/font/pretendardvariable.css" />
+    <link rel="preload" as="style" href="/font/pretendardvariable.css" />
+    <link rel="stylesheet" href="/font/pretendardvariable.css" />
     <script type="module" src="./../../main.js"></script>
     <title>그놈은 흑염룡 | TAING</title>
   </head>
@@ -31,6 +26,7 @@
               class="gnb-sch-input"
               id="gnb-sch-check"
               name="gnb-sch-check"
+              aria-pressed="true"
             />
             <label for="gnb-sch-check" class="gnb-sch-label"
               ><span class="sr-only">검색</span></label
@@ -169,7 +165,7 @@
     <h1 class="sr-only">오직 티빙에서만! 그놈은 흑염룡</h1>
     <div class="dt-program-wrapper">
       <!-- 1단 -->
-      <section class="dt-title-info" role="heading">
+      <section class="dt-title-info">
         <!-- 비쥬얼 이미지 컴포넌트-->
         <picture class="dt-visual-img">
           <source
@@ -198,7 +194,7 @@
             <h2>그놈은 흑염룡</h2>
           </figure>
           <!-- 정보 텍스트 컴포넌트 -->
-          <ul class="dt-program-info gnb-flex-row" role="contentinfo">
+          <ul class="dt-program-info gnb-flex-row">
             <li>
               <img
                 src="../../assets/detail-page/icons/icon-fifteen.svg"
@@ -212,7 +208,7 @@
             <li>해설 자막</li>
           </ul>
           <!-- 제작자 및 출연진 -->
-          <dl class="dt-cast-list" role="contentinfo">
+          <dl class="dt-cast-list">
             <dt id="creator">크리에이터</dt>
             <dd aria-labelledby="creator">이수현, 김수연</dd>
             <dt id="cast">출연</dt>
@@ -286,7 +282,6 @@
                 class="sr-only"
                 id="dt-auto-btn"
                 name="dt-auto-btn"
-                role="checkbox"
                 checked
               />
               <label for="dt-auto-btn"
@@ -576,242 +571,472 @@
                     >
                   </figcaption>
                 </figure>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <!-- 구독하기버튼 -->
-      <a href="#" target="_self" role="link" class="dt-more-btn">더 많은 회차가 보고싶다면, 지금 구독하기</a>
-     </section>
-     <!-- 수평선 컴포넌트 -->
-     <div role="none" class="dt-hr"><div></div></div>
-     <!-- 관련영상섹션 -->
-     <section class="dt-youtube-section">
-      <header>
-        <h3 class="dt-section--header">관련영상</h3>
-      </header>
-      <div class="dt-youtube-list-wrapper">
-        <ul>
-          <li>
-            <a href="#" target="_self" class="dt-youtube-item dt-item-transition" aria-label="관련영상 보기">
-              <figure>
-                <img src="../../assets/detail-page/3-youtube-1.webp" alt="은밀한 사생활 눈감아 줄게요, 그놈은 흑염룡 티저영상" />
-                <figcaption>
-                  <p role="heading"><strong>[봉인해제 티저]</strong>그놈은 흑염룡</p>
-                </figcaption>
-              </figure>
-            </a>
-          </li>
-          <li>
-            <a href="#" target="_self" class="dt-youtube-item dt-item-transition" aria-label="관련영상 보기">
-              <figure>
-                <img src="../../assets/detail-page/3-youtube-2.webp" alt="본부장의 이중생활 탐구 시작, 백수정 티저영상" />
-                <figcaption>
-                  <p role="heading"><strong>[백수정 티저]</strong>그놈은 흑염룡</p>
-                </figcaption>
-              </figure>
-            </a>
-          </li>
-          <li>
-            <a href="#" target="_self" class="dt-youtube-item dt-item-transition" aria-label="관련영상 보기">
-              <figure>
-                <img src="../../assets/detail-page/3-youtube-3.webp" alt="본부장의 완벽한 이중생활!, 반주연 티저영상" />
-                <figcaption>
-                  <p role="heading"><strong>[반주연 티저]</strong>그놈은 흑염룡</p>
-                </figcaption>
-              </figure>
-            </a>
-          </li>
-          <li>
-            <a href="#" target="_self" class="dt-youtube-item dt-item-transition" aria-label="관련영상 보기">
-              <figure>
-                <img src="../../assets/detail-page/3-youtube-4.webp" alt="새 본부장의 이중생활 목격?! 온앤오프 티저영상" />
-                <figcaption>
-                  <p role="heading"><strong>[온앤오프 티저]</strong>그놈은 흑염룡</p>
-                </figcaption>
-              </figure>
-            </a>
-          </li>
-          <li>
-            <a href="#" target="_self" class="dt-youtube-item dt-item-transition" aria-label="관련영상 보기">
-              <figure>
-                <img src="../../assets/detail-page/3-youtube-5.webp" alt="흑염룡, 나의 빌어먹을 흑역사, 그놈은 흑염룡 첫사랑 티저영상" />
-                <figcaption>
-                  <p role="heading"><strong>[첫사랑 티저]</strong>그놈은 흑염룡</p>
-                </figcaption>
-              </figure>
-            </a>
-          </li>
-        </ul>
-      </div>
-     </section>
-     <!-- 비슷한 영상 -->
-     <section class="dt-youtube-section dt-last-padding">
-      <header>
-        <h3 class="dt-section--header">비슷한 콘텐츠</h3>
-      </header>
-      <div class="dt-youtube-list-wrapper">
-        <ul>
-         <li>
-            <a href="#" target="_self" class="dt-contents-item dt-item-transition" aria-label="삼생 초월 로맨스 우룡">
-              <figure>
-                <img src="../../assets/detail-page/4-contents-1.webp" alt="삼생 초월 로맨스 우룡" />
-                <figcaption><p>삼생 초월 로맨스 우룡</p></figcaption>
-              </figure>
-            </a>
-         </li>
-         <li>
-            <a href="#" target="_self" class="dt-contents-item dt-item-transition" aria-label="유리미인살">
-              <figure>
-                <img src="../../assets/detail-page/4-contents-2.webp" alt="유리미인살" />
-                <figcaption><p>유리미인살</p></figcaption>
-              </figure>
-            </a>
-         </li>
-         <li>
-            <a href="#" target="_self" class="dt-contents-item dt-item-transition" aria-label="장안소년행">
-              <figure>
-                <img src="../../assets/detail-page/4-contents-3.webp" alt="장안소년행" />
-                <figcaption><p>장안소년행</p></figcaption>
-              </figure>
-            </a>
-         </li>
-         <li>
-            <a href="#" target="_self" class="dt-contents-item dt-item-transition" aria-label="반격리만사:반전의 로맨스">
-              <figure>
-                <img src="../../assets/detail-page/4-contents-4.webp" alt="반격리만사:반전의 로맨스" />
-                <figcaption><p>반격리만사:반전의 로맨스</p></figcaption>
-              </figure>
-            </a>
-         </li>
-         <li>
-            <a href="#" target="_self" class="dt-contents-item dt-item-transition" aria-label="묘절호인연">
-              <figure>
-                <img src="../../assets/detail-page/4-contents-5.webp" alt="묘절호인연" />
-                <figcaption><p>묘절호인연</p></figcaption>
-              </figure>
-            </a>
-         </li>
-         <li>
-            <a href="#" target="_self" class="dt-contents-item dt-item-transition" aria-label="옥루춘">
-              <figure>
-                <img src="../../assets/detail-page/4-contents-6.webp" alt="옥루춘" />
-                <figcaption><p>옥루춘</p></figcaption>
-              </figure>
-            </a>
-         </li>
-         <li>
-            <a href="#" target="_self" class="dt-contents-item dt-item-transition" aria-label="차청봉명">
-              <figure>
-                <img src="../../assets/detail-page/4-contents-7.webp" alt="차청봉명" />
-                <figcaption><p>차청봉명</p></figcaption>
-              </figure>
-            </a>
-         </li>
-         <li>
-            <a href="#" target="_self" class="dt-contents-item dt-item-transition" aria-label="청설루">
-              <figure>
-                <img src="../../assets/detail-page/4-contents-8.webp" alt="청설루" />
-                <figcaption><p>청설루</p></figcaption>
-              </figure>
-            </a>
-         </li>
-         <li>
-            <a href="#" target="_self" class="dt-contents-item dt-item-transition" aria-label="신상사">
-              <figure>
-                <img src="../../assets/detail-page/4-contents-9.webp" alt="신상사" />
-                <figcaption><p>신상사</p></figcaption>
-              </figure>
-            </a>
-         </li>
-         <li>
-            <a href="#" target="_self" class="dt-contents-item dt-item-transition" aria-label="오! 나의 황제폐하">
-              <figure>
-                <img src="../../assets/detail-page/4-contents-10.webp" alt="오! 나의 황제폐하" />
-                <figcaption><p>오! 나의 황제폐하</p></figcaption>
-              </figure>
-            </a>
-         </li>
-         <li>
-            <a href="#" target="_self" class="dt-contents-item dt-item-transition" aria-label="체크인 한양">
-              <figure>
-                <img src="../../assets/detail-page/4-contents-11.webp" alt="체크인 한양" />
-                <figcaption><p>체크인 한양</p></figcaption>
-              </figure>
-            </a>
-         </li>
-         <li>
-            <a href="#" target="_self" class="dt-contents-item dt-item-transition" aria-label="맹의첨처">
-              <figure>
-                <img src="../../assets/detail-page/4-contents-12.webp" alt="맹의첨처" />
-                <figcaption><p>맹의첨처</p></figcaption>
-              </figure>
-            </a>
-         </li>
-         <li>
-            <a href="#" target="_self" class="dt-contents-item dt-item-transition" aria-label="모백수">
-              <figure>
-                <img src="../../assets/detail-page/4-contents-13.webp" alt="모백수" />
-                <figcaption><p>모백수</p></figcaption>
-              </figure>
-            </a>
-         </li>
-         <li>
-            <a href="#" target="_self" class="dt-contents-item dt-item-transition" aria-label="호호생활:아름다운 인생">
-              <figure>
-                <img src="../../assets/detail-page/4-contents-14.webp" alt="호호생활:아름다운 인생" />
-                <figcaption><p>호호생활:아름다운 인생</p></figcaption>
-              </figure>
-            </a>
-         </li>
-         <li>
-            <a href="#" target="_self" class="dt-contents-item dt-item-transition" aria-label="일촌상사:나의소녀">
-              <figure>
-                <img src="../../assets/detail-page/4-contents-15.webp" alt="일촌상사:나의소녀" />
-                <figcaption><p>일촌상사:나의소녀</p></figcaption>
-              </figure>
-            </a>
-         </li>
-         <li>
-            <a href="#" target="_self" class="dt-contents-item dt-item-transition" aria-label="네가 필요해 : 삼삼래료">
-              <figure>
-                <img src="../../assets/detail-page/4-contents-16.webp" alt="네가 필요해 : 삼삼래료" />
-                <figcaption><p>네가 필요해 : 삼삼래료</p></figcaption>
-              </figure>
-            </a>
-         </li>
-         <li>
-            <a href="#" target="_self" class="dt-contents-item dt-item-transition" aria-label="공작성사청동심:성사님,...">
-              <figure>
-                <img src="../../assets/detail-page/4-contents-17.webp" alt="공작성사청동심:성사님,..." />
-                <figcaption><p>공작성사청동심:성사님,...</p></figcaption>
-              </figure>
-            </a>
-         </li>
-         <li>
-            <a href="#" target="_self" class="dt-contents-item dt-item-transition" aria-label="심도:두근거려">
-              <figure>
-                <img src="../../assets/detail-page/4-contents-18.webp" alt="심도:두근거려" />
-                <figcaption><p>심도:두근거려</p></figcaption>
-              </figure>
-            </a>
-         </li>
-        </ul>
-      </div>
-     </section>
- </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- 구독하기버튼 -->
+        <a href="#" target="_self" role="link" class="dt-more-btn"
+          >더 많은 회차가 보고싶다면, 지금 구독하기</a
+        >
+      </section>
+      <!-- 수평선 컴포넌트 -->
+      <div role="none" class="dt-hr"><div></div></div>
+      <!-- 관련영상섹션 -->
+      <section class="dt-youtube-section">
+        <header>
+          <h3 class="dt-section--header">관련영상</h3>
+        </header>
+        <div class="dt-youtube-list-wrapper">
+          <ul>
+            <li>
+              <a
+                href="#"
+                target="_self"
+                class="dt-youtube-item dt-item-transition"
+                aria-label="관련영상 보기"
+              >
+                <figure>
+                  <img
+                    src="../../assets/detail-page/3-youtube-1.webp"
+                    alt="은밀한 사생활 눈감아 줄게요, 그놈은 흑염룡 티저영상"
+                  />
+                  <figcaption>
+                    <p role="heading">
+                      <strong>[봉인해제 티저]</strong>그놈은 흑염룡
+                    </p>
+                  </figcaption>
+                </figure>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                target="_self"
+                class="dt-youtube-item dt-item-transition"
+                aria-label="관련영상 보기"
+              >
+                <figure>
+                  <img
+                    src="../../assets/detail-page/3-youtube-2.webp"
+                    alt="본부장의 이중생활 탐구 시작, 백수정 티저영상"
+                  />
+                  <figcaption>
+                    <p role="heading">
+                      <strong>[백수정 티저]</strong>그놈은 흑염룡
+                    </p>
+                  </figcaption>
+                </figure>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                target="_self"
+                class="dt-youtube-item dt-item-transition"
+                aria-label="관련영상 보기"
+              >
+                <figure>
+                  <img
+                    src="../../assets/detail-page/3-youtube-3.webp"
+                    alt="본부장의 완벽한 이중생활!, 반주연 티저영상"
+                  />
+                  <figcaption>
+                    <p role="heading">
+                      <strong>[반주연 티저]</strong>그놈은 흑염룡
+                    </p>
+                  </figcaption>
+                </figure>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                target="_self"
+                class="dt-youtube-item dt-item-transition"
+                aria-label="관련영상 보기"
+              >
+                <figure>
+                  <img
+                    src="../../assets/detail-page/3-youtube-4.webp"
+                    alt="새 본부장의 이중생활 목격?! 온앤오프 티저영상"
+                  />
+                  <figcaption>
+                    <p role="heading">
+                      <strong>[온앤오프 티저]</strong>그놈은 흑염룡
+                    </p>
+                  </figcaption>
+                </figure>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                target="_self"
+                class="dt-youtube-item dt-item-transition"
+                aria-label="관련영상 보기"
+              >
+                <figure>
+                  <img
+                    src="../../assets/detail-page/3-youtube-5.webp"
+                    alt="흑염룡, 나의 빌어먹을 흑역사, 그놈은 흑염룡 첫사랑 티저영상"
+                  />
+                  <figcaption>
+                    <p role="heading">
+                      <strong>[첫사랑 티저]</strong>그놈은 흑염룡
+                    </p>
+                  </figcaption>
+                </figure>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- 비슷한 영상 -->
+      <section class="dt-youtube-section dt-last-padding">
+        <header>
+          <h3 class="dt-section--header">비슷한 콘텐츠</h3>
+        </header>
+        <div class="dt-youtube-list-wrapper">
+          <ul>
+            <li>
+              <a
+                href="#"
+                target="_self"
+                class="dt-contents-item dt-item-transition"
+                aria-label="삼생 초월 로맨스 우룡"
+              >
+                <figure>
+                  <img
+                    src="../../assets/detail-page/4-contents-1.webp"
+                    alt="삼생 초월 로맨스 우룡"
+                  />
+                  <figcaption><p>삼생 초월 로맨스 우룡</p></figcaption>
+                </figure>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                target="_self"
+                class="dt-contents-item dt-item-transition"
+                aria-label="유리미인살"
+              >
+                <figure>
+                  <img
+                    src="../../assets/detail-page/4-contents-2.webp"
+                    alt="유리미인살"
+                  />
+                  <figcaption><p>유리미인살</p></figcaption>
+                </figure>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                target="_self"
+                class="dt-contents-item dt-item-transition"
+                aria-label="장안소년행"
+              >
+                <figure>
+                  <img
+                    src="../../assets/detail-page/4-contents-3.webp"
+                    alt="장안소년행"
+                  />
+                  <figcaption><p>장안소년행</p></figcaption>
+                </figure>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                target="_self"
+                class="dt-contents-item dt-item-transition"
+                aria-label="반격리만사:반전의 로맨스"
+              >
+                <figure>
+                  <img
+                    src="../../assets/detail-page/4-contents-4.webp"
+                    alt="반격리만사:반전의 로맨스"
+                  />
+                  <figcaption><p>반격리만사:반전의 로맨스</p></figcaption>
+                </figure>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                target="_self"
+                class="dt-contents-item dt-item-transition"
+                aria-label="묘절호인연"
+              >
+                <figure>
+                  <img
+                    src="../../assets/detail-page/4-contents-5.webp"
+                    alt="묘절호인연"
+                  />
+                  <figcaption><p>묘절호인연</p></figcaption>
+                </figure>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                target="_self"
+                class="dt-contents-item dt-item-transition"
+                aria-label="옥루춘"
+              >
+                <figure>
+                  <img
+                    src="../../assets/detail-page/4-contents-6.webp"
+                    alt="옥루춘"
+                  />
+                  <figcaption><p>옥루춘</p></figcaption>
+                </figure>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                target="_self"
+                class="dt-contents-item dt-item-transition"
+                aria-label="차청봉명"
+              >
+                <figure>
+                  <img
+                    src="../../assets/detail-page/4-contents-7.webp"
+                    alt="차청봉명"
+                  />
+                  <figcaption><p>차청봉명</p></figcaption>
+                </figure>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                target="_self"
+                class="dt-contents-item dt-item-transition"
+                aria-label="청설루"
+              >
+                <figure>
+                  <img
+                    src="../../assets/detail-page/4-contents-8.webp"
+                    alt="청설루"
+                  />
+                  <figcaption><p>청설루</p></figcaption>
+                </figure>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                target="_self"
+                class="dt-contents-item dt-item-transition"
+                aria-label="신상사"
+              >
+                <figure>
+                  <img
+                    src="../../assets/detail-page/4-contents-9.webp"
+                    alt="신상사"
+                  />
+                  <figcaption><p>신상사</p></figcaption>
+                </figure>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                target="_self"
+                class="dt-contents-item dt-item-transition"
+                aria-label="오! 나의 황제폐하"
+              >
+                <figure>
+                  <img
+                    src="../../assets/detail-page/4-contents-10.webp"
+                    alt="오! 나의 황제폐하"
+                  />
+                  <figcaption><p>오! 나의 황제폐하</p></figcaption>
+                </figure>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                target="_self"
+                class="dt-contents-item dt-item-transition"
+                aria-label="체크인 한양"
+              >
+                <figure>
+                  <img
+                    src="../../assets/detail-page/4-contents-11.webp"
+                    alt="체크인 한양"
+                  />
+                  <figcaption><p>체크인 한양</p></figcaption>
+                </figure>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                target="_self"
+                class="dt-contents-item dt-item-transition"
+                aria-label="맹의첨처"
+              >
+                <figure>
+                  <img
+                    src="../../assets/detail-page/4-contents-12.webp"
+                    alt="맹의첨처"
+                  />
+                  <figcaption><p>맹의첨처</p></figcaption>
+                </figure>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                target="_self"
+                class="dt-contents-item dt-item-transition"
+                aria-label="모백수"
+              >
+                <figure>
+                  <img
+                    src="../../assets/detail-page/4-contents-13.webp"
+                    alt="모백수"
+                  />
+                  <figcaption><p>모백수</p></figcaption>
+                </figure>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                target="_self"
+                class="dt-contents-item dt-item-transition"
+                aria-label="호호생활:아름다운 인생"
+              >
+                <figure>
+                  <img
+                    src="../../assets/detail-page/4-contents-14.webp"
+                    alt="호호생활:아름다운 인생"
+                  />
+                  <figcaption><p>호호생활:아름다운 인생</p></figcaption>
+                </figure>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                target="_self"
+                class="dt-contents-item dt-item-transition"
+                aria-label="일촌상사:나의소녀"
+              >
+                <figure>
+                  <img
+                    src="../../assets/detail-page/4-contents-15.webp"
+                    alt="일촌상사:나의소녀"
+                  />
+                  <figcaption><p>일촌상사:나의소녀</p></figcaption>
+                </figure>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                target="_self"
+                class="dt-contents-item dt-item-transition"
+                aria-label="네가 필요해 : 삼삼래료"
+              >
+                <figure>
+                  <img
+                    src="../../assets/detail-page/4-contents-16.webp"
+                    alt="네가 필요해 : 삼삼래료"
+                  />
+                  <figcaption><p>네가 필요해 : 삼삼래료</p></figcaption>
+                </figure>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                target="_self"
+                class="dt-contents-item dt-item-transition"
+                aria-label="공작성사청동심:성사님,..."
+              >
+                <figure>
+                  <img
+                    src="../../assets/detail-page/4-contents-17.webp"
+                    alt="공작성사청동심:성사님,..."
+                  />
+                  <figcaption><p>공작성사청동심:성사님,...</p></figcaption>
+                </figure>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                target="_self"
+                class="dt-contents-item dt-item-transition"
+                aria-label="심도:두근거려"
+              >
+                <figure>
+                  <img
+                    src="../../assets/detail-page/4-contents-18.webp"
+                    alt="심도:두근거려"
+                  />
+                  <figcaption><p>심도:두근거려</p></figcaption>
+                </figure>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
 
-     <!-- 모바일 하단 퀵버튼 -->
-  <nav class="gnb-main-quick">
-    <ul class="gnb-flex-row gnb-main-quick-ul">
-      <li  class="quick-active"><a href="../main-page/main-page.html"><img src="../../assets/gnb-quick/home-btn-active.svg" alt="홈"/>홈</a></li>
-      <li><a href="#"><img src="../../assets/gnb-quick/shorts-btn-defualt.svg" alt="쇼츠" />쇼츠</a></li>
-      <li><a href="#"><img src="../../assets/gnb-quick/live-btn-defualt.svg" alt="라이브" />라이브</a></li>
-      <li><a href="../mobile-search/mobile-search.html"><img src="../../assets/gnb-quick/search-btn-defualt.svg" alt="검색" />검색</a></li>
-      <li><a href="../my-history/my-history.html"><img src="../../assets/gnb-quick/hitory-btn-defualt.svg" alt="기록" />기록</a></li>
-    </ul>
-  </nav>
-
+    <!-- 모바일 하단 퀵버튼 -->
+    <nav class="gnb-main-quick">
+      <ul class="gnb-flex-row gnb-main-quick-ul">
+        <li class="quick-active">
+          <a href="../main-page/main-page.html"
+            ><img
+              src="../../assets/gnb-quick/home-btn-active.svg"
+              alt="홈"
+            />홈</a
+          >
+        </li>
+        <li>
+          <a href="#"
+            ><img
+              src="../../assets/gnb-quick/shorts-btn-defualt.svg"
+              alt="쇼츠"
+            />쇼츠</a
+          >
+        </li>
+        <li>
+          <a href="#"
+            ><img
+              src="../../assets/gnb-quick/live-btn-defualt.svg"
+              alt="라이브"
+            />라이브</a
+          >
+        </li>
+        <li>
+          <a href="../mobile-search/mobile-search.html"
+            ><img
+              src="../../assets/gnb-quick/search-btn-defualt.svg"
+              alt="검색"
+            />검색</a
+          >
+        </li>
+        <li>
+          <a href="../my-history/my-history.html"
+            ><img
+              src="../../assets/gnb-quick/hitory-btn-defualt.svg"
+              alt="기록"
+            />기록</a
+          >
+        </li>
+      </ul>
+    </nav>
 
     <footer>
       <div class="clone-modal-wrapper">
@@ -821,14 +1046,14 @@
             해당사이트는 공식 사이트가아닌, 학습을 위해 제작된 클론
             사이트입니다.
           </h3>
-          <form action="" method="dialog">
+          <form action="#" method="dialog">
             <button type="button" class="clone-modal-close">
               하루 이창 보지않기
             </button>
           </form>
         </dialog>
       </div>
-      
+
       <div class="footer-line"></div>
 
       <section class="footer-nav">
@@ -893,13 +1118,13 @@
           </p>
         </address>
       </section>
-
       <section class="footer-map">
         <div class="map-icon-mobile">
           <img
             src="./../../assets/map-icon/footer-map-icons.webp"
             usemap="#image-map-mobile"
-          />
+            alt="map-image-mobile"
+
 
           <map name="image-map-mobile">
             <area
@@ -941,7 +1166,10 @@
           <img
             src="./../../assets/map-icon/footer-map-icons-tablet.webp"
             usemap="#image-map-tablet"
-          />
+
+            alt="sns 아이콘 링크 이미지 모음"
+            alt="map-image-tablet"
+
 
           <map name="image-map-tablet">
             <area
@@ -983,6 +1211,8 @@
           <img
             src="./../../assets/map-icon/footer-map-icons-desktop.webp"
             usemap="#image-map-desktop"
+
+            alt="map-image-desktop"
           />
 
           <map name="image-map-desktop">
