@@ -139,6 +139,8 @@ body {
 .find-email-title2 {
   width: 288px;
   margin-bottom: 16px;
+  font-weight: normal;
+  font-size: 12px;
 }
 
 /* input */
@@ -302,6 +304,8 @@ body {
 
   .find-email-title2 {
     margin-bottom: 16px;
+    font-weight: normal;
+    font-size: 16px;
   }
 
   /* input */
@@ -395,7 +399,7 @@ body {
     h2 {
       margin: 0 0 4px;
     }
-    p {
+    h3 {
       width: 416px;
       margin: 0 0 16px;
     }
@@ -472,6 +476,8 @@ body {
     font-size: 21.238px;
     margin-bottom: 24px;
     width: 100%;
+
+    font-weight: normal;
   }
 
   /* input */

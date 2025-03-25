@@ -30,17 +30,17 @@
     </header>
     <main class="findPw-main">
       <div class="findPw-container">
-        <h2 class="findPw-header">비밀번호 찾기</h2>
+        <h1 class="findPw-header">비밀번호 찾기</h1>
         <form
           class="findPw-form"
           action="../login-page/login-page.html"
           method="get"
         >
-          <label class="find-pw-title" for="text"
-            >아이디 확인 후 등록된 이메일 주소로 비밀번호 재설정을 위한 인증
+          <h2 class="find-pw-title" for="text">
+            아이디 확인 후 등록된 이메일 주소로 비밀번호 재설정을 위한 인증
             메일이 발송됩니다. 이메일을 확인하여 12시간 이내에 비밀번호 재설정을
-            완료해주세요.</label
-          >
+            완료해주세요.
+          </h2>
           <div class="findPw-container">
             <input
               type="text"
@@ -49,9 +49,14 @@
               name="username"
               placeholder="아이디"
               required
+              aria-label="아이디 입력"
             />
             <div>
-              <input type="checkbox" id="delet_findPw" />
+              <input
+                type="checkbox"
+                id="delet_findPw"
+                aria-label="텍스트 지움"
+              />
             </div>
           </div>
           <script>
