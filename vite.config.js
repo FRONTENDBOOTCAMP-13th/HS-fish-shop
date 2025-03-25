@@ -30,11 +30,11 @@ export default defineConfig({
         movie_page: "src/pages/movie-page/movie-page.html",
         drama_page: "src/pages/drama-page/drama-page.html",
         main_page: "src/pages/main-page/main-page.html",
-        profile: "src/pages/profile-page/profile-page.html",
-        profileedit: "src/pages/profile-edit-page/profile-edit-page.html",
-        profileeditsub:
+        profile_page: "src/pages/profile-page/profile-page.html",
+        profileedit_page: "src/pages/profile-edit-page/profile-edit-page.html",
+        profileeditsub_page:
           "src/pages/profile-edit-sub-page/profile-edit-sub-page.html",
-        landing: "src/pages/landing-page/landing-page.html",
+        landing_page: "src/pages/landing-page/landing-page.html",
         login: "src/pages/login-page/login-page.html",
         findPw: "src/pages/findPw-page/findPw-page.html",
         findId: "src/pages/findId-page/findId-page.html",
