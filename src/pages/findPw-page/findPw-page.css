@@ -132,7 +132,7 @@ body {
   font-style: normal;
   font-weight: 600;
   line-height: 150%; /* 18.005px */
-  margin-bottom: 16px;
+  margin: 0 0 16px 0;
   width: 288px;
 }
 
@@ -222,7 +222,7 @@ body {
     font-style: normal;
     font-weight: 700;
     line-height: 140%; /* 39.802px */
-    padding: 0 0 28px;
+    padding: 0 0 24px;
     margin: 0px;
   }
 
@@ -240,12 +240,8 @@ body {
     font-style: normal;
     font-weight: 600;
     line-height: 150%; /* 18.005px */
-    margin-bottom: 4px;
-  }
-
-  .find-pw-title {
+    margin: 0 0 16px 0;
     width: 416px;
-    margin-bottom: 16px;
   }
 
   /* input */
@@ -349,12 +345,8 @@ body {
     font-style: normal;
     font-weight: 600;
     line-height: 150%; /* 18.005px */
-    margin-bottom: 4px;
-  }
-
-  .find-pw-title {
+    margin: 0 0 24px 0;
     width: 732px;
-    margin-bottom: 24px;
   }
 
   /* input */

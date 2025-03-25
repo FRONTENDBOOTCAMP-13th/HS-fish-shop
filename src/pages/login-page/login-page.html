@@ -10,24 +10,20 @@
       href="/public/font/woff2/PretendardVariable.woff2"
       crossorigin="anonymous"
     />
-    <link
-      rel="stylesheet"
-      as="style"
-      href="/public/font/pretendardvariable.css"
-    />
+    <link rel="stylesheet" href="/public/font/pretendardvariable.css" />
     <link rel="stylesheet" href="/src/styles/reset.css" />
     <link rel="stylesheet" href="/src/pages/login-page/login-page.css" />
     <script type="module" src="./../../main.js"></script>
     <title>TAING</title>
   </head>
   <body>
-    <header class="gnb gnb-login">
+    <h1 class="gnb gnb-login">
       <div class="gnb-max-wrapper gnb-flex-row">
         <a class="gnb-logo" href="/index.html" target="_self">
           <img src="../../../public/logo.svg" alt="티빙" />
         </a>
       </div>
-    </header>
+    </h1>
     <main class="login-main">
       <div class="login-container">
         <header class="login-header">TAING ID 로그인</header>
@@ -44,9 +40,10 @@
               placeholder="아이디"
               name="username"
               required
+              aria-label="아이디 입력"
             />
             <div>
-              <input type="checkbox" id="deletId" />
+              <input type="checkbox" id="deletId" aria-label="텍스트 지움" />
             </div>
           </div>
           <script>
@@ -68,10 +65,19 @@
               name="password"
               placeholder="비밀번호"
               required
+              aria-label="비밀번호 입력"
             />
             <div class="toggle-password-checkbox">
-              <input type="checkbox" id="showPassword" />
-              <input type="checkbox" id="deletPassword" />
+              <input
+                type="checkbox"
+                id="showPassword"
+                aria-label="비밀번호 보기"
+              />
+              <input
+                type="checkbox"
+                id="deletPassword"
+                aria-label="텍스트 지움"
+              />
             </div>
           </div>
           <script>
@@ -103,6 +109,7 @@
                 class="circle_checkbox"
                 id="keep-logged-in"
                 name="keep-logged-in"
+                aria-label="자동로그인 체크박스"
               />
               자동로그인
             </label>
@@ -134,7 +141,7 @@
             해당사이트는 공식 사이트가아닌, 학습을 위해 제작된 클론
             사이트입니다.
           </h3>
-          <form action="" method="dialog">
+          <form method="dialog">
             <button type="button" class="clone-modal-close">
               하루 이창 보지않기
             </button>

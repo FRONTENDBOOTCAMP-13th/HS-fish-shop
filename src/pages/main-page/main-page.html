@@ -4,13 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="/favicon.jpg" />
-    <link
-      rel="preload"
-      as="font"
-      href="/font/woff2/PretendardVariable.woff2"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" as="style" href="/font/pretendardvariable.css" />
+    <link rel="preload" as="style" href="/font/pretendardvariable.css" />
+    <link rel="stylesheet" href="/font/pretendardvariable.css" />
     <script type="module" src="./../../main.js"></script>
     <title>TAING</title>
   </head>
@@ -31,6 +26,7 @@
               class="gnb-sch-input"
               id="gnb-sch-check"
               name="gnb-sch-check"
+              aria-pressed="true"
             />
             <label for="gnb-sch-check" class="gnb-sch-label"
               ><span class="sr-only">검색</span></label
@@ -222,7 +218,11 @@
           />
         </div>
         <div class="main-visual-button-wrap">
-          <button type="button" class="main-visual-button-left">
+          <button
+            type="button"
+            class="main-visual-button-left"
+            aria-label="왼쪽 이동"
+          >
             <svg
               width="70"
               height="70"
@@ -247,14 +247,18 @@
                 </g>
               </g>
               <defs>
-                <clipPath id="clip0_158_6408">
+                <clipPath>
                   <rect width="70" height="70" fill="white" />
                 </clipPath>
               </defs>
             </svg>
           </button>
 
-          <button type="button" class="main-visual-button-right">
+          <button
+            type="button"
+            class="main-visual-button-right"
+            aria-label="오른쪽 이동"
+          >
             <svg
               width="70"
               height="70"
@@ -277,7 +281,7 @@
                 />
               </g>
               <defs>
-                <clipPath id="clip0_158_6402">
+                <clipPath>
                   <rect width="70" height="70" fill="white" />
                 </clipPath>
               </defs>
@@ -410,7 +414,7 @@
           </li>
         </ul>
         <div class="card-move-buttons">
-          <button type="button" class="left">
+          <button type="button" class="left" aria-label="왼쪽 이동">
             <svg
               width="70"
               height="70"
@@ -435,13 +439,13 @@
                 </g>
               </g>
               <defs>
-                <clipPath id="clip0_158_6408">
+                <clipPath>
                   <rect width="70" height="70" fill="white" />
                 </clipPath>
               </defs>
             </svg>
           </button>
-          <button type="button" class="right">
+          <button type="button" class="right" aria-label="오른쪽 이동">
             <svg
               width="70"
               height="70"
@@ -464,7 +468,7 @@
                 />
               </g>
               <defs>
-                <clipPath id="clip0_158_6402">
+                <clipPath>
                   <rect width="70" height="70" fill="white" />
                 </clipPath>
               </defs>
@@ -590,7 +594,7 @@
           </li>
         </ul>
         <div class="card-move-buttons">
-          <button type="button" class="left">
+          <button type="button" class="left" aria-label="왼쪽 이동">
             <svg
               width="70"
               height="70"
@@ -615,13 +619,13 @@
                 </g>
               </g>
               <defs>
-                <clipPath id="clip0_158_6408">
+                <clipPath>
                   <rect width="70" height="70" fill="white" />
                 </clipPath>
               </defs>
             </svg>
           </button>
-          <button type="button" class="right">
+          <button type="button" class="right" aria-label="오른쪽 이동">
             <svg
               width="70"
               height="70"
@@ -644,7 +648,7 @@
                 />
               </g>
               <defs>
-                <clipPath id="clip0_158_6402">
+                <clipPath>
                   <rect width="70" height="70" fill="white" />
                 </clipPath>
               </defs>
@@ -774,7 +778,7 @@
           </li>
         </ul>
         <div class="card-move-buttons">
-          <button type="button" class="left">
+          <button type="button" class="left" aria-label="왼쪽 이동">
             <svg
               width="70"
               height="70"
@@ -799,13 +803,13 @@
                 </g>
               </g>
               <defs>
-                <clipPath id="clip0_158_6408">
+                <clipPath>
                   <rect width="70" height="70" fill="white" />
                 </clipPath>
               </defs>
             </svg>
           </button>
-          <button type="button" class="right">
+          <button type="button" class="right" aria-label="오른쪽 이동">
             <svg
               width="70"
               height="70"
@@ -828,7 +832,7 @@
                 />
               </g>
               <defs>
-                <clipPath id="clip0_158_6402">
+                <clipPath>
                   <rect width="70" height="70" fill="white" />
                 </clipPath>
               </defs>
@@ -855,258 +859,366 @@
         <h2>프로필님이 시청중인 콘텐츠</h2>
         <ul class="main-card-list user-watching-card-list">
           <li class="card">
-            <a href="./../program-detail/program-detail.html" class="card-link">
-              <figure>
+            <figure>
+              <a
+                href="./../program-detail/program-detail.html"
+                class="card-link"
+              >
                 <img
                   src="./../../assets/main-card-images/user-watching-content/user-watching-content-1.webp"
                   alt="드라마 우리들의 블루스 포스터"
                 />
-                <div class="watching-card-bottom">
-                  <figcaption>9화</figcaption>
-                  <button type="button" class="watching-content-card-info">
-                    <img
-                      src="./../../assets/main-card-images/user-watching-content/wactching-content-card-info.svg"
-                      alt="더보기 버튼 이미지"
-                    />
-                  </button>
-                  <button type="button" class="play-svg-img">
-                    <img
-                      src="./../../assets/main-card-images/user-watching-content/play-icon.svg"
-                      alt="플레이 버튼 이미지"
-                    />
-                  </button>
-                </div>
-              </figure>
-            </a>
+              </a>
+              <figcaption class="watching-card-bottom">
+                <p>9화</p>
+                <button
+                  type="button"
+                  class="watching-content-card-info"
+                  aria-label="더보기"
+                >
+                  <img
+                    src="./../../assets/main-card-images/user-watching-content/wactching-content-card-info.svg"
+                    alt="더보기 버튼 이미지"
+                  />
+                </button>
+                <button
+                  type="button"
+                  class="play-svg-img"
+                  aria-label="바로 재생"
+                >
+                  <img
+                    src="./../../assets/main-card-images/user-watching-content/play-icon.svg"
+                    alt="플레이 버튼 이미지"
+                  />
+                </button>
+              </figcaption>
+            </figure>
           </li>
           <li class="card">
-            <a href="./../program-detail/program-detail.html" class="card-link">
-              <figure>
+            <figure>
+              <a
+                href="./../program-detail/program-detail.html"
+                class="card-link"
+              >
                 <img
                   src="./../../assets/main-card-images/user-watching-content/user-watching-content-2.webp"
                   alt="드라마 웰컴 투 삼달리 포스터"
                 />
-                <div class="watching-card-bottom">
-                  <figcaption>3화</figcaption>
-                  <button type="button" class="watching-content-card-info">
-                    <img
-                      src="./../../assets/main-card-images/user-watching-content/wactching-content-card-info.svg"
-                      alt="더보기 버튼 이미지"
-                    />
-                  </button>
-                  <button type="button" class="play-svg-img">
-                    <img
-                      src="./../../assets/main-card-images/user-watching-content/play-icon.svg"
-                      alt="플레이 버튼 이미지"
-                    />
-                  </button>
-                </div>
-              </figure>
-            </a>
+              </a>
+              <figcaption class="watching-card-bottom">
+                <p>3화</p>
+                <button
+                  type="button"
+                  class="watching-content-card-info"
+                  aria-label="더보기"
+                >
+                  <img
+                    src="./../../assets/main-card-images/user-watching-content/wactching-content-card-info.svg"
+                    alt="더보기 버튼 이미지"
+                  />
+                </button>
+                <button
+                  type="button"
+                  class="play-svg-img"
+                  aria-label="바로 재생"
+                >
+                  <img
+                    src="./../../assets/main-card-images/user-watching-content/play-icon.svg"
+                    alt="플레이 버튼 이미지"
+                  />
+                </button>
+              </figcaption>
+            </figure>
           </li>
           <li class="card">
-            <a href="./../program-detail/program-detail.html" class="card-link">
-              <figure>
+            <figure>
+              <a
+                href="./../program-detail/program-detail.html"
+                class="card-link"
+              >
                 <img
                   src="./../../assets/main-card-images/user-watching-content/user-watching-content-3.webp"
-                  alt="드라마 청춘기록 포스터"
+                  alt="영화 청춘기록 포스터 "
                 />
-                <div class="watching-card-bottom">
-                  <figcaption>7화</figcaption>
-                  <button type="button" class="watching-content-card-info">
-                    <img
-                      src="./../../assets/main-card-images/user-watching-content/wactching-content-card-info.svg"
-                      alt="더보기 버튼 이미지"
-                    />
-                  </button>
-                  <button type="button" class="play-svg-img">
-                    <img
-                      src="./../../assets/main-card-images/user-watching-content/play-icon.svg"
-                      alt="플레이 버튼 이미지"
-                    />
-                  </button>
-                </div>
-              </figure>
-            </a>
+              </a>
+              <figcaption class="watching-card-bottom">
+                <p>7화</p>
+                <button
+                  type="button"
+                  class="watching-content-card-info"
+                  aria-label="더보기"
+                >
+                  <img
+                    src="./../../assets/main-card-images/user-watching-content/wactching-content-card-info.svg"
+                    alt="더보기 버튼 이미지"
+                  />
+                </button>
+                <button
+                  type="button"
+                  class="play-svg-img"
+                  aria-label="바로 재생"
+                >
+                  <img
+                    src="./../../assets/main-card-images/user-watching-content/play-icon.svg"
+                    alt="플레이 버튼 이미지"
+                  />
+                </button>
+              </figcaption>
+            </figure>
           </li>
           <li class="card">
-            <a href="./../program-detail/program-detail.html" class="card-link">
-              <figure>
+            <figure>
+              <a
+                href="./../program-detail/program-detail.html"
+                class="card-link"
+              >
                 <img
                   src="./../../assets/main-card-images/user-watching-content/user-watching-content-4.webp"
                   alt="영화 아무도 없는 곳 포스터 "
                 />
-                <div class="watching-card-bottom">
-                  <figcaption>45분 남음</figcaption>
-                  <button type="button" class="watching-content-card-info">
-                    <img
-                      src="./../../assets/main-card-images/user-watching-content/wactching-content-card-info.svg"
-                      alt="더보기 버튼 이미지"
-                    />
-                  </button>
-                  <button type="button" class="play-svg-img">
-                    <img
-                      src="./../../assets/main-card-images/user-watching-content/play-icon.svg"
-                      alt="플레이 버튼 이미지"
-                    />
-                  </button>
-                </div>
-              </figure>
-            </a>
+              </a>
+              <figcaption class="watching-card-bottom">
+                <p>45분 남음</p>
+                <button
+                  type="button"
+                  class="watching-content-card-info"
+                  aria-label="더보기"
+                >
+                  <img
+                    src="./../../assets/main-card-images/user-watching-content/wactching-content-card-info.svg"
+                    alt="더보기 버튼 이미지"
+                  />
+                </button>
+                <button
+                  type="button"
+                  class="play-svg-img"
+                  aria-label="바로 재생"
+                >
+                  <img
+                    src="./../../assets/main-card-images/user-watching-content/play-icon.svg"
+                    alt="플레이 버튼 이미지"
+                  />
+                </button>
+              </figcaption>
+            </figure>
           </li>
           <li class="card">
-            <a href="./../program-detail/program-detail.html" class="card-link">
-              <figure>
+            <figure>
+              <a
+                href="./../program-detail/program-detail.html"
+                class="card-link"
+              >
                 <img
                   src="./../../assets/main-card-images/user-watching-content/user-watching-content-5.webp"
                   alt="드라마 미생 포스터"
                 />
-                <div class="watching-card-bottom">
-                  <figcaption>12회</figcaption>
-                  <button type="button" class="watching-content-card-info">
-                    <img
-                      src="./../../assets/main-card-images/user-watching-content/wactching-content-card-info.svg"
-                      alt="더보기 버튼 이미지"
-                    />
-                  </button>
-                  <button type="button" class="play-svg-img">
-                    <img
-                      src="./../../assets/main-card-images/user-watching-content/play-icon.svg"
-                      alt="플레이 버튼 이미지"
-                    />
-                  </button>
-                </div>
-              </figure>
-            </a>
+              </a>
+              <figcaption class="watching-card-bottom">
+                <p>12회</p>
+                <button
+                  type="button"
+                  class="watching-content-card-info"
+                  aria-label="더보기"
+                >
+                  <img
+                    src="./../../assets/main-card-images/user-watching-content/wactching-content-card-info.svg"
+                    alt="더보기 버튼 이미지"
+                  />
+                </button>
+                <button
+                  type="button"
+                  class="play-svg-img"
+                  aria-label="바로 재생"
+                >
+                  <img
+                    src="./../../assets/main-card-images/user-watching-content/play-icon.svg"
+                    alt="플레이 버튼 이미지"
+                  />
+                </button>
+              </figcaption>
+            </figure>
           </li>
           <li class="card">
-            <a href="./../program-detail/program-detail.html" class="card-link">
-              <figure>
+            <figure>
+              <a
+                href="./../program-detail/program-detail.html"
+                class="card-link"
+              >
                 <img
                   src="./../../assets/main-card-images/user-watching-content/user-watching-content-6.webp"
                   alt="예능 내편하자 4 포스터"
                 />
-                <div class="watching-card-bottom">
-                  <figcaption>1화</figcaption>
-                  <button type="button" class="watching-content-card-info">
-                    <img
-                      src="./../../assets/main-card-images/user-watching-content/wactching-content-card-info.svg"
-                      alt="더보기 버튼 이미지"
-                    />
-                  </button>
-                  <button type="button" class="play-svg-img">
-                    <img
-                      src="./../../assets/main-card-images/user-watching-content/play-icon.svg"
-                      alt="플레이 버튼 이미지"
-                    />
-                  </button>
-                </div>
-              </figure>
-            </a>
+              </a>
+              <figcaption class="watching-card-bottom">
+                <p>1화</p>
+                <button
+                  type="button"
+                  class="watching-content-card-info"
+                  aria-label="더보기"
+                >
+                  <img
+                    src="./../../assets/main-card-images/user-watching-content/wactching-content-card-info.svg"
+                    alt="더보기 버튼 이미지"
+                  />
+                </button>
+                <button
+                  type="button"
+                  class="play-svg-img"
+                  aria-label="바로 재생"
+                >
+                  <img
+                    src="./../../assets/main-card-images/user-watching-content/play-icon.svg"
+                    alt="플레이 버튼 이미지"
+                  />
+                </button>
+              </figcaption>
+            </figure>
           </li>
           <li class="card">
-            <a href="./../program-detail/program-detail.html" class="card-link">
-              <figure>
+            <figure>
+              <a
+                href="./../program-detail/program-detail.html"
+                class="card-link"
+              >
                 <img
                   src="./../../assets/main-card-images/user-watching-content/user-watching-content-7.webp"
                   alt="드라마 그놈은 흑염룡 포스터"
                 />
-                <div class="watching-card-bottom">
-                  <figcaption>7화</figcaption>
-                  <button type="button" class="watching-content-card-info">
-                    <img
-                      src="./../../assets/main-card-images/user-watching-content/wactching-content-card-info.svg"
-                      alt="더보기 버튼 이미지"
-                    />
-                  </button>
-                  <button type="button" class="play-svg-img">
-                    <img
-                      src="./../../assets/main-card-images/user-watching-content/play-icon.svg"
-                      alt="플레이 버튼 이미지"
-                    />
-                  </button>
-                </div>
-              </figure>
-            </a>
+              </a>
+              <figcaption class="watching-card-bottom">
+                <p>7화</p>
+                <button
+                  type="button"
+                  class="watching-content-card-info"
+                  aria-label="더보기"
+                >
+                  <img
+                    src="./../../assets/main-card-images/user-watching-content/wactching-content-card-info.svg"
+                    alt="더보기 버튼 이미지"
+                  />
+                </button>
+                <button
+                  type="button"
+                  class="play-svg-img"
+                  aria-label="바로 재생"
+                >
+                  <img
+                    src="./../../assets/main-card-images/user-watching-content/play-icon.svg"
+                    alt="플레이 버튼 이미지"
+                  />
+                </button>
+              </figcaption>
+            </figure>
           </li>
           <li class="card">
-            <a href="./../program-detail/program-detail.html" class="card-link">
-              <figure>
+            <figure>
+              <a
+                href="./../program-detail/program-detail.html"
+                class="card-link"
+              >
                 <img
                   src="./../../assets/main-card-images/user-watching-content/user-watching-content-8.webp"
                   alt="예능 나는 SOLO 그후(사랑은 계속 된다.) 포스터"
-                />
-                <div class="watching-card-bottom">
-                  <figcaption>2화</figcaption>
-                  <button type="button" class="watching-content-card-info">
-                    <img
-                      src="./../../assets/main-card-images/user-watching-content/wactching-content-card-info.svg"
-                      alt="더보기 버튼 이미지"
-                    />
-                  </button>
-                  <button type="button" class="play-svg-img">
-                    <img
-                      src="./../../assets/main-card-images/user-watching-content/play-icon.svg"
-                      alt="플레이 버튼 이미지"
-                    />
-                  </button>
-                </div>
-              </figure>
-            </a>
+              /></a>
+              <figcaption class="watching-card-bottom">
+                <p>2화</p>
+                <button
+                  type="button"
+                  class="watching-content-card-info"
+                  aria-label="더보기"
+                >
+                  <img
+                    src="./../../assets/main-card-images/user-watching-content/wactching-content-card-info.svg"
+                    alt="더보기 버튼 이미지"
+                  />
+                </button>
+                <button
+                  type="button"
+                  class="play-svg-img"
+                  aria-label="바로 재생"
+                >
+                  <img
+                    src="./../../assets/main-card-images/user-watching-content/play-icon.svg"
+                    alt="플레이 버튼 이미지"
+                  />
+                </button>
+              </figcaption>
+            </figure>
           </li>
           <li class="card">
-            <a href="./../program-detail/program-detail.html" class="card-link">
-              <figure>
+            <figure>
+              <a
+                href="./../program-detail/program-detail.html"
+                class="card-link"
+              >
                 <img
                   src="./../../assets/main-card-images/user-watching-content/user-watching-content-9.webp"
                   alt="예능 에드워드리의 컨츄리 쿡 포스터"
                 />
-                <div class="watching-card-bottom">
-                  <figcaption>3화</figcaption>
-                  <button type="button" class="watching-content-card-info">
-                    <img
-                      src="./../../assets/main-card-images/user-watching-content/wactching-content-card-info.svg"
-                      alt="더보기 버튼 이미지"
-                    />
-                  </button>
-                  <button type="button" class="play-svg-img">
-                    <img
-                      src="./../../assets/main-card-images/user-watching-content/play-icon.svg"
-                      alt="플레이 버튼 이미지"
-                    />
-                  </button>
-                </div>
-              </figure>
-            </a>
+              </a>
+              <figcaption class="watching-card-bottom">
+                <p>3화</p>
+                <button
+                  type="button"
+                  class="watching-content-card-info"
+                  aria-label="더보기"
+                >
+                  <img
+                    src="./../../assets/main-card-images/user-watching-content/wactching-content-card-info.svg"
+                    alt="더보기 버튼 이미지"
+                  />
+                </button>
+                <button
+                  type="button"
+                  class="play-svg-img"
+                  aria-label="바로 재생"
+                >
+                  <img
+                    src="./../../assets/main-card-images/user-watching-content/play-icon.svg"
+                    alt="플레이 버튼 이미지"
+                  />
+                </button>
+              </figcaption>
+            </figure>
           </li>
           <li class="card">
-            <a href="./../program-detail/program-detail.html" class="card-link">
-              <figure>
+            <figure>
+              <a
+                href="./../program-detail/program-detail.html"
+                class="card-link"
+              >
                 <img
                   src="./../../assets/main-card-images/user-watching-content/user-watching-content-10.webp"
                   alt="예능 아는 형님 포스터"
-                />
-                <div class="watching-card-bottom">
-                  <figcaption>123화</figcaption>
-                  <button type="button" class="watching-content-card-info">
-                    <img
-                      src="./../../assets/main-card-images/user-watching-content/wactching-content-card-info.svg"
-                      alt=""
-                    />
-                  </button>
-                  <button type="button" class="play-svg-img">
-                    <img
-                      src="./../../assets/main-card-images/user-watching-content/play-icon.svg"
-                      alt=""
-                    />
-                  </button>
-                </div>
-              </figure>
-            </a>
+              /></a>
+              <figcaption class="watching-card-bottom">
+                <p>123화</p>
+                <button
+                  type="button"
+                  class="watching-content-card-info"
+                  aria-label="더보기"
+                >
+                  <img
+                    src="./../../assets/main-card-images/user-watching-content/wactching-content-card-info.svg"
+                    alt=""
+                  />
+                </button>
+                <button
+                  type="button"
+                  class="play-svg-img"
+                  aria-label="바로 재생"
+                >
+                  <img
+                    src="./../../assets/main-card-images/user-watching-content/play-icon.svg"
+                    alt=""
+                  />
+                </button>
+              </figcaption>
+            </figure>
           </li>
         </ul>
         <div class="card-move-buttons">
-          <button type="button" class="left">
+          <button type="button" class="left" aria-label="왼쪽 이동">
             <svg
               width="70"
               height="70"
@@ -1131,13 +1243,13 @@
                 </g>
               </g>
               <defs>
-                <clipPath id="clip0_158_6408">
+                <clipPath>
                   <rect width="70" height="70" fill="white" />
                 </clipPath>
               </defs>
             </svg>
           </button>
-          <button type="button" class="right">
+          <button type="button" class="right" aria-label="오른쪽 이동">
             <svg
               width="70"
               height="70"
@@ -1160,7 +1272,7 @@
                 />
               </g>
               <defs>
-                <clipPath id="clip0_158_6402">
+                <clipPath>
                   <rect width="70" height="70" fill="white" />
                 </clipPath>
               </defs>
@@ -1344,7 +1456,7 @@
           </li>
         </ul>
         <div class="card-move-buttons">
-          <button type="button" class="left">
+          <button type="button" class="left" aria-label="왼쪽 이동">
             <svg
               width="70"
               height="70"
@@ -1369,13 +1481,13 @@
                 </g>
               </g>
               <defs>
-                <clipPath id="clip0_158_6408">
+                <clipPath>
                   <rect width="70" height="70" fill="white" />
                 </clipPath>
               </defs>
             </svg>
           </button>
-          <button type="button" class="right">
+          <button type="button" class="right" aria-label="오른쪽 이동">
             <svg
               width="70"
               height="70"
@@ -1398,7 +1510,7 @@
                 />
               </g>
               <defs>
-                <clipPath id="clip0_158_6402">
+                <clipPath>
                   <rect width="70" height="70" fill="white" />
                 </clipPath>
               </defs>
@@ -1417,8 +1529,8 @@
                   src="./../../assets/main-card-images/live-channel/live-channel-1.webp"
                   alt="라이브 에드워드리의 컨츄리쿡 영상 썸네일"
                 />
-                <div class="rank-channel-text">
-                  <figcaption>tv n</figcaption>
+                <figcaption class="rank-channel-text">
+                  <p>tv n</p>
                   <p class="subtitle">에드워드리의 컨츄리쿡</p>
                   <p class="ranking">
                     <img
@@ -1427,7 +1539,7 @@
                     />
                   </p>
                   <p class="viewer">12.7%</p>
-                </div>
+                </figcaption>
               </figure>
             </a>
           </li>
@@ -1438,8 +1550,8 @@
                   src="./../../assets/main-card-images/live-channel/live-channel-2.webp"
                   alt="라이브 연합뉴스 TV 뉴스센터 영상 썸네일"
                 />
-                <div class="rank-channel-text">
-                  <figcaption>연합뉴스 TV</figcaption>
+                <figcaption class="rank-channel-text">
+                  <p>연합뉴스 TV</p>
                   <p class="subtitle">뉴스 센터</p>
                   <p class="ranking">
                     <img
@@ -1448,7 +1560,7 @@
                     />
                   </p>
                   <p class="viewer">11.6</p>
-                </div>
+                </figcaption>
               </figure>
             </a>
           </li>
@@ -1459,8 +1571,8 @@
                   src="./../../assets/main-card-images/live-channel/live-channel-3.webp"
                   alt="라이브 신서유기4 영상 썸네일"
                 />
-                <div class="rank-channel-text">
-                  <figcaption>tvN SHOW</figcaption>
+                <figcaption class="rank-channel-text">
+                  <p>tvN SHOW</p>
                   <p class="subtitle">신서유기4 3화</p>
                   <p class="ranking">
                     <img
@@ -1469,7 +1581,7 @@
                     />
                   </p>
                   <p class="viewer">17.4%</p>
-                </div>
+                </figcaption>
               </figure>
             </a>
           </li>
@@ -1480,14 +1592,14 @@
                   src="./../../assets/main-card-images/live-channel/live-channel-4.webp"
                   alt="라이브 YTN 뉴스 NOW 영상 썸네일"
                 />
-                <div class="rank-channel-text">
-                  <figcaption>YTN</figcaption>
+                <figcaption class="rank-channel-text">
+                  <p>YTN</p>
                   <p class="subtitle">뉴스 NOW</p>
                   <p class="ranking">
                     <img src="./../../assets/numder-icon/num-4.svg" alt="" />
                   </p>
                   <p class="viewer"></p>
-                </div>
+                </figcaption>
               </figure>
             </a>
           </li>
@@ -1498,8 +1610,8 @@
                   src="./../../assets/main-card-images/live-channel/live-channel-5.webp"
                   alt="라이브 channel A 신랑수업 영상 썸네일"
                 />
-                <div class="rank-channel-text">
-                  <figcaption>channel A</figcaption>
+                <figcaption class="rank-channel-text">
+                  <p>channel A</p>
                   <p class="subtitle">신랑수업 2화</p>
                   <p class="ranking">
                     <img
@@ -1508,7 +1620,7 @@
                     />
                   </p>
                   <p class="viewer">5.7%</p>
-                </div>
+                </figcaption>
               </figure>
             </a>
           </li>
@@ -1519,8 +1631,8 @@
                   src="./../../assets/main-card-images/live-channel/live-channel-6.webp"
                   alt="라이브 JTBC 이혼 숙려 캠프 영상 썸네일"
                 />
-                <div class="rank-channel-text">
-                  <figcaption>JTBC</figcaption>
+                <figcaption class="rank-channel-text">
+                  <p>JTBC</p>
                   <p class="subtitle">이혼숙려 캠프 3화</p>
                   <p class="ranking">
                     <img
@@ -1529,7 +1641,7 @@
                     />
                   </p>
                   <p class="viewer">2.7%</p>
-                </div>
+                </figcaption>
               </figure>
             </a>
           </li>
@@ -1540,8 +1652,8 @@
                   src="./../../assets/main-card-images/live-channel/live-channel-7.webp"
                   alt="라이브 JTBC2 프리드라이프 광고 영상 썸네일"
                 />
-                <div class="rank-channel-text">
-                  <figcaption>JTBC2</figcaption>
+                <figcaption class="rank-channel-text">
+                  <p>JTBC2</p>
                   <p class="subtitle">프리드 라이프 홈쇼핑</p>
                   <p class="ranking">
                     <img
@@ -1550,7 +1662,7 @@
                     />
                   </p>
                   <p class="viewer"></p>
-                </div>
+                </figcaption>
               </figure>
             </a>
           </li>
@@ -1561,8 +1673,8 @@
                   src="./../../assets/main-card-images/live-channel/live-channel-8.webp"
                   alt="라이브 LifeTime 용감한 형사들4 영상 썸네일"
                 />
-                <div class="rank-channel-text">
-                  <figcaption>LifeTime</figcaption>
+                <figcaption class="rank-channel-text">
+                  <p>LifeTime</p>
                   <p class="subtitle">용감한 형사들4 2화</p>
                   <p class="ranking">
                     <img
@@ -1571,7 +1683,7 @@
                     />
                   </p>
                   <p class="viewer">7.3%</p>
-                </div>
+                </figcaption>
               </figure>
             </a>
           </li>
@@ -1582,8 +1694,8 @@
                   src="./../../assets/main-card-images/live-channel/live-channel-9.webp"
                   alt="라이브 MBN Live 프레스룸 Live 영상 썸네일"
                 />
-                <div class="rank-channel-text">
-                  <figcaption>MBN Live</figcaption>
+                <figcaption class="rank-channel-text">
+                  <p>MBN Live</p>
                   <p class="subtitle">프레스룸 Live</p>
                   <p class="ranking">
                     <img
@@ -1592,7 +1704,7 @@
                     />
                   </p>
                   <p class="viewer">11.2%</p>
-                </div>
+                </figcaption>
               </figure>
             </a>
           </li>
@@ -1603,8 +1715,8 @@
                   src="./../../assets/main-card-images/live-channel/live-channel-10.webp"
                   alt="라이브 OCN Movies 보디가드 영상 썸네일"
                 />
-                <div class="rank-channel-text">
-                  <figcaption>OCN Movies</figcaption>
+                <figcaption class="rank-channel-text">
+                  <p>OCN Movies</p>
                   <p class="subtitle">보디가드</p>
                   <p class="ranking">
                     <img
@@ -1613,13 +1725,13 @@
                     />
                   </p>
                   <p class="viewer"></p>
-                </div>
+                </figcaption>
               </figure>
             </a>
           </li>
         </ul>
         <div class="card-move-buttons">
-          <button type="button" class="left">
+          <button type="button" class="left" aria-label="왼쪽 이동">
             <svg
               width="70"
               height="70"
@@ -1644,13 +1756,13 @@
                 </g>
               </g>
               <defs>
-                <clipPath id="clip0_158_6408">
+                <clipPath>
                   <rect width="70" height="70" fill="white" />
                 </clipPath>
               </defs>
             </svg>
           </button>
-          <button type="button" class="right">
+          <button type="button" class="right" aria-label="오른쪽 이동">
             <svg
               width="70"
               height="70"
@@ -1673,7 +1785,7 @@
                 />
               </g>
               <defs>
-                <clipPath id="clip0_158_6402">
+                <clipPath>
                   <rect width="70" height="70" fill="white" />
                 </clipPath>
               </defs>
@@ -1691,7 +1803,7 @@
             해당사이트는 공식 사이트가아닌, 학습을 위해 제작된 클론
             사이트입니다.
           </h3>
-          <form action="" method="dialog">
+          <form method="dialog">
             <button type="button" class="clone-modal-close">
               하루 이창 보지않기
             </button>
@@ -1769,6 +1881,7 @@
           <img
             src="./../../assets/map-icon/footer-map-icons.webp"
             usemap="#image-map-mobile"
+            alt="map-image-mobile"
           />
 
           <map name="image-map-mobile">
@@ -1811,6 +1924,7 @@
           <img
             src="./../../assets/map-icon/footer-map-icons-tablet.webp"
             usemap="#image-map-tablet"
+            alt="map-image-tablet"
           />
 
           <map name="image-map-tablet">
@@ -1853,6 +1967,7 @@
           <img
             src="./../../assets/map-icon/footer-map-icons-desktop.webp"
             usemap="#image-map-desktop"
+            alt="map-image-desktop"
           />
 
           <map name="image-map-desktop">

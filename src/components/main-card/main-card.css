@@ -12,9 +12,11 @@
   overflow-x: hidden;
   max-width: 120rem;
   margin: 0 auto;
+
   @media (min-width: 1961px) {
     max-width: 100%;
   }
+
   /* card-move-buttons */
   .card-move-buttons {
     position: absolute;
@@ -176,7 +178,7 @@
 
 /* user-watching-card-list */
 .user-watching-card-list {
-  .card-link > figure {
+  figure {
     position: relative;
   }
 
@@ -192,7 +194,6 @@
     left: 50%;
     transform: translateY(-30%);
     transform: translateX(-50%);
-    z-index: 2;
 
     @media (min-width: 768px) {
       width: var(--play-img-w-tablet);
@@ -209,11 +210,11 @@
     background: rgb(25 25 25);
     align-items: center;
 
-    figcaption {
+    p {
       font-size: 0.625rem;
       padding: clamp(0.5rem, 2vw, 0.625rem);
       padding-right: 0;
-
+      color: #fff;
       @media (min-width: 768px) {
         font-weight: var(--card-font-bold-600);
         font-size: 16px;
@@ -225,7 +226,7 @@
       height: 100%;
       background: none;
       border: none;
-
+      z-index: 4;
       @media (min-width: 768px) {
         width: 2vw;
       }
@@ -304,14 +305,14 @@
     }
   }
 
-  figcaption,
+  p,
   .subtitle,
   .viewer {
     grid-column: 2/4;
     font-size: var(--card-font-mobile);
   }
 
-  figcaption {
+  p {
     font-size: var(--card-font-mobile);
     font-weight: var(--card-font-bold-700);
 

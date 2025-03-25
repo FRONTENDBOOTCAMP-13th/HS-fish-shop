@@ -5,13 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>프로필 편집</title>
     <link rel="icon" href="/favicon.jpg" />
-    <link
-      rel="preload"
-      as="font"
-      href="/font/woff2/PretendardVariable.woff2"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" as="style" href="/font/pretendardvariable.css" />
+    <link rel="preload" as="style" href="/font/pretendardvariable.css" />
+    <link rel="stylesheet" href="/font/pretendardvariable.css" />
     <link rel="stylesheet" href="/src/styles/reset.css" />
     <link rel="stylesheet" href="/src/styles/theme.css" />
     <script type="module" src="./../../main.js"></script>
@@ -31,6 +26,7 @@
     </div>
     <!-- main -->
     <section class="profile-selection">
+      <h2 class="sr-only">편집할 프로필 선택</h2>
       <p class="profile-title">프로필 편집</p>
       <p class="profile-text">편집할 프로필을 선택해주세요.</p>
       <div class="profile-container">
@@ -100,16 +96,16 @@
             해당사이트는 공식 사이트가아닌, 학습을 위해 제작된 클론
             사이트입니다.
           </h3>
-          <form action="" method="dialog">
+          <form method="dialog">
             <button type="button" class="clone-modal-close">
               하루 이창 보지않기
             </button>
           </form>
         </dialog>
       </div>
-
       <div class="footer-line"></div>
       <section class="footer-nav">
+        <h2 class="sr-only">타잉 고객지원 및 서비스 링크</h2>
         <ul>
           <li><a href="/">고객센터</a></li>
           <li><a href="/">이용약관</a></li>
@@ -120,7 +116,7 @@
           <li><a href="/">인재채용</a></li>
         </ul>
         <div class="footer-header-link">
-          <a href="">브랜드 바로가기 <span>+</span></a>
+          <a href="/">브랜드 바로가기 <span>+</span></a>
           <div class="footer-header-link-line">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -132,10 +128,11 @@
               <path d="M1 0.578125L0.999999 25.4199" stroke="#6B6B6B" />
             </svg>
           </div>
-          <a href="">그룹 계열사 바로가기 <span>+</span></a>
+          <a href="/">그룹 계열사 바로가기 <span>+</span></a>
         </div>
       </section>
       <section class="footer-address">
+        <h2 class="sr-only">타잉 회사 및 고객센터 정보</h2>
         <address>
           <p>
             <span>대표이사 : YANG JIEUL</span>
@@ -170,11 +167,14 @@
         </address>
       </section>
       <section class="footer-map">
+        <h2 class="sr-only">타잉 공식 SNS 연결</h2>
         <div class="map-icon-mobile">
           <img
             src="./../../assets/map-icon/footer-map-icons.webp"
             usemap="#image-map-mobile"
+            alt="map-image-mobile"
           />
+
           <map name="image-map-mobile">
             <area
               target="_blank"
@@ -210,11 +210,14 @@
             />
           </map>
         </div>
+
         <div class="map-icon-tablet">
           <img
             src="./../../assets/map-icon/footer-map-icons-tablet.webp"
             usemap="#image-map-tablet"
+            alt="map-image-tablet"
           />
+
           <map name="image-map-tablet">
             <area
               target="_blank"
@@ -250,11 +253,14 @@
             />
           </map>
         </div>
+
         <div class="map-icon-desktop">
           <img
             src="./../../assets/map-icon/footer-map-icons-desktop.webp"
             usemap="#image-map-desktop"
+            alt="map-image-desktop"
           />
+
           <map name="image-map-desktop">
             <area
               target="_blank"
@@ -292,6 +298,7 @@
         </div>
       </section>
       <section class="footer-copyright">
+        <h2 class="sr-only">타잉 저작권 및 법적 고지</h2>
         <p class="copyright">Copyright © 주식회사 티빙 All right reserved.</p>
       </section>
     </footer>
